@@ -619,5 +619,14 @@
   "url": "https://kaleoscollection.com/en-pt/products/jaconelli-dark-havana",
   "image_url": "https://cdn.shopify.com/s/files/1/0975/8077/7798/files/A034703-1_a5063110-f1fe-4d19-8741-69a71b6dff12.jpg?v=1777909765",
   "match": "exact"
+ },
+ "own_sn_paolo": {
+  "brand": "Studio Nicholson",
+  "name": "Paolo Corduroy Wide Leg Pant",
+  "colour": "Panna (cream)",
+  "size": "M",
+  "url": "https://www.studionicholson.com/products/paolo-corduroy-wide-leg-pant-in-panna",
+  "image_url": "https://www.studionicholson.com/cdn/shop/files/PAOLOSNM-1023CORDUROYPANNA4.jpg?v=1781799101",
+  "match": "exact"
  }
 }
