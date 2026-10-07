@@ -413,6 +413,39 @@ PIECE_ALT = {
   "Sage crochet": ("own_af_tank_white", "Even better here", ["tank_cream"]),
 }
 
+# how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
+NECKLACES = ("own_ix_figaro", "own_sd_pendant")
+NECK_WEAR = {
+  "Blue knit & graphic": ("Outside", "over the blue knit, so the pendant sits on the wool. The graphic tee stays underneath."),
+  "Sunday lunch": ("Outside", "over the chocolate knit, just below the crew neck. Silver shows up well on dark brown."),
+  "Sage & brown": ("Outside the tee, inside the jacket", "on the cream tee, framed by the open sage jacket."),
+  "Pinstripe & graphic": ("Outside", "both over the tee."),
+  "Riviera tee": ("Outside", "over the cream tee, at the collarbone."),
+  "Camp collar": ("On skin, inside the shirt", "in the open lace collar, with nothing underneath."),
+  "Graphic & light denim": ("Outside", "both over the tee."),
+  "Summer dinner": ("On skin, inside the shirt", "showing in the collar, with the top two buttons open."),
+  "Summer night tee": ("Outside", "both over the grey tee."),
+  "White tee & olive": ("Outside", "over the white tee, at the collarbone."),
+  "Grey tee & navy": ("Outside", "both over the grey tee."),
+  "Sage crochet": ("Outside the tank, inside the polo", "on the white tank, framed by the unbuttoned crochet placket."),
+  "Johnny collar & navy": ("On skin, inside the polo", "sitting in the V of the Johnny collar."),
+  "Black knit & cream": ("On skin, inside the polo", "in the V of the Johnny collar, where the silver stands out against the black."),
+  "Black camp night": ("On skin, inside the shirt", "both in the open camp collar, with nothing underneath."),
+  "Sage stripes & linen": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar, like in your mirror photo."),
+  "Blue & brown Riviera": ("Outside the tank, inside the shirt", "on the brown tank, framed by the open collar."),
+  "Striped half-zip": ("Outside the tee, inside the half-zip", "on the white tee, showing in the open zip."),
+  "Zip cardigan": ("Outside the tee, inside the zip knit", "both on the grey tee, framed by the half-open zip."),
+  "Studio day": ("Outside", "over the cream knit. The dark pendant stands out on cream."),
+  "Overshirt layers": ("Outside the tee, inside the overshirt", "both on the cream tee, framed by the open overshirt."),
+  "Check jacket": ("Outside the tee, inside the jacket", "on the brown tee, framed by the open check jacket."),
+  "Stripes & brown": ("Outside", "over the striped knit, just below the crew neck."),
+  "Brown & burgundy": ("Outside", "over the chocolate knit."),
+  "Oasis day": ("Outside", "both over the sweatshirt."),
+  "Date night": ("On skin, inside the half-zip", "in the open zip, unzipped to about mid-chest."),
+  "Black puffer, done right": ("Outside the knit, inside the puffer", "on the grey knit. Wear the puffer open so it shows."),
+  "Cold street": ("Outside the hoodie, inside the puffer", "over the hoodie, between the drawcords, with the puffer open."),
+}
+
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
 OUTER_ALT = {
   "AirCloud & cable": ["own_brown_puffer", "jacket_rain"],
@@ -681,6 +714,17 @@ def swaps_for(name, pieces, prod):
         outer = next((k for k in pieces if (ROLE_INFO.get(k) or OWNED.get(k))[0] == "Outerwear"), None)
         if outer:
             out[outer] = swap_box("Other jacket to try", OUTER_ALT[name], prod)
+    worn = [k for k in NECKLACES if k in pieces]
+    if worn:
+        if name not in NECK_WEAR:
+            print("WARNING: no necklace wear note for", name)
+        else:
+            where, how = NECK_WEAR[name]
+            for k in worn:
+                extra = ""
+                if len(worn) == 2:
+                    extra = " Figaro at 46 cm." if k == "own_ix_figaro" else " Hooked on the figaro's last ring, about 6 cm lower."
+                out[k] = f'<div class="wearhow"><span>How to wear it</span><b>{e(where)}.</b> {e(how[:1].upper() + how[1:])}{extra}</div>' + out.get(k, "")
     return out
 
 def build():
@@ -897,6 +941,7 @@ section,article{{scroll-margin-top:64px}}
 .sgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}}
 .sg{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}} .sg .ph{{aspect-ratio:4/3;background:#fff}} .sg .ph img{{object-fit:contain;background:#fff}}
 .fwid{{font-size:12px;color:var(--accent);margin-top:3px}}
+.wearhow{{margin-top:6px;font-size:12px;line-height:1.35;background:var(--chip);border-radius:8px;padding:6px 8px}} .wearhow span{{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:2px}} .wearhow b{{color:var(--accent);font-weight:600}}
 .swapbox{{margin-top:6px;font-size:12px}} .swapbox summary{{cursor:pointer;color:var(--accent);list-style:none;line-height:1.35}} .swapbox summary::-webkit-details-marker{{display:none}}
 .swapbox summary::after{{content:" ▾";}} .swapbox[open] summary::after{{content:" ▴";}} .swaplab{{font-weight:600}}
 .swapgrid{{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}} .swapitem{{display:block;text-decoration:none;color:var(--text);background:var(--chip);border-radius:8px;padding:5px}}
