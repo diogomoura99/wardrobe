@@ -1,0 +1,39 @@
+[
+ {
+  "role": "cardigan_mohair",
+  "rank": "primary",
+  "brand": "Percival",
+  "name": "White Glove Boxy Cardigan, Mohair",
+  "colour": "Grey (neutral heather)",
+  "price_eur": 260,
+  "url": "https://www.percivalclo.com/products/white-glove-boxy-cardigan-mohair-grey",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/WhiteGloveCardigan_Grey_PERCIVAL_MENSWEAR9.jpg?v=1787143996",
+  "fit_note": "Brushed mohair-wool blend, boxy V-neck with patch pockets, a neutral mid-grey. Take your usual M. From the brand of the half-zip you liked. None of COS, Arket, A&F or Les Deux has a grey fuzzy cardigan in M right now.",
+  "verified": true
+ },
+ {
+  "role": "cardigan_mohair",
+  "rank": "alt",
+  "brand": "Soulland",
+  "name": "BOB Alpaca Mix Cardigan",
+  "colour": "Light grey melange",
+  "price_eur": 360,
+  "url": "https://soulland.com/products/bob-alpaca-mix-cardigan-knitwear-light-grey-melange",
+  "image_url": "https://cdn.shopify.com/s/files/1/0104/8852/files/BOB_alpaca_mix_cardigan-Knitwear-52051-1371-Light_grey_melange.jpg?v=1751445317",
+  "fit_note": "Very hairy alpaca blend, the closest to COS's look but pricey. Unisex sizing: S/M is probably your M, so check the size guide.",
+  "verified": true
+ },
+ {
+  "role": "cardigan_mohair",
+  "rank": "alt2",
+  "brand": "aprel",
+  "name": "Knitted Cardigan",
+  "colour": "Light grey melange",
+  "price_eur": 47.95,
+  "on_sale": true,
+  "url": "https://www.zalando.pt/aprel-casaco-de-malha-light-grey-melange-ao622q001-c11.html",
+  "image_url": "https://img01.ztat.net/article/spp-media-p1/4e3ecda2643d4cc18832c66155b57ea6/8de2322465cb4b2db39e73e89be6b04f.jpg",
+  "fit_note": "Budget version with the right brushed look, but mostly synthetic, so expect pilling. Take M.",
+  "verified": true
+ }
+]
