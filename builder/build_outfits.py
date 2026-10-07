@@ -356,10 +356,10 @@ OUTFITS = [
   ("Summer", "Stripes & navy tank", "A navy tank under blue stripes",
    "Blue striped linen shirt, top two buttons open over a navy ribbed tank, ash pleated trousers, white Premiatas and the Rolex. Blue, navy and stone: easy old money for lunch.",
    ["own_ms_blue_stripe", "tank_navy", "own_af_ash_pleated", "own_white_sneakers", "own_watch", "own_cuban_bracelet"]),
-  ("Summer", "Navy terry Riviera", "New piece: navy cable-terry shirt",
+  ("Special Summer", "Navy terry Riviera", "New piece: navy cable-terry shirt",
    "Navy cable-terry shirt with the top buttons open, your light beige linen baggy trousers, brown suede Premiatas, the Jaconellis and the Rolex. The Riviera in the evening.",
    ["shirt_terry", "own_af_linen_baggy", "own_premiata", "own_sunnies_jaconelli", "own_ix_figaro", "own_watch"]),
-  ("Winter", "Chocolate coat", "New piece: chocolate wool coat",
+  ("Special Winter", "Chocolate coat", "New piece: chocolate wool coat",
    "Chocolate wool coat over your Arket navy jumper, ash pleated trousers, white Premiatas and your navy check scarf. Brown, navy and stone: the classiest winter look here.",
    ["coat_wool", "own_arket_navy", "own_af_ash_pleated", "own_white_sneakers", "own_ld_scarf", "own_watch"]),
 ]
@@ -566,6 +566,7 @@ VIBE = {
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
 
 SEASON_INFO = {
+  "Special occasions": ("For a special day", "One standout piece, the rest from your wardrobe", "The outfits above are your fundamentals. These go a step further: each is built around one piece from a modern, young brand that sets you apart, while staying classy."),
   "Spring": ("March – May", "Mornings 7–10 °C, afternoons 16–22 °C", "Showers are common (about 110–120 mm a month), so bring a light jacket you can take off."),
   "Summer": ("June – September", "Mornings 13–16 °C, afternoons 24–28 °C, heatwaves 32–35 °C+", "Dry July and August. Evenings cool down, so a light layer helps. September is still warm."),
   "Autumn": ("October – November", "Mornings 8–12 °C, afternoons 15–21 °C", "The rain comes back hard (about 160–175 mm a month). Knits and jackets, and suede on dry days only."),
@@ -744,14 +745,17 @@ def build():
         OUTFITS = [(a, b, c, d, [k for k in pcs if k != "own_cap_navy"]) for a, b, c, d, pcs in OUTFITS]
     prod = load_products()
     usage = Counter(k for *_, pieces in OUTFITS for k in pieces if k in ROLE_INFO and prod.get(k, {}).get("primary"))
-    seasons = ["Spring", "Summer", "Autumn", "Winter"]
+    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions"]
     sid = {s: s.lower().replace(" ", "-") for s in seasons}
+    sid["Special occasions"] = "special"
+    order = ["Spring", "Summer", "Autumn", "Winter"]
+    special = sorted([o for o in OUTFITS if o[0].startswith("Special ")], key=lambda o: order.index(o[0].split(" ", 1)[1]))
     sec = []
     n = 0
     for s in seasons:
         cards = []
-        for season, name, inspo, note, pieces in OUTFITS:
-            if season != s:
+        for season, name, inspo, note, pieces in (special if s == "Special occasions" else OUTFITS):
+            if s != "Special occasions" and season != s:
                 continue
             n += 1
             sw = swaps_for(name, pieces, prod)
@@ -763,10 +767,10 @@ def build():
             vibe, occ = VIBE.get(name, ("In between", "Everyday"))
             vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
             cards.append(f'''<article class="card{' hero' if hero else ''}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
-<p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span><span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
+<p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
 <p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
-        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">Braga: {e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
+        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s == "Special occasions" else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
         sec.append(f'<section id="{sid[s]}"><h2>{e(s)}</h2>{info}{"".join(cards)}</section>')
 
     # sunglasses lookbook
@@ -984,7 +988,7 @@ section,article{{scroll-margin-top:64px}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
 {"".join(sec)}
 {sg_section}
 {nk_section}
