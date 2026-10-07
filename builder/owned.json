@@ -430,5 +430,13 @@
   "url": "https://www.goat.com/sneakers/sporty-rich-x-handball-spezial-night-indigo-jp7066",
   "image_url": "img/spezial-sporty-rich-navy.jpg",
   "match": "exact"
+ },
+ "own_af_white_tee": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Premium Heavyweight Cropped Tee",
+  "colour": "White",
+  "url": "https://www.abercrombie.com/shop/eu-es/p/premium-heavyweight-cropped-tee-55001821?seq=53",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5094-00405-100_prod1?policy=product-medium",
+  "match": "exact"
  }
 }
