@@ -586,7 +586,7 @@ def build():
 <div class="meta"><div class="br">{e(q["brand"])}{' · <b>Top pick</b>' if q.get("rank")=="main" else ''}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{' <span class="start">On sale</span>' if q.get("on_sale") else ''}</div><div class="pr">{e(q.get("colour",""))}</div>
 <div class="fwid">{e(q.get("construction",""))}</div><div class="why">{e(q.get("fit_note",""))}</div></div></div>''' for q in caps)
-    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">The shape that suits you, like your A&F Western snapback: <b>5 panels with one smooth front panel, a stiff (structured) front, a mid-to-high crown and a gently curved brim.</b> Soft 6-panel "dad hats" sit flat on your thick hair. Your navy '47 Base Runner is that soft type, so try it on before keeping it.</p><div class="sgrid">{cap_cards}</div></section>''' if caps else ""
+    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">What suits you, going by your A&F Western snapback (which looks nothing like A&F's current snapbacks): <b>a pre-curved brim and a rounded crown that holds its shape</b>, classy rather than a flat-brim, boxy "classic snapback". Soft dad hats that collapse flat on your thick hair don't work either. Your navy '47 Base Runner is a soft one, so try it on before keeping it.</p><div class="sgrid">{cap_cards}</div></section>''' if caps else ""
 
     # shopping list
     rows = []
