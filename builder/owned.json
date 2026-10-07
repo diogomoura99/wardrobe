@@ -465,11 +465,11 @@
  },
  "own_sd_pendant": {
   "brand": "Serge DeNimes",
-  "name": "Square tile pendant (Nu Historic collection, about 10 mm)",
+  "name": "Square pendant, oxidised silver (photo: closest match, the Silver Atrium Necklace)",
   "colour": "Oxidised silver, slim curb chain 46–52 cm",
-  "url": "https://sergedenimes.com/collections/mens-silver-necklaces",
-  "image_url": "img/serge-denimes-square-pendant.jpg",
-  "match": "exact"
+  "url": "https://web.archive.org/web/20241009061224/https://www.sergedenimes.com/products/silver-atrium-necklace",
+  "image_url": "img/serge-denimes-atrium-closest.jpg",
+  "match": "close"
  },
  "own_ix_figaro": {
   "brand": "IX Studios",
