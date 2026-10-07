@@ -446,5 +446,13 @@
   "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=snapback%20hat",
   "image_url": "img/af-western-snapback.jpg",
   "match": "exact"
+ },
+ "own_af_black_5pocket": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy 5-Pocket Pant",
+  "colour": "Black",
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-5-pocket-pant-60867391",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-5268-00282-900_prod1?policy=product-large",
+  "match": "exact"
  }
 }
