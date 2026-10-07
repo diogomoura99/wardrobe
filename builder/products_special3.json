@@ -1,41 +1,5 @@
 [
  {
-  "role": "trouser_pinstripe_navy",
-  "rank": "primary",
-  "brand": "Abercrombie & Fitch",
-  "name": "Menswear Baggy Trouser",
-  "colour": "Navy pinstripe",
-  "price_eur": 80,
-  "url": "https://www.abercrombie.com/shop/eu/p/menswear-baggy-trouser-63617534",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-26011-00476-260_prod1?policy=product-large",
-  "fit_note": "Your A&F baggy block in a light, fluid suiting fabric (polyester-viscose), mid-navy with a near-invisible stripe, flat front. Take 32x30 (11 left).",
-  "verified": true
- },
- {
-  "role": "trouser_pinstripe_navy",
-  "rank": "alt",
-  "brand": "COS",
-  "name": "Pleated Relaxed-Fit Wide-Leg Trousers",
-  "colour": "Navy pinstripe",
-  "price_eur": 149,
-  "url": "https://www.cos.com/en-eu/men/menswear/trousers/relaxed-fit/wideleg/product/wool-twill-relaxed-fit-wide-leg-trousers-navy-pinstriped-1349894002",
-  "image_url": "https://media.cos.com/assets/001/1b/0d/1b0d9f248e3d9f6f692245107f07816c1673659d_xxl-1.jpg",
-  "fit_note": "100% wool, pleated and very wide, darker navy with a fluid drape. Take 48 (76 cm inside leg).",
-  "verified": true
- },
- {
-  "role": "trouser_pinstripe_navy",
-  "rank": "alt2",
-  "brand": "Arket",
-  "name": "Wide Cotton Linen Trousers",
-  "colour": "Dark Blue (solid)",
-  "price_eur": 99,
-  "url": "https://www.arket.com/en-eu/product/wide-cotton-linen-trousers-dark-blue-1319486002/",
-  "image_url": "https://media.arket.com/assets/006/07/38/073840f08cf552f3f3b2e5d9753404e6c1d454e1.jpg?imwidth=1280",
-  "fit_note": "Solid dark blue cotton-lyocell-linen, wide and straight, cool for summer. Take 48.",
-  "verified": true
- },
- {
   "role": "shoe_mexico66",
   "rank": "primary",
   "brand": "Onitsuka Tiger",
