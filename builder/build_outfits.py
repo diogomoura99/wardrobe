@@ -18,7 +18,7 @@ ROLE_INFO = {
     "hoodie_graphic_blue": ("Knitwear & tops", "Blue hoodie"),
     "sweat_grey": ("Knitwear & tops", "Grey sweatshirt"),
     "trouser_cord_ecru": ("Trousers", "Ecru wide corduroy"),
-    "trouser_linen_olive": ("Trousers", "Olive linen baggy trousers"),
+    "trouser_linen_olive": ("Trousers", "Olive linen trousers"),
     "trouser_linen_beige": ("Trousers", "Light beige linen baggy trousers"),
     "shoe_adidas_suede": ("Shoes", "Brown suede Adidas"),
     "clog_suede": ("Shoes", "Suede clogs"),
@@ -69,6 +69,7 @@ OWNED = {
     "own_camp_black": ("Knitwear & tops", "Your black camp-collar linen shirt"),
     "own_johnny_stripe": ("Knitwear & tops", "Your striped Johnny-collar knit polo"),
     "own_johnny_black": ("Knitwear & tops", "Your black Johnny-collar knit polo"),
+    "own_polo_halfzip": ("Knitwear & tops", "Your Polo Ralph Lauren navy half-zip"),
     "own_crochet_diamond": ("Knitwear & tops", "Your cream & sage crochet polo"),
     "own_crochet_granny": ("Knitwear & tops", "Your granny-square crochet polo"),
     "own_ymc_grey": ("Knitwear & tops", "Your YMC grey Suedehead knit"),
@@ -119,8 +120,8 @@ OUTFITS = [
    "Classy with a touch of old money, but modern. Your brown suede Premiatas give the same feel as the shoes in your photo, but more relaxed. Tuck the knit loosely so the belt shows.",
    ["own_ymc_grey", "trouser_cord_ecru", "own_premiata", "belt_brown", "own_cuban_bracelet", "own_watch"]),
   ("Autumn", "Striped half-zip", "Your board: grey striped half-zip",
-   "Half-zip over a white tee with mid-blue jeans. Easy everyday look.",
-   ["knit_halfzip", "own_af_white_tee", "own_midwash", "own_white_sneakers", "own_ix_figaro", "own_ix_figaro_bracelet"]),
+   "Your Polo Ralph Lauren half-zip over a white tee with mid-blue jeans. Easy everyday look.",
+   ["own_polo_halfzip", "own_af_white_tee", "own_midwash", "own_white_sneakers", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Autumn", "Zip cardigan", "Your own navy zip knit (like the one on your board)",
    "Your navy striped zip knit over your grey tee, dark grey baggy jeans and suede clogs. The grey tee ties the knit to the jeans, softer than white.",
    ["own_navy_zip_knit", "own_af_tee_grey", "own_af_greywash", "clog_suede", "own_ix_figaro", "own_sd_pendant"]),
@@ -156,8 +157,8 @@ OUTFITS = [
    "Varsity jacket, white tee, cream jeans and white sneakers. Preppy street.",
    ["jacket_varsity", "own_af_white_tee", "own_af_cream", "own_spezial_cream", "own_cap_navy"]),
   ("Winter", "Date night", "Your board: dark half-zip + wide trousers",
-   "Navy half-zip with your dark brown pleated trousers and brown suede Premiatas, your Serge DeNimes pendant at the open zip. Navy and brown is the classic old-money pairing, and it stays rich in low evening light.",
-   ["knit_halfzip", "own_af_brown", "own_premiata", "own_sd_pendant", "own_watch"]),
+   "Your Polo Ralph Lauren navy half-zip, tucked loosely into your dark brown pleated trousers, with brown suede Premiatas and your Serge DeNimes pendant at the open zip. Navy and brown is the classic old-money pairing, and it stays rich in low evening light.",
+   ["own_polo_halfzip", "own_af_brown", "own_premiata", "own_sd_pendant", "own_watch"]),
   ("Winter", "Grey on black", "Your board: grey knit + black wide trousers",
    "Grey knit with a white tee showing at the hem, over black wide trousers.",
    ["own_ymc_grey", "own_af_white_tee", "own_af_black_pleated", "own_spezial_cream", "jewelry_ring"]),
@@ -238,7 +239,7 @@ OUTFITS = [
    "Your lace camp-collar shirt worn open, cream jeans and suede clogs.",
    ["own_lace_camp", "own_af_cream", "clog_suede", "sunglasses", "own_ix_figaro", "own_sd_pendant"]),
   ("Summer", "Blue linen & olive", "Your light-blue linen shirt",
-   "Your light-blue linen shirt open over a white tee, olive linen baggy trousers, white Premiatas and the navy cap. Blue and olive is a fresh summer pairing.",
+   "Your light-blue linen shirt open over a white tee, olive linen trousers, white Premiatas and the navy cap. Blue and olive is a fresh summer pairing.",
    ["own_blue_linen", "own_af_white_tee", "trouser_linen_olive", "own_white_sneakers", "own_cap_navy"]),
   ("Summer", "Graphic & light denim", "Your board: graphic tees",
    "Your Hotel tee with light-wash baggy jeans, navy Spezials and the cap, plus the layered necklaces. Summer street, no shorts.",
@@ -307,7 +308,7 @@ OUTFITS = [
    "Light-blue cable knit over your black pleated trousers with white Premiatas, the Cuban bracelet and the Rolex. Light top, black trousers, white shoes: crisp, with no brown to fight the black.",
    ["own_blue_cable", "own_af_black_pleated", "own_white_sneakers", "own_cuban_bracelet", "own_watch"]),
   ("Summer", "White tee & olive", "Tee and light trousers",
-   "Your white tee with olive linen baggy trousers, navy Spezials, the navy cap and the IX figaro chain and bracelet. Casual, and navy with olive works.",
+   "Your white tee with olive linen trousers, navy Spezials, the navy cap and the IX figaro chain and bracelet. Casual, and navy with olive works.",
    ["own_af_white_tee", "trouser_linen_olive", "own_spezial_navy", "own_cap_navy", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Summer", "Brown tee & cream", "Warm summer neutrals",
    "Your brown tee with cream jeans, light-blue Spezials, your Western cap and the Cuban bracelet. Warm, with one cool accent at the feet.",
@@ -372,6 +373,12 @@ INNER_ALT = {
   "Hotel tee & khaki": ["own_af_white_tee", "own_af_tee_cream"],
   "Cream tee & light denim": ["own_af_white_tee", "own_af_tee_grey"],
   "Black camp night": ["own_af_tee_grey", "own_af_tee_cream"],
+}
+
+# other pieces worth showing under a specific tile: (piece, label, [options])
+PIECE_ALT = {
+  "Striped half-zip": ("own_polo_halfzip", "Also great here", ["knit_halfzip"]),
+  "Date night": ("own_polo_halfzip", "Also great here", ["knit_halfzip"]),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -629,6 +636,10 @@ def swaps_for(name, pieces, prod):
         inner = next((k for k in INNER_PRIORITY if k in pieces), None)
         if inner:
             out[inner] = swap_box("Backup if it's in the wash", INNER_ALT[name], prod)
+    if name in PIECE_ALT:
+        piece, label, alts = PIECE_ALT[name]
+        if piece in pieces:
+            out[piece] = out.get(piece, "") + swap_box(label, alts, prod)
     if name in OUTER_ALT:
         outer = next((k for k in pieces if (ROLE_INFO.get(k) or OWNED.get(k))[0] == "Outerwear"), None)
         if outer:
