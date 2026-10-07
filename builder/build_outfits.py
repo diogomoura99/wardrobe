@@ -567,6 +567,14 @@ def build():
     nk_section = f'''<section id="necklaces"><h2>Necklaces</h2><p class="lede">All silver-toned to match your Rolex, and sterling silver unless the colour says steel. <b>Length guide for you:</b> 50 cm sits around the collarbone and is the best everyday length for chains; 55 cm sits a little lower and works well for pendants and over knits. Wear one on its own, or layer two (see Layered pairs below).</p>{nk_html}</section>'''
     sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. For a medium-to-large head, look for a front width of about 140–150 mm. If you have a pair that fits well, measure it hinge to hinge and compare.</p><div class="sgrid">{sg_cards}</div></section>'''
 
+    # caps lookbook
+    caps = all_for_role("cap_structured")
+    cap_cards = "".join(f'''<div class="sg"><a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>
+<div class="meta"><div class="br">{e(q["brand"])}{' · <b>Top pick</b>' if q.get("rank")=="main" else ''}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
+<div class="pr">{money(q.get("price_eur"))}{' <span class="start">On sale</span>' if q.get("on_sale") else ''}</div><div class="pr">{e(q.get("colour",""))}</div>
+<div class="fwid">{e(q.get("construction",""))}</div><div class="why">{e(q.get("fit_note",""))}</div></div></div>''' for q in caps)
+    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">The shape that suits you, like your A&F Western snapback: <b>5 panels with one smooth front panel, a stiff (structured) front, a mid-to-high crown and a gently curved brim.</b> Soft 6-panel "dad hats" sit flat on your thick hair. Your navy '47 Base Runner is that soft type, so try it on before keeping it.</p><div class="sgrid">{cap_cards}</div></section>''' if caps else ""
+
     # shopping list
     rows = []
     top = {k for k, _ in usage.most_common(8)}
@@ -683,10 +691,11 @@ section,article{{scroll-margin-top:64px}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#shopping-list">Shopping list</a></nav>
 {"".join(sec)}
 {sg_section}
 {nk_section}
+{cap_section}
 <section id="shopping-list"><h2>Shopping list</h2>
 <p class="lede">Every piece once, with a main pick and up to two alternatives (often a cheaper one and an independent-label one). Pieces marked "Buy first" appear in the most outfits, so start with those. Outfit totals use the main picks.</p>
 {"".join(rows)}</section>
