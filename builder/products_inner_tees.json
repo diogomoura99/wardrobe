@@ -1,0 +1,28 @@
+[
+ {
+  "role": "tee_warm_beige",
+  "rank": "primary",
+  "brand": "Abercrombie & Fitch",
+  "name": "Premium Heavyweight Cropped Tee",
+  "colour": "Warm Beige",
+  "price_eur": 12.99,
+  "on_sale": true,
+  "url": "https://www.abercrombie.com/shop/eu/p/premium-heavyweight-cropped-tee-61674319",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5297-00490-175_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "The same tee as your white one (take M), in a soft beige. Warmer than white under browns, sage and blue linen. On sale (was €32)."
+ },
+ {
+  "role": "tee_cool_gray",
+  "rank": "primary",
+  "brand": "Abercrombie & Fitch",
+  "name": "Premium Heavyweight Cropped Tee",
+  "colour": "Cool Gray",
+  "price_eur": 35,
+  "on_sale": false,
+  "url": "https://www.abercrombie.com/shop/eu/p/premium-heavyweight-cropped-tee-55001821",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5767-00764-138_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Same tee (M) in grey marl. Great under navy knits and with grey or black jeans."
+ }
+]

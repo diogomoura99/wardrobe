@@ -27,6 +27,8 @@ ROLE_INFO = {
     "jeans_grey": ("Trousers", "Grey / washed-black jeans"),
     "trouser_cord_ecru": ("Trousers", "Ecru wide corduroy"),
     "jeans_lightwash_baggy": ("Trousers", "Light-wash baggy jeans"),
+    "tee_warm_beige": ("Knitwear & tops", "Beige heavyweight tee"),
+    "tee_cool_gray": ("Knitwear & tops", "Grey heavyweight tee"),
     "shorts_tailored": ("Trousers", "Pleated shorts"),
     "shorts_denim": ("Trousers", "Denim shorts"),
     "shoe_adidas_suede": ("Shoes", "Brown suede Adidas"),
@@ -285,8 +287,8 @@ OUTFITS = [
    "Sage textured jacket over a white tee, dark brown trousers and white Premiatas.",
    ["own_sage_jacket", "own_af_white_tee", "own_af_brown", "own_white_sneakers", "own_sd_pendant"]),
   ("Spring", "Navy zip & khaki", "Your navy zip knit, smarter",
-   "Navy zip knit closed, khaki jeans, brown suede Premiatas and the Rolex.",
-   ["own_navy_zip_knit", "own_beige_jeans", "own_premiata", "own_watch"]),
+   "Navy zip knit half-open over your light-blue linen shirt, collar out, with khaki jeans, brown suede Premiatas and the Rolex. Navy, light blue and khaki: classic.",
+   ["own_navy_zip_knit", "own_blue_linen", "own_beige_jeans", "own_premiata", "own_watch"]),
   ("Summer", "Seersucker whites", "Your adidas seersucker shirt",
    "Cream seersucker shirt with your white linen trousers, brown suede Premiatas, your clear lilac sunglasses and the Rolex.",
    ["own_seersucker_camp", "own_white_linen", "own_premiata", "own_sunnies_asos", "own_watch"]),
@@ -306,6 +308,31 @@ OUTFITS = [
    "Cream cord jacket open over your white tee, black baggy jeans and the green Spezials. Light colours on top keep the black from looking heavy on you. All yours.",
    ["own_cream_cord_jacket", "own_af_white_tee", "own_af_black_jeans", "own_samba_green", "own_cuban_bracelet"]),
 ]
+
+# backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
+INNER_ALT = {
+  "Striped half-zip": ["tee_cool_gray", "own_hotel_tee"],
+  "Zip cardigan": ["tee_cool_gray", "own_hotel_tee"],
+  "Overshirt layers": ["tee_warm_beige", "own_hotel_tee"],
+  "Check jacket": ["own_af_white_tee", "tee_warm_beige"],
+  "Stripes & sage jacket": ["own_af_white_tee", "tee_warm_beige"],
+  "Varsity": ["own_hotel_tee", "tee_warm_beige"],
+  "Grey on black": ["own_hotel_tee", "tee_cool_gray"],
+  "Collar & crew": ["own_blue_linen", "own_af_white_tee"],
+  "Coffee run": ["own_hotel_tee", "own_stripe_ls"],
+  "Club tee": ["own_af_white_tee", "tee_warm_beige"],
+  "Blue knit & graphic": ["own_af_white_tee", "tee_warm_beige"],
+  "Linen layers": ["tee_warm_beige", "own_hotel_tee"],
+  "Pinstripe & graphic": ["own_af_white_tee", "tee_cool_gray"],
+  "Linen & shorts": ["tee_warm_beige", "own_hotel_tee"],
+  "Jorts day": ["own_af_white_tee", "tee_cool_gray"],
+  "Beach town": ["own_hotel_tee", "tee_warm_beige"],
+  "Harrington & white": ["own_stripe_ls", "own_hotel_tee"],
+  "Sage & brown": ["tee_warm_beige", "own_brown_tee"],
+  "Brown linen day": ["tee_warm_beige", "own_hotel_tee"],
+  "Cream & black": ["tee_cool_gray", "own_hotel_tee"],
+  "Navy zip & khaki": ["own_af_white_tee", "shirt_oxford"],
+}
 
 VIBE = {
   "Knit & jeans": ("In between", "Everyday"),
@@ -489,6 +516,20 @@ def tile(key, prod):
 <div class="meta"><div class="br">{e(p["brand"])}</div><a class="nm" href="{e(p["url"])}" target="_blank" rel="noopener">{e(p["name"])}</a>
 <div class="pr">{money(p.get("price_eur"))}{' · ' + e(p.get("colour","")) if p.get("colour") else ''}</div>{alt_html}</div></div>'''
 
+def inner_alt(name, prod):
+    alts = INNER_ALT.get(name)
+    if not alts:
+        return ""
+    bits = []
+    for k in alts:
+        if k in OWNED:
+            bits.append(e(OWNED[k][1][0].lower() + OWNED[k][1][1:]))
+        else:
+            p = prod.get(k, {}).get("primary")
+            if p:
+                bits.append(f'<a href="{e(p["url"])}" target="_blank" rel="noopener">{e(p["brand"].replace("Abercrombie & Fitch", "A&F"))} tee in {e(p.get("colour",""))}</a> ({money(p.get("price_eur"))}, to buy)' if k.startswith("tee_") else f'<a href="{e(p["url"])}" target="_blank" rel="noopener">{e(ROLE_INFO[k][1].lower())}</a> (to buy)')
+    return ' <span class="swap"><b>Backup layer:</b> ' + " · or ".join(bits) + "</span>"
+
 def build():
     global OUTFITS
     if NO_CAPS:
@@ -514,7 +555,7 @@ def build():
             vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
             cards.append(f'''<article class="card{' hero' if hero else ''}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
 <p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span><span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
-<p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
+<p class="note">{e(note)}{inner_alt(name, prod)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
         info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">Braga: {e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
         sec.append(f'<section id="{sid[s]}"><h2>{e(s)}</h2>{info}{"".join(cards)}</section>')
@@ -701,6 +742,7 @@ section,article{{scroll-margin-top:64px}}
 .sgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}}
 .sg{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}} .sg .ph{{aspect-ratio:4/3;background:#fff}} .sg .ph img{{object-fit:contain;background:#fff}}
 .fwid{{font-size:12px;color:var(--accent);margin-top:3px}}
+.swap{{display:block;margin-top:6px;font-size:13px;color:var(--muted)}} .swap a{{color:var(--accent)}}
 .fitb{{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:2px 8px;margin-top:4px}} .fb-ok{{background:#e1f5ee;color:#085041}} .fb-mid{{background:#faeeda;color:#633806}} .fb-far{{background:#f6e3e3;color:#7a1f1f}} .fb-unk{{background:var(--chip);color:#555}}
 .pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:8px}}
 .pair{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}}
