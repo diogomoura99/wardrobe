@@ -586,15 +586,15 @@ def build():
         return (f'''<div class="sg"><a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>
 <div class="meta"><div class="br">{e(q["brand"])}{' · <b>Top pick</b>' if q.get("rank")=="main" else ''}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{' <span class="start">On sale</span>' if q.get("on_sale") else ''}</div><div class="pr">{e(q.get("colour",""))}</div>
-<div class="fwid">{e(q.get("construction",""))}</div><div class="why">{e(q.get("fit_note",""))}</div></div></div>''')
-    CAP_GROUPS = [("navy", "Navy, your workhorse", "With denim, navy pieces and your burgundy Sambas. Navy with burgundy is a classic."),
-                  ("green", "Washed green", "With your green adidas and the Eagles sweater."),
-                  ("brown", "Chocolate brown", "With the brown barn jacket, varsity, brown knits and puffers."),
-                  ("stone", "Stone and cream", "With all-light summer outfits: ivory tees, cream jeans, linen. The most contrast with your dark hair."),
-                  ("burgundy", "Burgundy (just for variety)", "Optional: navy already does this job.")]
+<div class="fwid">{e(q.get("construction",""))}</div>{'<div class="fitb fb-ok">✓ Shape very close to yours</div>' if q.get("similarity")=="high" else ('<div class="fitb fb-mid">Shallower than yours</div>' if q.get("similarity")=="medium" else '')}<div class="why">{e(q.get("fit_note",""))}</div></div></div>''')
+    CAP_GROUPS = [("green", "Washed green: the one colour worth adding", "For your green adidas, the Eagles sweater and sage pieces."),
+                  ("navy", "Navy: only if your '47 Base Runner doesn't fit", "Your navy cap already covers 16 outfits."),
+                  ("brown", "Chocolate brown (optional)", "Your Western cap already covers the brown outfits."),
+                  ("stone", "Stone and cream (optional)", "Would overlap with your cream/brown Western."),
+                  ("burgundy", "Burgundy (just for variety)", "Navy already does this job.")]
     cap_cards = "".join(f'<h3 class="cat">{e(t)} <span class="muted" style="font-weight:400;font-size:14px">— {e(d)}</span></h3><div class="sgrid">' + "".join(cap_card(q) for q in caps if q.get("colour_group") == g) + '</div>' for g, t, d in CAP_GROUPS if any(q.get("colour_group") == g for q in caps))
 
-    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">What suits you, going by your A&F Western snapback (which looks nothing like A&F's current snapbacks): <b>a pre-curved brim and a rounded crown that holds its shape</b>, classy rather than a flat-brim, boxy "classic snapback". Soft dad hats that collapse flat on your thick hair don't work either. Your navy '47 Base Runner is a soft one, so try it on before keeping it.</p>{cap_cards}</section>''' if caps else ""
+    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">What suits you, going by your A&F Western snapback (which looks nothing like A&F's current snapbacks): <b>a pre-curved brim and a rounded crown that holds its shape</b>, classy rather than a flat-brim, boxy "classic snapback". Soft dad hats that collapse flat on your thick hair don't work either. <b>You're covered with your two caps:</b> navy for the cool and denim outfits (and with burgundy Sambas), cream/brown for the warm ones. Try your navy '47 Base Runner first; it's the same relaxed, curved type as your Western. All caps below are matched to your Western cap's shape.</p>{cap_cards}</section>''' if caps else ""
 
     # shopping list
     rows = []
