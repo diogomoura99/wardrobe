@@ -470,5 +470,21 @@
   "url": "https://sergedenimes.com/collections/mens-silver-necklaces",
   "image_url": "img/serge-denimes-square-pendant.jpg",
   "match": "exact"
+ },
+ "own_ix_figaro": {
+  "brand": "IX Studios",
+  "name": "IX Figaro Chain Silver, 45–50 cm",
+  "colour": "Polished recycled silver, 2 mm",
+  "url": "https://ixstudioscph.com/products/ix-figaro-chain-silver",
+  "image_url": "https://cdn.shopify.com/s/files/1/0267/6070/8275/files/FG060RH50_23b961f1-9687-425c-afbc-28d3cf928ed2.png?v=1727179368",
+  "match": "exact"
+ },
+ "own_ix_figaro_bracelet": {
+  "brand": "IX Studios",
+  "name": "IX Figaro Bracelet Silver, 16.5–18 cm",
+  "colour": "Polished recycled silver, 2 mm",
+  "url": "https://ixstudioscph.com/products/ix-figaro-bracelet-silver",
+  "image_url": "https://cdn.shopify.com/s/files/1/0267/6110/1502/files/FG060RH18_c7201eb8-23a0-40ff-a7ea-2d9da7c74e23.png?v=1727179358",
+  "match": "exact"
  }
 }
