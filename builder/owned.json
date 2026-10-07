@@ -510,5 +510,45 @@
   "url": "https://www.abercrombie.com/shop/eu/p/premium-heavyweight-cropped-tee-61674319",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5297-00490-175_prod1?policy=product-large",
   "match": "exact"
+ },
+ "own_camp_black": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Camp Collar Cropped Summer Linen-Blend Shirt",
+  "colour": "Black, textured stripe",
+  "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=camp%20collar%20linen-blend%20shirt",
+  "image_url": "img/af-camp-collar-linen-black.jpg",
+  "match": "exact"
+ },
+ "own_johnny_stripe": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Striped Stitched Johnny Collar Sweater Polo",
+  "colour": "White / beige stripe",
+  "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=johnny%20collar%20sweater%20polo",
+  "image_url": "img/af-johnny-polo-stripe-white.jpg",
+  "match": "exact"
+ },
+ "own_johnny_black": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Striped Stitched Johnny Collar Sweater Polo",
+  "colour": "Black",
+  "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=johnny%20collar%20sweater%20polo",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-5030-00366-900_prod1?policy=product-large",
+  "match": "close"
+ },
+ "own_crochet_diamond": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Crochet-Style Diamond Button-Through Sweater Polo",
+  "colour": "Cream / sage diamond",
+  "url": "https://www.abercrombie.com/shop/eu/p/crochet-style-geometric-button-through-sweater-polo-59793333",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-5023-00370-110_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_crochet_granny": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Crochet-Style Pattern Button-Through Sweater Polo",
+  "colour": "Cream / red-brown squares",
+  "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=crochet%20button-through%20sweater%20polo",
+  "image_url": "img/af-crochet-granny-polo.jpg",
+  "match": "exact"
  }
 }

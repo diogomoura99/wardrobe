@@ -75,6 +75,11 @@ OWNED = {
     "own_af_tee_grey": ("Knitwear & tops", "Your grey A&F heavyweight tee"),
     "own_af_tee_cream": ("Knitwear & tops", "Your cream A&F heavyweight tee"),
     "own_af_tee_black": ("Knitwear & tops", "Your black A&F heavyweight tee"),
+    "own_camp_black": ("Knitwear & tops", "Your black camp-collar linen shirt"),
+    "own_johnny_stripe": ("Knitwear & tops", "Your striped Johnny-collar knit polo"),
+    "own_johnny_black": ("Knitwear & tops", "Your black Johnny-collar knit polo"),
+    "own_crochet_diamond": ("Knitwear & tops", "Your cream & sage crochet polo"),
+    "own_crochet_granny": ("Knitwear & tops", "Your granny-square crochet polo"),
     "own_ymc_grey": ("Knitwear & tops", "Your YMC grey Suedehead knit"),
     "own_arket_navy": ("Knitwear & tops", "Your Arket navy brushed-wool jumper"),
     "own_howlin_brown": ("Knitwear & tops", "Your Howlin' brown Shetland knit"),
@@ -325,6 +330,21 @@ OUTFITS = [
   ("Summer", "Cream tee & light denim", "The easiest summer outfit",
    "Your cream tee with light-wash baggy jeans, white Premiatas, the navy cap and your clear lilac sunglasses.",
    ["own_af_tee_cream", "own_lightwash", "own_white_sneakers", "own_cap_navy", "own_sunnies_asos"]),
+  ("Summer", "Granny squares", "Your crochet polo, street",
+   "Your granny-square crochet polo with cream jeans, burgundy Sambas, your Western cap and the Cuban bracelet. The red-brown squares pick up the Sambas and the cap's brown brim.",
+   ["own_crochet_granny", "own_af_cream", "own_samba_maroon", "own_cap_western", "own_cuban_bracelet"]),
+  ("Summer", "Sage crochet", "Your crochet polo, soft and light",
+   "Your cream and sage crochet polo with ash pleated trousers, white Premiatas, your clear lilac sunglasses and the IX chain and bracelet. Soft pastels, no shorts.",
+   ["own_crochet_diamond", "own_af_ash_pleated", "own_white_sneakers", "own_sunnies_asos", "own_ix_figaro", "own_ix_figaro_bracelet"]),
+  ("Summer", "Johnny collar & navy", "Your striped knit polo, dressed up",
+   "Your striped Johnny-collar polo with the COS navy wide-leg trousers, brown suede Premiatas, the IX chain and the Rolex. Beige, navy and brown: easy old money for a summer dinner.",
+   ["own_johnny_stripe", "own_cos_navy_trouser", "own_premiata", "own_ix_figaro", "own_watch"]),
+  ("Summer", "Black knit & cream", "Your black Johnny-collar polo",
+   "Your black Johnny-collar polo with cream jeans, off-white Spezials, the IX chain and the Rolex. Light trousers and shoes keep the black from feeling heavy, and the silver chain pops on black.",
+   ["own_johnny_black", "own_af_cream", "own_spezial_cream", "own_ix_figaro", "own_watch"]),
+  ("Summer", "Black camp night", "Your black camp-collar shirt",
+   "Your black camp-collar shirt open over a white tee, white linen trousers, white Premiatas and the layered necklaces. Black and white for a warm night out.",
+   ["own_camp_black", "own_af_white_tee", "own_white_linen", "own_white_sneakers", "own_ix_figaro", "own_sd_pendant"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -360,6 +380,7 @@ INNER_ALT = {
   "Grey tee & navy": ["own_af_white_tee", "own_af_tee_cream"],
   "Hotel tee & khaki": ["own_af_white_tee", "own_af_tee_cream"],
   "Cream tee & light denim": ["own_af_white_tee", "own_af_tee_grey"],
+  "Black camp night": ["own_af_tee_grey", "own_af_tee_cream"],
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -450,6 +471,11 @@ VIBE = {
   "Beach town": ("Street", "Holiday"),
   "Khaki & blue": ("In between", "City day"),
   "Day in Porto": ("Street", "Daytime"),
+  "Granny squares": ("Street", "Weekend"),
+  "Sage crochet": ("In between", "Daytime"),
+  "Johnny collar & navy": ("Classy", "Dinner"),
+  "Black knit & cream": ("In between", "Evening"),
+  "Black camp night": ("In between", "Night out"),
   "White tee & olive": ("Street", "Daytime"),
   "Brown tee & cream": ("Street", "Weekend"),
   "Grey tee & navy": ("In between", "Evening"),
