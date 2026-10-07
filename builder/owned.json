@@ -628,5 +628,14 @@
   "url": "https://www.studionicholson.com/products/paolo-corduroy-wide-leg-pant-in-panna",
   "image_url": "https://www.studionicholson.com/cdn/shop/files/PAOLOSNM-1023CORDUROYPANNA4.jpg?v=1781799101",
   "match": "exact"
+ },
+ "own_af_embroidered": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Embroidered Linen-Blend Button-Up Shirt",
+  "colour": "Warm Beige",
+  "size": "M",
+  "url": "https://www.abercrombie.com/shop/eu/p/embroidered-linen-blend-button-up-shirt-62215833",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-5327-00343-175_prod1?policy=product-large",
+  "match": "exact"
  }
 }

@@ -60,30 +60,6 @@
   "verified": true
  },
  {
-  "role": "shirt_embroidered",
-  "rank": "primary",
-  "brand": "Abercrombie & Fitch",
-  "name": "Embroidered Linen-Blend Button-Up Shirt",
-  "colour": "Warm Beige",
-  "price_eur": 80,
-  "url": "https://www.abercrombie.com/shop/eu/p/embroidered-linen-blend-button-up-shirt-62215833",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-5327-00343-175_prod1?policy=product-large",
-  "fit_note": "Relaxed linen-blend shirt with tonal embroidered medallions. Take M (5 left).",
-  "verified": true
- },
- {
-  "role": "shirt_embroidered",
-  "rank": "alt",
-  "brand": "Les Deux",
-  "name": "Flower Jacquard Shirt",
-  "colour": "Light Ivory",
-  "price_eur": 139,
-  "url": "https://lesdeux.com/products/flower-jacquard-shirt-light-ivory",
-  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/19777039_1002464_218-Light-Ivory_01.webp?v=1787663323",
-  "fit_note": "Tonal woven floral with a camp collar. Take M.",
-  "verified": true
- },
- {
   "role": "bomber_twotone",
   "rank": "primary",
   "brand": "EME Studios",
