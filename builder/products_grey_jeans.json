@@ -1,0 +1,39 @@
+[
+ {
+  "role": "jeans_grey_neutral",
+  "rank": "primary",
+  "brand": "Abercrombie & Fitch",
+  "name": "Loose Jean",
+  "colour": "Gray Wash (neutral, no blue cast)",
+  "price_eur": 56.99,
+  "on_sale": true,
+  "url": "https://www.abercrombie.com/shop/eu/p/loose-jean-58768829",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-4215-00310-120_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "A washed mid-to-dark grey that measures neutral, unlike your grey-blue pair. Loose through hip and thigh with a straight wide leg, one step slimmer than your Baggy. Take 32x30 (40 in stock). On sale (was €80), still returnable. A&F's Baggy in a neutral grey is sold out in every W32."
+ },
+ {
+  "role": "jeans_grey_neutral",
+  "rank": "alt",
+  "brand": "Abercrombie & Fitch",
+  "name": "Relaxed Jean",
+  "colour": "Grey Wash",
+  "price_eur": 80,
+  "url": "https://www.abercrombie.com/shop/eu/p/relaxed-jean-63145039",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-6047-00587-120_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Neutral mid-grey with a faint warm tint, roomy thigh, no taper. Only 1 left in 32x30."
+ },
+ {
+  "role": "jeans_grey_neutral",
+  "rank": "alt2",
+  "brand": "Weekday",
+  "name": "Astro Loose Baggy Jeans",
+  "colour": "Complex Grey (medium grey)",
+  "price_eur": 59.99,
+  "url": "https://www.weekday.com/en-eu/p/men/jeans/loose-fit/astro-mid-rise-loose-baggy-unisex-jeans-complex-grey-medium-grey-1114252049/",
+  "image_url": "https://media.weekday.com/assets/003/54/3e/543e98b00cc3ae6abd62de85f20b30c0a6869a24_xxl-1.jpg",
+  "verified": true,
+  "fit_note": "The most neutral grey and truly baggy, but a heavy faded wash with small rips, so more street. W32 L30 in stock."
+ }
+]
