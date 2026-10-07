@@ -24,7 +24,6 @@ ROLE_INFO = {
     "shoe_adidas_suede": ("Shoes", "Brown suede Adidas"),
     "clog_suede": ("Shoes", "Suede clogs"),
     "shoe_premiata": ("Shoes", "Premiata"),
-    "sunglasses": ("Accessories", "Sunglasses"),
     "bracelet_cuff": ("Accessories", "Silver cuff"),
     "jewelry_ring": ("Accessories", "Silver ring"),
 }
@@ -102,6 +101,7 @@ OWNED = {
     "own_cap_navy": ("Accessories", "Your navy Yankees cap"),
     "own_cap_western": ("Accessories", "Your A&F Western snapback"),
     "own_sunnies_asos": ("Accessories", "Your clear lilac round sunglasses"),
+    "own_sunnies_jaconelli": ("Accessories", "Your Kaleos Jaconelli sunglasses"),
     "own_sd_pendant": ("Accessories", "Your Serge DeNimes square pendant"),
     "own_ix_figaro": ("Accessories", "Your IX figaro chain"),
     "own_ix_figaro_bracelet": ("Accessories", "Your IX figaro bracelet"),
@@ -184,14 +184,14 @@ OUTFITS = [
    ["own_brown_puffer", "hoodie_graphic_blue", "own_beige_jeans", "own_spezial_navy", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Winter", "Coffee run", "Your photo: blue knit + check scarf",
    "Let the white tee show at the hem. Your navy, white and light-blue check scarf is the statement, and it picks up the blue knit and light jeans.",
-   ["own_cos_blue", "own_af_white_tee", "own_lightwash", "own_ld_scarf", "sunglasses", "own_spezial_cream"]),
+   ["own_cos_blue", "own_af_white_tee", "own_lightwash", "own_ld_scarf", "own_sunnies_jaconelli", "own_spezial_cream"]),
 
   ("Summer", "Club tee", "Your board: graphic tees + clogs + cap",
    "Boxy graphic tee, white jeans, suede clogs and a cap. Easy warm-day look.",
    ["own_hotel_tee", "own_af_cream", "clog_suede", "own_cap_navy", "own_cuban_bracelet"]),
   ("Spring", "Knit polo & white jeans", "Your board: polo + white jeans",
    "Knit polo with white jeans and your navy suede Spezials. Brown, cream and navy: the classiest spring look here.",
-   ["knit_polo", "own_af_cream", "own_spezial_navy", "sunglasses", "bracelet_cuff"]),
+   ["knit_polo", "own_af_cream", "own_spezial_navy", "own_sunnies_jaconelli", "bracelet_cuff"]),
   ("Spring", "Blue knit & graphic", "Your board: blue knit + graphic tee flat lay",
    "Blue knit over a graphic tee, light jeans and your white Premiatas.",
    ["own_cos_blue", "own_hotel_tee", "own_lightwash", "own_white_sneakers", "own_sd_pendant"]),
@@ -200,19 +200,19 @@ OUTFITS = [
    ["own_rust_hoodie", "own_af_greywash", "own_white_sneakers", "own_cap_navy", "own_watch"]),
   ("Spring", "Oxford & stone", "Shirts for the first warm days",
    "Oxford shirt with sleeves rolled, stone pleated trousers, your white Premiatas.",
-   ["shirt_oxford", "own_af_ash_pleated", "own_white_sneakers", "sunglasses", "own_ld_belt", "bracelet_cuff"]),
+   ["shirt_oxford", "own_af_ash_pleated", "own_white_sneakers", "own_sunnies_jaconelli", "own_ld_belt", "bracelet_cuff"]),
   ("Spring", "Linen layers", "Your light-blue linen shirt, for spring",
    "Light-blue linen shirt with the top two buttons open over your white ribbed tank, stone trousers and your light-blue Spezials. Blue suits you.",
    ["own_blue_linen", "own_af_tank_white", "own_af_ash_pleated", "own_gazelle", "own_sunnies_asos", "own_cuban_bracelet"]),
   ("Summer", "Navy & white", "Your navy linen shirt and white trousers",
-   "The outfit you already wear, finished with clogs, sunglasses and a leather bracelet.",
-   ["own_navy_linen", "own_white_linen", "clog_suede", "sunglasses", "own_cuban_bracelet"]),
+   "The outfit you already wear, finished with clogs, your havana Jaconellis and the Cuban bracelet.",
+   ["own_navy_linen", "own_white_linen", "clog_suede", "own_sunnies_jaconelli", "own_cuban_bracelet"]),
   ("Summer", "Pinstripe & graphic", "Your pinstripe trousers + your board (graphic tee, clogs)",
    "Your pinstripe linen trousers with a boxy graphic tee and clogs. Relaxed, a bit resort.",
    ["own_hotel_tee", "own_pinstripe", "clog_suede", "own_cap_navy", "own_ix_figaro", "own_sd_pendant"]),
   ("Spring", "Rugby & navy", "Your Cowboys rugby polo, one step up",
    "Your Cowboys rugby polo with navy wide trousers. More contrast than the all-white version.",
-   ["own_rugby", "own_cos_navy_trouser", "own_white_sneakers", "sunglasses", "own_cuban_bracelet"]),
+   ["own_rugby", "own_cos_navy_trouser", "own_white_sneakers", "own_sunnies_jaconelli", "own_cuban_bracelet"]),
   ("Spring", "Sunday lunch", "Built from your style",
    "Chocolate knit, navy wide trousers and your light-blue Spezials. Brown, navy and light blue is a classic mix.",
    ["own_howlin_brown", "own_cos_navy_trouser", "own_gazelle", "own_ld_belt", "own_ix_figaro", "own_ix_figaro_bracelet"]),
@@ -242,7 +242,7 @@ OUTFITS = [
    ["own_af_tee_cream", "own_white_linen", "own_gazelle", "own_sunnies_asos", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Summer", "Camp collar", "Your lace camp-collar shirt",
    "Your lace camp-collar shirt worn open, cream jeans and suede clogs.",
-   ["own_lace_camp", "own_af_cream", "clog_suede", "sunglasses", "own_ix_figaro", "own_sd_pendant"]),
+   ["own_lace_camp", "own_af_cream", "clog_suede", "own_sunnies_jaconelli", "own_ix_figaro", "own_sd_pendant"]),
   ("Summer", "Blue linen & olive", "Your light-blue linen shirt",
    "Your light-blue linen shirt, top two buttons open over your white tank, your olive pleated baggy trousers, white Premiatas and the navy cap. Blue and olive is a fresh summer pairing.",
    ["own_blue_linen", "own_af_tank_white", "own_af_olive_pleated", "own_white_sneakers", "own_cap_navy"]),
@@ -256,14 +256,14 @@ OUTFITS = [
    "Your grey tee with ash pleated trousers, brown suede Premiatas, the layered necklaces and the Rolex. Easy but put together.",
    ["own_af_tee_grey", "own_af_ash_pleated", "own_premiata", "own_ix_figaro", "own_sd_pendant", "own_watch"]),
   ("Summer", "Beach town", "Your navy linen shirt",
-   "Navy linen shirt, top two buttons open over your white tank, your light beige linen baggy trousers, suede clogs and sunglasses. Long and light instead of shorts.",
-   ["own_navy_linen", "own_af_tank_white", "own_af_linen_baggy", "clog_suede", "sunglasses"]),
+   "Navy linen shirt, top two buttons open over your white tank, your light beige linen baggy trousers, suede clogs and your havana Jaconellis. Long and light instead of shorts.",
+   ["own_navy_linen", "own_af_tank_white", "own_af_linen_baggy", "clog_suede", "own_sunnies_jaconelli"]),
   ("Summer", "Khaki & blue", "Your khaki jeans + blue linen",
    "Light-blue linen shirt, khaki jeans and white Premiatas. Easy for a city day.",
-   ["own_blue_linen", "own_beige_jeans", "own_white_sneakers", "sunglasses", "bracelet_cuff"]),
+   ["own_blue_linen", "own_beige_jeans", "own_white_sneakers", "own_sunnies_jaconelli", "bracelet_cuff"]),
   ("Summer", "Day in Porto", "Tee, casual",
    "Your cream tee with khaki jeans, burgundy Sambas and your Western cap, whose brown brim picks up the khaki.",
-   ["own_af_tee_cream", "own_beige_jeans", "own_samba_maroon", "own_cap_western", "sunglasses"]),
+   ["own_af_tee_cream", "own_beige_jeans", "own_samba_maroon", "own_cap_western", "own_sunnies_jaconelli"]),
   ("Autumn", "Navy harrington", "Your Polo harrington, old-money style",
    "Your navy Polo harrington over the Coastal sweater, khaki jeans and brown suede Premiatas. Pure old money, and all yours.",
    ["own_polo_harrington", "own_coastal", "own_beige_jeans", "own_premiata", "own_watch"]),
@@ -284,7 +284,7 @@ OUTFITS = [
    ["own_cream_cord_jacket", "own_stripe_navy_green", "own_midwash", "own_premiata", "own_watch"]),
   ("Spring", "Harrington & white", "Your Polo harrington, lighter",
    "Navy harrington over a white tee with cream jeans and white sneakers. Clean and classic.",
-   ["own_polo_harrington", "own_af_white_tee", "own_af_cream", "own_spezial_cream", "sunglasses"]),
+   ["own_polo_harrington", "own_af_white_tee", "own_af_cream", "own_spezial_cream", "own_sunnies_jaconelli"]),
   ("Spring", "Sage & brown", "Your sage jacket + brown trousers",
    "Sage textured jacket over your cream tee, dark brown trousers and white Premiatas. Cream sits more softly between sage and brown than white.",
    ["own_sage_jacket", "own_af_tee_cream", "own_af_brown", "own_white_sneakers", "own_sd_pendant"]),
@@ -302,7 +302,7 @@ OUTFITS = [
    ["own_ms_blue_stripe", "own_af_tank_white", "own_lightwash", "own_samba_maroon", "own_cap_navy"]),
   ("Summer", "Brown linen day", "Your brown linen shirt, open",
    "Brown linen shirt, top two buttons open over your white tank, cream jeans and light-blue Spezials. A cream tank is even softer with the brown.",
-   ["own_ms_brown_linen", "own_af_tank_white", "own_af_cream", "own_gazelle", "sunglasses"]),
+   ["own_ms_brown_linen", "own_af_tank_white", "own_af_cream", "own_gazelle", "own_sunnies_jaconelli"]),
   ("Winter", "AirCloud & cable", "Your second brown puffer",
    "Brown AirCloud puffer over your blue cable knit, cream jeans, burgundy Sambas and your cream and brown Western cap. All yours.",
    ["own_aircloud_brown", "own_blue_cable", "own_af_cream", "own_samba_maroon", "own_cap_western"]),
@@ -716,6 +716,7 @@ def build():
 
     # sunglasses lookbook
     sg = all_for_role("sunglasses")
+    OWNED_URLS = {v.get("url", "").split("?")[0] for v in OWNED_INFO.values()}
     def fw(q):
         v = str(q.get("front_width_mm") or KNOWN_FRONT.get(q.get("name"), "")).strip()
         return v
@@ -734,7 +735,7 @@ def build():
 <div class="meta"><div class="br">{e(q["brand"])}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{" · " + e(q.get("shape","")) if q.get("shape") else ""}</div>
 <div class="pr">{e(q.get("colour",""))}{(" · Size " + e(q["size"])) if q.get("size") else ""}</div>
-<div class="fwid">{("Front width: " + e(fw(q)) + " mm") if fw(q) else "Front width: check the product page"}</div>{fit_badge(fw(q))}
+<div class="fwid">{("Front width: " + e(fw(q)) + " mm") if fw(q) else "Front width: check the product page"}</div>{fit_badge(fw(q))}{'<div class="fitb fb-ok">✓ You have this pair</div>' if q.get("url", "").split("?")[0] in OWNED_URLS else ""}
 <div class="why">{e(q.get("fit_note",""))}</div></div></div>''' for q in sorted(sg, key=lambda q: float(q.get("price_eur") or 0)))
     # necklace lookbook
     TYPE_OF = {"jewelry_chain": "thin chain", "necklace_chain_bold": "bold chain", "necklace_pendant": "pendant"}
@@ -774,7 +775,7 @@ def build():
 <li><b>Best with</b> a tee, an open collar or a crewneck knit. With a buttoned shirt, wear just one.</li></ul></div>
 <div class="pgrid">{pairs_html}</div>''' + nk_html
     nk_section = f'''<section id="necklaces"><h2>Necklaces</h2><p class="lede">All silver-toned to match your Rolex, and sterling silver unless the colour says steel. <b>Length guide for you:</b> 50 cm sits around the collarbone and is the best everyday length for chains; 55 cm sits a little lower and works well for pendants and over knits. Wear one on its own, or layer two (see Layered pairs below).</p>{nk_html}</section>'''
-    sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. Your ASOS round pair in clear lilac fits you well and measures <b>142 mm</b> across the front (hinge to hinge). Each frame below is marked against it: <b>✓ fits like yours</b> means within 3 mm. Rounded, panto-style shapes in clear or crystal acetate clearly work on you.</p><div class="sgrid">{sg_cards}</div></section>'''
+    sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. Your ASOS round pair in clear lilac fits you well and measures <b>142 mm</b> across the front (hinge to hinge). Each frame below is marked against it: <b>✓ fits like yours</b> means within 3 mm. Rounded, panto-style shapes in clear or crystal acetate clearly work on you. You now also own the Kaleos Jaconelli in dark havana.</p><div class="sgrid">{sg_cards}</div></section>'''
 
     # caps lookbook
     caps = all_for_role("cap_structured")

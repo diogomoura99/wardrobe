@@ -610,5 +610,14 @@
   "url": "https://lesdeux.com/products/signature-check-scarf-dark-navy",
   "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/19778243_1002384_460-Dark-Navy-Blue_01.webp?v=1787676164",
   "match": "exact"
+ },
+ "own_sunnies_jaconelli": {
+  "brand": "Kaleos Eyehunters",
+  "name": "Jaconelli",
+  "colour": "Dark Havana, grey gradient lenses",
+  "size": "One size (about 142 mm front)",
+  "url": "https://kaleoscollection.com/en-pt/products/jaconelli-dark-havana",
+  "image_url": "https://cdn.shopify.com/s/files/1/0975/8077/7798/files/A034703-1_a5063110-f1fe-4d19-8741-69a71b6dff12.jpg?v=1777909765",
+  "match": "exact"
  }
 }
