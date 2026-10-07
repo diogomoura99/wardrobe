@@ -637,5 +637,23 @@
   "url": "https://www.abercrombie.com/shop/eu/p/embroidered-linen-blend-button-up-shirt-62215833",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-5327-00343-175_prod1?policy=product-large",
   "match": "exact"
+ },
+ "own_levis_grey": {
+  "brand": "Levi's",
+  "name": "578 Baggy",
+  "colour": "Small Grey Step (neutral mid-grey)",
+  "size": "32x32",
+  "url": "https://www.zalando.pt/levis-578-baggy-calcas-de-ganga-largas-small-grey-step-le222g0f3-c16.html",
+  "image_url": "https://img01.ztat.net/article/spp-media-p1/ae85226fda6c41229c1a9bbc3943dde5/7cddba4987aa4b7394084dd92e63a89b.jpg?imwidth=600",
+  "match": "exact"
+ },
+ "own_levis_taupe": {
+  "brand": "Levi's",
+  "name": "578 Baggy (fine corduroy)",
+  "colour": "Smokey Taupe",
+  "size": "32x32",
+  "url": "https://www.zalando.pt/levis-578-baggy-calcas-de-ganga-largas-smokey-taupe-le222g0f3-b13.html",
+  "image_url": "https://img01.ztat.net/article/spp-media-p1/d065455fe65a47c7925d0c2ff399ca62/3f555b9042bf4d22ae587ca637431055.jpg?imwidth=600",
+  "match": "exact"
  }
 }
