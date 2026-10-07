@@ -486,5 +486,29 @@
   "url": "https://ixstudioscph.com/products/ix-figaro-bracelet-silver",
   "image_url": "https://cdn.shopify.com/s/files/1/0267/6110/1502/files/FG060RH18_c7201eb8-23a0-40ff-a7ea-2d9da7c74e23.png?v=1727179358",
   "match": "exact"
+ },
+ "own_af_tee_grey": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Premium Heavyweight Cropped Tee",
+  "colour": "Cool Gray",
+  "url": "https://www.abercrombie.com/shop/eu/p/premium-heavyweight-cropped-tee-55001821",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5767-00764-138_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_af_tee_black": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Premium Heavyweight Cropped Tee",
+  "colour": "Black",
+  "url": "https://www.abercrombie.com/shop/eu/p/premium-heavyweight-cropped-tee-55001821",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5084-00406-900_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_af_tee_cream": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Premium Heavyweight Cropped Tee",
+  "colour": "Warm Beige (cream)",
+  "url": "https://www.abercrombie.com/shop/eu/p/premium-heavyweight-cropped-tee-61674319",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5297-00490-175_prod1?policy=product-large",
+  "match": "exact"
  }
 }
