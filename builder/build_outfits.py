@@ -24,13 +24,8 @@ ROLE_INFO = {
     "clog_suede": ("Shoes", "Suede clogs"),
     "shoe_premiata": ("Shoes", "Premiata"),
     "bracelet_cuff": ("Accessories", "Silver cuff"),
-    "jacket_suede": ("Outerwear", "Tobacco suede jacket"),
     "coat_wool": ("Outerwear", "Chocolate wool coat"),
-    "knit_vest": ("Knitwear & tops", "Cream cable vest"),
-    "cardigan_shawl": ("Knitwear & tops", "Oatmeal shawl cardigan"),
-    "knit_fairisle": ("Knitwear & tops", "Fair Isle knit"),
     "shirt_terry": ("Knitwear & tops", "Navy terry shirt"),
-    "knit_stripe_tee": ("Knitwear & tops", "Riviera striped knit tee"),
     "jewelry_ring": ("Accessories", "Silver ring"),
 }
 ALIAS = {}
@@ -361,27 +356,9 @@ OUTFITS = [
   ("Summer", "Stripes & navy tank", "A navy tank under blue stripes",
    "Blue striped linen shirt, top two buttons open over a navy ribbed tank, ash pleated trousers, white Premiatas and the Rolex. Blue, navy and stone: easy old money for lunch.",
    ["own_ms_blue_stripe", "tank_navy", "own_af_ash_pleated", "own_white_sneakers", "own_watch", "own_cuban_bracelet"]),
-  ("Spring", "Suede & olive", "New piece: tobacco suede trucker",
-   "Tobacco suede trucker over your white tee, olive pleated baggy trousers, light-blue Spezials and the Jaconellis. Earthy and old money, with light blue as the cool accent.",
-   ["jacket_suede", "own_af_white_tee", "own_af_olive_pleated", "own_gazelle", "own_sunnies_jaconelli", "own_ix_figaro"]),
-  ("Spring", "Cable vest & stripes", "New piece: cream cable vest",
-   "Cream cable vest over your blue striped linen shirt, collar out and sleeves rolled, with the COS navy wide-leg trousers, off-white Spezials and the Rolex. Preppy without trying.",
-   ["knit_vest", "own_ms_blue_stripe", "own_cos_navy_trouser", "own_spezial_cream", "own_watch", "own_cuban_bracelet"]),
   ("Summer", "Navy terry Riviera", "New piece: navy cable-terry shirt",
    "Navy cable-terry shirt with the top buttons open, your light beige linen baggy trousers, brown suede Premiatas, the Jaconellis and the Rolex. The Riviera in the evening.",
    ["shirt_terry", "own_af_linen_baggy", "own_premiata", "own_sunnies_jaconelli", "own_ix_figaro", "own_watch"]),
-  ("Summer", "Riviera stripes", "New piece: striped knit tee",
-   "Cream knit tee with a navy and light-blue band, your white linen trousers, navy Spezials and the navy cap. The stripe does the work, so everything else stays plain.",
-   ["knit_stripe_tee", "own_white_linen", "own_spezial_navy", "own_cap_navy", "own_ix_figaro", "own_ix_figaro_bracelet"]),
-  ("Autumn", "Shawl collar", "New piece: oatmeal shawl cardigan",
-   "Oatmeal shawl-collar cardigan open over your white tee, tucked into your dark brown pleated trousers with the braided belt, burgundy Sambas and the Rolex. Pure Ralph Lauren.",
-   ["cardigan_shawl", "own_af_white_tee", "own_af_brown", "own_samba_maroon", "own_ld_belt", "own_sd_pendant", "own_watch"]),
-  ("Autumn", "Suede & cream", "The suede trucker, autumn version",
-   "Tobacco suede trucker over your cream ladder-stitch knit, your cream Paolo cords and brown suede Premiatas. Cream on cream with suede: quiet and expensive-looking.",
-   ["jacket_suede", "own_cos_cream", "own_sn_paolo", "own_premiata", "own_ix_figaro", "own_watch"]),
-  ("Winter", "Fair Isle weekend", "New piece: Shetland Fair Isle",
-   "Fair Isle crew with your cream Paolo cords, burgundy Sambas, your dark brown puffer worn open and the Western cap. The rust in the knit picks up the Sambas.",
-   ["own_brown_puffer", "knit_fairisle", "own_sn_paolo", "own_samba_maroon", "own_cap_western"]),
   ("Winter", "Chocolate coat", "New piece: chocolate wool coat",
    "Chocolate wool coat over your Arket navy jumper, ash pleated trousers, white Premiatas and your navy check scarf. Brown, navy and stone: the classiest winter look here.",
    ["coat_wool", "own_arket_navy", "own_af_ash_pleated", "own_white_sneakers", "own_ld_scarf", "own_watch"]),
@@ -424,9 +401,6 @@ INNER_ALT = {
   "Navy & cream tank": ["own_af_tank_white", "own_af_tee_cream"],
   "Blue & brown Riviera": ["own_af_tank_white", "own_af_white_tee"],
   "Stripes & navy tank": ["own_af_tank_white", "own_af_white_tee"],
-  "Suede & olive": ["own_af_tee_cream", "own_af_tee_grey"],
-  "Cable vest & stripes": ["own_blue_linen"],
-  "Shawl collar": ["own_af_tee_cream", "own_af_tee_grey"],
 }
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
@@ -478,11 +452,7 @@ NECK_WEAR = {
   "Date night": ("On skin, inside the half-zip", "in the open zip, unzipped to about mid-chest."),
   "Black puffer, done right": ("Outside the knit, inside the puffer", "on the grey knit. Wear the puffer open so it shows."),
   "Cold street": ("Outside the hoodie, inside the puffer", "over the hoodie, between the drawcords, with the puffer open."),
-  "Suede & olive": ("Outside the tee, inside the jacket", "on the white tee, framed by the open suede jacket."),
   "Navy terry Riviera": ("On skin, inside the shirt", "in the open collar, with the top buttons undone."),
-  "Riviera stripes": ("Outside", "over the knit tee, at the collarbone."),
-  "Shawl collar": ("Outside the tee, inside the cardigan", "on the white tee, framed by the open shawl collar."),
-  "Suede & cream": ("Outside the knit, inside the jacket", "over the cream knit, just below the crew neck."),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -506,9 +476,6 @@ OUTER_ALT = {
   "Cream cord & Eagles": ["own_sage_jacket", "own_brown_jacket_af"],
   "Cream & black": ["own_sage_jacket"],
   "Cord jacket & stripes": ["own_brown_jacket_af", "own_sage_jacket"],
-  "Suede & olive": ["own_brown_jacket_af", "own_polo_harrington"],
-  "Suede & cream": ["own_brown_jacket_af", "own_check_jacket"],
-  "Fair Isle weekend": ["own_aircloud_brown"],
 }
 
 VIBE = {
@@ -588,13 +555,7 @@ VIBE = {
   "Cream tee & light denim": ("Street", "Everyday"),
   "Cream & black": ("Street", "Weekend"),
   "Blue on black": ("Classy", "Dinner"),
-  "Suede & olive": ("In between", "Weekend daytime"),
-  "Cable vest & stripes": ("Classy", "Lunch / work"),
   "Navy terry Riviera": ("Classy", "Holiday dinner"),
-  "Riviera stripes": ("Street", "Beach town"),
-  "Shawl collar": ("Classy", "Dinner / family"),
-  "Suede & cream": ("Classy", "Date / lunch"),
-  "Fair Isle weekend": ("In between", "Weekend"),
   "Chocolate coat": ("Classy", "Dinner / city"),
   "Sage stripes & linen": ("In between", "Daytime / holiday"),
   "Navy & cream tank": ("Street", "Weekend"),
@@ -722,7 +683,7 @@ ALT_HINT = {
   "own_polo_harrington": "navy",
 }
 INNER_PRIORITY = ["own_af_tank_white", "tank_cream", "tank_navy", "tank_brown", "own_af_white_tee", "own_af_tee_grey", "own_af_tee_cream", "own_af_tee_black", "own_hotel_tee", "own_brown_tee",
-                  "own_stripe_ls", "shirt_oxford", "own_blue_linen", "own_ms_blue_stripe"]
+                  "own_stripe_ls", "shirt_oxford", "own_blue_linen"]
 
 def piece_view(k, prod):
     """(image, link, title, subtitle) for any owned key or shop role."""
