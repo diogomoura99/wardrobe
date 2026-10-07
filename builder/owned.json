@@ -350,5 +350,77 @@
   "url": "https://www.abercrombie.com/shop/us/p/new-york-jets-crew-sweater-57732363?seq=04",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-4167-00251-300_prod1?policy=product-large",
   "match": "exact"
+ },
+ "own_ymc_grey": {
+  "brand": "YMC",
+  "name": "Suedehead Crew Knit",
+  "colour": "Grey",
+  "url": "https://www.endclothing.com/eu/ymc-suedehead-crew-knit-p8cza-2.html",
+  "image_url": "https://media.endclothing.com/media/catalog/product/B/R/BR_P8CZA-2_1_1.jpg",
+  "match": "exact"
+ },
+ "own_arket_navy": {
+  "brand": "Arket",
+  "name": "Brushed Wool Jumper",
+  "colour": "Dark Navy",
+  "url": "https://www.arket.com/en-eu/product/brushed-wool-jumper-dark-navy-1358336001/",
+  "image_url": "https://media.arket.com/assets/006/d6/bc/d6bc1b9d018fa24fca2b9b06edcd48f620b846e3.jpg?imwidth=1200",
+  "match": "exact"
+ },
+ "own_howlin_brown": {
+  "brand": "Howlin'",
+  "name": "Birth Of The Cool",
+  "colour": "Brownish",
+  "url": "https://howlinknitwear.com/products/birth-of-the-cool-brownish-aw26",
+  "image_url": "https://howlinknitwear.com/cdn/shop/files/BIRTHOFTHECOOL_BROWNISH_1_fc893e4c-ef0f-46f4-a343-2193ef115e2a.jpg?v=1786451905&width=2048",
+  "match": "exact"
+ },
+ "own_hotel_tee": {
+  "brand": "Nude Project",
+  "name": "Hotel Tee",
+  "colour": "Ivory",
+  "url": "https://nude-project.com/products/versalles-tee-marshmallow",
+  "image_url": "https://cdn.shopify.com/s/files/1/0025/3725/9054/files/5back_9cfe5e24-5fbe-4972-a419-45be6352759b.webp?v=1790611244",
+  "match": "exact"
+ },
+ "own_af_black_pleated": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cotton-Blend Pleated Baggy Trouser",
+  "colour": "Black",
+  "url": "https://www.abercrombie.com/shop/eu/p/cotton-blend-pleated-baggy-trouser-63718506",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6263-00443-900_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_af_ash_pleated": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cotton-Blend Pleated Baggy Trouser",
+  "colour": "Ash",
+  "url": "https://www.abercrombie.com/shop/eu/p/lyocell-cotton-pleated-baggy-trouser-63504014",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6255-00442-140_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_cos_navy_trouser": {
+  "brand": "COS",
+  "name": "Pleated Cotton Relaxed-Fit Wide-Leg Trousers",
+  "colour": "Dark blue",
+  "url": "https://www.cos.com/en-eu/men/menswear/trousers/relaxed-fit/wideleg/product/pleated-cotton-relaxed-fit-wide-leg-trousers-dark-blue-1294676009",
+  "image_url": "https://media.cos.com/assets/001/28/2a/282aaf0f88eb73dfbdc69f6d42af1d9203c59950_xxl-1.jpg?imwidth=1200",
+  "match": "exact"
+ },
+ "own_spezial_cream": {
+  "brand": "adidas",
+  "name": "Handball Spezial",
+  "colour": "Off White / Shadow Red / Gum",
+  "url": "https://www.asphaltgold.com/en/products/adidas-handball-spezial-off-white-shadow-red-gum-2",
+  "image_url": "https://cdn.shopify.com/s/files/1/0473/6965/0340/files/gy4ga54krxa-KJ9969_Adidas_Handball-Spezial-Off-White-Shadow-Red-Gum-2_os-1.jpg?v=1783939618",
+  "match": "exact"
+ },
+ "own_cuban_bracelet": {
+  "brand": "All Blues",
+  "name": "Cuban Bracelet",
+  "colour": "Sterling silver",
+  "url": "https://www.allblues.se/product/cuban-bracelet-silver",
+  "image_url": "https://allblues.centracdn.net/client/dynamic/images/685_1f69eddb6e-cuban_bracelet_silver_p_1.jpg",
+  "match": "exact"
  }
 }
