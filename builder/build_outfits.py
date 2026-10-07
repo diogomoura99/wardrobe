@@ -159,15 +159,15 @@ OUTFITS = [
   ("Winter", "Varsity", "Your board: navy varsity + white jeans + NY cap",
    "Varsity jacket, white tee, cream jeans and white sneakers. Preppy street.",
    ["jacket_varsity", "own_af_white_tee", "own_af_cream", "own_spezial_cream", "own_cap_navy"]),
-  ("Winter", "Date night", "Your board: dark half-zip + black trousers",
-   "Dark half-zip, black wide trousers, Premiatas and your Serge DeNimes pendant showing at the open zip. The classy end of your board.",
-   ["knit_halfzip", "own_af_black_pleated", "own_premiata", "own_sd_pendant", "own_watch"]),
+  ("Winter", "Date night", "Your board: dark half-zip + wide trousers",
+   "Navy half-zip with your dark brown pleated trousers and brown suede Premiatas, your Serge DeNimes pendant at the open zip. Navy and brown is the classic old-money pairing, and it stays rich in low evening light.",
+   ["knit_halfzip", "own_af_brown", "own_premiata", "own_sd_pendant", "own_watch"]),
   ("Winter", "Grey on black", "Your board: grey knit + black wide trousers",
    "Grey knit with a white tee showing at the hem, over black wide trousers.",
    ["own_ymc_grey", "own_af_white_tee", "own_af_black_pleated", "own_spezial_cream", "jewelry_ring"]),
   ("Winter", "Collar & crew", "Preppy layering: shirt under a knit",
-   "Oxford collar showing above a navy crewneck, black wide trousers, Premiatas. Preppy but not stiff.",
-   ["shirt_oxford", "own_arket_navy", "own_af_black_pleated", "own_premiata", "jewelry_ring"]),
+   "Oxford collar showing above a navy crewneck, ash pleated trousers and brown suede Premiatas. White, navy, stone and brown: preppy but not stiff.",
+   ["shirt_oxford", "own_arket_navy", "own_af_ash_pleated", "own_premiata", "jewelry_ring"]),
   ("Winter", "Sweatshirt & white denim", "Your board: sweatshirt + white jeans",
    "Heavy grey sweatshirt, white jeans, your navy Spezials and the navy cap. Grey, cream and navy: simple and clean.",
    ["sweat_grey", "own_af_cream", "own_spezial_navy", "own_cap_navy", "own_watch"]),
@@ -307,6 +307,9 @@ OUTFITS = [
   ("Autumn", "Cream & black", "Your black jeans, done right",
    "Cream cord jacket open over your white tee, black baggy jeans and the green Spezials. Light colours on top keep the black from looking heavy on you. All yours.",
    ["own_cream_cord_jacket", "own_af_white_tee", "own_af_black_jeans", "own_samba_green", "own_cuban_bracelet"]),
+  ("Winter", "Blue on black", "Your black pleated trousers, done right",
+   "Light-blue cable knit over your black pleated trousers with white Premiatas, the Cuban bracelet and the Rolex. Light top, black trousers, white shoes: crisp, with no brown to fight the black.",
+   ["own_blue_cable", "own_af_black_pleated", "own_white_sneakers", "own_cuban_bracelet", "own_watch"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -400,6 +403,7 @@ VIBE = {
   "Khaki & blue": ("In between", "City day"),
   "Day in Porto": ("In between", "Daytime"),
   "Cream & black": ("Street", "Weekend"),
+  "Blue on black": ("Classy", "Dinner"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
