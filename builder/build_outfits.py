@@ -24,9 +24,7 @@ ROLE_INFO = {
     "shoe_adidas_suede": ("Shoes", "Brown suede Adidas"),
     "clog_suede": ("Shoes", "Suede clogs"),
     "shoe_premiata": ("Shoes", "Premiata"),
-    "scarf_check": ("Accessories", "Check scarf"),
     "sunglasses": ("Accessories", "Sunglasses"),
-    "belt_brown": ("Accessories", "Brown leather belt"),
     "bracelet_cuff": ("Accessories", "Silver cuff"),
     "jewelry_ring": ("Accessories", "Silver ring"),
 }
@@ -108,6 +106,8 @@ OWNED = {
     "own_ix_figaro": ("Accessories", "Your IX figaro chain"),
     "own_ix_figaro_bracelet": ("Accessories", "Your IX figaro bracelet"),
     "own_cuban_bracelet": ("Accessories", "Your All Blues Cuban bracelet"),
+    "own_ld_belt": ("Accessories", "Your Les Deux braided brown belt"),
+    "own_ld_scarf": ("Accessories", "Your Les Deux navy check scarf"),
 }
 
 OUTFITS = [
@@ -122,8 +122,8 @@ OUTFITS = [
    "Knit polo with light denim and brown suede sneakers. Smart without trying.",
    ["knit_polo", "own_lightwash", "shoe_adidas_suede", "bracelet_cuff", "own_watch"]),
   ("Autumn", "Night out", "Your example: grey knit + ecru corduroy",
-   "Classy with a touch of old money, but modern. Your brown suede Premiatas give the same feel as the shoes in your photo, but more relaxed. Tuck the knit loosely so the belt shows.",
-   ["own_ymc_grey", "trouser_cord_ecru", "own_premiata", "belt_brown", "own_cuban_bracelet", "own_watch"]),
+   "Classy with a touch of old money, but modern. Your brown suede Premiatas give the same feel as the shoes in your photo, but more relaxed. Tuck the knit loosely so your braided belt shows.",
+   ["own_ymc_grey", "trouser_cord_ecru", "own_premiata", "own_ld_belt", "own_cuban_bracelet", "own_watch"]),
   ("Autumn", "Striped half-zip", "Your board: grey striped half-zip",
    "Your Polo Ralph Lauren half-zip over a white tee with mid-blue jeans. Easy everyday look.",
    ["own_polo_halfzip", "own_af_white_tee", "own_midwash", "own_white_sneakers", "own_ix_figaro", "own_ix_figaro_bracelet"]),
@@ -183,8 +183,8 @@ OUTFITS = [
    "Brown puffer over a blue hoodie with khaki jeans and your navy Spezials, which pick up the blue of the hoodie.",
    ["own_brown_puffer", "hoodie_graphic_blue", "own_beige_jeans", "own_spezial_navy", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Winter", "Coffee run", "Your photo: blue knit + check scarf",
-   "Let the white tee show at the hem. The scarf is the statement.",
-   ["own_cos_blue", "own_af_white_tee", "own_lightwash", "scarf_check", "sunglasses", "own_spezial_cream"]),
+   "Let the white tee show at the hem. Your navy, white and light-blue check scarf is the statement, and it picks up the blue knit and light jeans.",
+   ["own_cos_blue", "own_af_white_tee", "own_lightwash", "own_ld_scarf", "sunglasses", "own_spezial_cream"]),
 
   ("Summer", "Club tee", "Your board: graphic tees + clogs + cap",
    "Boxy graphic tee, white jeans, suede clogs and a cap. Easy warm-day look.",
@@ -200,7 +200,7 @@ OUTFITS = [
    ["own_rust_hoodie", "own_af_greywash", "own_white_sneakers", "own_cap_navy", "own_watch"]),
   ("Spring", "Oxford & stone", "Shirts for the first warm days",
    "Oxford shirt with sleeves rolled, stone pleated trousers, your white Premiatas.",
-   ["shirt_oxford", "own_af_ash_pleated", "own_white_sneakers", "sunglasses", "belt_brown", "bracelet_cuff"]),
+   ["shirt_oxford", "own_af_ash_pleated", "own_white_sneakers", "sunglasses", "own_ld_belt", "bracelet_cuff"]),
   ("Spring", "Linen layers", "Your light-blue linen shirt, for spring",
    "Light-blue linen shirt with the top two buttons open over your white ribbed tank, stone trousers and your light-blue Spezials. Blue suits you.",
    ["own_blue_linen", "own_af_tank_white", "own_af_ash_pleated", "own_gazelle", "own_sunnies_asos", "own_cuban_bracelet"]),
@@ -215,7 +215,7 @@ OUTFITS = [
    ["own_rugby", "own_cos_navy_trouser", "own_white_sneakers", "sunglasses", "own_cuban_bracelet"]),
   ("Spring", "Sunday lunch", "Built from your style",
    "Chocolate knit, navy wide trousers and your light-blue Spezials. Brown, navy and light blue is a classic mix.",
-   ["own_howlin_brown", "own_cos_navy_trouser", "own_gazelle", "belt_brown", "own_ix_figaro", "own_ix_figaro_bracelet"]),
+   ["own_howlin_brown", "own_cos_navy_trouser", "own_gazelle", "own_ld_belt", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Autumn", "Blue & brown", "Your new COS jumper + your new brown trousers",
    "Light blue and dark brown is one of the best combinations for your colouring. Brown suede Premiatas tie it together.",
    ["own_cos_blue", "own_af_brown", "own_premiata", "own_cuban_bracelet", "own_watch"]),

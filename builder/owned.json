@@ -592,5 +592,23 @@
   "url": "https://www.abercrombie.com/shop/eu/p/pleated-baggy-trouser-63504015",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6255-00442-330_prod1?policy=product-large",
   "match": "exact"
+ },
+ "own_ld_belt": {
+  "brand": "Les Deux",
+  "name": "Victor Braided Belt",
+  "colour": "Brown, brass-tone round buckle",
+  "size": "85",
+  "url": "https://lesdeux.com/products/victor-braided-belt-brown",
+  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/17862010_1001840_820-Brown_01_1e8a3a68-035d-45bf-8298-45900c099a56.webp?v=1787701535&width=1000",
+  "match": "exact"
+ },
+ "own_ld_scarf": {
+  "brand": "Les Deux",
+  "name": "Signature Check Scarf",
+  "colour": "Dark navy, white and light-blue check",
+  "size": "One size",
+  "url": "https://lesdeux.com/products/signature-check-scarf-dark-navy",
+  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/19778243_1002384_460-Dark-Navy-Blue_01.webp?v=1787676164",
+  "match": "exact"
  }
 }
