@@ -36,9 +36,7 @@ ROLE_INFO = {
     "scarf_check": ("Accessories", "Check scarf"),
     "sunglasses": ("Accessories", "Sunglasses"),
     "belt_brown": ("Accessories", "Brown leather belt"),
-    "jewelry_chain": ("Accessories", "Thin silver chain"),
-    "necklace_pendant": ("Accessories", "Pendant necklace"),
-    "necklace_chain_bold": ("Accessories", "Bolder silver chain"),
+    "chain_figaro": ("Accessories", "Thin silver chain (your pick)"),
     "bracelet_cuff": ("Accessories", "Silver cuff"),
     "jewelry_ring": ("Accessories", "Silver ring"),
 }
@@ -103,6 +101,7 @@ OWNED = {
     "own_cap_navy": ("Accessories", "Your navy Yankees cap"),
     "own_cap_western": ("Accessories", "Your A&F Western snapback"),
     "own_sunnies_asos": ("Accessories", "Your clear lilac round sunglasses"),
+    "own_sd_pendant": ("Accessories", "Your Serge DeNimes square pendant"),
     "own_cuban_bracelet": ("Accessories", "Your All Blues Cuban bracelet"),
 }
 
@@ -122,25 +121,25 @@ OUTFITS = [
    ["own_ymc_grey", "trouser_cord_ecru", "own_premiata", "belt_brown", "own_cuban_bracelet", "own_watch"]),
   ("Autumn", "Striped half-zip", "Your board: grey striped half-zip",
    "Half-zip over a white tee with mid-blue jeans. Easy everyday look.",
-   ["knit_halfzip", "own_af_white_tee", "own_midwash", "own_white_sneakers", "jewelry_chain"]),
+   ["knit_halfzip", "own_af_white_tee", "own_midwash", "own_white_sneakers", "chain_figaro"]),
   ("Autumn", "Zip cardigan", "Your own navy zip knit (like the one on your board)",
    "Your navy striped zip knit over a white tee, dark grey baggy jeans and suede clogs.",
-   ["own_navy_zip_knit", "own_af_white_tee", "own_af_greywash", "clog_suede", "necklace_chain_bold"]),
+   ["own_navy_zip_knit", "own_af_white_tee", "own_af_greywash", "clog_suede", "chain_figaro", "own_sd_pendant"]),
   ("Autumn", "Cream & brown", "Your board: cream knit + dark brown trousers",
    "Your cream jumper over your new dark brown trousers, with the burgundy Sambas as the colour pop.",
    ["own_cos_cream", "own_af_brown", "own_samba_maroon", "jewelry_ring", "own_watch"]),
   ("Autumn", "Studio day", "The reel: cream knit + stone trousers",
    "All neutrals, with suede sneakers for contrast.",
-   ["own_cos_cream", "own_af_ash_pleated", "own_gazelle", "jewelry_chain", "bracelet_cuff"]),
+   ["own_cos_cream", "own_af_ash_pleated", "own_gazelle", "own_sd_pendant", "bracelet_cuff"]),
   ("Autumn", "Overshirt layers", "Shirts are part of your mix too",
    "Corduroy overshirt worn open over a white tee, khaki jeans and your green adidas.",
-   ["shirt_overshirt", "own_af_white_tee", "own_beige_jeans", "own_samba_green", "necklace_chain_bold"]),
+   ["shirt_overshirt", "own_af_white_tee", "own_beige_jeans", "own_samba_green", "chain_figaro", "own_sd_pendant"]),
   ("Autumn", "Check jacket", "Your own check jacket, one step up",
    "Your check jacket and brown tee with ecru corduroy instead of jeans. Same Premiatas, one step smarter.",
-   ["own_check_jacket", "own_brown_tee", "trouser_cord_ecru", "own_premiata", "necklace_pendant"]),
+   ["own_check_jacket", "own_brown_tee", "trouser_cord_ecru", "own_premiata", "own_sd_pendant"]),
   ("Autumn", "Stripes & brown", "Your striped knit, one step up",
    "Your green and cream striped knit over dark brown wide trousers instead of jeans. Warmer and more grown-up.",
-   ["own_stripe_knit", "own_af_brown", "own_white_sneakers", "jewelry_chain"]),
+   ["own_stripe_knit", "own_af_brown", "own_white_sneakers", "chain_figaro"]),
   ("Autumn", "Stripes & sage jacket", "Your sage jacket + blue stripes",
    "Your sage textured jacket over the blue stripes, khaki jeans and green adidas. Greens and blues that work together.",
    ["own_sage_jacket", "own_stripe_ls", "own_beige_jeans", "own_samba_green", "own_cuban_bracelet"]),
@@ -158,8 +157,8 @@ OUTFITS = [
    "Varsity jacket, white tee, cream jeans and white sneakers. Preppy street.",
    ["jacket_varsity", "own_af_white_tee", "own_af_cream", "own_spezial_cream", "own_cap_navy"]),
   ("Winter", "Date night", "Your board: dark half-zip + black trousers",
-   "Dark half-zip, black wide trousers, Premiatas and a pendant. The classy end of your board.",
-   ["knit_halfzip", "own_af_black_pleated", "own_premiata", "necklace_pendant", "own_watch"]),
+   "Dark half-zip, black wide trousers, Premiatas and your Serge DeNimes pendant showing at the open zip. The classy end of your board.",
+   ["knit_halfzip", "own_af_black_pleated", "own_premiata", "own_sd_pendant", "own_watch"]),
   ("Winter", "Grey on black", "Your board: grey knit + black wide trousers",
    "Grey knit with a white tee showing at the hem, over black wide trousers.",
    ["own_ymc_grey", "own_af_white_tee", "own_af_black_pleated", "own_spezial_cream", "jewelry_ring"]),
@@ -171,16 +170,16 @@ OUTFITS = [
    ["sweat_grey", "own_af_cream", "own_spezial_navy", "own_cap_navy", "own_watch"]),
   ("Winter", "Black puffer, done right", "Your black puffer, with better colours",
    "Black looks harsh with beige. With grey and white it looks clean and intentional.",
-   ["own_black_puffer", "own_ymc_grey", "own_af_cream", "own_spezial_cream", "necklace_chain_bold"]),
+   ["own_black_puffer", "own_ymc_grey", "own_af_cream", "own_spezial_cream", "own_sd_pendant"]),
   ("Winter", "Rainy day", "Built for Portuguese winters",
    "Waxed jacket over a chocolate knit with grey jeans. Leather sneakers cope with rain better than suede.",
    ["jacket_rain", "own_howlin_brown", "own_af_greywash", "own_spezial_cream", "own_cuban_bracelet"]),
   ("Winter", "Cold street", "Your board: hoodies + puffers",
    "Brown puffer over a blue hoodie with khaki jeans and your navy Spezials, which pick up the blue of the hoodie.",
-   ["own_brown_puffer", "hoodie_graphic_blue", "own_beige_jeans", "own_spezial_navy", "necklace_chain_bold"]),
+   ["own_brown_puffer", "hoodie_graphic_blue", "own_beige_jeans", "own_spezial_navy", "chain_figaro"]),
   ("Winter", "Coffee run", "Your photo: blue knit + check scarf",
    "Let the white tee show at the hem. The scarf is the statement.",
-   ["own_cos_blue", "own_af_white_tee", "own_lightwash", "scarf_check", "sunglasses", "necklace_pendant", "own_spezial_cream"]),
+   ["own_cos_blue", "own_af_white_tee", "own_lightwash", "scarf_check", "sunglasses", "own_spezial_cream"]),
 
   ("Summer", "Club tee", "Your board: graphic tees + clogs + cap",
    "Boxy graphic tee, white jeans, suede clogs and a cap. Easy warm-day look.",
@@ -190,7 +189,7 @@ OUTFITS = [
    ["knit_polo", "own_af_cream", "own_spezial_navy", "sunglasses", "bracelet_cuff"]),
   ("Spring", "Blue knit & graphic", "Your board: blue knit + graphic tee flat lay",
    "Blue knit over a graphic tee, light jeans and your white Premiatas.",
-   ["own_cos_blue", "own_hotel_tee", "own_lightwash", "own_white_sneakers", "necklace_chain_bold"]),
+   ["own_cos_blue", "own_hotel_tee", "own_lightwash", "own_white_sneakers", "own_sd_pendant"]),
   ("Spring", "Weekend hoodie", "Your rust hoodie",
    "Rust hoodie, dark grey baggy jeans, white Premiatas and the navy cap. All yours.",
    ["own_rust_hoodie", "own_af_greywash", "own_white_sneakers", "own_cap_navy", "own_watch"]),
@@ -205,13 +204,13 @@ OUTFITS = [
    ["own_navy_linen", "own_white_linen", "clog_suede", "sunglasses", "own_cuban_bracelet"]),
   ("Summer", "Pinstripe & graphic", "Your pinstripe trousers + your board (graphic tee, clogs)",
    "Your pinstripe linen trousers with a boxy graphic tee and clogs. Relaxed, a bit resort.",
-   ["own_hotel_tee", "own_pinstripe", "clog_suede", "own_cap_navy", "necklace_chain_bold"]),
+   ["own_hotel_tee", "own_pinstripe", "clog_suede", "own_cap_navy", "chain_figaro", "own_sd_pendant"]),
   ("Spring", "Rugby & navy", "Your Cowboys rugby polo, one step up",
    "Your Cowboys rugby polo with navy wide trousers. More contrast than the all-white version.",
    ["own_rugby", "own_cos_navy_trouser", "own_white_sneakers", "sunglasses", "own_cuban_bracelet"]),
   ("Spring", "Sunday lunch", "Built from your style",
    "Chocolate knit, navy wide trousers and your light-blue adidas. Brown, navy and light blue is a classic mix.",
-   ["own_howlin_brown", "own_cos_navy_trouser", "own_gazelle", "belt_brown", "jewelry_chain"]),
+   ["own_howlin_brown", "own_cos_navy_trouser", "own_gazelle", "belt_brown", "chain_figaro"]),
   ("Autumn", "Blue & brown", "Your new COS jumper + your new brown trousers",
    "Light blue and dark brown is one of the best combinations for your colouring. Brown suede Premiatas tie it together.",
    ["own_cos_blue", "own_af_brown", "own_premiata", "own_cuban_bracelet", "own_watch"]),
@@ -219,8 +218,8 @@ OUTFITS = [
    "Check jacket open over a navy knit, cream jeans and burgundy Sambas. The navy picks up the check.",
    ["own_check_jacket", "own_arket_navy", "own_af_cream", "own_samba_maroon", "own_watch"]),
   ("Autumn", "Brown & burgundy", "Your board formula, in brown",
-   "Chocolate knit, light jeans, burgundy Sambas, your cream and brown Western cap and a silver chain. Warm and easy.",
-   ["own_howlin_brown", "own_lightwash", "own_samba_maroon", "own_cap_western", "necklace_chain_bold"]),
+   "Chocolate knit, light jeans, burgundy Sambas, your cream and brown Western cap and your Serge DeNimes pendant over the knit. Warm and easy.",
+   ["own_howlin_brown", "own_lightwash", "own_samba_maroon", "own_cap_western", "own_sd_pendant"]),
   ("Winter", "Tonal brown", "Your brown puffer, head to toe",
    "Your brown AirCloud puffer, cream jumper, dark brown trousers and brown suede Premiatas. Warm, tonal and classy.",
    ["own_aircloud_brown", "own_cos_cream", "own_af_brown", "own_premiata", "own_watch"]),
@@ -237,20 +236,20 @@ OUTFITS = [
    "Cream knit polo, stone pleated shorts, white Premiatas, sunglasses and your Rolex. The classic Mediterranean look.",
    ["polo_knit_ss", "shorts_tailored", "own_white_sneakers", "sunglasses", "own_cuban_bracelet", "own_watch"]),
   ("Summer", "Camp collar", "Your lace camp-collar shirt",
-   "Your lace camp-collar shirt, cream jeans, suede clogs and a silver chain.",
-   ["own_lace_camp", "own_af_cream", "clog_suede", "sunglasses", "necklace_chain_bold"]),
+   "Your lace camp-collar shirt worn open, cream jeans and suede clogs.",
+   ["own_lace_camp", "own_af_cream", "clog_suede", "sunglasses", "chain_figaro", "own_sd_pendant"]),
   ("Summer", "Linen & shorts", "Your light-blue linen shirt",
    "Your linen shirt open over a white tee, pleated shorts, light-blue adidas and the navy cap.",
    ["own_blue_linen", "own_af_white_tee", "shorts_tailored", "own_gazelle", "own_cap_navy"]),
   ("Summer", "Jorts day", "Your board: graphic tees",
    "Graphic tee, relaxed denim shorts, navy Spezials and the cap. Pure summer street.",
-   ["own_hotel_tee", "shorts_denim", "own_spezial_navy", "own_cap_navy", "necklace_chain_bold"]),
+   ["own_hotel_tee", "shorts_denim", "own_spezial_navy", "own_cap_navy", "chain_figaro", "own_sd_pendant"]),
   ("Summer", "Summer dinner", "Brown linen at night",
    "Your brown linen shirt, stone pleated trousers, brown suede Premiatas and the Rolex. Classy for warm evenings.",
-   ["own_ms_brown_linen", "own_af_ash_pleated", "own_premiata", "jewelry_chain", "own_watch"]),
+   ["own_ms_brown_linen", "own_af_ash_pleated", "own_premiata", "chain_figaro", "own_watch"]),
   ("Summer", "Knit polo night", "Your white linen trousers, dressed up",
    "Knit polo with your white linen trousers and brown Premiatas. Smart, but still summer.",
-   ["polo_knit_ss", "own_white_linen", "own_premiata", "necklace_pendant", "own_watch"]),
+   ["polo_knit_ss", "own_white_linen", "own_premiata", "own_sd_pendant", "own_watch"]),
   ("Summer", "Beach town", "Your navy linen shirt",
    "Navy linen shirt open over a white tee, pleated shorts, suede clogs and sunglasses.",
    ["own_navy_linen", "own_af_white_tee", "shorts_tailored", "clog_suede", "sunglasses"]),
@@ -270,8 +269,8 @@ OUTFITS = [
    "Coastal sweater with navy wide trousers, burgundy Sambas and the cap.",
    ["own_coastal", "own_cos_navy_trouser", "own_samba_maroon", "own_cap_navy", "own_watch"]),
   ("Autumn", "Oasis day", "Your Oasis sweatshirt, as you wore it",
-   "Oasis sweatshirt with your dark grey baggy jeans, burgundy Sambas, cap and a chain. Street, but considered.",
-   ["own_oasis", "own_af_greywash", "own_samba_maroon", "own_cap_navy", "necklace_chain_bold"]),
+   "Oasis sweatshirt with your dark grey baggy jeans, burgundy Sambas and the cap. Street, but considered.",
+   ["own_oasis", "own_af_greywash", "own_samba_maroon", "own_cap_navy", "chain_figaro", "own_sd_pendant"]),
   ("Autumn", "Blue cable & grey", "Your blue cable knit",
    "Blue cable knit, dark grey jeans, white sneakers and the navy cap.",
    ["own_blue_cable", "own_af_greywash", "own_spezial_cream", "own_cap_navy", "own_cuban_bracelet"]),
@@ -283,7 +282,7 @@ OUTFITS = [
    ["own_polo_harrington", "own_af_white_tee", "own_af_cream", "own_spezial_cream", "sunglasses"]),
   ("Spring", "Sage & brown", "Your sage jacket + brown trousers",
    "Sage textured jacket over a white tee, dark brown trousers and white Premiatas.",
-   ["own_sage_jacket", "own_af_white_tee", "own_af_brown", "own_white_sneakers", "jewelry_chain"]),
+   ["own_sage_jacket", "own_af_white_tee", "own_af_brown", "own_white_sneakers", "own_sd_pendant"]),
   ("Spring", "Navy zip & khaki", "Your navy zip knit, smarter",
    "Navy zip knit closed, khaki jeans, brown suede Premiatas and the Rolex.",
    ["own_navy_zip_knit", "own_beige_jeans", "own_premiata", "own_watch"]),
@@ -385,6 +384,7 @@ SEASON_INFO = {
 }
 
 KNOWN_FRONT = {}
+LAYER_NOTE = ' <b>Necklaces, layered:</b> IX figaro at 46 cm with your Serge DeNimes pendant at 52 cm, so they sit about 6 cm apart.'
 MY_FRONT = 142  # his ASOS round pair, measured hinge to hinge
 ALT_SLOTS = ("alt", "alt2", "alt3", "alt4", "alt5", "alt6", "alt7", "alt8")
 MAIN_BRANDS = ("Abercrombie", "COS", "Les Deux", "Arket")
@@ -513,7 +513,7 @@ def build():
             vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
             cards.append(f'''<article class="card{' hero' if hero else ''}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
 <p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span><span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
-<p class="note">{e(note)}</p><div class="tiles">{tiles}</div></article>''')
+<p class="note">{e(note)}{LAYER_NOTE if "chain_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
         info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">Braga: {e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
         sec.append(f'<section id="{sid[s]}"><h2>{e(s)}</h2>{info}{"".join(cards)}</section>')
@@ -582,11 +582,19 @@ def build():
 
     # caps lookbook
     caps = all_for_role("cap_structured")
-    cap_cards = "".join(f'''<div class="sg"><a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>
+    def cap_card(q):
+        return (f'''<div class="sg"><a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>
 <div class="meta"><div class="br">{e(q["brand"])}{' · <b>Top pick</b>' if q.get("rank")=="main" else ''}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{' <span class="start">On sale</span>' if q.get("on_sale") else ''}</div><div class="pr">{e(q.get("colour",""))}</div>
-<div class="fwid">{e(q.get("construction",""))}</div><div class="why">{e(q.get("fit_note",""))}</div></div></div>''' for q in caps)
-    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">What suits you, going by your A&F Western snapback (which looks nothing like A&F's current snapbacks): <b>a pre-curved brim and a rounded crown that holds its shape</b>, classy rather than a flat-brim, boxy "classic snapback". Soft dad hats that collapse flat on your thick hair don't work either. Your navy '47 Base Runner is a soft one, so try it on before keeping it.</p><div class="sgrid">{cap_cards}</div></section>''' if caps else ""
+<div class="fwid">{e(q.get("construction",""))}</div><div class="why">{e(q.get("fit_note",""))}</div></div></div>''')
+    CAP_GROUPS = [("navy", "Navy, your workhorse", "With denim, navy pieces and your burgundy Sambas. Navy with burgundy is a classic."),
+                  ("green", "Washed green", "With your green adidas and the Eagles sweater."),
+                  ("brown", "Chocolate brown", "With the brown barn jacket, varsity, brown knits and puffers."),
+                  ("stone", "Stone and cream", "With all-light summer outfits: ivory tees, cream jeans, linen. The most contrast with your dark hair."),
+                  ("burgundy", "Burgundy (just for variety)", "Optional: navy already does this job.")]
+    cap_cards = "".join(f'<h3 class="cat">{e(t)} <span class="muted" style="font-weight:400;font-size:14px">— {e(d)}</span></h3><div class="sgrid">' + "".join(cap_card(q) for q in caps if q.get("colour_group") == g) + '</div>' for g, t, d in CAP_GROUPS if any(q.get("colour_group") == g for q in caps))
+
+    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">What suits you, going by your A&F Western snapback (which looks nothing like A&F's current snapbacks): <b>a pre-curved brim and a rounded crown that holds its shape</b>, classy rather than a flat-brim, boxy "classic snapback". Soft dad hats that collapse flat on your thick hair don't work either. Your navy '47 Base Runner is a soft one, so try it on before keeping it.</p>{cap_cards}</section>''' if caps else ""
 
     # shopping list
     rows = []

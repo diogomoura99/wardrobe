@@ -462,5 +462,13 @@
   "url": "https://www.asos.com/pt/search/?q=asos%20design%20round%20sunglasses%20crystal",
   "image_url": "img/asos-round-lilac-sunglasses.jpg",
   "match": "exact"
+ },
+ "own_sd_pendant": {
+  "brand": "Serge DeNimes",
+  "name": "Square clover tile pendant (oxidised silver)",
+  "colour": "Oxidised sterling silver, fine curb chain",
+  "url": "https://sergedenimes.com/collections/mens-silver-necklaces",
+  "image_url": "img/serge-denimes-square-pendant.jpg",
+  "match": "exact"
  }
 }
