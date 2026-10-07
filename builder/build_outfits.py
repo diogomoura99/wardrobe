@@ -385,6 +385,7 @@ SEASON_INFO = {
 }
 
 KNOWN_FRONT = {"Wayne Sun": "144"}
+MY_FRONT = 142  # his ASOS round pair, measured hinge to hinge
 ALT_SLOTS = ("alt", "alt2", "alt3", "alt4", "alt5", "alt6", "alt7", "alt8")
 MAIN_BRANDS = ("Abercrombie", "COS", "Les Deux", "Arket")
 
@@ -522,11 +523,22 @@ def build():
     def fw(q):
         v = str(q.get("front_width_mm") or KNOWN_FRONT.get(q.get("name"), "")).strip()
         return v
+    def fit_badge(v):
+        import re as _re
+        m = _re.search(r"\d+(?:\.\d+)?", v or "")
+        if not m:
+            return '<div class="fitb fb-unk">Size unknown: compare on the shop page</div>'
+        d = float(m.group()) - MY_FRONT
+        est = " (estimate)" if "~" in v or "est" in v else ""
+        if abs(d) <= 3: return f'<div class="fitb fb-ok">✓ Fits like yours{est}</div>'
+        if 3 < d <= 6: return f'<div class="fitb fb-mid">A bit bigger than yours{est}</div>'
+        if -6 <= d < -3: return f'<div class="fitb fb-mid">A bit smaller than yours{est}</div>'
+        return f'<div class="fitb fb-far">{"Much bigger" if d > 0 else "Much smaller"} than yours{est}</div>'
     sg_cards = "".join(f'''<div class="sg"><a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>
 <div class="meta"><div class="br">{e(q["brand"])}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{" · " + e(q.get("shape","")) if q.get("shape") else ""}</div>
 <div class="pr">{e(q.get("colour",""))}</div>
-<div class="fwid">{("Front width: " + e(fw(q)) + " mm") if fw(q) else "Front width: check the product page"}</div>
+<div class="fwid">{("Front width: " + e(fw(q)) + " mm") if fw(q) else "Front width: check the product page"}</div>{fit_badge(fw(q))}
 <div class="why">{e(q.get("fit_note",""))}</div></div></div>''' for q in sorted(sg, key=lambda q: float(q.get("price_eur") or 0)))
     # necklace lookbook
     TYPE_OF = {"jewelry_chain": "thin chain", "necklace_chain_bold": "bold chain", "necklace_pendant": "pendant"}
@@ -566,7 +578,7 @@ def build():
 <li><b>Best with</b> a tee, an open collar or a crewneck knit. With a buttoned shirt, wear just one.</li></ul></div>
 <div class="pgrid">{pairs_html}</div>''' + nk_html
     nk_section = f'''<section id="necklaces"><h2>Necklaces</h2><p class="lede">All silver-toned to match your Rolex, and sterling silver unless the colour says steel. <b>Length guide for you:</b> 50 cm sits around the collarbone and is the best everyday length for chains; 55 cm sits a little lower and works well for pendants and over knits. Wear one on its own, or layer two (see Layered pairs below).</p>{nk_html}</section>'''
-    sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. For a medium-to-large head, look for a front width of about 140–150 mm. Your ASOS round pair in clear lilac fits you well, so measure it hinge to hinge and compare: frames within a few mm of it will fit too. Rounded, panto-style shapes in clear or crystal acetate clearly work on you.</p><div class="sgrid">{sg_cards}</div></section>'''
+    sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. Your ASOS round pair in clear lilac fits you well and measures <b>142 mm</b> across the front (hinge to hinge). Each frame below is marked against it: <b>✓ fits like yours</b> means within 3 mm. Rounded, panto-style shapes in clear or crystal acetate clearly work on you.</p><div class="sgrid">{sg_cards}</div></section>'''
 
     # caps lookbook
     caps = all_for_role("cap_structured")
@@ -668,6 +680,7 @@ section,article{{scroll-margin-top:64px}}
 .sgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}}
 .sg{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}} .sg .ph{{aspect-ratio:4/3;background:#fff}} .sg .ph img{{object-fit:contain;background:#fff}}
 .fwid{{font-size:12px;color:var(--accent);margin-top:3px}}
+.fitb{{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:2px 8px;margin-top:4px}} .fb-ok{{background:#e1f5ee;color:#085041}} .fb-mid{{background:#faeeda;color:#633806}} .fb-far{{background:#f6e3e3;color:#7a1f1f}} .fb-unk{{background:var(--chip);color:#555}}
 .pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:8px}}
 .pair{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}}
 .pairimgs{{display:grid;grid-template-columns:1fr 1fr;gap:8px}} .pair .ph{{aspect-ratio:1/1;background:#fff}} .pair .ph img{{object-fit:contain;background:#fff}}

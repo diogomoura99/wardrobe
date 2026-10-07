@@ -1,7 +1,64 @@
 [
-{"role":"sunglasses","rank":"primary","brand":"Kaleos Eyehunters","name":"Jaconelli","colour":"Dark havana / grey gradient","price_eur":190,"url":"https://kaleoscollection.com/en-pt/products/jaconelli-dark-havana","image_url":"https://cdn.shopify.com/s/files/1/0975/8077/7798/files/A034703-1_a5063110-f1fe-4d19-8741-69a71b6dff12.jpg?v=1777909765","verified":true,"fit_note":"Handmade panto with a faceted brow and keyhole bridge. Dark havana suits your dark hair. Spanish brand, no duties."},
-{"role":"sunglasses","rank":"alt","brand":"Etnia Barcelona","name":"Wayne Sun","colour":"Havana / blue polarized","price_eur":229,"url":"https://etniabarcelona.com/en-es/products/wayne-sun?variant=63857128309113","image_url":"https://cdn.shopify.com/s/files/1/0993/2396/9913/files/5-WAYNE-49S-HVBL_2.jpg?v=1782835237","verified":true,"fit_note":"Soft hexagonal panto in striped havana with blue mineral lenses that pick up your powder blue."},
-{"role":"sunglasses","rank":"alt2","brand":"Moscot","name":"Lemtosh Sun 49","colour":"Tortoise / green","price_eur":330,"url":"https://www.visiofactory.com/en/sunglasses/moscot/moscot-lemtosh-tortoise-lem-2002-49-ac-sun-02-49-24-large.html","image_url":"https://cdn1.visiofactory.com/73682-large/moscot-lemtosh-tortoise-lem-2002-49-ac-sun-02-49-24-large.jpg","verified":true,"fit_note":"Premium heritage panto in thick acetate. Sold by an authorised French optician, ships to PT. Only 1 left."},
-{"role":"sunglasses","rank":"alt3","brand":"Ace & Tate","name":"Filipe (Medium)","colour":"Translucent olive / brown","price_eur":125,"url":"https://www.aceandtate.com/pt/filipe-medium-jurassic-sun","image_url":"https://images.aceandtate.com/image/upload/:spree/public/spree/products/19777/original/filipe-medium-jurassic-sun-front.jpg","verified":true,"fit_note":"Soft square in translucent olive. Quieter and modern. Free shipping and returns in PT."},
-{"role":"sunglasses","rank":"alt4","brand":"Mr. Boho","name":"Elpatio","colour":"Honey tortoise / dark green","price_eur":69,"url":"https://www.mrboho.com/en/products/cedar-elpatio-with-classical-lenses","image_url":"https://cdn.shopify.com/s/files/1/0356/5836/7107/files/BMT43-11-FWeb.png?v=1756711635","verified":true,"fit_note":"Chunky soft-octagon with a keyhole bridge. Budget pick with character, Spanish brand."}
+ {
+  "role": "sunglasses",
+  "rank": "primary",
+  "brand": "Kaleos Eyehunters",
+  "name": "Jaconelli",
+  "colour": "Dark havana / grey gradient",
+  "price_eur": 190,
+  "url": "https://kaleoscollection.com/en-pt/products/jaconelli-dark-havana",
+  "image_url": "https://cdn.shopify.com/s/files/1/0975/8077/7798/files/A034703-1_a5063110-f1fe-4d19-8741-69a71b6dff12.jpg?v=1777909765",
+  "verified": true,
+  "fit_note": "Handmade panto with a faceted brow and keyhole bridge. Dark havana suits your dark hair. Spanish brand, no duties."
+ },
+ {
+  "role": "sunglasses",
+  "rank": "alt",
+  "brand": "Etnia Barcelona",
+  "name": "Wayne Sun",
+  "colour": "Havana / blue polarized",
+  "price_eur": 229,
+  "url": "https://etniabarcelona.com/en-es/products/wayne-sun?variant=63857128309113",
+  "image_url": "https://cdn.shopify.com/s/files/1/0993/2396/9913/files/5-WAYNE-49S-HVBL_2.jpg?v=1782835237",
+  "verified": true,
+  "fit_note": "Soft hexagonal panto in striped havana with blue mineral lenses that pick up your powder blue."
+ },
+ {
+  "role": "sunglasses",
+  "rank": "alt2",
+  "brand": "Moscot",
+  "name": "Lemtosh Sun 49",
+  "colour": "Tortoise / green",
+  "price_eur": 330,
+  "url": "https://www.visiofactory.com/en/sunglasses/moscot/moscot-lemtosh-tortoise-lem-2002-49-ac-sun-02-49-24-large.html",
+  "image_url": "https://cdn1.visiofactory.com/73682-large/moscot-lemtosh-tortoise-lem-2002-49-ac-sun-02-49-24-large.jpg",
+  "verified": true,
+  "fit_note": "Premium heritage panto in thick acetate. Sold by an authorised French optician, ships to PT. Only 1 left.",
+  "front_width_mm": "~142 est. (size 46 is 139)"
+ },
+ {
+  "role": "sunglasses",
+  "rank": "alt3",
+  "brand": "Ace & Tate",
+  "name": "Filipe (Medium)",
+  "colour": "Translucent olive / brown",
+  "price_eur": 125,
+  "url": "https://www.aceandtate.com/pt/filipe-medium-jurassic-sun",
+  "image_url": "https://images.aceandtate.com/image/upload/:spree/public/spree/products/19777/original/filipe-medium-jurassic-sun-front.jpg",
+  "verified": true,
+  "fit_note": "Soft square in translucent olive. Quieter and modern. Free shipping and returns in PT.",
+  "front_width_mm": "140"
+ },
+ {
+  "role": "sunglasses",
+  "rank": "alt4",
+  "brand": "Mr. Boho",
+  "name": "Elpatio",
+  "colour": "Honey tortoise / dark green",
+  "price_eur": 69,
+  "url": "https://www.mrboho.com/en/products/cedar-elpatio-with-classical-lenses",
+  "image_url": "https://cdn.shopify.com/s/files/1/0356/5836/7107/files/BMT43-11-FWeb.png?v=1756711635",
+  "verified": true,
+  "fit_note": "Chunky soft-octagon with a keyhole bridge. Budget pick with character, Spanish brand."
+ }
 ]
