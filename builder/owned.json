@@ -438,5 +438,13 @@
   "url": "https://www.abercrombie.com/shop/eu-es/p/premium-heavyweight-cropped-tee-55001821?seq=53",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5094-00405-100_prod1?policy=product-medium",
   "match": "exact"
+ },
+ "own_cap_western": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Western Snapback Hat",
+  "colour": "Cream / brown",
+  "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=snapback%20hat",
+  "image_url": "img/af-western-snapback.jpg",
+  "match": "exact"
  }
 }

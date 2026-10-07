@@ -100,6 +100,7 @@ OWNED = {
     "own_spezial_navy": ("Shoes", "Your navy Sporty & Rich Spezials"),
     "own_watch": ("Accessories", "Your Rolex Datejust"),
     "own_cap_navy": ("Accessories", "Your navy Yankees cap"),
+    "own_cap_western": ("Accessories", "Your A&F Western snapback"),
     "own_cuban_bracelet": ("Accessories", "Your All Blues Cuban bracelet"),
 }
 
@@ -216,8 +217,8 @@ OUTFITS = [
    "Check jacket open over a navy knit, cream jeans and burgundy Sambas. The navy picks up the check.",
    ["own_check_jacket", "own_arket_navy", "own_af_cream", "own_samba_maroon", "own_watch"]),
   ("Autumn", "Brown & burgundy", "Your board formula, in brown",
-   "Chocolate knit, light jeans, burgundy Sambas, navy cap and a silver chain. Warm and easy.",
-   ["own_howlin_brown", "own_lightwash", "own_samba_maroon", "own_cap_navy", "necklace_chain_bold"]),
+   "Chocolate knit, light jeans, burgundy Sambas, your cream and brown Western cap and a silver chain. Warm and easy.",
+   ["own_howlin_brown", "own_lightwash", "own_samba_maroon", "own_cap_western", "necklace_chain_bold"]),
   ("Winter", "Tonal brown", "Your brown puffer, head to toe",
    "Your brown AirCloud puffer, cream jumper, dark brown trousers and brown suede Premiatas. Warm, tonal and classy.",
    ["own_aircloud_brown", "own_cos_cream", "own_af_brown", "own_premiata", "own_watch"]),
@@ -255,14 +256,14 @@ OUTFITS = [
    "Light-blue linen shirt, khaki jeans and white Premiatas. Easy for a city day.",
    ["own_blue_linen", "own_beige_jeans", "own_white_sneakers", "sunglasses", "bracelet_cuff"]),
   ("Summer", "Day in Porto", "Knit polo, casual",
-   "Knit polo with khaki jeans, burgundy Sambas and the navy cap.",
-   ["polo_knit_ss", "own_beige_jeans", "own_samba_maroon", "own_cap_navy", "sunglasses"]),
+   "Knit polo with khaki jeans, burgundy Sambas and your Western cap, whose brown brim picks up the khaki.",
+   ["polo_knit_ss", "own_beige_jeans", "own_samba_maroon", "own_cap_western", "sunglasses"]),
   ("Autumn", "Navy harrington", "Your Polo harrington, old-money style",
    "Your navy Polo harrington over the Coastal sweater, khaki jeans and brown suede Premiatas. Pure old money, and all yours.",
    ["own_polo_harrington", "own_coastal", "own_beige_jeans", "own_premiata", "own_watch"]),
   ("Autumn", "Cream cord & Eagles", "Your cord jacket + Eagles sweater",
-   "Cream cord jacket open over the Eagles sweater, light jeans, green adidas and the cap. Preppy sport.",
-   ["own_cream_cord_jacket", "own_eagles", "own_lightwash", "own_samba_green", "own_cap_navy"]),
+   "Cream cord jacket open over the Eagles sweater, light jeans, green adidas and your cream Western cap. Preppy sport.",
+   ["own_cream_cord_jacket", "own_eagles", "own_lightwash", "own_samba_green", "own_cap_western"]),
   ("Autumn", "Coastal & navy", "Your Coastal sweater",
    "Coastal sweater with navy wide trousers, burgundy Sambas and the cap.",
    ["own_coastal", "own_cos_navy_trouser", "own_samba_maroon", "own_cap_navy", "own_watch"]),
@@ -297,8 +298,8 @@ OUTFITS = [
    "Brown linen shirt open over a white tee, cream jeans and light-blue adidas.",
    ["own_ms_brown_linen", "own_af_white_tee", "own_af_cream", "own_gazelle", "sunglasses"]),
   ("Winter", "AirCloud & cable", "Your second brown puffer",
-   "Brown AirCloud puffer over your blue cable knit, cream jeans, burgundy Sambas and the cap. All yours.",
-   ["own_aircloud_brown", "own_blue_cable", "own_af_cream", "own_samba_maroon", "own_cap_navy"]),
+   "Brown AirCloud puffer over your blue cable knit, cream jeans, burgundy Sambas and your cream and brown Western cap. All yours.",
+   ["own_aircloud_brown", "own_blue_cable", "own_af_cream", "own_samba_maroon", "own_cap_western"]),
 ]
 
 VIBE = {
