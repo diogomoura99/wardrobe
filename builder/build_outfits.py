@@ -377,6 +377,16 @@ SEASON_INFO = {
 }
 
 KNOWN_FRONT = {"Wayne Sun": "144"}
+ALT_SLOTS = ("alt", "alt2", "alt3", "alt4", "alt5", "alt6", "alt7", "alt8")
+MAIN_BRANDS = ("Abercrombie", "COS", "Les Deux", "Arket")
+
+def sorted_alts(slot):
+    """Alternatives with the main brands (A&F, COS, Les Deux, Arket) listed first."""
+    alts = [slot[k] for k in ALT_SLOTS if slot.get(k)]
+    return sorted(alts, key=lambda a: not any(a.get("brand", "").startswith(b) for b in MAIN_BRANDS))
+
+# layered necklace pairs: (name, vibe, short piece url, short length cm, long piece url, long length cm, note)
+PAIRS = []
 
 def all_for_role(role):
     seen, out = set(), []
@@ -405,7 +415,7 @@ def load_products():
             continue
         rank = p.get("rank", "primary")
         if rank in slot:
-            rank = next((k for k in ("alt", "alt2", "alt3", "alt4", "alt5") if k not in slot), None)
+            rank = next((k for k in ALT_SLOTS if k not in slot), None)
             if rank is None:
                 continue
         slot[rank] = p
@@ -443,7 +453,7 @@ def tile(key, prod):
     cat, label = ROLE_INFO[key]
     if not p:
         return ""
-    alts = [prod[key][k] for k in ("alt", "alt2", "alt3", "alt4", "alt5") if prod[key].get(k)]
+    alts = sorted_alts(prod[key])
     alt_html = "".join(f'<a class="alt" href="{e(a["url"])}" target="_blank" rel="noopener">or {e(a["brand"])} · {money(a.get("price_eur"))}</a>' for a in alts)
     return f'''<div class="tile"><a class="ph" href="{e(p["url"])}" target="_blank" rel="noopener">
 <img loading="lazy" referrerpolicy="no-referrer" src="{e(p.get("image_url",""))}" alt="{e(p["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(label)}</span></a>
@@ -493,7 +503,7 @@ def build():
 <div class="why">{e(q.get("fit_note",""))}</div></div></div>''' for q in sorted(sg, key=lambda q: float(q.get("price_eur") or 0)))
     # necklace lookbook
     TYPE_OF = {"jewelry_chain": "thin chain", "necklace_chain_bold": "bold chain", "necklace_pendant": "pendant"}
-    neck = [dict(q, type=q.get("type") or TYPE_OF[r]) for r in TYPE_OF for q in all_for_role(r)] + all_for_role("necklace_lookbook")
+    neck = [dict(q, type=q.get("type") or ("pendant" if "pendant" in q["name"].lower() else TYPE_OF[r])) for r in TYPE_OF for q in all_for_role(r)] + all_for_role("necklace_lookbook")
     seen_u, neck2 = set(), []
     for q in neck:
         u = q["url"].split("?")[0]
@@ -505,9 +515,29 @@ def build():
 <div class="meta"><div class="br">{e(q["brand"])}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{sale}</div><div class="pr">{e(q.get("colour",""))}</div>
 {('<div class="fwid">' + spec + '</div>') if spec else ''}<div class="why">{e(q.get("fit_note",""))}</div></div></div>'''
-    groups = [("Thin chains", "thin chain", "1.5–2.5 mm. Everyday, quiet, sits under an open collar."), ("Bolder chains", "bold chain", "3–5 mm. More presence, best with tees, knits and street days."), ("Pendants", "pendant", "A small cross, coin or medallion on a fine chain. The most personal option.")]
-    nk_html = "".join(f'''<h3 class="cat">{e(g)} <span class="muted" style="font-weight:400;font-size:14px">— {e(d)}</span></h3><div class="sgrid">{"".join(nk_card(q) for q in sorted([q for q in neck2 if q["type"]==t], key=lambda q: float(q.get("price_eur") or 0)))}</div>''' for g,t,d in groups)
-    nk_section = f'''<section id="necklaces"><h2>Necklaces</h2><p class="lede">All silver, to match your Rolex. <b>Length guide for you:</b> 50 cm sits around the collarbone and is the best everyday length for chains; 55 cm sits a little lower and works well for pendants and over knits. Wear one necklace at a time, or a thin chain plus a pendant if they're different lengths.</p>{nk_html}</section>'''
+    groups = [("Thin chains", "thin chain", "1.5–2.5 mm. Everyday, quiet, sits under an open collar."), ("Bolder chains", "bold chain", "3–5 mm. More presence, best with tees, knits and street days."), ("Pendants", "pendant", "A small cross, coin or medallion on a fine chain. The most personal option."), ("Ready-made layered sets", "layered set", "Two strands sold as one piece, already spaced for you.")]
+    nk_html = "".join(f'''<h3 class="cat">{e(g)} <span class="muted" style="font-weight:400;font-size:14px">— {e(d)}</span></h3><div class="sgrid">{"".join(nk_card(q) for q in sorted([q for q in neck2 if q["type"]==t], key=lambda q: float(q.get("price_eur") or 0)))}</div>''' for g,t,d in groups if any(q["type"]==t for q in neck2))
+    by_url = {q["url"].split("?")[0]: q for q in neck2}
+    def pair_card(name, vibe, su, sl, lu, ll, note):
+        a, b = by_url.get(su.split("?")[0]), by_url.get(lu.split("?")[0])
+        if not a or not b:
+            print("pair skipped (missing piece):", name); return ""
+        vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
+        half = lambda q, tag, ln: f'''<a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><em class="lentag">{tag} · {e(ln)} cm</em><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>'''
+        line = lambda q, tag, ln: f'<div class="pr"><b>{tag} ({e(ln)} cm):</b> <a href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["brand"])} {e(q["name"])}</a> · {money(q.get("price_eur"))}</div>'
+        tot = float(a.get("price_eur") or 0) + float(b.get("price_eur") or 0)
+        return f'''<div class="pair"><div class="pairimgs">{half(a, "Short", sl)}{half(b, "Long", ll)}</div>
+<div class="meta"><div class="pairhd"><b>{e(name)}</b><span class="vchip {vcls}">{e(vibe)}</span><span class="tot">Together: {money(tot)}</span></div>
+{line(a, "Short", sl)}{line(b, "Long", ll)}<div class="why">{e(note)}</div></div></div>'''
+    pairs_html = "".join(pair_card(*p) for p in PAIRS)
+    if pairs_html:
+        nk_html = f'''<h3 class="cat">Layered pairs <span class="muted" style="font-weight:400;font-size:14px">— two necklaces worn together, one shorter and one longer</span></h3>
+<div class="fit"><ul><li><b>Leave about 5 cm between them</b> (for you: 50 + 55 cm, or 50 + 60 cm for a pendant over a knit) so they don't tangle and each one shows.</li>
+<li><b>Mix the textures, keep the metal.</b> A plain chain plus a pendant, or a thin chain plus a bolder one. All silver, to match your Rolex.</li>
+<li><b>The longer one carries the detail.</b> Put the pendant or the bolder chain on the long strand and keep the short one quiet.</li>
+<li><b>Best with</b> a tee, an open collar or a crewneck knit. With a buttoned shirt, wear just one.</li></ul></div>
+<div class="pgrid">{pairs_html}</div>''' + nk_html
+    nk_section = f'''<section id="necklaces"><h2>Necklaces</h2><p class="lede">All silver, to match your Rolex. <b>Length guide for you:</b> 50 cm sits around the collarbone and is the best everyday length for chains; 55 cm sits a little lower and works well for pendants and over knits. Wear one on its own, or layer two (see Layered pairs below).</p>{nk_html}</section>'''
     sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. For a medium-to-large head, look for a front width of about 140–150 mm. If you have a pair that fits well, measure it hinge to hinge and compare.</p><div class="sgrid">{sg_cards}</div></section>'''
 
     # shopping list
@@ -520,7 +550,7 @@ def build():
         for r in items:
             p = prod[r]["primary"]
             star = '<span class="start">Buy first</span>' if r in top else ""
-            alts = [prod[r][k] for k in ("alt", "alt2", "alt3", "alt4", "alt5") if prod[r].get(k)]
+            alts = sorted_alts(prod[r])
             alt = "<br>".join(f'<a href="{e(a["url"])}" target="_blank" rel="noopener">{e(a["brand"])}: {e(a["name"])} · {money(a.get("price_eur"))}</a>' for a in alts) or '<span class="muted">-</span>'
             lis.append(f'''<tr><td class="thumb"><a href="{e(p["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(p.get("image_url",""))}" alt="" onerror="this.remove()"></a></td>
 <td><div class="role">{e(ROLE_INFO[r][1])} {star}</div><a href="{e(p["url"])}" target="_blank" rel="noopener">{e(p["brand"])}: {e(p["name"])}</a> · <b>{money(p.get("price_eur"))}</b>
@@ -602,6 +632,11 @@ section,article{{scroll-margin-top:64px}}
 .sgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}}
 .sg{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}} .sg .ph{{aspect-ratio:4/3;background:#fff}} .sg .ph img{{object-fit:contain;background:#fff}}
 .fwid{{font-size:12px;color:var(--accent);margin-top:3px}}
+.pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:8px}}
+.pair{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}}
+.pairimgs{{display:grid;grid-template-columns:1fr 1fr;gap:8px}} .pair .ph{{aspect-ratio:1/1;background:#fff}} .pair .ph img{{object-fit:contain;background:#fff}}
+.ph .lentag{{position:absolute;top:6px;left:6px;z-index:3;background:var(--accent);color:#fff;font-style:normal;font-size:11px;font-weight:600;padding:2px 8px;border-radius:999px}}
+.pairhd{{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:4px}} .pairhd .tot{{margin-left:auto}}
 .fit{{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:0 0 18px}}
 .fit h3{{margin:0 0 6px;font-size:16px}} .fit ul{{margin:0;padding-left:18px}} .fit li{{margin:4px 0}}
 .extras{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 12px 12px 30px}} .extras li{{margin:4px 0}} .extras a{{color:var(--accent)}}
