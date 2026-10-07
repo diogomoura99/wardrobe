@@ -173,7 +173,7 @@
   "colour": "Light Blue / Gum",
   "url": "https://www.adidas.com/us/handball-spezial-shoes/BD7632.html",
   "image_url": "https://assets.adidas.com/images/w_1880,f_auto,q_auto/b1ce66dca4c947538c6da9760113f537_9366/BD7632_09_standard.jpg",
-  "match": "similar"
+  "match": "exact"
  },
  "own_samba_green": {
   "brand": "adidas Originals",
@@ -181,7 +181,7 @@
   "colour": "Collegiate Green / Pink / Gum",
   "url": "https://www.adidas.com/us/handball-spezial-shoes/JI2648.html",
   "image_url": "https://assets.adidas.com/images/w_1880,f_auto,q_auto/5f5de72798b649209ec20c9ac8f9e312_9366/JI2648_01_standard.jpg",
-  "match": "very likely"
+  "match": "exact"
  },
  "own_white_sneakers": {
   "brand": "Premiata",

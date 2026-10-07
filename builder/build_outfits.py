@@ -90,9 +90,9 @@ OWNED = {
     "own_af_black_pleated": ("Trousers", "Your black pleated baggy trousers"),
     "own_af_ash_pleated": ("Trousers", "Your ash pleated baggy trousers"),
     "own_cos_navy_trouser": ("Trousers", "Your COS navy pleated wide-leg trousers"),
-    "own_samba_green": ("Shoes", "Your green adidas"),
+    "own_samba_green": ("Shoes", "Your green Handball Spezials"),
     "own_samba_maroon": ("Shoes", "Your burgundy Sambas"),
-    "own_gazelle": ("Shoes", "Your light-blue adidas"),
+    "own_gazelle": ("Shoes", "Your light-blue Handball Spezials"),
     "own_white_sneakers": ("Shoes", "Your white Premiatas"),
     "own_premiata": ("Shoes", "Your brown Premiata Bonnies"),
     "own_spezial_cream": ("Shoes", "Your off-white Handball Spezials"),
@@ -132,7 +132,7 @@ OUTFITS = [
    "All neutrals, with suede sneakers for contrast.",
    ["own_cos_cream", "own_af_ash_pleated", "own_gazelle", "own_sd_pendant", "bracelet_cuff"]),
   ("Autumn", "Overshirt layers", "Shirts are part of your mix too",
-   "Corduroy overshirt worn open over a white tee, khaki jeans and your green adidas.",
+   "Corduroy overshirt worn open over a white tee, khaki jeans and your green Spezials.",
    ["shirt_overshirt", "own_af_white_tee", "own_beige_jeans", "own_samba_green", "chain_figaro", "own_sd_pendant"]),
   ("Autumn", "Check jacket", "Your own check jacket, one step up",
    "Your check jacket and brown tee with ecru corduroy instead of jeans. Same Premiatas, one step smarter.",
@@ -141,7 +141,7 @@ OUTFITS = [
    "Your green and cream striped knit over dark brown wide trousers instead of jeans. Warmer and more grown-up.",
    ["own_stripe_knit", "own_af_brown", "own_white_sneakers", "chain_figaro"]),
   ("Autumn", "Stripes & sage jacket", "Your sage jacket + blue stripes",
-   "Your sage textured jacket over the blue stripes, khaki jeans and green adidas. Greens and blues that work together.",
+   "Your sage textured jacket over the blue stripes, khaki jeans and green Spezials. Greens and blues that work together.",
    ["own_sage_jacket", "own_stripe_ls", "own_beige_jeans", "own_samba_green", "own_cuban_bracelet"]),
   ("Autumn", "Guinness, upgraded", "Your Guinness knit, one step up",
    "Keep the fun knit, with navy wide trousers and your burgundy Sambas so it looks deliberate.",
@@ -197,7 +197,7 @@ OUTFITS = [
    "Oxford shirt with sleeves rolled, stone pleated trousers, your white Premiatas.",
    ["shirt_oxford", "own_af_ash_pleated", "own_white_sneakers", "sunglasses", "belt_brown", "bracelet_cuff"]),
   ("Spring", "Linen layers", "Your light-blue linen shirt, for spring",
-   "Linen shirt open over a white tee, stone trousers and your light-blue adidas. Blue suits you.",
+   "Linen shirt open over a white tee, stone trousers and your light-blue Spezials. Blue suits you.",
    ["own_blue_linen", "own_af_white_tee", "own_af_ash_pleated", "own_gazelle", "own_sunnies_asos", "own_cuban_bracelet"]),
   ("Summer", "Navy & white", "Your navy linen shirt and white trousers",
    "The outfit you already wear, finished with clogs, sunglasses and a leather bracelet.",
@@ -209,7 +209,7 @@ OUTFITS = [
    "Your Cowboys rugby polo with navy wide trousers. More contrast than the all-white version.",
    ["own_rugby", "own_cos_navy_trouser", "own_white_sneakers", "sunglasses", "own_cuban_bracelet"]),
   ("Spring", "Sunday lunch", "Built from your style",
-   "Chocolate knit, navy wide trousers and your light-blue adidas. Brown, navy and light blue is a classic mix.",
+   "Chocolate knit, navy wide trousers and your light-blue Spezials. Brown, navy and light blue is a classic mix.",
    ["own_howlin_brown", "own_cos_navy_trouser", "own_gazelle", "belt_brown", "chain_figaro"]),
   ("Autumn", "Blue & brown", "Your new COS jumper + your new brown trousers",
    "Light blue and dark brown is one of the best combinations for your colouring. Brown suede Premiatas tie it together.",
@@ -239,7 +239,7 @@ OUTFITS = [
    "Your lace camp-collar shirt worn open, cream jeans and suede clogs.",
    ["own_lace_camp", "own_af_cream", "clog_suede", "sunglasses", "chain_figaro", "own_sd_pendant"]),
   ("Summer", "Linen & shorts", "Your light-blue linen shirt",
-   "Your linen shirt open over a white tee, pleated shorts, light-blue adidas and the navy cap.",
+   "Your linen shirt open over a white tee, pleated shorts, light-blue Spezials and the navy cap.",
    ["own_blue_linen", "own_af_white_tee", "shorts_tailored", "own_gazelle", "own_cap_navy"]),
   ("Summer", "Jorts day", "Your board: graphic tees",
    "Graphic tee, relaxed denim shorts, navy Spezials and the cap. Pure summer street.",
@@ -263,7 +263,7 @@ OUTFITS = [
    "Your navy Polo harrington over the Coastal sweater, khaki jeans and brown suede Premiatas. Pure old money, and all yours.",
    ["own_polo_harrington", "own_coastal", "own_beige_jeans", "own_premiata", "own_watch"]),
   ("Autumn", "Cream cord & Eagles", "Your cord jacket + Eagles sweater",
-   "Cream cord jacket open over the Eagles sweater, light jeans, green adidas and your cream Western cap. Preppy sport.",
+   "Cream cord jacket open over the Eagles sweater, light jeans, green Spezials and your cream Western cap. Preppy sport.",
    ["own_cream_cord_jacket", "own_eagles", "own_lightwash", "own_samba_green", "own_cap_western"]),
   ("Autumn", "Coastal & navy", "Your Coastal sweater",
    "Coastal sweater with navy wide trousers, burgundy Sambas and the cap.",
@@ -296,13 +296,13 @@ OUTFITS = [
    "Blue striped linen shirt, denim shorts, burgundy Sambas and the cap.",
    ["own_ms_blue_stripe", "shorts_denim", "own_samba_maroon", "own_cap_navy"]),
   ("Summer", "Brown linen day", "Your brown linen shirt, open",
-   "Brown linen shirt open over a white tee, cream jeans and light-blue adidas.",
+   "Brown linen shirt open over a white tee, cream jeans and light-blue Spezials.",
    ["own_ms_brown_linen", "own_af_white_tee", "own_af_cream", "own_gazelle", "sunglasses"]),
   ("Winter", "AirCloud & cable", "Your second brown puffer",
    "Brown AirCloud puffer over your blue cable knit, cream jeans, burgundy Sambas and your cream and brown Western cap. All yours.",
    ["own_aircloud_brown", "own_blue_cable", "own_af_cream", "own_samba_maroon", "own_cap_western"]),
   ("Autumn", "Cream & black", "Your black jeans, done right",
-   "Cream cord jacket open over your white tee, black baggy jeans and the green adidas. Light colours on top keep the black from looking heavy on you. All yours.",
+   "Cream cord jacket open over your white tee, black baggy jeans and the green Spezials. Light colours on top keep the black from looking heavy on you. All yours.",
    ["own_cream_cord_jacket", "own_af_white_tee", "own_af_black_jeans", "own_samba_green", "own_cuban_bracelet"]),
 ]
 
@@ -596,6 +596,18 @@ def build():
 
     cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">What suits you, going by your A&F Western snapback (which looks nothing like A&F's current snapbacks): <b>a pre-curved brim and a rounded crown that holds its shape</b>, classy rather than a flat-brim, boxy "classic snapback". Soft dad hats that collapse flat on your thick hair don't work either. <b>You're covered with your two caps:</b> navy for the cool and denim outfits (and with burgundy Sambas), cream/brown for the warm ones. Try your navy '47 Base Runner first; it's the same relaxed, curved type as your Western. All caps below are matched to your Western cap's shape.</p>{cap_cards}</section>''' if caps else ""
 
+    # brands for you
+    brands = all_for_role("brand_pick")
+    def brand_card(q):
+        return f'''<div class="sg"><a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["product_name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>
+<div class="meta"><div class="br">{e(q["brand"])} · {e(q["country"])}</div><div class="why" style="color:var(--text)">{e(q["why"])}</div>
+<div class="pr" style="margin-top:4px">Typical prices {e(q["price_range"])}</div>
+<div class="fwid">Try: <a href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["product_name"])}</a>, {e(q["product_colour"])} · {money(q.get("price_eur"))}</div>
+<div class="why">Size: {e(q["sizing"])}</div></div></div>'''
+    BT = [("affordable", "Affordable"), ("mid", "Mid-range"), ("investment", "Investment pieces")]
+    brand_html = "".join(f'<h3 class="cat">{t}</h3><div class="sgrid">' + "".join(brand_card(q) for q in brands if q["tier"] == k) + "</div>" for k, t in BT if any(q["tier"] == k for q in brands))
+    brand_section = f'''<section id="brands"><h2>Brands for you</h2><p class="lede">New brands that fit your style (relaxed, old-money, Ralph Lauren meets Copenhagen), on top of A&F, COS, Les Deux and Arket. Each has one piece picked for your shape. All ship to Portugal; EU brands have no customs.</p>{brand_html}</section>''' if brands else ""
+
     # shopping list
     rows = []
     top = {k for k, _ in usage.most_common(8)}
@@ -713,11 +725,12 @@ section,article{{scroll-margin-top:64px}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
 {"".join(sec)}
 {sg_section}
 {nk_section}
 {cap_section}
+{brand_section}
 <section id="shopping-list"><h2>Shopping list</h2>
 <p class="lede">Every piece once, with a main pick and up to two alternatives (often a cheaper one and an independent-label one). Pieces marked "Buy first" appear in the most outfits, so start with those. Outfit totals use the main picks.</p>
 {"".join(rows)}</section>
