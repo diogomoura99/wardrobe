@@ -574,5 +574,23 @@
   "url": "https://www.abercrombie.com/shop/eu/p/heavyweight-rib-tank-63962321",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-26031-00076-100_prod1?policy=product-large",
   "match": "close"
+ },
+ "own_af_linen_baggy": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Linen-Blend Baggy Trouser",
+  "colour": "Light Beige",
+  "size": "32x30",
+  "url": "https://www.abercrombie.com/shop/eu/p/linen-blend-baggy-trouser-61822820",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6051-00302-412_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_af_olive_pleated": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cotton-Blend Pleated Baggy Trouser",
+  "colour": "Olive Gray",
+  "size": "32x30",
+  "url": "https://www.abercrombie.com/shop/eu/p/pleated-baggy-trouser-63504015",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6255-00442-330_prod1?policy=product-large",
+  "match": "exact"
  }
 }
