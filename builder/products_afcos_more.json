@@ -111,28 +111,17 @@
   "role": "sunglasses",
   "brand": "Abercrombie & Fitch",
   "name": "Semi-Rimless Sunglasses",
-  "colour": "Tortoise / brown",
+  "colour": "Tortoise Shell / brown",
   "price_eur": 85,
   "url": "https://www.abercrombie.com/shop/eu/p/semi-rimless-sunglasses-61581319",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_112-6068-00017-406_prod1?policy=product-large",
   "verified": true,
   "shape": "browline",
-  "fit_note": "Clubmaster-like browline, tortoise top and gold rims. A&F's only tortoise acetate pair now.",
+  "fit_note": "Of the two colours, the tortoise brow with brown lenses is the warm, Ralph Lauren-style one that goes with navy, cream and brown suede, and its thin lower metal rim is a muted antique tone rather than bright gold, so it sits fine next to his steel Rolex (the other colour is black frame with green lenses, which is too harsh); one size only, and A&F publishes no measurements.",
   "rank": "alt",
-  "front_width_mm": "~140 est."
- },
- {
-  "role": "sunglasses",
-  "brand": "COS",
-  "name": "Rectangular Aviator Sunglasses",
-  "colour": "Tortoiseshell / brown",
-  "price_eur": 69,
-  "url": "https://www.cos.com/en-eu/men/accessories/sunglasses/product/rectangular-aviator-sunglasses-tortoiseshell-brown-1312226001",
-  "image_url": "https://media.cos.com/assets/001/ae/4e/ae4eea69c693fe3b4e76aebe48886cb71cdb09a8_xxl-1.jpg",
-  "verified": false,
-  "shape": "rectangular",
-  "fit_note": "Chunky tortoise rectangle with a double bridge. Summer stock, may be gone.",
-  "rank": "alt"
+  "front_width_mm": "~140 est.",
+  "size": "",
+  "on_sale": false
  },
  {
   "role": "clog_suede",

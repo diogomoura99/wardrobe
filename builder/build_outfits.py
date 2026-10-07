@@ -384,7 +384,7 @@ SEASON_INFO = {
   "Winter": ("December – February", "Mornings 3–6 °C (some frost), afternoons 11–14 °C", "The wettest months in Braga (about 170–220 mm a month). Puffers, warm knits and leather shoes for rainy days."),
 }
 
-KNOWN_FRONT = {"Wayne Sun": "144"}
+KNOWN_FRONT = {}
 MY_FRONT = 142  # his ASOS round pair, measured hinge to hinge
 ALT_SLOTS = ("alt", "alt2", "alt3", "alt4", "alt5", "alt6", "alt7", "alt8")
 MAIN_BRANDS = ("Abercrombie", "COS", "Les Deux", "Arket")
@@ -537,7 +537,7 @@ def build():
     sg_cards = "".join(f'''<div class="sg"><a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>
 <div class="meta"><div class="br">{e(q["brand"])}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{" · " + e(q.get("shape","")) if q.get("shape") else ""}</div>
-<div class="pr">{e(q.get("colour",""))}</div>
+<div class="pr">{e(q.get("colour",""))}{(" · Size " + e(q["size"])) if q.get("size") else ""}</div>
 <div class="fwid">{("Front width: " + e(fw(q)) + " mm") if fw(q) else "Front width: check the product page"}</div>{fit_badge(fw(q))}
 <div class="why">{e(q.get("fit_note",""))}</div></div></div>''' for q in sorted(sg, key=lambda q: float(q.get("price_eur") or 0)))
     # necklace lookbook
