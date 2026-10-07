@@ -384,7 +384,7 @@ SEASON_INFO = {
 }
 
 KNOWN_FRONT = {}
-LAYER_NOTE = ' <b>Necklaces, layered:</b> IX figaro at 46 cm with your Serge DeNimes pendant at 52 cm, so they sit about 6 cm apart.'
+LAYER_NOTE = ' <b>Necklaces, layered:</b> IX figaro at 46 cm, with your Serge DeNimes pendant hooked on the last ring of its chain (about 52 cm), so they sit about 6 cm apart.'
 MY_FRONT = 142  # his ASOS round pair, measured hinge to hinge
 ALT_SLOTS = ("alt", "alt2", "alt3", "alt4", "alt5", "alt6", "alt7", "alt8")
 MAIN_BRANDS = ("Abercrombie", "COS", "Les Deux", "Arket")
