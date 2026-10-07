@@ -422,5 +422,13 @@
   "url": "https://www.allblues.se/product/cuban-bracelet-silver",
   "image_url": "https://allblues.centracdn.net/client/dynamic/images/685_1f69eddb6e-cuban_bracelet_silver_p_1.jpg",
   "match": "exact"
+ },
+ "own_spezial_navy": {
+  "brand": "adidas x Sporty & Rich",
+  "name": "Handball Spezial Night Indigo (JP7066)",
+  "colour": "Navy suede, white stripes, gum",
+  "url": "https://www.goat.com/sneakers/sporty-rich-x-handball-spezial-night-indigo-jp7066",
+  "image_url": "img/spezial-sporty-rich-navy.jpg",
+  "match": "exact"
  }
 }
