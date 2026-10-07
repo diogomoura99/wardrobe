@@ -2,15 +2,15 @@
  {
   "role": "trouser_linen_olive",
   "rank": "primary",
-  "brand": "Arket",
-  "name": "Linen Blend Trousers",
-  "colour": "Khaki Green (true olive)",
-  "price_eur": 39.5,
-  "on_sale": true,
-  "url": "https://www.arket.com/en-eu/product/linen-blend-trousers-khaki-green-1273324010/",
-  "image_url": "https://media.arket.com/assets/006/19/cd/19cdfaf74e892db2ac8093adba7e1b5cdd554c35_xxl-1.jpg",
+  "brand": "Abercrombie & Fitch",
+  "name": "Pleated Baggy Trouser",
+  "colour": "Olive gray",
+  "price_eur": 80,
+  "on_sale": false,
+  "url": "https://www.abercrombie.com/shop/eu/p/pleated-baggy-trouser-63504015",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6255-00442-330_prod1?policy=product-large",
   "verified": true,
-  "fit_note": "Linen-cotton, relaxed straight leg (a bit narrower than your A&F baggies), drawstring back with a proper fly. Take EU 48, only a few left. 50% off (was €79). The A&F olive is sold out in 32."
+  "fit_note": "Your ash pleated baggy trouser in olive: the same light lyocell-cotton, wide straight leg, pleats and fly. Take 32x30 (in stock). No olive linen comes in this baggy fit in your size right now, and the Arket olive is relaxed, not baggy."
  },
  {
   "role": "trouser_linen_beige",
@@ -23,45 +23,19 @@
   "url": "https://www.abercrombie.com/shop/eu/p/linen-blend-baggy-trouser-61822820",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6051-00302-412_prod1?policy=product-large",
   "verified": true,
-  "fit_note": "Your A&F baggy fit in linen-blend, still in stock in 32x30. On sale (was €80)."
+  "fit_note": "Your A&F baggy fit in the same cotton-linen as your sand pull-ons: wide straight leg, a proper fly and belt loops, ankle length like your ash pair. No pleats. Take 32x30 (the only length left in 32). On sale (was €80)."
  },
  {
   "role": "trouser_linen_beige",
   "rank": "alt",
-  "brand": "Abercrombie & Fitch",
-  "name": "Linen-Blend Relaxed Pleated Trouser",
-  "colour": "Pale sand",
-  "price_eur": 80,
-  "on_sale": false,
-  "url": "https://www.abercrombie.com/shop/eu/p/linen-blend-relaxed-straight-hybrid-waist-trouser-63481269",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-26046-00175-412_prod1?policy=product-large",
-  "verified": true,
-  "fit_note": "Front pleats, relaxed straight leg, a touch less wide than the baggy. Take M Regular."
- },
- {
-  "role": "trouser_linen_beige",
-  "rank": "alt",
-  "brand": "Les Deux",
-  "name": "Linen Casual Pants",
-  "colour": "Light Sand",
-  "price_eur": 83.3,
-  "on_sale": true,
-  "url": "https://lesdeux.com/products/linen-casual-pants-light-sand",
-  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/18860593_1001864_815-Light-Sand_01.webp",
-  "verified": true,
-  "fit_note": "Loose, straight linen with a drawstring waist: more casual. Take M (low stock). 30% off (was €119)."
- },
- {
-  "role": "trouser_linen_beige",
-  "rank": "alt",
-  "brand": "Arket",
-  "name": "Relaxed Linen Trousers",
+  "brand": "Massimo Dutti",
+  "name": "100% Linen Pleated Trousers",
   "colour": "Beige",
-  "price_eur": 69,
+  "price_eur": 79.95,
   "on_sale": false,
-  "url": "https://www.arket.com/en-eu/product/relaxed-linen-trousers-beige-1282842007/",
-  "image_url": "https://media.arket.com/assets/006/53/e0/53e0ef1f5f738f31cb5930bce366a39533713d99_xxl-1.jpg",
+  "url": "https://www.massimodutti.com/pt/en/100-linen-total-look-pants-l02865390",
+  "image_url": "https://static.massimodutti.net/assets/public/f46a/8b6c/abb2454bab6f/d7b67086415c/02865390710-o6/02865390710-o6.jpg",
   "verified": true,
-  "fit_note": "100% linen pull-on, relaxed straight leg. Take M."
+  "fit_note": "Pure linen, wide and full with front pleats, a zip fly and belt loops (elastic at the back). Take M. None of A&F, COS, Les Deux or Arket has another linen trouser this wide in your size right now."
  }
 ]
