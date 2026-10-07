@@ -387,7 +387,26 @@ def sorted_alts(slot):
     return sorted(alts, key=lambda a: not any(a.get("brand", "").startswith(b) for b in MAIN_BRANDS))
 
 # layered necklace pairs: (name, vibe, short piece url, short length cm, long piece url, long length cm, note)
-PAIRS = []
+PAIRS = [
+  ("Budget try-out", "In between", "https://ixstudioscph.com/products/ix-figaro-chain-silver", "50", "https://kiama.pt/produto/colar-com-cruz/", "60",
+   "A fine figaro plus a brushed cross made in Portugal. The cheapest way to find out if you like layering before spending more."),
+  ("Portuguese pair", "In between", "https://hattonlabs.com/products/silver-twisted-rope-chain-m", "51", "https://kiama.pt/produto/colar-vieira-de-santiago/", "60",
+   "A twisted rope chain with the Camino scallop shell lower down. Atlantic-coast and personal, great with a linen shirt open at the collar."),
+  ("Riviera anchor", "In between", "https://ixstudioscph.com/products/ix-figaro-chain-silver", "50", "https://www.werkstatt-muenchen.com/products/chain-mini-anchor", "64",
+   "Fine figaro at the collarbone and a tiny anchor further down. Nautical without being literal, perfect for summer."),
+  ("Old-money medal", "Classy", "https://ixstudioscph.com/products/ix-figaro-chain-silver", "46", "https://sergedenimes.com/products/silver-st-christopher-necklace", "52",
+   "A fine figaro close to the neck with the St Christopher just below. The most classic pair here, very Ralph Lauren."),
+  ("Cross & curb", "Classy", "https://www.miansai.com/en-pt/products/1-3mm-cuban-chain-necklace-sterling-silver", "53", "https://www.miansai.com/en-pt/products/croix-mini-st-christopher-pendant-necklace-sterling-silver", "61",
+   "Both from Miansai, so the silver matches perfectly. The cross falls below the chain, over a tee or a crewneck knit."),
+  ("Thin + bold", "Street", "https://www.miansai.com/en-pt/products/1-3mm-cuban-chain-necklace-sterling-silver", "46", "https://www.miansai.com/en-pt/products/3mm-cuban-curb-chain-necklace-polished-sterling-silver", "56",
+   "Two curb chains, one fine and one heavier. No pendant, just texture. Best with a white tee or the Hotel tee."),
+  ("Mariner & laurel", "In between", "https://ixstudioscph.com/products/ix-curb-marina-chain-silver", "45", "https://sergedenimes.com/products/silver-laurel-necklace", "52",
+   "Preppy anchor links close to the neck with a small laurel medal below. Good with a knit polo or a rugby collar open."),
+  ("Matches your bracelet", "Street", "https://www.allblues.se/product/cuban-necklace-silver", "47", "https://www.allblues.se/product/coin-pendant-01-large", "54",
+   "The same 4 mm Cuban as your All Blues bracelet, with their coin below. One brand, so all the silver is identical."),
+  ("Copenhagen", "Classy", "https://www.tomwoodproject.com/en-eu/products/billie-chain", "46", "https://www.tomwoodproject.com/en-eu/products/umi-pendant", "52",
+   "Paperclip chain plus a plain polished tag. Minimal and Scandinavian, the investment pair. The bright polish matches your Rolex bezel.", 340),
+]
 
 def all_for_role(role):
     seen, out = set(), []
@@ -519,17 +538,18 @@ def build():
     groups = [("Thin chains", "thin chain", "1.5–2.5 mm. Everyday, quiet, sits under an open collar."), ("Bolder chains", "bold chain", "3–5 mm. More presence, best with tees, knits and street days."), ("Pendants", "pendant", "A small cross, coin or medallion on a fine chain. The most personal option."), ("Ready-made layered sets", "layered set", "Two strands sold as one piece, already spaced for you.")]
     nk_html = "".join(f'''<h3 class="cat">{e(g)} <span class="muted" style="font-weight:400;font-size:14px">— {e(d)}</span></h3><div class="sgrid">{"".join(nk_card(q) for q in sorted([q for q in neck2 if q["type"]==t], key=lambda q: float(q.get("price_eur") or 0)))}</div>''' for g,t,d in groups if any(q["type"]==t for q in neck2))
     by_url = {q["url"].split("?")[0]: q for q in neck2}
-    def pair_card(name, vibe, su, sl, lu, ll, note):
+    def pair_card(name, vibe, su, sl, lu, ll, note, sp=None, lp=None):
         a, b = by_url.get(su.split("?")[0]), by_url.get(lu.split("?")[0])
         if not a or not b:
             print("pair skipped (missing piece):", name); return ""
         vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
         half = lambda q, tag, ln: f'''<a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><em class="lentag">{tag} · {e(ln)} cm</em><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>'''
-        line = lambda q, tag, ln: f'<div class="pr"><b>{tag} ({e(ln)} cm):</b> <a href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["brand"])} {e(q["name"])}</a> · {money(q.get("price_eur"))}</div>'
-        tot = float(a.get("price_eur") or 0) + float(b.get("price_eur") or 0)
+        line = lambda q, tag, ln, pr: f'<div class="pr"><b>{tag} ({e(ln)} cm):</b> <a href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["brand"])} {e(q["name"])}</a> · {money(pr)}</div>'
+        pa, pb = sp or a.get("price_eur") or 0, lp or b.get("price_eur") or 0
+        tot = float(pa) + float(pb)
         return f'''<div class="pair"><div class="pairimgs">{half(a, "Short", sl)}{half(b, "Long", ll)}</div>
 <div class="meta"><div class="pairhd"><b>{e(name)}</b><span class="vchip {vcls}">{e(vibe)}</span><span class="tot">Together: {money(tot)}</span></div>
-{line(a, "Short", sl)}{line(b, "Long", ll)}<div class="why">{e(note)}</div></div></div>'''
+{line(a, "Short", sl, pa)}{line(b, "Long", ll, pb)}<div class="why">{e(note)}</div></div></div>'''
     pairs_html = "".join(pair_card(*p) for p in PAIRS)
     if pairs_html:
         nk_html = f'''<h3 class="cat">Layered pairs <span class="muted" style="font-weight:400;font-size:14px">— two necklaces worn together, one shorter and one longer</span></h3>
@@ -538,7 +558,7 @@ def build():
 <li><b>The longer one carries the detail.</b> Put the pendant or the bolder chain on the long strand and keep the short one quiet.</li>
 <li><b>Best with</b> a tee, an open collar or a crewneck knit. With a buttoned shirt, wear just one.</li></ul></div>
 <div class="pgrid">{pairs_html}</div>''' + nk_html
-    nk_section = f'''<section id="necklaces"><h2>Necklaces</h2><p class="lede">All silver, to match your Rolex. <b>Length guide for you:</b> 50 cm sits around the collarbone and is the best everyday length for chains; 55 cm sits a little lower and works well for pendants and over knits. Wear one on its own, or layer two (see Layered pairs below).</p>{nk_html}</section>'''
+    nk_section = f'''<section id="necklaces"><h2>Necklaces</h2><p class="lede">All silver-toned to match your Rolex, and sterling silver unless the colour says steel. <b>Length guide for you:</b> 50 cm sits around the collarbone and is the best everyday length for chains; 55 cm sits a little lower and works well for pendants and over knits. Wear one on its own, or layer two (see Layered pairs below).</p>{nk_html}</section>'''
     sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. For a medium-to-large head, look for a front width of about 140–150 mm. If you have a pair that fits well, measure it hinge to hinge and compare.</p><div class="sgrid">{sg_cards}</div></section>'''
 
     # shopping list
