@@ -1,0 +1,4 @@
+*.tmp
+builder/*_backup_*.py
+__pycache__/
+.DS_Store

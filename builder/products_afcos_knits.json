@@ -1,0 +1,110 @@
+[
+ {
+  "role": "knit_polo",
+  "rank": "alt",
+  "brand": "Abercrombie & Fitch",
+  "name": "100% Merino Wool 3-Button Collared Sweater",
+  "colour": "Brown",
+  "price_eur": 80,
+  "url": "https://www.abercrombie.com/shop/eu/p/100-merino-wool-3-button-collared-sweater-63845824",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6276-00816-400_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Fine merino, ends at the hip, horn buttons, no logo. Quiet old money."
+ },
+ {
+  "role": "knit_polo",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Brushed-Wool Polo Shirt",
+  "colour": "Dark Brown",
+  "price_eur": 89,
+  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/product/brushed-wool-polo-shirt-dark-brown-1302327001",
+  "image_url": "https://cdna.lystit.com/photos/cosstores/cd5902a6/cos-Brown-Brushed-Wool-Polo-Shirt.jpeg",
+  "verified": false,
+  "fit_note": "Relaxed, hip length, soft brushed texture. Your COS size M."
+ },
+ {
+  "role": "knit_grey_fuzzy",
+  "rank": "alt",
+  "brand": "Abercrombie & Fitch",
+  "name": "100% Merino Wool Crew Sweater",
+  "colour": "Light heather grey",
+  "price_eur": 75,
+  "url": "https://www.abercrombie.com/shop/eu/p/100-merino-wool-crew-sweater-63830819",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6273-00814-110_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Smooth merino rather than fuzzy (A&F has no brushed grey crew now). Hip length."
+ },
+ {
+  "role": "knit_grey_fuzzy",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Cable-Knit Merino-Mohair Sweater",
+  "colour": "Grey",
+  "price_eur": 129,
+  "url": "https://www.lyst.com/clothing/cos-cable-knit-merino-mohair-sweater/",
+  "image_url": "https://cdna.lystit.com/photos/cosstores/10ee8a02/800x1200/cos-Gray-Cable-Knit-Merino-Mohair-Sweater.jpeg",
+  "verified": false,
+  "fit_note": "Brushed merino-mohair cable, slightly cropped. Exactly the fuzzy grey texture."
+ },
+ {
+  "role": "knit_halfzip",
+  "rank": "alt",
+  "brand": "Abercrombie & Fitch",
+  "name": "Quarter-Zip Sweater",
+  "colour": "Navy",
+  "price_eur": 75,
+  "url": "https://www.abercrombie.com/shop/eu/p/quarter-zip-sweater-63845821",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6242-00811-205_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Oversized chunky rib, mock neck, no logo. Take M."
+ },
+ {
+  "role": "knit_halfzip",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Double-Faced Knitted Half-Zip Jumper",
+  "colour": "Navy",
+  "price_eur": 79,
+  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/product/double-faced-knitted-half-zip-jumper-navy-1363087001",
+  "image_url": "https://cdna.lystit.com/1040/1300/n/photos/cosstores/2e6a5b82/800x1200/cos-Navy-Double-Faced-Knitted-Half-Zip-Jumper.jpeg",
+  "verified": false,
+  "fit_note": "Clean double-faced knit, hip length, funnel neck."
+ },
+ {
+  "role": "knit_navy",
+  "rank": "alt",
+  "brand": "Abercrombie & Fitch",
+  "name": "100% Cotton Crew Sweater",
+  "colour": "Navy",
+  "price_eur": 75,
+  "url": "https://www.abercrombie.com/shop/eu/p/100-cotton-crew-sweater-63392327",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6146-00723-210_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Boxy and short, textured rib cotton, no logo."
+ },
+ {
+  "role": "knit_navy",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Boiled-Wool Crew-Neck Jumper",
+  "colour": "Navy",
+  "price_eur": 99,
+  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/merino/product/boiled-wool-crew-neck-jumper-navy-1190846001",
+  "image_url": "https://cdna.lystit.com/photos/cosstores/045919f1/cos-Navy-Boiled-Wool-Crew-Neck-Sweater.jpeg",
+  "verified": false,
+  "fit_note": "Dense boiled wool, relaxed, hip length. A polished navy staple."
+ },
+ {
+  "role": "tee_graphic",
+  "rank": "alt",
+  "brand": "Abercrombie & Fitch",
+  "name": "Boxy Graphic Tee",
+  "colour": "Off-white",
+  "price_eur": 22.99,
+  "url": "https://www.abercrombie.com/shop/eu/p/boxy-graphic-tee-62973849",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_123-6259-00721-100_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Boxy, hip length, picnic print on the back. On sale, M almost gone."
+ }
+]

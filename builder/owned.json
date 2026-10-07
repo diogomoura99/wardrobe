@@ -1,0 +1,354 @@
+{
+ "own_af_cream": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Jean",
+  "colour": "Cream",
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-61958834",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-5434-00488-110_model1?policy=product-large",
+  "match": "exact"
+ },
+ "own_lightwash": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Jean",
+  "colour": "Light wash",
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-53267822",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-3165-2552-280_model1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_midwash": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Jean",
+  "colour": "Medium wash",
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-61958834",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-6052-00591-260_model1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_beige_jeans": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Jean",
+  "colour": "Khaki",
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-61958834",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-6054-00596-180_model1?policy=product-large",
+  "match": "exact"
+ },
+ "own_cos_blue": {
+  "brand": "COS",
+  "name": "Boiled Merino Wool Crew-Neck Jumper",
+  "colour": "Blue, size M",
+  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/merino/product/boiled-merino-wool-crew-neck-jumper-blue-1338797005",
+  "image_url": "https://media.cos.com/assets/001/2d/f5/2df56b32c579d21a430390a94984c4349ea7be69_xxl-1.jpg?imwidth=1200",
+  "match": "exact"
+ },
+ "own_cap_navy": {
+  "brand": "'47",
+  "name": "NY Yankees Base Runner Cap",
+  "colour": "Navy",
+  "url": "https://www.asphaltgold.com/en/products/47-mlb-new-york-yankees-base-runner-cap-navy-1",
+  "image_url": "https://www.asphaltgold.com/cdn/shop/files/YGslGbkzWFKgDWsRpHOP_B-BSRNR17GWS-NY-47-MLB-New-York-Yankees-Base-Runner-Cap-Navy-os-1_1200x1200.jpg?v=1742828402",
+  "match": "exact"
+ },
+ "own_samba_maroon": {
+  "brand": "adidas Originals",
+  "name": "Samba OG",
+  "colour": "Noble Maroon, size 44",
+  "url": "https://www.asphaltgold.com/en/products/adidas-samba-og-noble-maroon-cream-white-gum-5",
+  "image_url": "https://www.asphaltgold.com/cdn/shop/files/z3hqscjctrg-LB8466_Adidas_Samba-OG-Noble-Maroon-Cream-White-Gum-5_os-1_1200x1200.jpg?v=1791295841",
+  "match": "exact"
+ },
+ "own_cos_cream": {
+  "brand": "COS",
+  "name": "Ladder-Stitch Wool Jumper",
+  "colour": "Cream, size M",
+  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/wool/product/ladder-stitch-wool-jumper-cream-1314507001",
+  "image_url": "https://media.cos.com/assets/001/47/76/47764937c23e6bd2cd6e2c587b01c28252534200_xxl-1.jpg?imwidth=1200",
+  "match": "exact"
+ },
+ "own_af_brown": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cotton-Blend Pleated Baggy Trouser",
+  "colour": "Dark Brown, 32 x 30",
+  "url": "https://www.abercrombie.com/shop/eu/p/cotton-blend-pleated-baggy-trouser-63718506",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6335-00457-450_model1?policy=product-large",
+  "match": "exact"
+ },
+ "own_brown_puffer": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Ultra Puffer",
+  "colour": "Dark brown",
+  "url": "https://www.abercrombie.com/shop/eu/p/ultra-puffer-59214821",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-4138-00043-410_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_black_puffer": {
+  "brand": "Abercrombie & Fitch",
+  "name": "AirCloud Mockneck Puffer",
+  "colour": "Black",
+  "url": "https://www.abercrombie.com/shop/eu/p/a-and-f-aircloud-mockneck-puffer-62375343",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-5178-00063-900_prod1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_check_jacket": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cropped plaid zip jacket",
+  "colour": "Brown/navy plaid",
+  "url": "https://www.abercrombie.com/shop/us/mens-jackets-outerwear-and-jackets",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-5964-00147-318_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_stripe_knit": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Essential Crew Sweater",
+  "colour": "Olive Stripe",
+  "url": "https://www.abercrombie.com/shop/eu/p/a-and-f-essential-crew-sweater-62250319",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-5309-00583-100_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_guinness": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Oversized Guinness Graphic Crew Sweater",
+  "colour": "Oatmeal",
+  "url": "https://www.abercrombie.com/shop/us/p/oversized-guinness-graphic-crew-sweater-59358832",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-5115-00423-104_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_rugby": {
+  "brand": "Abercrombie & Fitch (NFL)",
+  "name": "Dallas Cowboys Cropped Rugby Polo",
+  "colour": "White / navy stripes",
+  "url": "https://www.abercrombie.com/shop/us/nfl-dallas-cowboys-nfl",
+  "image_url": "https://media.gq-magazine.co.uk/photos/67d9977a719475e15b689773/3:4/w_748%2Cc_limit/Abercrombie-syndi-Dallas-Cowboys-classic-rugby-polo.jpg",
+  "match": "exact"
+ },
+ "own_stripe_ls": {
+  "brand": "Cold Culture",
+  "name": "Burnin Stripes Longsleeve",
+  "colour": "Blue",
+  "url": "https://coldcultureworldwide.com/products/burnin-stripes-crewneck-black-and-blue",
+  "image_url": "https://cdn.shopify.com/s/files/1/0039/1839/7529/files/burnin-stripes-longsleeve-black-and-blue-338676.jpg?v=1773331841",
+  "match": "exact"
+ },
+ "own_brown_tee": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Premium Heavyweight 2.0 Tee",
+  "colour": "Brown",
+  "url": "https://www.abercrombie.com/shop/us/p/premium-heavyweight-20-tee-62254821",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5530-00582-408_prod1?policy=product-large",
+  "match": "similar"
+ },
+ "own_blue_linen": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cropped 100% Linen Button-Up Shirt",
+  "colour": "Light blue",
+  "url": "https://www.abercrombie.com/shop/eu/p/cropped-linen-button-up-shirt-60450863",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-5199-00238-202_prod1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_navy_linen": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cropped 100% Linen Button-Up Shirt",
+  "colour": "Navy",
+  "url": "https://www.abercrombie.com/shop/eu/p/cropped-linen-button-up-shirt-60450863",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-5199-00238-201_prod1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_white_linen": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Breezy Pull-On Pant",
+  "colour": "White",
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-breezy-pull-on-pant-59163410",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-5013-00127-100_prod1?policy=product-large",
+  "match": "similar"
+ },
+ "own_pinstripe": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Breezy Pull-On Pant",
+  "colour": "White pinstripe",
+  "url": "https://www.abercrombie.com/shop/us/p/baggy-breezy-pull-on-pant-59709075",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-5095-00176-114_prod1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_gazelle": {
+  "brand": "adidas Originals",
+  "name": "Handball Spezial",
+  "colour": "Light Blue / Gum",
+  "url": "https://www.adidas.com/us/handball-spezial-shoes/BD7632.html",
+  "image_url": "https://assets.adidas.com/images/w_1880,f_auto,q_auto/b1ce66dca4c947538c6da9760113f537_9366/BD7632_09_standard.jpg",
+  "match": "similar"
+ },
+ "own_samba_green": {
+  "brand": "adidas Originals",
+  "name": "Handball Spezial",
+  "colour": "Collegiate Green / Pink / Gum",
+  "url": "https://www.adidas.com/us/handball-spezial-shoes/JI2648.html",
+  "image_url": "https://assets.adidas.com/images/w_1880,f_auto,q_auto/5f5de72798b649209ec20c9ac8f9e312_9366/JI2648_01_standard.jpg",
+  "match": "very likely"
+ },
+ "own_white_sneakers": {
+  "brand": "Premiata",
+  "name": "Bskt Clay",
+  "colour": "White / dark logo",
+  "url": "https://premiata.it/en/products/bsktclay-bskt-clay-7262",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/BSK07262_1_44ac0b83-97af-404e-9ad0-c78b63faccee.jpg?v=1786102342",
+  "match": "similar"
+ },
+ "own_premiata": {
+  "brand": "Premiata",
+  "name": "Bonnie 6899",
+  "colour": "Dark brown suede, size 43",
+  "url": "https://premiata.eu",
+  "image_url": "img/premiata-bonnie-6899.jpg",
+  "match": "exact"
+ },
+ "own_watch": {
+  "brand": "Rolex",
+  "name": "Datejust 41",
+  "colour": "Slate dial with diamonds, fluted white-gold bezel, Jubilee",
+  "url": "https://www.rolex.com/watches/datejust/m126334-0006",
+  "image_url": "https://media.rolex.com/image/upload/q_auto/f_auto/t_v7/c_limit,w_1200/v1/a677b2c664f6/catalogue/2026/upright-c/m126334-0006",
+  "match": "exact"
+ },
+ "own_coastal": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Coastal Crew Sweater",
+  "colour": "Warm Beige Pattern, M",
+  "url": "https://www.abercrombie.com/shop/eu/p/diamond-stitch-crew-sweater-62948842",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6001-00600-108_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_aircloud_brown": {
+  "brand": "Abercrombie & Fitch",
+  "name": "AirCloud Mockneck Puffer",
+  "colour": "Dark Brown, M",
+  "url": "https://www.abercrombie.com/shop/eu/p/a-and-f-aircloud-mockneck-puffer-62375343",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-5180-00067-450_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_lace_camp": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Camp Collar Cropped Lace Shirt",
+  "colour": "Dark Brown",
+  "url": "https://web.archive.org/web/20240718135028/https://www.abercrombie.com/shop/us/p/camp-collar-cropped-lace-shirt-57318820",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-4092-0136-420_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_seersucker_camp": {
+  "brand": "adidas Originals",
+  "name": "Essentials Seersucker Shirt",
+  "colour": "Wonder White",
+  "url": "https://www.adidas.com/us/essentials-seersucker-short-sleeve-shirt/JD2456.html",
+  "image_url": "https://cdn.etrias.nl/media/cache/product_lg/2/1/2175986jd2456b2b012plp-no-bg.png",
+  "match": "exact"
+ },
+ "own_ms_brown_linen": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cropped 100% Linen Shirt",
+  "colour": "Dark Brown",
+  "url": "https://web.archive.org/web/20250619223343/https://www.abercrombie.com/shop/us/p/cropped-linen-button-up-shirt-59585819",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-5199-00238-402_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_ms_blue_stripe": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cropped 100% Linen Shirt",
+  "colour": "Light Blue Stripe",
+  "url": "https://www.abercrombie.com/shop/eu/p/cropped-linen-button-up-shirt-60450863",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-5199-00238-205_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_ms_sage_stripe": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cropped 100% Linen Shirt",
+  "colour": "Slate Green Stripe",
+  "url": "https://www.abercrombie.com/shop/eu/p/cropped-linen-button-up-shirt-60450863",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-5199-00238-304_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_polo_harrington": {
+  "brand": "Polo Ralph Lauren",
+  "name": "Bi-Swing Windbreaker",
+  "colour": "Refined Navy",
+  "url": "https://www.fwrd.com/product-polo-ralph-lauren-biswing-windbreaker-in-refined-navy/PLAU-MO22/",
+  "image_url": "https://is4.fwrdassets.com/images/p/fw/z/PLAU-MO22_V4.jpg",
+  "match": "very likely"
+ },
+ "own_sage_jacket": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Lightweight Zip Trucker Jacket",
+  "colour": "Light sage / stone",
+  "url": "https://www.abercrombie.com/shop/us/p/lightweight-zip-jacket-56097822",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-4095-0052-181_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_cream_cord_jacket": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cropped Zip Workwear Jacket (corduroy)",
+  "colour": "Light stone",
+  "url": "https://www.abercrombie.com/shop/us/p/cropped-zip-workwear-jacket-57299819",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-4058-00098-400_prod1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_brown_jacket_af": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Lightweight Barn Jacket",
+  "colour": "Dark Coffee",
+  "url": "https://www.abercrombie.com/shop/us/p/lightweight-barn-jacket-62374822",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-5093-00164-420_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_navy_zip_knit": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cropped Zip Sweater Shirt Jacket",
+  "colour": "Navy / blue stripe",
+  "url": "https://www.abercrombie.com/shop/us/p/cropped-zip-sweater-shirt-jacket-60772842",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-5141-00064-208_prod1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_blue_cable": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Cable Patchwork Crew Sweater",
+  "colour": "Light blue",
+  "url": "https://www.abercrombie.com/shop/us/p/cable-patchwork-crew-sweater-61001860",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-5173-00552-210_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_stripe_navy_green": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Essential Crew Sweater",
+  "colour": "Dark Forest Stripe",
+  "url": "https://www.abercrombie.com/shop/us/p/a-and-f-essential-crew-sweater-62250319",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-5197-00534-305_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_oasis": {
+  "brand": "Abercrombie & Fitch x Oasis",
+  "name": "Oasis Graphic Crew Sweatshirt",
+  "colour": "Light heather grey",
+  "url": "https://www.abercrombie.com/shop/us/p/oasis-graphic-crew-sweatshirt-59568323",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_122-5375-00875-112_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_af_greywash": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Jean",
+  "colour": "Dark Gray Wash",
+  "url": "https://www.abercrombie.com/shop/us/p/baggy-jean-62188820",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-6955-00537-210_prod1?policy=product-large",
+  "match": "very likely"
+ },
+ "own_rust_hoodie": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Essential Popover Hoodie (western stitch)",
+  "colour": "Brown Wash",
+  "url": "https://www.abercrombie.com/shop/us/p/essential-popover-hoodie-59445819",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_122-5634-01192-416_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_eagles": {
+  "brand": "Abercrombie & Fitch (NFL)",
+  "name": "Philadelphia Eagles Crew Sweater",
+  "colour": "Cream / green",
+  "url": "https://www.abercrombie.com/shop/us/p/new-york-jets-crew-sweater-57732363?seq=04",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-4167-00251-300_prod1?policy=product-large",
+  "match": "exact"
+ }
+}

@@ -1,0 +1,62 @@
+[
+ {
+  "role": "shoe_white",
+  "rank": "primary",
+  "brand": "adidas",
+  "name": "Handball Spezial",
+  "colour": "Off White / Shadow Red / Gum",
+  "price_eur": 109,
+  "url": "https://www.asphaltgold.com/en/products/adidas-handball-spezial-off-white-shadow-red-gum-2",
+  "image_url": "https://cdn.shopify.com/s/files/1/0473/6965/0340/files/gy4ga54krxa-KJ9969_Adidas_Handball-Spezial-Off-White-Shadow-Red-Gum-2_os-1.jpg?v=1783939618",
+  "verified": true,
+  "fit_note": "Cream with burgundy stripes on gum. Echoes your burgundy Sambas, great under cream or light jeans."
+ },
+ {
+  "role": "shoe_white",
+  "rank": "alt",
+  "brand": "Premiata",
+  "name": "Russell 8072",
+  "colour": "Cream white, tonal, shell toe",
+  "price_eur": 230,
+  "url": "https://premiata.it/en/collections/russell-men/products/russell-8072",
+  "image_url": "https://premiata.it/cdn/shop/files/RUS08072_1_1200x.jpg?v=1786102746",
+  "verified": true,
+  "fit_note": "Tonal cream leather with a shell toe and pre-worn 2 cm sole. The most versatile white option: goes with everything you own."
+ },
+ {
+  "role": "shoe_white",
+  "rank": "alt2",
+  "brand": "Premiata",
+  "name": "Steven 7628",
+  "colour": "Cream / burgundy logo / brown heel",
+  "price_eur": 280,
+  "url": "https://premiata.it/en/products/steven-7628",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/STE07628_1.jpg?v=1783002900",
+  "verified": true,
+  "fit_note": "Premiata's take on the Golden Goose look, pre-worn sole. From a brand you already wear."
+ },
+ {
+  "role": "shoe_white",
+  "rank": "alt3",
+  "brand": "Diadora",
+  "name": "Prestige Used",
+  "colour": "White / green logo",
+  "price_eur": 180,
+  "url": "https://www.diadora.com/en/pt/prestige_used/201.182230_C1931.html",
+  "image_url": "https://www.diadora.com/on/demandware.static/-/Sites-diadora-master/default/dw9d8a42c6/images/hi-res/201.182230_C1931_00_HR.jpg",
+  "verified": true,
+  "fit_note": "80s Italian tennis shoe, worn-in look. Tennis-club splash of green."
+ },
+ {
+  "role": "shoe_white",
+  "rank": "alt4",
+  "brand": "Premiata",
+  "name": "Russell 8556",
+  "colour": "Cream / dark brown stripes",
+  "price_eur": 230,
+  "url": "https://premiata.it/en/products/rus08556",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/RUS08556_1.jpg?v=1788512651",
+  "verified": true,
+  "fit_note": "Slim retro cream leather with chocolate stripes. Matches your brown Bonnies."
+ }
+]

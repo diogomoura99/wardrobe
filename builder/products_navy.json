@@ -1,0 +1,74 @@
+[
+ {
+  "role": "trouser_navy_wide",
+  "rank": "primary",
+  "brand": "Abercrombie & Fitch",
+  "name": "Menswear Baggy Trouser",
+  "colour": "Deep Navy",
+  "price_eur": 22.99,
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-trouser-61008912",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-5114-00198-204_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "The A&F baggy fit in navy (19\" leg opening, 12.25\" rise at 32). Drapier poly-viscose, not cotton. On sale (was \u20ac80); check 32x30 is in stock."
+ },
+ {
+  "role": "trouser_navy_wide",
+  "rank": "alt",
+  "brand": "Les Deux",
+  "name": "Pleated Twill Suit Pants",
+  "colour": "Dark Blue Night",
+  "price_eur": 139,
+  "url": "https://lesdeux.com/products/pleated-twill-suit-pants-dark-blue-night",
+  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/18860490_1001895_490-Dark-Blue-Night_01.webp?v=1790259972",
+  "verified": true,
+  "fit_note": "Closest to your brown A&F pair: same lyocell-cotton, pleats, near-identical hem. You're likely a 31 in Les Deux. Low stock."
+ },
+ {
+  "role": "trouser_navy_wide",
+  "rank": "alt2",
+  "brand": "COS",
+  "name": "Pleated Relaxed-Fit Wide-Leg Trousers",
+  "colour": "Dark blue",
+  "price_eur": 99,
+  "url": "https://www.cos.com/en-eu/men/menswear/trousers/relaxed-fit/wideleg/product/pleated-cotton-relaxed-fit-wide-leg-trousers-dark-blue-1294676009",
+  "image_url": "https://media.cos.com/assets/001/28/2a/282aaf0f88eb73dfbdc69f6d42af1d9203c59950_xxl-1.jpg?imwidth=1200",
+  "verified": true,
+  "fit_note": "Not much wider at the hem than your A&F baggy (\u224822\u201323 cm flat vs 24, estimated). The volume is in the hips and upper thigh from the deep pleats."
+ },
+ {
+  "role": "trouser_navy_wide",
+  "rank": "alt3",
+  "brand": "Abercrombie & Fitch",
+  "name": "Relaxed Pleated Chino",
+  "colour": "Deep Navy",
+  "price_eur": 80,
+  "url": "https://www.abercrombie.com/shop/eu/p/relaxed-pleated-chino-63504013",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-26007-00458-200_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Slightly slimmer than the A&F baggy (\u22481 inch less around the hem, estimated). Same cotton-lyocell fabric as your brown pair."
+ },
+ {
+  "role": "trouser_navy_wide",
+  "rank": "alt4",
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Jean",
+  "colour": "Dark Rinse",
+  "price_eur": 80,
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-58482319",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-4255-00264-275_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "The denim option: your favourite Baggy Jean cut in a dark rinse."
+ },
+ {
+  "role": "trouser_navy_wide",
+  "rank": "alt5",
+  "brand": "Norse Projects",
+  "name": "Hengifoss High Waist Twill Trouser",
+  "colour": "Dark Navy",
+  "price_eur": 315,
+  "url": "https://norseprojects.com/products/hengifoss-high-waist-cotton-wool-twill-trouser-dark-navy",
+  "image_url": "https://cdn.shopify.com/s/files/1/0960/6738/7723/files/N25-0500-7004-1048.jpg?v=1784536946",
+  "verified": true,
+  "fit_note": "High rise, roomy leg, flat front. Hem about 1 cm wider than A&F. You're likely a 31 in Norse."
+ }
+]

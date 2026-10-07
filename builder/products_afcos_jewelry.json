@@ -1,0 +1,38 @@
+[
+ {
+  "role": "bracelet_cuff",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Hinged Bracelet",
+  "colour": "Silver-tone (plated brass)",
+  "price_eur": 39,
+  "url": "https://www.cos.com/en-eu/men/accessories/jewellery/bracelets/product/hinged-bracelet-silver-1381599001",
+  "image_url": "https://media.cos.com/assets/001/a9/d0/a9d015160503763f3d5d113a6bb20d7f0114222e_xxl-1.jpg",
+  "verified": false,
+  "fit_note": "Slim polished bangle, sits neatly next to your Datejust. Plated, not sterling. Price estimated."
+ },
+ {
+  "role": "jewelry_chain",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Box-Chain Necklace",
+  "colour": "Silver-tone (plated brass)",
+  "price_eur": 45,
+  "url": "https://www.cos.com/en-eu/men/accessories/jewellery/necklaces/product/box-chain-necklace-silver-1322664002",
+  "image_url": "https://media.cos.com/assets/001/89/5a/895a6cea45ae4b8f12ca3651a1802919a4ff3bc4_xxl-1.jpg",
+  "verified": false,
+  "fit_note": "Classic box chain, about 2.5\u20133 mm. Quiet everyday chain. Plated, not sterling."
+ },
+ {
+  "role": "jewelry_ring",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Indented Signet Ring",
+  "colour": "Brushed silver-tone (plated brass)",
+  "price_eur": 25,
+  "url": "https://www.cos.com/en-eu/men/accessories/jewellery/rings/product/indented-signet-ring-silver-1322671001",
+  "image_url": "https://media.cos.com/assets/001/66/43/664311f6287c83070bac1aea70375d56eb7b4192_xxl-1.jpg",
+  "verified": false,
+  "fit_note": "Brushed signet with a small indent. Plated, not sterling."
+ }
+]
