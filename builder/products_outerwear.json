@@ -12,54 +12,6 @@
   "fit_note": "Hip length, relaxed, detachable hood. Closest current replacement for the Ultra puffer. Low stock."
  },
  {
-  "role": "coat_wool",
-  "rank": "primary",
-  "brand": "COS",
-  "name": "Double-Breasted Wool-Blend Long Coat",
-  "colour": "Charcoal M\u00e9lange",
-  "price_eur": 299,
-  "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/wool/product/double-breasted-wool-blend-long-coat-charcoal-mlange-1350222001",
-  "image_url": "https://media.cos.com/assets/001/7f/bf/7fbfaa10497d59ea1b0c31329dd045deaf26ca5b_xxl-1.jpg?imwidth=1200",
-  "verified": true,
-  "fit_note": "Long and relaxed, soft wool blend. Clean charcoal layer over knits or hoodies. Also in dark brown."
- },
- {
-  "role": "coat_wool",
-  "rank": "alt",
-  "brand": "Mango Man",
-  "name": "Long wool coat",
-  "colour": "Medium brown",
-  "price_eur": 129.99,
-  "url": "https://shop.mango.com/pt/pt/p/homem/sobretudos/la/casaco-comprido-la/37057883/09/00",
-  "image_url": "https://media.mango.com/is/image/punto/37057883-09-002?wid=1024",
-  "verified": true,
-  "fit_note": "Straight (not slim) single-breasted coat, 55% wool. The budget camel option; size up for a relaxed drape."
- },
- {
-  "role": "jacket_suede",
-  "rank": "primary",
-  "brand": "Massimo Dutti",
-  "name": "Suede jacket with pocket detail",
-  "colour": "Russet brown",
-  "price_eur": 269,
-  "url": "https://www.massimodutti.com/pt/en/suede-jacket-with-pocket-detail-l03453440?pelement=64325028",
-  "image_url": "https://static.massimodutti.net/assets/public/45de/b2ce/67c34bf7a2c3/c94a58ca33bb/03453440701-t/03453440701-t.jpg?ts=1790162494415",
-  "verified": true,
-  "fit_note": "Boxy, hip-length real goat suede with a shirt collar. Warm brown, no logos."
- },
- {
-  "role": "jacket_suede",
-  "rank": "alt",
-  "brand": "Abercrombie & Fitch",
-  "name": "Easy Vegan Suede Zip Jacket",
-  "colour": "Brown",
-  "price_eur": 140,
-  "url": "https://www.abercrombie.com/shop/eu/p/easy-vegan-suede-zip-jacket-61761364",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-5215-00247-420_prod1?policy=product-large",
-  "verified": true,
-  "fit_note": "Cropped faux-suede zip jacket, very close to your check jacket's shape."
- },
- {
   "role": "jacket_rain",
   "rank": "primary",
   "brand": "COS",
