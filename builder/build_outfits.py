@@ -191,8 +191,8 @@ OUTFITS = [
    "Blue knit over a graphic tee, light jeans and your white Premiatas.",
    ["own_cos_blue", "own_hotel_tee", "own_lightwash", "own_white_sneakers", "necklace_chain_bold"]),
   ("Spring", "Weekend hoodie", "Your rust hoodie",
-   "Rust hoodie, your black baggy jeans, white Premiatas and the navy cap. The rust keeps the black from looking heavy. All yours.",
-   ["own_rust_hoodie", "own_af_black_jeans", "own_white_sneakers", "own_cap_navy", "own_watch"]),
+   "Rust hoodie, dark grey baggy jeans, white Premiatas and the navy cap. All yours.",
+   ["own_rust_hoodie", "own_af_greywash", "own_white_sneakers", "own_cap_navy", "own_watch"]),
   ("Spring", "Oxford & stone", "Shirts for the first warm days",
    "Oxford shirt with sleeves rolled, stone pleated trousers, your white Premiatas.",
    ["shirt_oxford", "own_af_ash_pleated", "own_white_sneakers", "sunglasses", "belt_brown", "bracelet_cuff"]),
@@ -301,6 +301,9 @@ OUTFITS = [
   ("Winter", "AirCloud & cable", "Your second brown puffer",
    "Brown AirCloud puffer over your blue cable knit, cream jeans, burgundy Sambas and your cream and brown Western cap. All yours.",
    ["own_aircloud_brown", "own_blue_cable", "own_af_cream", "own_samba_maroon", "own_cap_western"]),
+  ("Autumn", "Cream & black", "Your black jeans, done right",
+   "Cream cord jacket open over your white tee, black baggy jeans and the green adidas. Light colours on top keep the black from looking heavy on you. All yours.",
+   ["own_cream_cord_jacket", "own_af_white_tee", "own_af_black_jeans", "own_samba_green", "own_cuban_bracelet"]),
 ]
 
 VIBE = {
@@ -368,6 +371,7 @@ VIBE = {
   "Beach town": ("Street", "Holiday"),
   "Khaki & blue": ("In between", "City day"),
   "Day in Porto": ("In between", "Daytime"),
+  "Cream & black": ("Street", "Weekend"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}

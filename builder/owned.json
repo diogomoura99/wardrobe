@@ -451,8 +451,8 @@
   "brand": "Abercrombie & Fitch",
   "name": "Baggy Jean, rigid denim (32x30)",
   "colour": "Black",
-  "url": "https://www.abercrombie.com/shop/eu/p/baggy-5-pocket-pant-60773616",
-  "image_url": "img/af-black-baggy-jeans.jpg",
-  "match": "exact"
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-57521553",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-4135-00179-900_prod1?policy=product-large",
+  "match": "close"
  }
 }
