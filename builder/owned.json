@@ -566,5 +566,13 @@
   "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=linen%20pull-on%20pant",
   "image_url": "img/af-linen-pull-on-sand.jpg",
   "match": "exact"
+ },
+ "own_af_tank_white": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Ribbed Tank (Soft A&F Collection)",
+  "colour": "White, fine rib, high round neck",
+  "url": "https://www.abercrombie.com/shop/eu/p/heavyweight-rib-tank-63962321",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-26031-00076-100_prod1?policy=product-large",
+  "match": "close"
  }
 }

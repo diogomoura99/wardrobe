@@ -17,6 +17,9 @@ ROLE_INFO = {
     "shirt_overshirt": ("Knitwear & tops", "Overshirt"),
     "hoodie_graphic_blue": ("Knitwear & tops", "Blue hoodie"),
     "sweat_grey": ("Knitwear & tops", "Grey sweatshirt"),
+    "tank_cream": ("Knitwear & tops", "Cream ribbed tank"),
+    "tank_navy": ("Knitwear & tops", "Navy ribbed tank"),
+    "tank_brown": ("Knitwear & tops", "Brown ribbed tank"),
     "trouser_cord_ecru": ("Trousers", "Ecru wide corduroy"),
     "trouser_linen_olive": ("Trousers", "Olive linen trousers"),
     "trouser_linen_beige": ("Trousers", "Light beige linen baggy trousers"),
@@ -69,6 +72,7 @@ OWNED = {
     "own_camp_black": ("Knitwear & tops", "Your black camp-collar linen shirt"),
     "own_johnny_stripe": ("Knitwear & tops", "Your striped Johnny-collar knit polo"),
     "own_johnny_black": ("Knitwear & tops", "Your black Johnny-collar knit polo"),
+    "own_af_tank_white": ("Knitwear & tops", "Your white A&F ribbed tank"),
     "own_polo_halfzip": ("Knitwear & tops", "Your Polo Ralph Lauren navy half-zip"),
     "own_crochet_diamond": ("Knitwear & tops", "Your cream & sage crochet polo"),
     "own_crochet_granny": ("Knitwear & tops", "Your granny-square crochet polo"),
@@ -198,8 +202,8 @@ OUTFITS = [
    "Oxford shirt with sleeves rolled, stone pleated trousers, your white Premiatas.",
    ["shirt_oxford", "own_af_ash_pleated", "own_white_sneakers", "sunglasses", "belt_brown", "bracelet_cuff"]),
   ("Spring", "Linen layers", "Your light-blue linen shirt, for spring",
-   "Linen shirt open over a white tee, stone trousers and your light-blue Spezials. Blue suits you.",
-   ["own_blue_linen", "own_af_white_tee", "own_af_ash_pleated", "own_gazelle", "own_sunnies_asos", "own_cuban_bracelet"]),
+   "Light-blue linen shirt with the top two buttons open over your white ribbed tank, stone trousers and your light-blue Spezials. Blue suits you.",
+   ["own_blue_linen", "own_af_tank_white", "own_af_ash_pleated", "own_gazelle", "own_sunnies_asos", "own_cuban_bracelet"]),
   ("Summer", "Navy & white", "Your navy linen shirt and white trousers",
    "The outfit you already wear, finished with clogs, sunglasses and a leather bracelet.",
    ["own_navy_linen", "own_white_linen", "clog_suede", "sunglasses", "own_cuban_bracelet"]),
@@ -237,11 +241,11 @@ OUTFITS = [
    "Your cream tee with white linen trousers, light-blue Spezials, your clear lilac sunglasses and the IX figaro chain and bracelet. Pastel and relaxed.",
    ["own_af_tee_cream", "own_white_linen", "own_gazelle", "own_sunnies_asos", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Summer", "Camp collar", "Your lace camp-collar shirt",
-   "Your lace camp-collar shirt worn open, cream jeans and suede clogs.",
-   ["own_lace_camp", "own_af_cream", "clog_suede", "sunglasses", "own_ix_figaro", "own_sd_pendant"]),
+   "Your lace camp-collar shirt with the top buttons open over your white tank, so the lace has a clean layer under it, with cream jeans and suede clogs.",
+   ["own_lace_camp", "own_af_tank_white", "own_af_cream", "clog_suede", "sunglasses", "own_ix_figaro", "own_sd_pendant"]),
   ("Summer", "Blue linen & olive", "Your light-blue linen shirt",
-   "Your light-blue linen shirt open over a white tee, olive linen trousers, white Premiatas and the navy cap. Blue and olive is a fresh summer pairing.",
-   ["own_blue_linen", "own_af_white_tee", "trouser_linen_olive", "own_white_sneakers", "own_cap_navy"]),
+   "Your light-blue linen shirt, top two buttons open over your white tank, olive linen trousers, white Premiatas and the navy cap. Blue and olive is a fresh summer pairing.",
+   ["own_blue_linen", "own_af_tank_white", "trouser_linen_olive", "own_white_sneakers", "own_cap_navy"]),
   ("Summer", "Graphic & light denim", "Your board: graphic tees",
    "Your Hotel tee with light-wash baggy jeans, navy Spezials and the cap, plus the layered necklaces. Summer street, no shorts.",
    ["own_hotel_tee", "own_lightwash", "own_spezial_navy", "own_cap_navy", "own_ix_figaro", "own_sd_pendant"]),
@@ -252,8 +256,8 @@ OUTFITS = [
    "Your grey tee with ash pleated trousers, brown suede Premiatas, the layered necklaces and the Rolex. Easy but put together.",
    ["own_af_tee_grey", "own_af_ash_pleated", "own_premiata", "own_ix_figaro", "own_sd_pendant", "own_watch"]),
   ("Summer", "Beach town", "Your navy linen shirt",
-   "Navy linen shirt open over a white tee, your sand linen pull-on trousers, suede clogs and sunglasses. Long and light instead of shorts.",
-   ["own_navy_linen", "own_af_white_tee", "own_af_linen_pullon", "clog_suede", "sunglasses"]),
+   "Navy linen shirt, top two buttons open over your white tank, your sand linen pull-on trousers, suede clogs and sunglasses. Long and light instead of shorts.",
+   ["own_navy_linen", "own_af_tank_white", "own_af_linen_pullon", "clog_suede", "sunglasses"]),
   ("Summer", "Khaki & blue", "Your khaki jeans + blue linen",
    "Light-blue linen shirt, khaki jeans and white Premiatas. Easy for a city day.",
    ["own_blue_linen", "own_beige_jeans", "own_white_sneakers", "sunglasses", "bracelet_cuff"]),
@@ -291,14 +295,14 @@ OUTFITS = [
    "Cream seersucker shirt with your white linen trousers, brown suede Premiatas, your clear lilac sunglasses and the Rolex.",
    ["own_seersucker_camp", "own_white_linen", "own_premiata", "own_sunnies_asos", "own_watch"]),
   ("Summer", "Sage stripes", "Your sage striped linen shirt",
-   "Sage striped linen shirt open over your cream tee, ash pleated trousers, white Premiatas and your clear lilac sunglasses. Soft pastels together.",
-   ["own_ms_sage_stripe", "own_af_tee_cream", "own_af_ash_pleated", "own_white_sneakers", "own_sunnies_asos", "own_cuban_bracelet"]),
+   "Sage striped linen shirt, top two buttons open over your white tank, ash pleated trousers, white Premiatas and your clear lilac sunglasses. Soft pastels together.",
+   ["own_ms_sage_stripe", "own_af_tank_white", "own_af_ash_pleated", "own_white_sneakers", "own_sunnies_asos", "own_cuban_bracelet"]),
   ("Summer", "Blue stripes & denim", "Your blue striped linen shirt",
-   "Blue striped linen shirt open over a white tee, light-wash baggy jeans, burgundy Sambas and the cap.",
-   ["own_ms_blue_stripe", "own_af_white_tee", "own_lightwash", "own_samba_maroon", "own_cap_navy"]),
+   "Blue striped linen shirt, top two buttons open over your white tank, light-wash baggy jeans, burgundy Sambas and the cap.",
+   ["own_ms_blue_stripe", "own_af_tank_white", "own_lightwash", "own_samba_maroon", "own_cap_navy"]),
   ("Summer", "Brown linen day", "Your brown linen shirt, open",
-   "Brown linen shirt open over a white tee, cream jeans and light-blue Spezials.",
-   ["own_ms_brown_linen", "own_af_white_tee", "own_af_cream", "own_gazelle", "sunglasses"]),
+   "Brown linen shirt, top two buttons open over your white tank, cream jeans and light-blue Spezials. A cream tank is even softer with the brown.",
+   ["own_ms_brown_linen", "own_af_tank_white", "own_af_cream", "own_gazelle", "sunglasses"]),
   ("Winter", "AirCloud & cable", "Your second brown puffer",
    "Brown AirCloud puffer over your blue cable knit, cream jeans, burgundy Sambas and your cream and brown Western cap. All yours.",
    ["own_aircloud_brown", "own_blue_cable", "own_af_cream", "own_samba_maroon", "own_cap_western"]),
@@ -324,11 +328,11 @@ OUTFITS = [
    "Your cream tee with light-wash baggy jeans, white Premiatas, the navy cap and your clear lilac sunglasses.",
    ["own_af_tee_cream", "own_lightwash", "own_white_sneakers", "own_cap_navy", "own_sunnies_asos"]),
   ("Summer", "Granny squares", "Your crochet polo, street",
-   "Your granny-square crochet polo with cream jeans, burgundy Sambas, your Western cap and the Cuban bracelet. The red-brown squares pick up the Sambas and the cap's brown brim.",
-   ["own_crochet_granny", "own_af_cream", "own_samba_maroon", "own_cap_western", "own_cuban_bracelet"]),
+   "Your granny-square crochet polo, unbuttoned a little lower over your white tank, with cream jeans, burgundy Sambas, your Western cap and the Cuban bracelet. The red-brown squares pick up the Sambas and the cap's brown brim.",
+   ["own_crochet_granny", "own_af_tank_white", "own_af_cream", "own_samba_maroon", "own_cap_western", "own_cuban_bracelet"]),
   ("Summer", "Sage crochet", "Your crochet polo, soft and light",
-   "Your cream and sage crochet polo with ash pleated trousers, white Premiatas, your clear lilac sunglasses and the IX chain and bracelet. Soft pastels, no shorts.",
-   ["own_crochet_diamond", "own_af_ash_pleated", "own_white_sneakers", "own_sunnies_asos", "own_ix_figaro", "own_ix_figaro_bracelet"]),
+   "Your cream and sage crochet polo, unbuttoned a little lower over your white tank, with ash pleated trousers, white Premiatas, your clear lilac sunglasses and the IX chain and bracelet. Soft pastels, no shorts.",
+   ["own_crochet_diamond", "own_af_tank_white", "own_af_ash_pleated", "own_white_sneakers", "own_sunnies_asos", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Summer", "Johnny collar & navy", "Your striped knit polo, dressed up",
    "Your striped Johnny-collar polo with the COS navy wide-leg trousers, brown suede Premiatas, the IX chain and the Rolex. Beige, navy and brown: easy old money for a summer dinner.",
    ["own_johnny_stripe", "own_cos_navy_trouser", "own_premiata", "own_ix_figaro", "own_watch"]),
@@ -336,8 +340,20 @@ OUTFITS = [
    "Your black Johnny-collar polo with cream jeans, off-white Spezials, the IX chain and the Rolex. Light trousers and shoes keep the black from feeling heavy, and the silver chain pops on black.",
    ["own_johnny_black", "own_af_cream", "own_spezial_cream", "own_ix_figaro", "own_watch"]),
   ("Summer", "Black camp night", "Your black camp-collar shirt",
-   "Your black camp-collar shirt open over a white tee, white linen trousers, white Premiatas and the layered necklaces. Black and white for a warm night out.",
-   ["own_camp_black", "own_af_white_tee", "own_white_linen", "own_white_sneakers", "own_ix_figaro", "own_sd_pendant"]),
+   "Your black camp-collar shirt, top buttons open over your white tank, white linen trousers, white Premiatas and the layered necklaces. The white at the neck keeps the black away from your face.",
+   ["own_camp_black", "own_af_tank_white", "own_white_linen", "own_white_sneakers", "own_ix_figaro", "own_sd_pendant"]),
+  ("Summer", "Sage stripes & linen", "Your mirror photo: sage stripes, white tank, linen",
+   "Your sage striped linen shirt, top two buttons open over your white tank, sand linen pull-on trousers, brown suede Premiatas and your Serge DeNimes pendant. Your own fit pic, finished with shoes.",
+   ["own_ms_sage_stripe", "own_af_tank_white", "own_af_linen_pullon", "own_premiata", "own_sd_pendant", "own_cuban_bracelet"]),
+  ("Summer", "Navy & cream tank", "A cream tank under navy linen",
+   "Navy linen shirt, top two buttons open over a cream ribbed tank, cream baggy jeans, burgundy Sambas and your Western cap. Navy, cream and burgundy: preppy and warm.",
+   ["own_navy_linen", "tank_cream", "own_af_cream", "own_samba_maroon", "own_cap_western", "own_cuban_bracelet"]),
+  ("Summer", "Blue & brown Riviera", "A brown tank under light-blue linen",
+   "Light-blue linen shirt, top two buttons open over a chocolate ribbed tank, white linen trousers, brown suede Premiatas, the IX chain and the Rolex. Light blue and brown, your best pairing, made summery.",
+   ["own_blue_linen", "tank_brown", "own_white_linen", "own_premiata", "own_ix_figaro", "own_watch"]),
+  ("Summer", "Stripes & navy tank", "A navy tank under blue stripes",
+   "Blue striped linen shirt, top two buttons open over a navy ribbed tank, ash pleated trousers, white Premiatas and the Rolex. Blue, navy and stone: easy old money for lunch.",
+   ["own_ms_blue_stripe", "tank_navy", "own_af_ash_pleated", "own_white_sneakers", "own_watch", "own_cuban_bracelet"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -353,36 +369,51 @@ INNER_ALT = {
   "Coffee run": ["own_af_tee_grey", "own_hotel_tee"],
   "Club tee": ["own_af_white_tee", "own_af_tee_cream"],
   "Blue knit & graphic": ["own_af_white_tee", "own_af_tee_grey"],
-  "Linen layers": ["own_af_tee_cream", "own_af_tee_grey"],
+  "Linen layers": ["own_af_white_tee", "own_af_tee_grey"],
   "Pinstripe & graphic": ["own_af_white_tee", "own_af_tee_grey"],
-  "Blue linen & olive": ["own_af_tee_cream", "own_hotel_tee"],
+  "Blue linen & olive": ["own_af_white_tee", "own_af_tee_cream"],
   "Graphic & light denim": ["own_af_white_tee", "own_af_tee_grey"],
-  "Beach town": ["own_af_tee_grey", "own_hotel_tee"],
+  "Beach town": ["own_af_white_tee", "own_af_tee_grey"],
   "Harrington & white": ["own_stripe_ls", "own_af_tee_grey"],
   "Sage & brown": ["own_af_white_tee", "own_brown_tee"],
-  "Brown linen day": ["own_af_tee_cream", "own_hotel_tee"],
+  "Brown linen day": ["own_af_tee_cream", "own_af_white_tee"],
   "Cream & black": ["own_af_tee_grey", "own_af_tee_cream"],
   "Navy zip & khaki": ["own_af_white_tee", "own_af_tee_grey"],
   "Riviera tee": ["own_af_white_tee", "own_af_tee_grey"],
   "Summer night tee": ["own_af_tee_cream", "own_af_white_tee"],
   "Day in Porto": ["own_af_white_tee", "own_hotel_tee"],
-  "Sage stripes": ["own_af_white_tee", "own_af_tee_grey"],
-  "Blue stripes & denim": ["own_af_tee_cream", "own_af_tee_grey"],
+  "Sage stripes": ["own_af_tee_cream", "own_af_white_tee"],
+  "Blue stripes & denim": ["own_af_white_tee", "own_af_tee_grey"],
   "White tee & olive": ["own_af_tee_cream", "own_hotel_tee"],
   "Brown tee & cream": ["own_af_white_tee", "own_hotel_tee"],
   "Grey tee & navy": ["own_af_white_tee", "own_af_tee_cream"],
   "Hotel tee & khaki": ["own_af_white_tee", "own_af_tee_cream"],
   "Cream tee & light denim": ["own_af_white_tee", "own_af_tee_grey"],
-  "Black camp night": ["own_af_tee_grey", "own_af_tee_cream"],
+  "Black camp night": ["own_af_white_tee", "own_af_tee_grey"],
+  "Camp collar": ["own_af_tee_cream", "own_af_white_tee"],
+  "Sage stripes & linen": ["own_af_tee_cream", "own_af_white_tee"],
+  "Navy & cream tank": ["own_af_tank_white", "own_af_tee_cream"],
+  "Blue & brown Riviera": ["own_af_tank_white", "own_af_white_tee"],
+  "Stripes & navy tank": ["own_af_tank_white", "own_af_white_tee"],
 }
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
   "Striped half-zip": ("own_polo_halfzip", "Also great here", ["knit_halfzip"]),
   "Date night": ("own_polo_halfzip", "Also great here", ["knit_halfzip"]),
-  "Camp collar": ("own_af_cream", "Lighter for hot days", ["own_af_linen_pullon"]),
-  "Brown linen day": ("own_af_cream", "Lighter for hot days", ["own_af_linen_pullon"]),
+  "Camp collar": [("own_af_cream", "Lighter for hot days", ["own_af_linen_pullon"]),
+                  ("own_af_tank_white", "Other tank colour", ["tank_cream"])],
+  "Brown linen day": [("own_af_cream", "Lighter for hot days", ["own_af_linen_pullon"]),
+                      ("own_af_tank_white", "Even better here", ["tank_cream"])],
   "Brown tee & cream": ("own_af_cream", "Lighter for hot days", ["own_af_linen_pullon"]),
+  "Linen layers": ("own_af_tank_white", "Other tank colour", ["tank_navy"]),
+  "Blue linen & olive": ("own_af_tank_white", "Other tank colour", ["tank_navy"]),
+  "Beach town": ("own_af_tank_white", "Other tank colour", ["tank_cream"]),
+  "Sage stripes": ("own_af_tank_white", "Other tank colour", ["tank_cream"]),
+  "Sage stripes & linen": ("own_af_tank_white", "Other tank colour", ["tank_cream"]),
+  "Blue stripes & denim": ("own_af_tank_white", "Other tank colour", ["tank_navy"]),
+  "Granny squares": ("own_af_tank_white", "Even better here", ["tank_cream"]),
+  "Sage crochet": ("own_af_tank_white", "Even better here", ["tank_cream"]),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -485,6 +516,10 @@ VIBE = {
   "Cream tee & light denim": ("Street", "Everyday"),
   "Cream & black": ("Street", "Weekend"),
   "Blue on black": ("Classy", "Dinner"),
+  "Sage stripes & linen": ("In between", "Daytime / holiday"),
+  "Navy & cream tank": ("Street", "Weekend"),
+  "Blue & brown Riviera": ("Classy", "Holiday dinner"),
+  "Stripes & navy tank": ("Classy", "Lunch / dinner"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
@@ -606,7 +641,7 @@ ALT_HINT = {
   "own_sage_jacket": "light sage",
   "own_polo_harrington": "navy",
 }
-INNER_PRIORITY = ["own_af_white_tee", "own_af_tee_grey", "own_af_tee_cream", "own_af_tee_black", "own_hotel_tee", "own_brown_tee",
+INNER_PRIORITY = ["own_af_tank_white", "tank_cream", "tank_navy", "tank_brown", "own_af_white_tee", "own_af_tee_grey", "own_af_tee_cream", "own_af_tee_black", "own_hotel_tee", "own_brown_tee",
                   "own_stripe_ls", "shirt_oxford", "own_blue_linen"]
 
 def piece_view(k, prod):
@@ -639,11 +674,12 @@ def swaps_for(name, pieces, prod):
     if name in INNER_ALT:
         inner = next((k for k in INNER_PRIORITY if k in pieces), None)
         if inner:
-            out[inner] = swap_box("Backup if it's in the wash", INNER_ALT[name], prod)
+            out[inner] = swap_box("Backup if it's in the wash" if inner in OWNED else "Until you buy it", INNER_ALT[name], prod)
     if name in PIECE_ALT:
-        piece, label, alts = PIECE_ALT[name]
-        if piece in pieces:
-            out[piece] = out.get(piece, "") + swap_box(label, alts, prod)
+        entries = PIECE_ALT[name]
+        for piece, label, alts in (entries if isinstance(entries, list) else [entries]):
+            if piece in pieces:
+                out[piece] = out.get(piece, "") + swap_box(label, alts, prod)
     if name in OUTER_ALT:
         outer = next((k for k in pieces if (ROLE_INFO.get(k) or OWNED.get(k))[0] == "Outerwear"), None)
         if outer:

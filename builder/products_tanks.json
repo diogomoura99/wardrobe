@@ -1,0 +1,62 @@
+[
+ {
+  "role": "tank_cream",
+  "rank": "primary",
+  "brand": "Suitsupply",
+  "name": "Off-White Ribbed Tank Top, cotton-silk",
+  "colour": "Off-white",
+  "price_eur": 79,
+  "url": "https://suitsupply.com/en-pt/men/knitwear/off-white-ribbed-tank-top/SW2159.html",
+  "image_url": "https://cdn.suitsupply.com/image/upload/f_auto,q_auto,w_1200/products/knitwear/default/sw2159_25",
+  "verified": true,
+  "fit_note": "Fine rib in cotton and silk, a high round neck and medium straps that cover the underarms, like your A&F. Take M (one of only two sizes left). A&F's own tanks are sold out in M until the spring restock."
+ },
+ {
+  "role": "tank_cream",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Cable-Knit Cotton-Linen Tank Top",
+  "colour": "Off-white",
+  "price_eur": 49,
+  "url": "https://www.cos.com/en-eu/men/menswear/tops/sleeveless/product/cable-knit-cotton-linen-tank-top-white-1342033002",
+  "image_url": "https://media.cos.com/assets/001/05/5d/055d67c41d06e6b5bd9862af53b1401d17f440ca_xxl-1.jpg",
+  "verified": true,
+  "fit_note": "The most closed option: a crew neck and wide straps. It's a fine knit rather than a rib, so it's best under linen shirts, not under the crochet polos. Take M."
+ },
+ {
+  "role": "tank_navy",
+  "rank": "primary",
+  "brand": "Suitsupply",
+  "name": "Navy Ribbed Tank Top, cotton-silk",
+  "colour": "Navy",
+  "price_eur": 79,
+  "url": "https://suitsupply.com/en-pt/men/knitwear/navy-ribbed-tank-top/SW2227.html",
+  "image_url": "https://cdn.suitsupply.com/image/upload/f_auto,q_auto,w_1200/products/knitwear/default/sw2227_25",
+  "verified": true,
+  "fit_note": "Same cut as the off-white: high round neck, underarms covered. Take M."
+ },
+ {
+  "role": "tank_navy",
+  "rank": "alt",
+  "brand": "COS",
+  "name": "Textured Knitted Cotton Tank Top",
+  "colour": "Navy",
+  "price_eur": 49,
+  "url": "https://www.cos.com/en-eu/men/menswear/tops/sleeveless/product/textured-knitted-cotton-tank-top-navy-1273307001",
+  "image_url": "https://media.cos.com/assets/001/d7/d3/d7d3450e70e1debb9f07dc230919d53c79c9a14e_xxl-1.jpg",
+  "verified": true,
+  "fit_note": "Crew neck and wide straps, very closed. A light knit, so it reads a little dressier. Take M."
+ },
+ {
+  "role": "tank_brown",
+  "rank": "primary",
+  "brand": "Suitsupply",
+  "name": "Mid Brown Ribbed Tank Top, cotton-silk",
+  "colour": "Chocolate brown",
+  "price_eur": 79,
+  "url": "https://suitsupply.com/en-pt/men/knitwear/mid-brown-ribbed-tank-top/SW2288.html",
+  "image_url": "https://cdn.suitsupply.com/image/upload/f_auto,q_auto,w_1200/products/knitwear/default/sw2288_25",
+  "verified": true,
+  "fit_note": "Same closed cut, in a deep chocolate. Take M. No A&F, COS, Les Deux or Arket brown tank has a closed cut in stock in M right now."
+ }
+]
