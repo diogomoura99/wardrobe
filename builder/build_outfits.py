@@ -21,14 +21,13 @@ ROLE_INFO = {
     "hoodie_graphic_blue": ("Knitwear & tops", "Blue hoodie"),
     "sweat_grey": ("Knitwear & tops", "Grey sweatshirt"),
     "shirt_linen_summer": ("Knitwear & tops", "White / striped linen shirt"),
-    "polo_knit_ss": ("Knitwear & tops", "Short-sleeve knit polo"),
     "shirt_camp": ("Knitwear & tops", "Camp-collar shirt"),
     "jeans_midwash": ("Trousers", "Mid-blue jeans"),
     "jeans_grey": ("Trousers", "Grey / washed-black jeans"),
     "trouser_cord_ecru": ("Trousers", "Ecru wide corduroy"),
     "jeans_lightwash_baggy": ("Trousers", "Light-wash baggy jeans"),
-    "shorts_tailored": ("Trousers", "Pleated shorts"),
-    "shorts_denim": ("Trousers", "Denim shorts"),
+    "trouser_linen_olive": ("Trousers", "Olive linen baggy trousers"),
+    "trouser_linen_beige": ("Trousers", "Light beige linen baggy trousers"),
     "shoe_adidas_suede": ("Shoes", "Brown suede Adidas"),
     "shoe_newbalance": ("Shoes", "Retro New Balance"),
     "clog_suede": ("Shoes", "Suede clogs"),
@@ -72,7 +71,7 @@ OWNED = {
     "own_ms_brown_linen": ("Knitwear & tops", "Your brown linen shirt"),
     "own_ms_blue_stripe": ("Knitwear & tops", "Your blue striped linen shirt"),
     "own_ms_sage_stripe": ("Knitwear & tops", "Your sage striped linen shirt"),
-    "own_af_white_tee": ("Knitwear & tops", "Your A&F heavyweight cropped tee"),
+    "own_af_white_tee": ("Knitwear & tops", "Your white A&F heavyweight tee"),
     "own_af_tee_grey": ("Knitwear & tops", "Your grey A&F heavyweight tee"),
     "own_af_tee_cream": ("Knitwear & tops", "Your cream A&F heavyweight tee"),
     "own_af_tee_black": ("Knitwear & tops", "Your black A&F heavyweight tee"),
@@ -236,33 +235,33 @@ OUTFITS = [
   ("Spring", "Cowboys & khaki", "Your rugby polo with khaki jeans",
    "Your Cowboys rugby polo with khaki jeans, navy Spezials and the navy cap. Collegiate preppy, the same idea as the Sporty & Rich collab.",
    ["own_rugby", "own_beige_jeans", "own_spezial_navy", "own_cap_navy", "own_cuban_bracelet"]),
-  ("Summer", "Riviera", "Old-money summer",
-   "Cream knit polo, stone pleated shorts, white Premiatas, sunglasses and your Rolex. The classic Mediterranean look.",
-   ["polo_knit_ss", "shorts_tailored", "own_white_sneakers", "sunglasses", "own_cuban_bracelet", "own_watch"]),
+  ("Summer", "Riviera tee", "Summer, softer and more casual",
+   "Your cream tee with white linen trousers, light-blue Spezials, your clear lilac sunglasses and the IX figaro chain and bracelet. Pastel and relaxed.",
+   ["own_af_tee_cream", "own_white_linen", "own_gazelle", "own_sunnies_asos", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Summer", "Camp collar", "Your lace camp-collar shirt",
    "Your lace camp-collar shirt worn open, cream jeans and suede clogs.",
    ["own_lace_camp", "own_af_cream", "clog_suede", "sunglasses", "own_ix_figaro", "own_sd_pendant"]),
-  ("Summer", "Linen & shorts", "Your light-blue linen shirt",
-   "Your linen shirt open over a white tee, pleated shorts, light-blue Spezials and the navy cap.",
-   ["own_blue_linen", "own_af_white_tee", "shorts_tailored", "own_gazelle", "own_cap_navy"]),
-  ("Summer", "Jorts day", "Your board: graphic tees",
-   "Graphic tee, relaxed denim shorts, navy Spezials and the cap. Pure summer street.",
-   ["own_hotel_tee", "shorts_denim", "own_spezial_navy", "own_cap_navy", "own_ix_figaro", "own_sd_pendant"]),
+  ("Summer", "Blue linen & olive", "Your light-blue linen shirt",
+   "Your light-blue linen shirt open over a white tee, olive linen baggy trousers, white Premiatas and the navy cap. Blue and olive is a fresh summer pairing.",
+   ["own_blue_linen", "own_af_white_tee", "trouser_linen_olive", "own_white_sneakers", "own_cap_navy"]),
+  ("Summer", "Graphic & light denim", "Your board: graphic tees",
+   "Your Hotel tee with light-wash baggy jeans, navy Spezials and the cap, plus the layered necklaces. Summer street, no shorts.",
+   ["own_hotel_tee", "own_lightwash", "own_spezial_navy", "own_cap_navy", "own_ix_figaro", "own_sd_pendant"]),
   ("Summer", "Summer dinner", "Brown linen at night",
    "Your brown linen shirt, stone pleated trousers, brown suede Premiatas and the Rolex. Classy for warm evenings.",
    ["own_ms_brown_linen", "own_af_ash_pleated", "own_premiata", "own_ix_figaro", "own_ix_figaro_bracelet", "own_watch"]),
-  ("Summer", "Knit polo night", "Your white linen trousers, dressed up",
-   "Knit polo with your white linen trousers and brown Premiatas. Smart, but still summer.",
-   ["polo_knit_ss", "own_white_linen", "own_premiata", "own_sd_pendant", "own_watch"]),
+  ("Summer", "Summer night tee", "A tee, dressed up for a warm night",
+   "Your grey tee with ash pleated trousers, brown suede Premiatas, the layered necklaces and the Rolex. Easy but put together.",
+   ["own_af_tee_grey", "own_af_ash_pleated", "own_premiata", "own_ix_figaro", "own_sd_pendant", "own_watch"]),
   ("Summer", "Beach town", "Your navy linen shirt",
-   "Navy linen shirt open over a white tee, pleated shorts, suede clogs and sunglasses.",
-   ["own_navy_linen", "own_af_white_tee", "shorts_tailored", "clog_suede", "sunglasses"]),
+   "Navy linen shirt open over a white tee, light beige linen baggy trousers, suede clogs and sunglasses. Long and light instead of shorts.",
+   ["own_navy_linen", "own_af_white_tee", "trouser_linen_beige", "clog_suede", "sunglasses"]),
   ("Summer", "Khaki & blue", "Your khaki jeans + blue linen",
    "Light-blue linen shirt, khaki jeans and white Premiatas. Easy for a city day.",
    ["own_blue_linen", "own_beige_jeans", "own_white_sneakers", "sunglasses", "bracelet_cuff"]),
-  ("Summer", "Day in Porto", "Knit polo, casual",
-   "Knit polo with khaki jeans, burgundy Sambas and your Western cap, whose brown brim picks up the khaki.",
-   ["polo_knit_ss", "own_beige_jeans", "own_samba_maroon", "own_cap_western", "sunglasses"]),
+  ("Summer", "Day in Porto", "Tee, casual",
+   "Your cream tee with khaki jeans, burgundy Sambas and your Western cap, whose brown brim picks up the khaki.",
+   ["own_af_tee_cream", "own_beige_jeans", "own_samba_maroon", "own_cap_western", "sunglasses"]),
   ("Autumn", "Navy harrington", "Your Polo harrington, old-money style",
    "Your navy Polo harrington over the Coastal sweater, khaki jeans and brown suede Premiatas. Pure old money, and all yours.",
    ["own_polo_harrington", "own_coastal", "own_beige_jeans", "own_premiata", "own_watch"]),
@@ -294,11 +293,11 @@ OUTFITS = [
    "Cream seersucker shirt with your white linen trousers, brown suede Premiatas, your clear lilac sunglasses and the Rolex.",
    ["own_seersucker_camp", "own_white_linen", "own_premiata", "own_sunnies_asos", "own_watch"]),
   ("Summer", "Sage stripes", "Your sage striped linen shirt",
-   "Sage striped linen shirt, stone pleated shorts, white Premiatas and your clear lilac sunglasses. Soft pastels together.",
-   ["own_ms_sage_stripe", "shorts_tailored", "own_white_sneakers", "own_sunnies_asos", "own_cuban_bracelet"]),
+   "Sage striped linen shirt open over your cream tee, ash pleated trousers, white Premiatas and your clear lilac sunglasses. Soft pastels together.",
+   ["own_ms_sage_stripe", "own_af_tee_cream", "own_af_ash_pleated", "own_white_sneakers", "own_sunnies_asos", "own_cuban_bracelet"]),
   ("Summer", "Blue stripes & denim", "Your blue striped linen shirt",
-   "Blue striped linen shirt, denim shorts, burgundy Sambas and the cap.",
-   ["own_ms_blue_stripe", "shorts_denim", "own_samba_maroon", "own_cap_navy"]),
+   "Blue striped linen shirt open over a white tee, light-wash baggy jeans, burgundy Sambas and the cap.",
+   ["own_ms_blue_stripe", "own_af_white_tee", "own_lightwash", "own_samba_maroon", "own_cap_navy"]),
   ("Summer", "Brown linen day", "Your brown linen shirt, open",
    "Brown linen shirt open over a white tee, cream jeans and light-blue Spezials.",
    ["own_ms_brown_linen", "own_af_white_tee", "own_af_cream", "own_gazelle", "sunglasses"]),
@@ -311,6 +310,21 @@ OUTFITS = [
   ("Winter", "Blue on black", "Your black pleated trousers, done right",
    "Light-blue cable knit over your black pleated trousers with white Premiatas, the Cuban bracelet and the Rolex. Light top, black trousers, white shoes: crisp, with no brown to fight the black.",
    ["own_blue_cable", "own_af_black_pleated", "own_white_sneakers", "own_cuban_bracelet", "own_watch"]),
+  ("Summer", "White tee & olive", "Tee and light trousers",
+   "Your white tee with olive linen baggy trousers, navy Spezials, the navy cap and the IX figaro chain and bracelet. Casual, and navy with olive works.",
+   ["own_af_white_tee", "trouser_linen_olive", "own_spezial_navy", "own_cap_navy", "own_ix_figaro", "own_ix_figaro_bracelet"]),
+  ("Summer", "Brown tee & cream", "Warm summer neutrals",
+   "Your brown tee with cream jeans, light-blue Spezials, your Western cap and the Cuban bracelet. Warm, with one cool accent at the feet.",
+   ["own_brown_tee", "own_af_cream", "own_gazelle", "own_cap_western", "own_cuban_bracelet"]),
+  ("Summer", "Grey tee & navy", "Summer evening, casual",
+   "Your grey tee with the COS navy wide-leg trousers, white Premiatas and the layered necklaces. Simple and cool-toned for a warm evening.",
+   ["own_af_tee_grey", "own_cos_navy_trouser", "own_white_sneakers", "own_ix_figaro", "own_sd_pendant"]),
+  ("Summer", "Hotel tee & khaki", "Your board: graphic tees",
+   "Your Hotel tee with khaki jeans, green Spezials and the navy cap. Ivory, khaki and a green accent.",
+   ["own_hotel_tee", "own_beige_jeans", "own_samba_green", "own_cap_navy", "own_cuban_bracelet"]),
+  ("Summer", "Cream tee & light denim", "The easiest summer outfit",
+   "Your cream tee with light-wash baggy jeans, white Premiatas, the navy cap and your clear lilac sunglasses.",
+   ["own_af_tee_cream", "own_lightwash", "own_white_sneakers", "own_cap_navy", "own_sunnies_asos"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -328,14 +342,47 @@ INNER_ALT = {
   "Blue knit & graphic": ["own_af_white_tee", "own_af_tee_grey"],
   "Linen layers": ["own_af_tee_cream", "own_af_tee_grey"],
   "Pinstripe & graphic": ["own_af_white_tee", "own_af_tee_grey"],
-  "Linen & shorts": ["own_af_tee_cream", "own_hotel_tee"],
-  "Jorts day": ["own_af_white_tee", "own_af_tee_grey"],
+  "Blue linen & olive": ["own_af_tee_cream", "own_af_tee_grey"],
+  "Graphic & light denim": ["own_af_white_tee", "own_af_tee_grey"],
   "Beach town": ["own_af_tee_grey", "own_hotel_tee"],
   "Harrington & white": ["own_stripe_ls", "own_af_tee_grey"],
   "Sage & brown": ["own_af_white_tee", "own_brown_tee"],
   "Brown linen day": ["own_af_tee_cream", "own_hotel_tee"],
   "Cream & black": ["own_af_tee_grey", "own_af_tee_black"],
   "Navy zip & khaki": ["own_af_white_tee", "own_af_tee_grey"],
+  "Riviera tee": ["own_af_white_tee", "own_af_tee_grey"],
+  "Summer night tee": ["own_af_tee_cream", "own_af_white_tee"],
+  "Day in Porto": ["own_af_white_tee", "own_hotel_tee"],
+  "Sage stripes": ["own_af_white_tee", "own_af_tee_grey"],
+  "Blue stripes & denim": ["own_af_tee_cream", "own_af_tee_grey"],
+  "White tee & olive": ["own_af_tee_cream", "own_af_tee_grey"],
+  "Brown tee & cream": ["own_af_white_tee", "own_hotel_tee"],
+  "Grey tee & navy": ["own_af_white_tee", "own_af_tee_cream"],
+  "Hotel tee & khaki": ["own_af_white_tee", "own_af_tee_cream"],
+  "Cream tee & light denim": ["own_af_white_tee", "own_af_tee_grey"],
+}
+
+# other jackets to try on in the mirror (owned first; same colour family and warmth)
+OUTER_ALT = {
+  "AirCloud & cable": ["own_brown_puffer", "jacket_rain"],
+  "Tonal brown": ["own_brown_puffer", "own_brown_jacket_af"],
+  "Brown puffer": ["own_aircloud_brown", "jacket_rain"],
+  "Cold street": ["own_aircloud_brown", "jacket_rain"],
+  "Black puffer, done right": ["own_brown_puffer", "own_aircloud_brown"],
+  "Black puffer & burgundy": ["own_brown_puffer", "own_aircloud_brown"],
+  "Puffer vest": ["own_polo_harrington", "own_aircloud_brown"],
+  "Varsity": ["own_brown_jacket_af", "own_polo_harrington"],
+  "Rainy day": ["own_brown_jacket_af", "own_brown_puffer"],
+  "Brown jacket": ["jacket_rain", "own_cream_cord_jacket"],
+  "Check jacket": ["own_brown_jacket_af"],
+  "Check & navy": ["own_brown_jacket_af", "own_brown_puffer"],
+  "Navy harrington": ["own_brown_jacket_af", "own_sage_jacket"],
+  "Harrington & white": ["own_sage_jacket", "own_cream_cord_jacket"],
+  "Sage & brown": ["own_cream_cord_jacket", "own_polo_harrington"],
+  "Stripes & sage jacket": ["own_polo_harrington", "own_cream_cord_jacket"],
+  "Cream cord & Eagles": ["own_sage_jacket", "own_brown_jacket_af"],
+  "Cream & black": ["own_sage_jacket"],
+  "Cord jacket & stripes": ["own_brown_jacket_af", "own_sage_jacket"],
 }
 
 VIBE = {
@@ -394,15 +441,20 @@ VIBE = {
   "Black puffer & burgundy": ("Street", "Everyday"),
   "Blue & cream": ("In between", "Daytime"),
   "Cowboys & khaki": ("Street", "Weekend"),
-  "Riviera": ("Classy", "Holiday / lunch"),
+  "Riviera tee": ("In between", "Holiday / lunch"),
   "Camp collar": ("Street", "Warm day"),
-  "Linen & shorts": ("In between", "Daytime"),
-  "Jorts day": ("Street", "Weekend"),
+  "Blue linen & olive": ("In between", "Daytime"),
+  "Graphic & light denim": ("Street", "Weekend"),
   "Summer dinner": ("Classy", "Dinner"),
-  "Knit polo night": ("Classy", "Night out"),
+  "Summer night tee": ("In between", "Night out"),
   "Beach town": ("Street", "Holiday"),
   "Khaki & blue": ("In between", "City day"),
-  "Day in Porto": ("In between", "Daytime"),
+  "Day in Porto": ("Street", "Daytime"),
+  "White tee & olive": ("Street", "Daytime"),
+  "Brown tee & cream": ("Street", "Weekend"),
+  "Grey tee & navy": ("In between", "Evening"),
+  "Hotel tee & khaki": ("Street", "Weekend"),
+  "Cream tee & light denim": ("Street", "Everyday"),
   "Cream & black": ("Street", "Weekend"),
   "Blue on black": ("Classy", "Dinner"),
 }
@@ -494,7 +546,7 @@ def money(x):
         return ""
     return f"€{x:,.0f}" if x == int(x) else f"€{x:,.2f}"
 
-def tile(key, prod):
+def tile(key, prod, swap=""):
     if key in OWNED:
         cat, label = OWNED[key]
         info = OWNED_INFO.get(key)
@@ -507,7 +559,7 @@ def tile(key, prod):
             note = "" if info.get("match") == "exact" else '<div class="pr">Closest match to yours</div>'
             return f'''<div class="tile owned-img"><a class="ph" href="{e(info["url"])}" target="_blank" rel="noopener">
 <em class="owntag">✓ You have it</em><img loading="lazy" referrerpolicy="no-referrer" src="{e(info["image_url"])}" alt="{e(label)}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(label)}</span></a>
-<div class="meta"><div class="br">{e(info.get("brand",""))}</div><div class="nm">{e(label)}</div>{note}</div></div>'''
+<div class="meta"><div class="br">{e(info.get("brand",""))}</div><div class="nm">{e(label)}</div>{note}{swap}</div></div>'''
         return f'''<div class="tile owned"><div class="ph"><em class="owntag">✓ You have it</em><span>{e(label)}</span></div>
 <div class="meta"><div class="nm">{e(label)}</div></div></div>'''
     p = prod.get(key, {}).get("primary")
@@ -519,21 +571,56 @@ def tile(key, prod):
     return f'''<div class="tile"><a class="ph" href="{e(p["url"])}" target="_blank" rel="noopener">
 <img loading="lazy" referrerpolicy="no-referrer" src="{e(p.get("image_url",""))}" alt="{e(p["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(label)}</span></a>
 <div class="meta"><div class="br">{e(p["brand"])}</div><a class="nm" href="{e(p["url"])}" target="_blank" rel="noopener">{e(p["name"])}</a>
-<div class="pr">{money(p.get("price_eur"))}{' · ' + e(p.get("colour","")) if p.get("colour") else ''}</div>{alt_html}</div></div>'''
+<div class="pr">{money(p.get("price_eur"))}{' · ' + e(p.get("colour","")) if p.get("colour") else ''}</div>{alt_html}{swap}</div></div>'''
 
-def inner_alt(name, prod):
-    alts = INNER_ALT.get(name)
-    if not alts:
-        return ""
-    bits = []
-    for k in alts:
-        if k in OWNED:
-            bits.append(e(OWNED[k][1][0].lower() + OWNED[k][1][1:]))
-        else:
-            p = prod.get(k, {}).get("primary")
-            if p:
-                bits.append(f'<a href="{e(p["url"])}" target="_blank" rel="noopener">{e(p["brand"].replace("Abercrombie & Fitch", "A&F"))} tee in {e(p.get("colour",""))}</a> ({money(p.get("price_eur"))}, to buy)' if k.startswith("tee_") else f'<a href="{e(p["url"])}" target="_blank" rel="noopener">{e(ROLE_INFO[k][1].lower())}</a> (to buy)')
-    return ' <span class="swap"><b>Backup layer:</b> ' + " · or ".join(bits) + "</span>"
+ALT_HINT = {
+  "own_aircloud_brown": "warmer, more vibrant brown",
+  "own_brown_puffer": "deeper, darker brown, bulkier and warmer",
+  "jacket_rain": "khaki and chocolate waxed cotton, for mild rain",
+  "own_brown_jacket_af": "dark coffee, lighter weight",
+  "own_cream_cord_jacket": "light stone corduroy",
+  "own_sage_jacket": "light sage",
+  "own_polo_harrington": "navy",
+}
+INNER_PRIORITY = ["own_af_white_tee", "own_af_tee_grey", "own_af_tee_cream", "own_af_tee_black", "own_hotel_tee", "own_brown_tee",
+                  "own_stripe_ls", "shirt_oxford", "own_blue_linen"]
+
+def piece_view(k, prod):
+    """(image, link, title, subtitle) for any owned key or shop role."""
+    import base64
+    if k in OWNED:
+        info = OWNED_INFO.get(k, {})
+        img = info.get("image_url", "")
+        if img.startswith("img/"):
+            fp = os.path.join(os.path.dirname(OUT), img)
+            img = ("data:image/jpeg;base64," + base64.b64encode(open(fp, "rb").read()).decode()) if os.path.exists(fp) else ""
+        sub = ALT_HINT.get(k) or info.get("colour", "")
+        return img, info.get("url", "#"), OWNED[k][1], sub
+    p = prod.get(k, {}).get("primary") or {}
+    sub = (ALT_HINT.get(k) or p.get("colour", "")) + " · " + money(p.get("price_eur")) + ", to buy"
+    return p.get("image_url", ""), p.get("url", "#"), (p.get("brand", "") + " " + p.get("name", "")).replace("Abercrombie & Fitch", "A&F"), sub
+
+def swap_box(kind, alts, prod):
+    views = [piece_view(k, prod) for k in alts]
+    short = " · ".join(v[2].replace("Your ", "your ") for v in views)
+    items = ""
+    for img, u, t, sub in views:
+        pic = ('<img loading="lazy" referrerpolicy="no-referrer" src="' + e(img) + '" alt="">') if img else ""
+        items += '<a class="swapitem" href="' + e(u) + '" target="_blank" rel="noopener"><span class="swapph">' + pic + '</span><b>' + e(t) + '</b><small>' + e(sub) + '</small></a>'
+    return '<details class="swapbox"><summary><span class="swaplab">' + kind + ':</span> ' + e(short) + '</summary><div class="swapgrid">' + items + '</div></details>'
+
+def swaps_for(name, pieces, prod):
+    """Which tile gets which swap box: backup inner layer, and other jackets to try."""
+    out = {}
+    if name in INNER_ALT:
+        inner = next((k for k in INNER_PRIORITY if k in pieces), None)
+        if inner:
+            out[inner] = swap_box("Backup if it's in the wash", INNER_ALT[name], prod)
+    if name in OUTER_ALT:
+        outer = next((k for k in pieces if (ROLE_INFO.get(k) or OWNED.get(k))[0] == "Outerwear"), None)
+        if outer:
+            out[outer] = swap_box("Other jacket to try", OUTER_ALT[name], prod)
+    return out
 
 def build():
     global OUTFITS
@@ -551,7 +638,8 @@ def build():
             if season != s:
                 continue
             n += 1
-            tiles = "".join(tile(k, prod) for k in sorted(pieces, key=lambda k: CATS.index((ROLE_INFO.get(k) or OWNED.get(k))[0])))
+            sw = swaps_for(name, pieces, prod)
+            tiles = "".join(tile(k, prod, sw.get(k, "")) for k in sorted(pieces, key=lambda k: CATS.index((ROLE_INFO.get(k) or OWNED.get(k))[0])))
             total = sum(float(prod[k]["primary"].get("price_eur") or 0) for k in pieces if k in ROLE_INFO and prod.get(k, {}).get("primary"))
             hero = False
             n_own = sum(1 for k in pieces if k in OWNED)
@@ -560,7 +648,7 @@ def build():
             vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
             cards.append(f'''<article class="card{' hero' if hero else ''}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
 <p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span><span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
-<p class="note">{e(note)}{inner_alt(name, prod)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
+<p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
         info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">Braga: {e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
         sec.append(f'<section id="{sid[s]}"><h2>{e(s)}</h2>{info}{"".join(cards)}</section>')
@@ -747,6 +835,11 @@ section,article{{scroll-margin-top:64px}}
 .sgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}}
 .sg{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}} .sg .ph{{aspect-ratio:4/3;background:#fff}} .sg .ph img{{object-fit:contain;background:#fff}}
 .fwid{{font-size:12px;color:var(--accent);margin-top:3px}}
+.swapbox{{margin-top:6px;font-size:12px}} .swapbox summary{{cursor:pointer;color:var(--accent);list-style:none;line-height:1.35}} .swapbox summary::-webkit-details-marker{{display:none}}
+.swapbox summary::after{{content:" ▾";}} .swapbox[open] summary::after{{content:" ▴";}} .swaplab{{font-weight:600}}
+.swapgrid{{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}} .swapitem{{display:block;text-decoration:none;color:var(--text);background:var(--chip);border-radius:8px;padding:5px}}
+.swapph{{display:block;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:#fff;margin-bottom:4px}} .swapph img{{width:100%;height:100%;object-fit:cover;display:block}}
+.swapitem b{{display:block;font-weight:600;font-size:11px;line-height:1.25}} .swapitem small{{display:block;color:var(--muted);font-size:11px;line-height:1.25}}
 .swap{{display:block;margin-top:6px;font-size:13px;color:var(--muted)}} .swap a{{color:var(--accent)}}
 .fitb{{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:2px 8px;margin-top:4px}} .fb-ok{{background:#e1f5ee;color:#085041}} .fb-mid{{background:#faeeda;color:#633806}} .fb-far{{background:#f6e3e3;color:#7a1f1f}} .fb-unk{{background:var(--chip);color:#555}}
 .pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:8px}}

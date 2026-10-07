@@ -1,0 +1,28 @@
+[
+ {
+  "role": "trouser_linen_olive",
+  "rank": "primary",
+  "brand": "Abercrombie & Fitch",
+  "name": "Linen-Blend Baggy Trouser",
+  "colour": "Olive (fine olive-grey stripe)",
+  "price_eur": 49.99,
+  "on_sale": true,
+  "url": "https://www.abercrombie.com/shop/eu/p/linen-blend-baggy-trouser-61936320",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6147-00330-330_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Your A&F baggy fit in light linen-blend. Take 32; the regular inseam ends at the ankle. On sale (was €80)."
+ },
+ {
+  "role": "trouser_linen_beige",
+  "rank": "primary",
+  "brand": "Abercrombie & Fitch",
+  "name": "Linen-Blend Baggy Trouser",
+  "colour": "Light Beige",
+  "price_eur": 56.99,
+  "on_sale": true,
+  "url": "https://www.abercrombie.com/shop/eu/p/linen-blend-baggy-trouser-61822820",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6051-00302-412_prod1?policy=product-large",
+  "verified": true,
+  "fit_note": "Same baggy linen-blend trouser in light beige: a cooler alternative to jeans in summer. Take 32. On sale (was €80)."
+ }
+]
