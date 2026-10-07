@@ -558,5 +558,13 @@
   "url": "https://www.ralphlauren.eu/pt/en/wool-quarter-zip-jumper-625233.html",
   "image_url": "https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-1450628_lifestyle?$rl_4x5_pdp$",
   "match": "close"
+ },
+ "own_af_linen_pullon": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Linen-Blend Pull-On Pant",
+  "colour": "Sand, textured linen",
+  "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=linen%20pull-on%20pant",
+  "image_url": "img/af-linen-pull-on-sand.jpg",
+  "match": "exact"
  }
 }

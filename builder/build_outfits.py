@@ -82,6 +82,7 @@ OWNED = {
     "own_beige_jeans": ("Trousers", "Your khaki baggy jeans"),
     "own_af_brown": ("Trousers", "Your dark brown pleated trousers"),
     "own_af_greywash": ("Trousers", "Your dark grey baggy jeans"),
+    "own_af_linen_pullon": ("Trousers", "Your sand linen pull-on trousers"),
     "own_af_black_jeans": ("Trousers", "Your black baggy jeans"),
     "own_white_linen": ("Trousers", "Your white linen trousers"),
     "own_pinstripe": ("Trousers", "Your pinstripe linen trousers"),
@@ -251,8 +252,8 @@ OUTFITS = [
    "Your grey tee with ash pleated trousers, brown suede Premiatas, the layered necklaces and the Rolex. Easy but put together.",
    ["own_af_tee_grey", "own_af_ash_pleated", "own_premiata", "own_ix_figaro", "own_sd_pendant", "own_watch"]),
   ("Summer", "Beach town", "Your navy linen shirt",
-   "Navy linen shirt open over a white tee, light beige linen baggy trousers, suede clogs and sunglasses. Long and light instead of shorts.",
-   ["own_navy_linen", "own_af_white_tee", "trouser_linen_beige", "clog_suede", "sunglasses"]),
+   "Navy linen shirt open over a white tee, your sand linen pull-on trousers, suede clogs and sunglasses. Long and light instead of shorts.",
+   ["own_navy_linen", "own_af_white_tee", "own_af_linen_pullon", "clog_suede", "sunglasses"]),
   ("Summer", "Khaki & blue", "Your khaki jeans + blue linen",
    "Light-blue linen shirt, khaki jeans and white Premiatas. Easy for a city day.",
    ["own_blue_linen", "own_beige_jeans", "own_white_sneakers", "sunglasses", "bracelet_cuff"]),
@@ -379,6 +380,9 @@ INNER_ALT = {
 PIECE_ALT = {
   "Striped half-zip": ("own_polo_halfzip", "Also great here", ["knit_halfzip"]),
   "Date night": ("own_polo_halfzip", "Also great here", ["knit_halfzip"]),
+  "Camp collar": ("own_af_cream", "Lighter for hot days", ["own_af_linen_pullon"]),
+  "Brown linen day": ("own_af_cream", "Lighter for hot days", ["own_af_linen_pullon"]),
+  "Brown tee & cream": ("own_af_cream", "Lighter for hot days", ["own_af_linen_pullon"]),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
