@@ -49,18 +49,6 @@
  },
  {
   "role": "bracelet_cuff",
-  "rank": "alt",
-  "brand": "Miansai",
-  "name": "Niam Cuff",
-  "colour": "Polished sterling silver",
-  "price_eur": 148.95,
-  "url": "https://www.miansai.com/en-pt/products/niam-cuff-sterling-silver-polished-silver",
-  "image_url": "https://cdn.shopify.com/s/files/1/1994/2941/files/102-0503_color_polishedsilver_01.jpg?v=1711390504",
-  "verified": true,
-  "fit_note": "Thin open cuff, stacks well. Ships from the US; duties paid at checkout."
- },
- {
-  "role": "bracelet_cuff",
   "rank": "alt2",
   "brand": "All Blues",
   "name": "Round Bracelet",
@@ -70,18 +58,6 @@
   "image_url": "https://allblues.centracdn.net/client/dynamic/images/125_4e2a381036-round_bracelet_polished_silver_p_1.jpg",
   "verified": true,
   "fit_note": "Thin sculptural Scandinavian cuff. The investment piece. EU shipping."
- },
- {
-  "role": "bracelet_leather",
-  "rank": "primary",
-  "brand": "Miansai",
-  "name": "Ames Leather Bracelet",
-  "colour": "Brown braided leather / silver",
-  "price_eur": 85.95,
-  "url": "https://www.miansai.com/en-pt/products/ames-leather-bracelet-sterling-silver-brown",
-  "image_url": "https://cdn.shopify.com/s/files/1/1994/2941/files/101-0793_color_brown_01.jpg?v=1783647255",
-  "verified": true,
-  "fit_note": "Closest to your inspiration photo. Only size L was in stock. Duties paid at checkout."
  },
  {
   "role": "bracelet_leather",
@@ -154,18 +130,6 @@
   "image_url": "https://allblues.centracdn.net/client/dynamic/images/728_49b905e0db-cuban_necklace_silver_p_1.jpg",
   "verified": true,
   "fit_note": "Matches the Cuban bracelet. Confident but not flashy. EU shipping."
- },
- {
-  "role": "necklace_chain_bold",
-  "rank": "alt",
-  "brand": "Miansai",
-  "name": "3mm Cuban Curb Chain",
-  "colour": "Polished sterling silver",
-  "price_eur": 168.95,
-  "url": "https://www.miansai.com/en-pt/products/3mm-cuban-curb-chain-necklace-polished-sterling-silver",
-  "image_url": "https://cdn.shopify.com/s/files/1/1994/2941/products/103-0378_color_polishedsilver_01.jpg?v=1691142757",
-  "verified": true,
-  "fit_note": "Adjustable 51–56 cm. Works alone or with a pendant. Duties paid at checkout."
  },
  {
   "role": "necklace_chain_bold",

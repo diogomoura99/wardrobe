@@ -13,18 +13,6 @@
  },
  {
   "role": "trouser_cord_ecru",
-  "rank": "alt",
-  "brand": "Carhartt WIP",
-  "name": "Brandon Pant (corduroy)",
-  "colour": "Wall (sand-cream)",
-  "price_eur": 119,
-  "url": "https://www.carhartt-wip.com/en-pt/p/brandon-pant-wall-rinsed-586",
-  "image_url": "https://cdn.media.amplience.net/i/carhartt_wip/I037063_G1_02-ST-02?$facebook$",
-  "verified": true,
-  "fit_note": "Loose straight leg, full length, 8-wale cord. Warmer sand colour than true ecru."
- },
- {
-  "role": "trouser_cord_ecru",
   "rank": "alt2",
   "brand": "Portuguese Flannel",
   "name": "Corduroy Trousers",

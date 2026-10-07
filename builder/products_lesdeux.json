@@ -12,18 +12,6 @@
   "fit_note": "Faded mid-blue, small chest text, back print. 40% off."
  },
  {
-  "role": "jacket_rain",
-  "rank": "alt",
-  "brand": "Les Deux",
-  "name": "Shell Jacket",
-  "colour": "Black",
-  "price_eur": 259,
-  "url": "https://lesdeux.com/products/shell-jacket-black",
-  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/19777679_1002147_100-Black_01.webp?v=1787675369",
-  "verified": true,
-  "fit_note": "Hip-length hooded shell, clean Copenhagen look (no stated waterproofing)."
- },
- {
   "role": "knit_grey_fuzzy",
   "rank": "alt",
   "brand": "Les Deux",
@@ -132,18 +120,6 @@
   "fit_note": "Loose wide straight leg, soft brushed twill, flat front. Take 31/32."
  },
  {
-  "role": "trouser_cord_ecru",
-  "rank": "alt",
-  "brand": "Les Deux",
-  "name": "Corduroy Tapered Pants",
-  "colour": "Ivory",
-  "price_eur": 169,
-  "url": "https://lesdeux.com/products/corduroy-pants-ivory",
-  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/19777573_1002167_215-Ivory_01.webp?v=1787674219",
-  "verified": true,
-  "fit_note": "Ecru cord, loose through the thigh but narrows at the ankle. Take 31/32."
- },
- {
   "role": "trouser_pleated_stone",
   "rank": "alt",
   "brand": "Les Deux",
@@ -154,18 +130,6 @@
   "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/18860486_1001895_815-Light-Sand_01.webp?v=1790259912",
   "verified": true,
   "fit_note": "Same trouser as the navy one, in stone. 30% off; only 31/34 left (would need hemming)."
- },
- {
-  "role": "vest_puffer",
-  "rank": "alt",
-  "brand": "Les Deux",
-  "name": "Quilted Vest",
-  "colour": "Black",
-  "price_eur": 139,
-  "url": "https://lesdeux.com/products/quilted-vest-black",
-  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/19777372_1002212_100-Black_01.webp?v=1787672442",
-  "verified": true,
-  "fit_note": "Slim quilted liner-style vest with snaps. Works over knits."
  },
  {
   "role": "belt_brown",

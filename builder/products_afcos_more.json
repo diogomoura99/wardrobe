@@ -48,30 +48,6 @@
   "rank": "alt"
  },
  {
-  "role": "trouser_cord_ecru",
-  "brand": "Abercrombie & Fitch",
-  "name": "Cotton-Blend Pleated Baggy Trouser",
-  "colour": "Ash (not corduroy)",
-  "price_eur": 80,
-  "url": "https://www.abercrombie.com/shop/eu/p/lyocell-cotton-pleated-baggy-trouser-63504014",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_130-6255-00442-140_prod1?policy=product-large",
-  "verified": true,
-  "fit_note": "A&F has no cord trousers now. This is your baggy fit in a pale stone close to ecru.",
-  "rank": "alt"
- },
- {
-  "role": "trouser_cord_ecru",
-  "brand": "COS",
-  "name": "Pleated Denim Barrel-Leg Trousers",
-  "colour": "Beige (not corduroy)",
-  "price_eur": 99,
-  "url": "https://www.cos.com/en-eu/men/menswear/trousers/relaxed-fit/barrelleg/product/pleated-denim-relaxed-fit-barrel-leg-trousers-beige-1339919002",
-  "image_url": "https://media.cos.com/assets/001/f7/06/f706c60315ee90add9137129f1d0a775aa15ab16_xxl-1.jpg",
-  "verified": false,
-  "fit_note": "COS has no ecru cord now. Pleated beige denim, roomy barrel leg that narrows at the ankle.",
-  "rank": "alt"
- },
- {
   "role": "belt_brown",
   "brand": "Abercrombie & Fitch",
   "name": "Leather Belt",

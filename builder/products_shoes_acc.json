@@ -300,30 +300,6 @@
   "fit_note": "Slim dark-brown Italian calf belt. Ideal with wide ecru trousers."
  },
  {
-  "role": "belt_brown",
-  "rank": "alt",
-  "brand": "Les Deux",
-  "name": "Victor Braided Belt",
-  "colour": "Brown",
-  "price_eur": 99,
-  "url": "https://www.lesdeux.com/products/victor-braided-belt-brown",
-  "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/17862010_1001840_820-Brown_01_1e8a3a68-035d-45bf-8298-45900c099a56.webp?v=1787701535",
-  "verified": true,
-  "fit_note": "Braided leather: old-money touch without feeling formal."
- },
- {
-  "role": "belt_brown",
-  "rank": "alt2",
-  "brand": "Massimo Dutti",
-  "name": "Distressed leather belt",
-  "colour": "Dark brown",
-  "price_eur": 49.95,
-  "url": "https://www.massimodutti.com/pt/cinto-em-pele-napa-desgastada-l02749305?pelement=65684649",
-  "image_url": "https://static.massimodutti.net/assets/public/2304/fb2e/1afe4e75ad23/16bd603c3540/02749305700-o1/02749305700-o1.jpg?ts=1789397560625",
-  "verified": true,
-  "fit_note": "Budget pick. The distressed finish keeps it casual."
- },
- {
   "role": "beanie",
   "rank": "primary",
   "brand": "Norse Projects",
@@ -358,77 +334,5 @@
   "image_url": "https://media.arket.com/assets/006/92/f9/92f9318b492fecb9f0c3163d8f929a4d4f76f485.jpg?imwidth=1200",
   "verified": true,
   "fit_note": "Soft cashmere-wool in dark brown. Also in mole and dark blue."
- },
- {
-  "role": "jewelry_chain",
-  "rank": "primary",
-  "brand": "Miansai",
-  "name": "1.3mm Cuban Chain Necklace",
-  "colour": "Sterling silver",
-  "price_eur": 148.95,
-  "url": "https://www.miansai.com/en-pt/products/1-3mm-cuban-chain-necklace-sterling-silver",
-  "image_url": "https://www.miansai.com/cdn/shop/files/103-0269_color_polishedsilver_01.jpg?v=1690990108&width=1200",
-  "verified": true,
-  "fit_note": "Thin, understated sterling chain. Ships from the US; duties are paid at checkout."
- },
- {
-  "role": "jewelry_chain",
-  "rank": "alt",
-  "brand": "Vitaly",
-  "name": "Proof",
-  "colour": "Stainless steel, cross pendant",
-  "price_eur": 85.95,
-  "url": "https://www.vitalydesign.com/products/vt1306-p-proo-proof",
-  "image_url": "https://www.vitalydesign.com/cdn/shop/files/Recontextualized_Proof_Chains_SS_POG_03.jpg?v=1779385570",
-  "verified": true,
-  "fit_note": "Modern take on the thin cross necklace from your inspiration. Ships from Canada; check duties."
- },
- {
-  "role": "jewelry_chain",
-  "rank": "alt2",
-  "brand": "Miansai",
-  "name": "Croix Pendant Necklace",
-  "colour": "Sterling silver",
-  "price_eur": 177.95,
-  "url": "https://www.miansai.com/en-pt/products/croix-mini-st-christopher-pendant-necklace-sterling-silver",
-  "image_url": "https://www.miansai.com/cdn/shop/files/103-0408_color_polishedsilver_01.jpg?v=1691192068&width=1200",
-  "verified": true,
-  "fit_note": "Small cross-engraved medallion on a fine chain. The most refined option."
- },
- {
-  "role": "jewelry_ring",
-  "rank": "primary",
-  "brand": "Miansai",
-  "name": "3mm Silver Ring",
-  "colour": "Matte sterling silver",
-  "price_eur": 148.95,
-  "url": "https://www.miansai.com/en-pt/products/silver-band-3mm-matte-sterling-silver",
-  "image_url": "https://www.miansai.com/cdn/shop/products/104-0206_color_mattesilver_01.jpg?v=1691141316&width=1200",
-  "verified": true,
-  "fit_note": "Plain, slim matte band. The simplest everyday ring."
- },
- {
-  "role": "jewelry_ring",
-  "rank": "alt",
-  "brand": "Miansai",
-  "name": "Thin Hex Ring",
-  "colour": "Polished sterling silver",
-  "price_eur": 85.95,
-  "url": "https://www.miansai.com/en-pt/products/thin-hex-ring-sterling-silver",
-  "image_url": "https://www.miansai.com/cdn/shop/products/104-0434_color_polishedsilver_01.jpg?v=1691164356&width=1200",
-  "verified": true,
-  "fit_note": "Slim flat-top ring that reads like a minimal signet."
- },
- {
-  "role": "jewelry_ring",
-  "rank": "alt2",
-  "brand": "Vitaly",
-  "name": "Aim",
-  "colour": "Stainless steel",
-  "price_eur": 49.95,
-  "url": "https://www.vitalydesign.com/products/vt1025-r-aim-aim",
-  "image_url": "https://www.vitalydesign.com/cdn/shop/files/Aim-Vitaly-SS-1_f09c5c7b-4115-44f2-9f8a-e63f92035814.jpg?v=1752568700",
-  "verified": true,
-  "fit_note": "Budget band with a subtle twist. Ships from Canada; check duties."
  }
 ]

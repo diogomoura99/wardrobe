@@ -27,7 +27,8 @@
   "rank": "alt",
   "verified": true,
   "size": "L",
-  "on_sale": false
+  "on_sale": false,
+  "lookbook_only": true
  },
  {
   "brand": "Komono",

@@ -87,7 +87,7 @@
   "role": "knit_cream_texture",
   "rank": "alt",
   "brand": "La Paz",
-  "name": "E\u00e7a Cable-Knit Polo",
+  "name": "Eça Cable-Knit Polo",
   "colour": "Ecru",
   "price_eur": 268,
   "url": "https://lapaz.pt/products/eca-ecru",
@@ -250,18 +250,6 @@
   "image_url": "https://cdn.shopify.com/s/files/1/0925/0825/8634/files/LAPAZ_AW26_MATIAS_BLUE_OFFWHITE_LOGO_1.jpg?v=1787146769",
   "verified": true,
   "fit_note": "Mid blue with a small anchor print. A tasteful nautical touch. Portuguese brand."
- },
- {
-  "role": "hoodie_graphic_blue",
-  "rank": "alt2",
-  "brand": "Abercrombie & Fitch",
-  "name": "Bar Graphic Popover Hoodie",
-  "colour": "Light Blue",
-  "price_eur": 56.99,
-  "url": "https://www.abercrombie.com/shop/eu-es/p/cocktail-bar-graphic-popover-hoodie-62788915?seq=01",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_122-1089-01415-212_prod1?policy=product-medium",
-  "verified": true,
-  "fit_note": "The vintage-graphic option, closest to your flat-lay photo. On sale."
  },
  {
   "role": "sweat_grey",

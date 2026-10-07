@@ -7,29 +7,20 @@ e = html.escape
 
 CATS = ["Outerwear", "Knitwear & tops", "Trousers", "Shoes", "Accessories"]
 ROLE_INFO = {
-    "jacket_brown": ("Outerwear", "Brown jacket"),
     "jacket_rain": ("Outerwear", "Waxed jacket"),
     "vest_puffer": ("Outerwear", "Puffer vest"),
     "jacket_varsity": ("Outerwear", "Varsity jacket"),
-    "puffer_taupe": ("Outerwear", "Hooded puffer"),
     "knit_cable_cream": ("Knitwear & tops", "Cream cable knit"),
     "knit_polo": ("Knitwear & tops", "Knit polo"),
     "knit_halfzip": ("Knitwear & tops", "Half-zip knit"),
-    "knit_zip_cardigan": ("Knitwear & tops", "Zip cardigan"),
     "shirt_oxford": ("Knitwear & tops", "Oxford shirt"),
     "shirt_overshirt": ("Knitwear & tops", "Overshirt"),
     "hoodie_graphic_blue": ("Knitwear & tops", "Blue hoodie"),
     "sweat_grey": ("Knitwear & tops", "Grey sweatshirt"),
-    "shirt_linen_summer": ("Knitwear & tops", "White / striped linen shirt"),
-    "shirt_camp": ("Knitwear & tops", "Camp-collar shirt"),
-    "jeans_midwash": ("Trousers", "Mid-blue jeans"),
-    "jeans_grey": ("Trousers", "Grey / washed-black jeans"),
     "trouser_cord_ecru": ("Trousers", "Ecru wide corduroy"),
-    "jeans_lightwash_baggy": ("Trousers", "Light-wash baggy jeans"),
     "trouser_linen_olive": ("Trousers", "Olive linen baggy trousers"),
     "trouser_linen_beige": ("Trousers", "Light beige linen baggy trousers"),
     "shoe_adidas_suede": ("Shoes", "Brown suede Adidas"),
-    "shoe_newbalance": ("Shoes", "Retro New Balance"),
     "clog_suede": ("Shoes", "Suede clogs"),
     "shoe_premiata": ("Shoes", "Premiata"),
     "scarf_check": ("Accessories", "Check scarf"),
@@ -515,10 +506,6 @@ PAIRS = [
    "Fine figaro at the collarbone and a tiny anchor further down. Nautical without being literal, perfect for summer."),
   ("Old-money medal", "Classy", "https://ixstudioscph.com/products/ix-figaro-chain-silver", "46", "https://sergedenimes.com/products/silver-st-christopher-necklace", "52",
    "A fine figaro close to the neck with the St Christopher just below. The most classic pair here, very Ralph Lauren."),
-  ("Cross & curb", "Classy", "https://www.miansai.com/en-pt/products/1-3mm-cuban-chain-necklace-sterling-silver", "53", "https://www.miansai.com/en-pt/products/croix-mini-st-christopher-pendant-necklace-sterling-silver", "61",
-   "Both from Miansai, so the silver matches perfectly. The cross falls below the chain, over a tee or a crewneck knit."),
-  ("Thin + bold", "Street", "https://www.miansai.com/en-pt/products/1-3mm-cuban-chain-necklace-sterling-silver", "46", "https://www.miansai.com/en-pt/products/3mm-cuban-curb-chain-necklace-polished-sterling-silver", "56",
-   "Two curb chains, one fine and one heavier. No pendant, just texture. Best with a white tee or the Hotel tee."),
   ("Mariner & laurel", "In between", "https://ixstudioscph.com/products/ix-curb-marina-chain-silver", "45", "https://sergedenimes.com/products/silver-laurel-necklace", "52",
    "Preppy anchor links close to the neck with a small laurel medal below. Good with a knit polo or a rugby collar open."),
   ("Matches your bracelet", "Street", "https://www.allblues.se/product/cuban-necklace-silver", "47", "https://www.allblues.se/product/coin-pendant-01-large", "54",
@@ -544,7 +531,7 @@ def load_products():
     for f in sorted(os.listdir(HERE)):
         if f.startswith("products_") and f.endswith(".json"):
             entries += json.load(open(os.path.join(HERE, f)))
-    direct = [p for p in entries if p.get("role") in ROLE_INFO]
+    direct = [p for p in entries if p.get("role") in ROLE_INFO and not p.get("lookbook_only")]
     aliased = [dict(p, role=ALIAS[p["role"]], rank="alt") for p in entries if p.get("role") in ALIAS]
     for p in direct + aliased:
         if p["role"].startswith("shoe_") and any(b in p.get("brand", "") for b in BLOCK_BRANDS_SHOES):

@@ -35,22 +35,6 @@
   "role": "necklace_lookbook",
   "type": "atlas",
   "rank": "alt",
-  "brand": "Createdbyill",
-  "name": "Big Sisyphus Necklace",
-  "colour": "Rhodium-plated brass pendant, sterling chain",
-  "price_eur": 99.9,
-  "on_sale": false,
-  "url": "https://www.createdbyill.com/products/big-sisyphus-necklace",
-  "image_url": "https://cdn.shopify.com/s/files/1/0636/5400/2915/files/BigSisyphusNecklace_1.jpg?v=1789053808",
-  "verified": true,
-  "width_mm": "larger figure + polished ball",
-  "lengths_cm": "48–52 adjustable",
-  "fit_note": "Bigger version with a polished silver-tone ball. Note the pendant is brass, only the chain is sterling."
- },
- {
-  "role": "necklace_lookbook",
-  "type": "atlas",
-  "rank": "alt",
   "brand": "Hidden Depths",
   "name": "Amor Fati Pendant",
   "colour": "Oxidised sterling silver, handmade",
@@ -110,22 +94,6 @@
   "width_mm": "round medal",
   "lengths_cm": "pendant only, or 51 / 56 / 61",
   "fit_note": "\"No man steps in the same river twice, for he is not the same man.\" A man standing in a river: growth and becoming someone new."
- },
- {
-  "role": "necklace_lookbook",
-  "type": "atlas",
-  "rank": "alt",
-  "brand": "Hidden Depths",
-  "name": "Memento Mori Pendant",
-  "colour": "Oxidised sterling silver, handmade",
-  "price_eur": 126.95,
-  "on_sale": false,
-  "url": "https://www.wearehiddendepths.com/products/momento-mori-et-in-arcadia-ego-pendant",
-  "image_url": "https://cdn.shopify.com/s/files/1/0685/9358/2173/files/IMG_5137.jpg?v=1774456041",
-  "verified": true,
-  "width_mm": "round medal with skull",
-  "lengths_cm": "pendant only, or 51 / 56 / 61",
-  "fit_note": "\"Remember you will die\": live like the rally drivers in your notes, and be someone worth bringing back. Strong meaning, but the skull reads darker than your style."
  },
  {
   "role": "necklace_lookbook",
@@ -254,37 +222,5 @@
   "width_mm": "coin 16–18 mm",
   "lengths_cm": "42 / 48 / 54",
   "fit_note": "The minimalist route: a plain coin with \"ATLAS\" (up to 8 characters) engraved on the back, so only you know. Same brand as your bracelet. €170 coin + €100 chain. Engraved pieces can't be returned."
- },
- {
-  "role": "necklace_lookbook",
-  "type": "atlas",
-  "rank": "alt",
-  "brand": "Tiffany & Co. (pre-owned, Vestiaire)",
-  "name": "Atlas Open Pendant",
-  "colour": "Sterling silver, Roman numerals",
-  "price_eur": 226,
-  "on_sale": true,
-  "url": "https://es.vestiairecollective.com/mujer-joyas/collares/tiffany-co/collares-atlas-tiffany-co-de-plata-plateado-67806943.shtml",
-  "image_url": "https://cdn.shopify.com/s/files/1/0133/9195/3977/files/150971-fv_e835a5e9-5f17-4afd-a8d2-837a4320d14f.jpg?v=1770044804",
-  "verified": true,
-  "width_mm": "about 13–15 mm ring",
-  "lengths_cm": "41",
-  "fit_note": "Possibly the \"Atlas\" you saw: Tiffany's Atlas line, named after the Titan clock on their New York store. It's a ring of Roman numerals, not the Titan. Pre-owned, the 41 cm chain is short for you, and it's sold as women's."
- },
- {
-  "role": "necklace_lookbook",
-  "type": "atlas",
-  "rank": "alt",
-  "brand": "Trendhim (Arkaiski)",
-  "name": "Atlas – rotating world pendant",
-  "colour": "Stainless steel (not silver), stone globe",
-  "price_eur": 69.95,
-  "on_sale": false,
-  "url": "https://www.trendhim.pt/atlas-colar-em-aco-inoxidavel-prateado-com-pendente-mundo-em-azurita-malaquita-rotativo-p.html",
-  "image_url": "https://eu-images.contentstack.com/v3/assets/blt7dcd2cfbc90d45de/blt4578a923305e779e/62eb8fea668de0303a0312ff/3-1atlasnek-atlasnek.jpg",
-  "verified": true,
-  "width_mm": "35 × 30 mm (big)",
-  "lengths_cm": "65–75",
-  "fit_note": "Possibly the \"Atlas\" chain you saw, as Trendhim advertises a lot on Instagram. Steel, big (35 mm) and heavy, so not my pick, but here so you can compare."
  }
 ]

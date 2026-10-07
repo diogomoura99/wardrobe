@@ -45,7 +45,7 @@
   "url": "https://www.zalando.pt/levis-501-levisoriginal-calcas-de-ganga-de-perna-direita-the-fairway-le221000v-k39.html",
   "image_url": "https://img01.ztat.net/article/spp-media-p1/44d092766b7944a38600da594dc4047b/08e676ef6b2640a6bcc030a7b01b0bb3.jpg?imwidth=800&filter=packshot",
   "verified": true,
-  "fit_note": "The classic 501 from your board. On sale (was \u20ac109.95), L34 in stock."
+  "fit_note": "The classic 501 from your board. On sale (was €109.95), L34 in stock."
  },
  {
   "role": "jeans_midwash",
@@ -189,43 +189,7 @@
   "url": "https://www.zalando.pt/polo-ralph-lauren-the-colden-packable-down-vest-colete-collection-navy-po222t0hf-k11.html",
   "image_url": "https://img01.ztat.net/article/spp-media-p1/a19e214a5b1c4bf4bba3cfa162d27803/daa4adf58b7248bcb9fa8965e5421c03.jpg?imwidth=800&filter=packshot",
   "verified": true,
-  "fit_note": "Hip-length down vest with the pony. The preppy layer. On sale (was \u20ac325)."
- },
- {
-  "role": "vest_puffer",
-  "rank": "alt",
-  "brand": "Holzweiler",
-  "name": "Daff Down Vest",
-  "colour": "Black",
-  "price_eur": 320,
-  "url": "https://holzweileroslo.com/en/daff-down-vest-25-04_awd-black",
-  "image_url": "https://holzweiler.centracdn.net/client/dynamic/images/5020_527e62bb0e-23112-1051-0824-1200x1600.jpg",
-  "verified": true,
-  "fit_note": "Light down vest, hip length. Holzweiler is on your board."
- },
- {
-  "role": "vest_puffer",
-  "rank": "alt2",
-  "brand": "Abercrombie & Fitch",
-  "name": "YPB On The Go Puffer Vest",
-  "colour": "Black",
-  "price_eur": 110,
-  "url": "https://www.abercrombie.com/shop/eu/p/ypb-on-the-go-puffer-vest-63616550",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_105-6004-00043-900_model1?policy=product-large",
-  "verified": true,
-  "fit_note": "Classic quilted vest, hip length. Almost sold out."
- },
- {
-  "role": "jacket_varsity",
-  "rank": "alt",
-  "brand": "Nude Project",
-  "name": "The Freelancer Bomber Jacket",
-  "colour": "Beige",
-  "price_eur": 169,
-  "url": "https://nude-project.com/products/new-tolito-jacket-dark-beige",
-  "image_url": "https://cdn.shopify.com/s/files/1/0025/3725/9054/files/NP_SORRY_ECOMM65409_caa5d40d-ca23-4cfe-b382-92ae9b426b71.webp?v=1787227039",
-  "verified": true,
-  "fit_note": "Boxy padded bomber, hip length, cream tone. Nude Project is on your board."
+  "fit_note": "Hip-length down vest with the pony. The preppy layer. On sale (was €325)."
  },
  {
   "role": "jacket_varsity",

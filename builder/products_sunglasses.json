@@ -57,7 +57,8 @@
   "fit_note": "Olive (Jurassic) with brown lenses adds an earthy Copenhagen colour that suits his sage, khaki and brown-suede outfits and stands apart from all the tortoise options and his lilac crystal pair (the other colours are smoky grey, black, and a honey horn called Smooth Jazz, which is the runner-up); Filipe only comes in Medium (49-21-150), which is 140 mm across, 2 mm under his reference.",
   "front_width_mm": "140",
   "size": "Medium",
-  "on_sale": false
+  "on_sale": false,
+  "lookbook_only": true
  },
  {
   "role": "sunglasses",
