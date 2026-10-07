@@ -102,6 +102,7 @@ OWNED = {
     "own_watch": ("Accessories", "Your Rolex Datejust"),
     "own_cap_navy": ("Accessories", "Your navy Yankees cap"),
     "own_cap_western": ("Accessories", "Your A&F Western snapback"),
+    "own_sunnies_asos": ("Accessories", "Your clear lilac round sunglasses"),
     "own_cuban_bracelet": ("Accessories", "Your All Blues Cuban bracelet"),
 }
 
@@ -198,7 +199,7 @@ OUTFITS = [
    ["shirt_oxford", "own_af_ash_pleated", "own_white_sneakers", "sunglasses", "belt_brown", "bracelet_cuff"]),
   ("Spring", "Linen layers", "Your light-blue linen shirt, for spring",
    "Linen shirt open over a white tee, stone trousers and your light-blue adidas. Blue suits you.",
-   ["own_blue_linen", "own_af_white_tee", "own_af_ash_pleated", "own_gazelle", "sunglasses", "own_cuban_bracelet"]),
+   ["own_blue_linen", "own_af_white_tee", "own_af_ash_pleated", "own_gazelle", "own_sunnies_asos", "own_cuban_bracelet"]),
   ("Summer", "Navy & white", "Your navy linen shirt and white trousers",
    "The outfit you already wear, finished with clogs, sunglasses and a leather bracelet.",
    ["own_navy_linen", "own_white_linen", "clog_suede", "sunglasses", "own_cuban_bracelet"]),
@@ -228,7 +229,7 @@ OUTFITS = [
    ["own_black_puffer", "own_arket_navy", "own_midwash", "own_samba_maroon", "own_cap_navy"]),
   ("Spring", "Blue & cream", "Your COS blue jumper, spring version",
    "Light blue jumper with cream jeans and your navy Sporty & Rich Spezials. Exactly the Sporty & Rich look, and all the clothes are yours.",
-   ["own_cos_blue", "own_af_cream", "own_spezial_navy", "sunglasses", "own_watch"]),
+   ["own_cos_blue", "own_af_cream", "own_spezial_navy", "own_sunnies_asos", "own_watch"]),
   ("Spring", "Cowboys & khaki", "Your rugby polo with khaki jeans",
    "Your Cowboys rugby polo with khaki jeans, navy Spezials and the navy cap. Collegiate preppy, the same idea as the Sporty & Rich collab.",
    ["own_rugby", "own_beige_jeans", "own_spezial_navy", "own_cap_navy", "own_cuban_bracelet"]),
@@ -287,11 +288,11 @@ OUTFITS = [
    "Navy zip knit closed, khaki jeans, brown suede Premiatas and the Rolex.",
    ["own_navy_zip_knit", "own_beige_jeans", "own_premiata", "own_watch"]),
   ("Summer", "Seersucker whites", "Your adidas seersucker shirt",
-   "Cream seersucker shirt with your white linen trousers, brown suede Premiatas, sunglasses and the Rolex.",
-   ["own_seersucker_camp", "own_white_linen", "own_premiata", "sunglasses", "own_watch"]),
+   "Cream seersucker shirt with your white linen trousers, brown suede Premiatas, your clear lilac sunglasses and the Rolex.",
+   ["own_seersucker_camp", "own_white_linen", "own_premiata", "own_sunnies_asos", "own_watch"]),
   ("Summer", "Sage stripes", "Your sage striped linen shirt",
-   "Sage striped linen shirt, stone pleated shorts, white Premiatas and sunglasses.",
-   ["own_ms_sage_stripe", "shorts_tailored", "own_white_sneakers", "sunglasses", "own_cuban_bracelet"]),
+   "Sage striped linen shirt, stone pleated shorts, white Premiatas and your clear lilac sunglasses. Soft pastels together.",
+   ["own_ms_sage_stripe", "shorts_tailored", "own_white_sneakers", "own_sunnies_asos", "own_cuban_bracelet"]),
   ("Summer", "Blue stripes & denim", "Your blue striped linen shirt",
    "Blue striped linen shirt, denim shorts, burgundy Sambas and the cap.",
    ["own_ms_blue_stripe", "shorts_denim", "own_samba_maroon", "own_cap_navy"]),
@@ -565,7 +566,7 @@ def build():
 <li><b>Best with</b> a tee, an open collar or a crewneck knit. With a buttoned shirt, wear just one.</li></ul></div>
 <div class="pgrid">{pairs_html}</div>''' + nk_html
     nk_section = f'''<section id="necklaces"><h2>Necklaces</h2><p class="lede">All silver-toned to match your Rolex, and sterling silver unless the colour says steel. <b>Length guide for you:</b> 50 cm sits around the collarbone and is the best everyday length for chains; 55 cm sits a little lower and works well for pendants and over knits. Wear one on its own, or layer two (see Layered pairs below).</p>{nk_html}</section>'''
-    sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. For a medium-to-large head, look for a front width of about 140–150 mm. If you have a pair that fits well, measure it hinge to hinge and compare.</p><div class="sgrid">{sg_cards}</div></section>'''
+    sg_section = f'''<section id="sunglasses"><h2>Sunglasses</h2><p class="lede">All the frames side by side, cheapest first. For a medium-to-large head, look for a front width of about 140–150 mm. Your ASOS round pair in clear lilac fits you well, so measure it hinge to hinge and compare: frames within a few mm of it will fit too. Rounded, panto-style shapes in clear or crystal acetate clearly work on you.</p><div class="sgrid">{sg_cards}</div></section>'''
 
     # caps lookbook
     caps = all_for_role("cap_structured")

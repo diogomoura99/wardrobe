@@ -454,5 +454,13 @@
   "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-57521553",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-4135-00179-900_prod1?policy=product-large",
   "match": "close"
+ },
+ "own_sunnies_asos": {
+  "brand": "ASOS DESIGN",
+  "name": "Round sunglasses, lilac crystal frame, smoke ombre lens",
+  "colour": "Clear lilac",
+  "url": "https://www.asos.com/pt/search/?q=asos%20design%20round%20sunglasses%20crystal",
+  "image_url": "img/asos-round-lilac-sunglasses.jpg",
+  "match": "exact"
  }
 }
