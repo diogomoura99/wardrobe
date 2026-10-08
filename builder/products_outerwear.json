@@ -10,29 +10,5 @@
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-6929-00326-400_prod1?policy=product-large",
   "verified": true,
   "fit_note": "Hip length, relaxed, detachable hood. Closest current replacement for the Ultra puffer. Low stock."
- },
- {
-  "role": "jacket_rain",
-  "rank": "primary",
-  "brand": "COS",
-  "name": "Corduroy-Detail Waxed-Cotton Jacket",
-  "colour": "Khaki / Chocolate",
-  "price_eur": 249,
-  "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/jackets/product/corduroy-detail-waxed-cotton-jacket-khaki-chocolate-1340998001",
-  "image_url": "https://media.cos.com/assets/001/92/a0/92a033ece18ce831aeaef70fa345e2ef808a4be9_xxl-1.jpg?imwidth=1200",
-  "verified": true,
-  "fit_note": "Cropped, boxy waxed cotton with a cord collar. Water-repellent, good for Portuguese rain."
- },
- {
-  "role": "jacket_rain",
-  "rank": "alt",
-  "brand": "Arket",
-  "name": "Short Waxed Jacket",
-  "colour": "Khaki Green",
-  "price_eur": 159,
-  "url": "https://www.arket.com/en-eu/product/short-waxed-jacket-khaki-green-1352974002/",
-  "image_url": "https://media.arket.com/assets/006/90/53/90535d65000eb978cab081c5f3b2c09c74669806.jpg?imwidth=1200",
-  "verified": true,
-  "fit_note": "Short waxed jacket with a cord collar, fully lined. The cheaper version of the COS one."
  }
 ]

@@ -655,5 +655,14 @@
   "url": "https://www.zalando.pt/levis-578-baggy-calcas-de-ganga-largas-smokey-taupe-le222g0f3-b13.html",
   "image_url": "https://img01.ztat.net/article/spp-media-p1/d065455fe65a47c7925d0c2ff399ca62/3f555b9042bf4d22ae587ca637431055.jpg?imwidth=600",
   "match": "exact"
+ },
+ "own_cos_waxed": {
+  "brand": "COS",
+  "name": "Corduroy-Detail Waxed-Cotton Jacket",
+  "colour": "Khaki / Chocolate",
+  "size": "M",
+  "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/jackets/product/corduroy-detail-waxed-cotton-jacket-khaki-chocolate-1340998001",
+  "image_url": "https://media.cos.com/assets/001/92/a0/92a033ece18ce831aeaef70fa345e2ef808a4be9_xxl-1.jpg?imwidth=1200",
+  "match": "exact"
  }
 }
