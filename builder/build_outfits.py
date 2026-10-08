@@ -837,8 +837,8 @@ def build():
             n_all = sum(1 for k in pieces if k in OWNED or prod.get(k, {}).get("primary"))
             vibe, occ = VIBE.get(name, ("In between", "Everyday"))
             vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
-            cards.append(f'''<article class="card{' hero' if hero else ''}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
-<p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
+            cards.append(f'''<article class="card{' hero' if hero else ''}" data-name="{e(name)}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
+<p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><button class="fav" type="button" aria-pressed="false" aria-label="Save to favourites">☆ Favourite</button><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
 <p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
         info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s == "Special occasions" else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
@@ -1021,6 +1021,7 @@ section,article{{scroll-margin-top:64px}}
 .owned-img .ph{{outline:2px solid #9fe1cb;outline-offset:-2px}}
 .ph .owntag{{position:absolute;top:8px;left:8px;z-index:3;background:#0f6e56;color:#fff;font-style:normal;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.18)}}
 .tots{{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}} .tots .tot{{margin-left:0}}
+.fav{{border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 10px;font:inherit;font-size:13px;cursor:pointer;white-space:nowrap;color:var(--muted)}} .fav.on{{background:#fff4d6;border-color:#e3c46a;color:#7a5a00;font-weight:600}} nav a.navfav{{background:#fff4d6;color:#7a5a00}} #favtools button{{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}}
 .ownchip{{font-size:13px;background:#e1f5ee;color:#085041;border-radius:999px;padding:3px 10px;white-space:nowrap}}
 .season{{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:-4px 0 16px;font-size:14px}}
 .season .months{{font-weight:600}} .season .temps{{color:var(--accent)}} .season .tip{{color:var(--muted);flex-basis:100%}}
@@ -1060,7 +1061,10 @@ section,article{{scroll-margin-top:64px}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
+<p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
+<div id="favlist"></div><p id="favtools" hidden><button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
 {"".join(sec)}
 {sg_section}
 {nk_section}
@@ -1077,6 +1081,39 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   const f=b.dataset.f;
   document.querySelectorAll('article.card').forEach(c=>{{c.style.display=(f==='all'||c.dataset.vibe===f||(f==='ready'&&c.dataset.ready==='yes')||(f==='one'&&c.dataset.ready==='one'))?'':'none';}});
 }}));
+(function(){{
+  const KEY='wardrobe-favs';
+  let favs=[];
+  try{{favs=JSON.parse(localStorage.getItem(KEY)||'[]')||[];}}catch(e){{favs=[];}}
+  const save=()=>{{try{{localStorage.setItem(KEY,JSON.stringify(favs));}}catch(e){{}}}};
+  const list=document.getElementById('favlist');
+  const originals=[...document.querySelectorAll('section:not(#favourites) article.card')];
+  function render(){{
+    list.innerHTML='';
+    const picked=originals.filter(c=>favs.includes(c.dataset.name));
+    picked.forEach(c=>{{const k=c.cloneNode(true);k.querySelectorAll('[id]').forEach(x=>x.removeAttribute('id'));list.appendChild(k);}});
+    document.getElementById('favempty').hidden=picked.length>0;
+    document.getElementById('favtools').hidden=picked.length===0;
+    document.getElementById('favcount').textContent=picked.length?'('+picked.length+')':'';
+    document.querySelectorAll('article.card').forEach(c=>{{
+      const on=favs.includes(c.dataset.name), b=c.querySelector('.fav');
+      if(b){{b.classList.toggle('on',on);b.setAttribute('aria-pressed',on);b.textContent=on?'★ Favourite':'☆ Favourite';}}
+    }});
+  }}
+  document.addEventListener('click',ev=>{{
+    const b=ev.target.closest('.fav'); if(!b) return;
+    const n=b.closest('article.card').dataset.name;
+    favs=favs.includes(n)?favs.filter(x=>x!==n):favs.concat([n]);
+    save(); render();
+  }});
+  document.getElementById('favcopy').addEventListener('click',()=>{{
+    const txt='My favourite outfits: '+originals.filter(c=>favs.includes(c.dataset.name)).map(c=>'#'+parseInt(c.querySelector('.num').textContent,10)+' '+c.dataset.name).join(', ');
+    const msg=document.getElementById('favmsg');
+    const done=()=>{{msg.textContent='Copied.';}};
+    try{{navigator.clipboard.writeText(txt).then(done,()=>{{msg.textContent=txt;}});}}catch(e){{msg.textContent=txt;}}
+  }});
+  render();
+}})();
 </script></body></html>'''
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     open(OUT, "w").write(doc)
