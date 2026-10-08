@@ -837,7 +837,7 @@ def build():
             n_all = sum(1 for k in pieces if k in OWNED or prod.get(k, {}).get("primary"))
             vibe, occ = VIBE.get(name, ("In between", "Everyday"))
             vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
-            cards.append(f'''<article class="card{' hero' if hero else ''}" data-name="{e(name)}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
+            cards.append(f'''<article id="o{n}" class="card{' hero' if hero else ''}" data-name="{e(name)}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
 <p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><button class="fav" type="button" aria-pressed="false" aria-label="Save to favourites">☆ Favourite</button><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
 <p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
@@ -1022,6 +1022,7 @@ section,article{{scroll-margin-top:64px}}
 .ph .owntag{{position:absolute;top:8px;left:8px;z-index:3;background:#0f6e56;color:#fff;font-style:normal;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.18)}}
 .tots{{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}} .tots .tot{{margin-left:0}}
 .fav{{border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 10px;font:inherit;font-size:13px;cursor:pointer;white-space:nowrap;color:var(--muted)}} .fav.on{{background:#fff4d6;border-color:#e3c46a;color:#7a5a00;font-weight:600}} nav a.navfav{{background:#fff4d6;color:#7a5a00}} #favtools button{{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}}
+.jump{{display:flex;align-items:center;gap:4px}} .jump input{{width:96px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;background:#fff}} .jump button{{border:0;background:var(--accent);color:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}} #jumpmsg{{font-size:13px;color:#a33}} article.card.flash{{outline:3px solid #e3c46a;outline-offset:2px;transition:outline-color .4s}}
 .ownchip{{font-size:13px;background:#e1f5ee;color:#085041;border-radius:999px;padding:3px 10px;white-space:nowrap}}
 .season{{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:-4px 0 16px;font-size:14px}}
 .season .months{{font-weight:600}} .season .temps{{color:var(--accent)}} .season .tip{{color:var(--muted);flex-basis:100%}}
@@ -1045,7 +1046,7 @@ section,article{{scroll-margin-top:64px}}
 .fit h3{{margin:0 0 6px;font-size:16px}} .fit ul{{margin:0;padding-left:18px}} .fit li{{margin:4px 0}}
 .extras{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 12px 12px 30px}} .extras li{{margin:4px 0}} .extras a{{color:var(--accent)}}
 .foot{{margin-top:40px;color:var(--muted);font-size:13px}}
-@media (max-width:640px){{.tots{{margin-left:40px;justify-content:flex-start}} .altc,.uses,th:nth-child(3),th:nth-child(4){{display:none}}}}
+@media (max-width:640px){{nav{{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}} nav::-webkit-scrollbar{{display:none}} nav a,.jump{{flex:0 0 auto;white-space:nowrap}} .tots{{margin-left:40px;justify-content:flex-start}} .altc,.uses,th:nth-child(3),th:nth-child(4){{display:none}}}}
 </style></head><body><div class="wrap">
 <h1>Your outfits for every season</h1>
 <p class="lede"><b>Your style: relaxed, clean casual with an old-money touch, like Ralph Lauren meets Copenhagen.</b> Your Pinterest board sets the direction, not a copy of it. Knits, shirts, sweatshirts, hoodies and tees, with jeans or wide trousers, Sambas and Gazelles, a puffer or vest. It ranges from street to classy, so there's always something for the occasion. {n} outfits mixing new pieces with clothes you already own. Click any piece to open the shop page.</p>
@@ -1061,7 +1062,7 @@ section,article{{scroll-margin-top:64px}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><form class="jump" role="search" autocomplete="off"><input id="jump" type="search" inputmode="numeric" list="jumplist" placeholder="Outfit #" aria-label="Go to outfit number"><datalist id="jumplist"></datalist><button type="submit">Go</button><span id="jumpmsg"></span></form><a href="#favourites" class="navfav">★ Favourites</a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
@@ -1091,7 +1092,7 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   function render(){{
     list.innerHTML='';
     const picked=originals.filter(c=>favs.includes(c.dataset.name));
-    picked.forEach(c=>{{const k=c.cloneNode(true);k.querySelectorAll('[id]').forEach(x=>x.removeAttribute('id'));list.appendChild(k);}});
+    picked.forEach(c=>{{const k=c.cloneNode(true);k.removeAttribute('id');k.querySelectorAll('[id]').forEach(x=>x.removeAttribute('id'));list.appendChild(k);}});
     document.getElementById('favempty').hidden=picked.length>0;
     document.getElementById('favtools').hidden=picked.length===0;
     document.getElementById('favcount').textContent=picked.length?'('+picked.length+')':'';
@@ -1113,6 +1114,27 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
     try{{navigator.clipboard.writeText(txt).then(done,()=>{{msg.textContent=txt;}});}}catch(e){{msg.textContent=txt;}}
   }});
   render();
+}})();
+(function(){{
+  const form=document.querySelector('form.jump'), box=document.getElementById('jump'), msg=document.getElementById('jumpmsg');
+  const cards=[...document.querySelectorAll('section:not(#favourites) article.card')];
+  const dl=document.getElementById('jumplist');
+  cards.forEach(c=>{{const o=document.createElement('option');o.value=parseInt(c.querySelector('.num').textContent,10)+' '+c.dataset.name;dl.appendChild(o);}});
+  function go(){{
+    const v=box.value.trim(); if(!v) return;
+    const n=parseInt(v,10);
+    let t=!isNaN(n)?document.getElementById('o'+n):cards.find(c=>c.dataset.name.toLowerCase().includes(v.toLowerCase()));
+    if(!t){{msg.textContent=isNaN(n)?'No match':'No outfit '+n;setTimeout(()=>msg.textContent='',2000);return;}}
+    if(t.style.display==='none'){{const all=document.querySelector('.vibes button[data-f="all"]');if(all)all.click();}}
+    box.blur();
+    const nav=document.querySelector('nav');
+    const place=()=>window.scrollTo(0,t.getBoundingClientRect().top+window.scrollY-nav.offsetHeight-8);
+    place();setTimeout(place,250);setTimeout(place,700);
+    t.classList.add('flash');setTimeout(()=>t.classList.remove('flash'),1800);
+  }}
+  form.addEventListener('submit',ev=>{{ev.preventDefault();go();}});
+  box.addEventListener('change',()=>{{if(/^[0-9]+ /.test(box.value)) go();}});
+  box.addEventListener('focus',()=>box.select());
 }})();
 </script></body></html>'''
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
