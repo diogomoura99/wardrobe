@@ -1,7 +1,7 @@
 [
  {
   "role": "jacket_varsity",
-  "rank": "primary",
+  "rank": "alt",
   "brand": "Golden Bear",
   "name": "The Hayes Leather-Panelled Wool-Blend Varsity Jacket",
   "colour": "Navy with ivory leather panels",
@@ -25,7 +25,7 @@
  },
  {
   "role": "sweat_grey",
-  "rank": "primary",
+  "rank": "alt",
   "brand": "Merz b. Schwanen",
   "name": "3S48 Loopwheeled Heavyweight Sweatshirt",
   "colour": "Grey Melange",
@@ -81,18 +81,6 @@
   "url": "https://premiata.eu/products/lucy-7770",
   "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/LUC07770_1.jpg?v=1783002739",
   "fit_note": "Slim retro runner in midnight blue. Take 43, like your Bonnies.",
-  "verified": true
- },
- {
-  "role": "shoe_premiata_burgundy",
-  "rank": "primary",
-  "brand": "Premiata",
-  "name": "Lander 8411",
-  "colour": "Burgundy suede and nylon, cream sole",
-  "price_eur": 275,
-  "url": "https://premiata.eu/products/lan08411",
-  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/LAN08411_1.jpg?v=1790062404",
-  "fit_note": "The timeless take on your burgundy Sambas: a slim retro runner in burgundy. Take 43, like your Bonnies (check the size guide, it's a different model).",
   "verified": true
  },
  {
