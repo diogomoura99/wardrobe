@@ -106,5 +106,41 @@
   "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/RUS08028_1.jpg?v=1786102735",
   "fit_note": "Cleaner white-and-navy court shape. Take 43.",
   "verified": true
+ },
+ {
+  "role": "shoe_premiata_black",
+  "rank": "primary",
+  "brand": "Premiata",
+  "name": "Bonnie 8123",
+  "colour": "Cream leather, grey suede, black stripes",
+  "price_eur": 240,
+  "url": "https://premiata.eu/products/bonnie-8123",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/BOE08123_1.jpg?v=1786102320",
+  "fit_note": "Same Bonnie shape as yours, in cream with black stripes that pick up a black top. Take 43, like your Bonnies.",
+  "verified": true
+ },
+ {
+  "role": "shoe_gg_navy",
+  "rank": "primary",
+  "brand": "Golden Goose",
+  "name": "Super-Star",
+  "colour": "Ivory leather with dark-blue star and heel tab",
+  "price_eur": 485,
+  "url": "https://www.goldengoose.com/pt/en/men%E2%80%99s-super-star-in-white-leather-with-dark-blue-star-cod-GMF00101.F004164.15430.html",
+  "image_url": "https://static2.goldengoose.com/public/Style/ECOMM/GMF00101.F004164-15430.jpg",
+  "fit_note": "The warmer, less distressed Super-Star; the navy star matches your harrington. Take 43 (Golden Goose 43 = UK 9 / US 10, same as your adidas 44).",
+  "verified": true
+ },
+ {
+  "role": "shoe_gg_black",
+  "rank": "primary",
+  "brand": "Golden Goose",
+  "name": "Super-Star",
+  "colour": "White leather, ice suede star, black heel tab",
+  "price_eur": 460,
+  "url": "https://www.goldengoose.com/pt/en/men-s-super-star-with-black-heel-tab-and-metal-stud-lettering-cod-GMF00102.F000318.10220.html",
+  "image_url": "https://static2.goldengoose.com/public/Style/ECOMM/GMF00102.F000318-10220.jpg",
+  "fit_note": "The classic Super-Star; the black heel tab ties in a black top. Take 43 (Golden Goose 43 = UK 9 / US 10, same as your adidas 44).",
+  "verified": true
  }
 ]

@@ -22,6 +22,9 @@ ROLE_INFO = {
     "clog_suede": ("Shoes", "Suede clogs"),
     "shoe_premiata": ("Shoes", "Navy suede Premiata"),
     "shoe_premiata_cream": ("Shoes", "Cream & burgundy Premiata"),
+    "shoe_premiata_black": ("Shoes", "Cream & black Premiata"),
+    "shoe_gg_navy": ("Shoes", "Cream & navy Golden Goose"),
+    "shoe_gg_black": ("Shoes", "White & black Golden Goose"),
     "bracelet_cuff": ("Accessories", "Silver cuff"),
     "coat_wool": ("Outerwear", "Chocolate wool coat"),
     "cardigan_mohair": ("Knitwear & tops", "Grey mohair cardigan"),
@@ -453,8 +456,8 @@ PIECE_ALT = {
   "Sage crochet": ("own_af_tank_white", "Even better here", ["tank_cream"]),
   "Knit polo & white jeans": ("own_spezial_navy", "Timeless option", ["shoe_premiata"]),
   "Blue & cream": ("own_spezial_navy", "Timeless option", ["shoe_premiata"]),
-  "Harrington & white": ("own_spezial_cream", "Timeless option", ["shoe_premiata_cream"]),
-  "Black knit & cream": ("own_spezial_cream", "Timeless option", ["shoe_premiata_cream"]),
+  "Harrington & white": ("own_spezial_cream", "Other shoes to try", ["shoe_premiata_cream", "shoe_mexico66", "shoe_gg_navy"]),
+  "Black knit & cream": ("own_spezial_cream", "Other shoes to try", ["shoe_premiata_cream", "shoe_premiata_black", "shoe_gg_black"]),
 }
 
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
@@ -743,6 +746,13 @@ ALT_HINT = {
   "own_sage_jacket": "light sage",
   "own_polo_harrington": "navy",
 }
+TREND_TAG = {
+  "shoe_premiata_cream": ("More timeless", "Vintage tennis shape, not tied to any trend wave."),
+  "shoe_mexico66": ("Timeless design, trend at its peak", "A 1966 classic, but the slim-sneaker wave is at its height now. It will cool off, and the shoe will still look right."),
+  "shoe_premiata_black": ("In between", "Terrace shape like your Spezials, a wave that's past its peak, but the quiet brand ages slower."),
+  "shoe_gg_navy": ("More trendy, late stage", "Golden Goose peaked around 2018–22. Still everywhere, and the distressed look is starting to read dated."),
+  "shoe_gg_black": ("More trendy, late stage", "The most recognisable Golden Goose, so it says \"trend\" the loudest. Past its peak."),
+}
 INNER_PRIORITY = ["own_af_tank_white", "tank_cream", "tank_navy", "tank_brown", "own_af_white_tee", "own_af_tee_grey", "own_af_tee_cream", "own_af_tee_black", "own_hotel_tee", "own_brown_tee",
                   "own_stripe_ls", "shirt_oxford", "own_blue_linen"]
 
@@ -765,9 +775,10 @@ def swap_box(kind, alts, prod):
     views = [piece_view(k, prod) for k in alts]
     short = " · ".join(v[2].replace("Your ", "your ") for v in views)
     items = ""
-    for img, u, t, sub in views:
+    for k, (img, u, t, sub) in zip(alts, views):
         pic = ('<img loading="lazy" referrerpolicy="no-referrer" src="' + e(img) + '" alt="">') if img else ""
-        items += '<a class="swapitem" href="' + e(u) + '" target="_blank" rel="noopener"><span class="swapph">' + pic + '</span><b>' + e(t) + '</b><small>' + e(sub) + '</small></a>'
+        tag = ('<i class="trend">' + e(TREND_TAG[k][0]) + '</i><small>' + e(TREND_TAG[k][1]) + '</small>') if k in TREND_TAG else ""
+        items += '<a class="swapitem" href="' + e(u) + '" target="_blank" rel="noopener"><span class="swapph">' + pic + '</span><b>' + e(t) + '</b><small>' + e(sub) + '</small>' + tag + '</a>'
     return '<details class="swapbox"><summary><span class="swaplab">' + kind + ':</span> ' + e(short) + '</summary><div class="swapgrid">' + items + '</div></details>'
 
 def swaps_for(name, pieces, prod):
@@ -1021,7 +1032,7 @@ section,article{{scroll-margin-top:64px}}
 .swapbox summary::after{{content:" ▾";}} .swapbox[open] summary::after{{content:" ▴";}} .swaplab{{font-weight:600}}
 .swapgrid{{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px}} .swapitem{{display:block;text-decoration:none;color:var(--text);background:var(--chip);border-radius:8px;padding:5px}}
 .swapph{{display:block;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:#fff;margin-bottom:4px}} .swapph img{{width:100%;height:100%;object-fit:cover;display:block}}
-.swapitem b{{display:block;font-weight:600;font-size:11px;line-height:1.25}} .swapitem small{{display:block;color:var(--muted);font-size:11px;line-height:1.25}}
+.swapitem b{{display:block;font-weight:600;font-size:11px;line-height:1.25}} .swapitem small{{display:block;color:var(--muted);font-size:11px;line-height:1.25}} .swapitem .trend{{display:inline-block;font-style:normal;font-size:10px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:1px 6px;margin:4px 0 2px}}
 .swap{{display:block;margin-top:6px;font-size:13px;color:var(--muted)}} .swap a{{color:var(--accent)}}
 .fitb{{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:2px 8px;margin-top:4px}} .fb-ok{{background:#e1f5ee;color:#085041}} .fb-mid{{background:#faeeda;color:#633806}} .fb-far{{background:#f6e3e3;color:#7a1f1f}} .fb-unk{{background:var(--chip);color:#555}}
 .pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:8px}}
