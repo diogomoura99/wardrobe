@@ -57,7 +57,17 @@ section,article{scroll-margin-top:64px}
 .ph .owntag{position:absolute;top:8px;left:8px;z-index:3;background:#0f6e56;color:#fff;font-style:normal;font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.18)}
 .tots{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end} .tots .tot{margin-left:0}
 .fav{border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 10px;font:inherit;font-size:13px;cursor:pointer;white-space:nowrap;color:var(--muted)} .fav.on{background:#fff4d6;border-color:#e3c46a;color:#7a5a00;font-weight:600} nav a.navfav{background:#fff4d6;color:#7a5a00} #favtools button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer}
-.jump{display:flex;align-items:center;gap:4px} .jump input{width:96px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;background:#fff} .jump button{border:0;background:var(--accent);color:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer} #jumpmsg{font-size:13px;color:#a33} article.card.flash{outline:3px solid #e3c46a;outline-offset:2px;transition:outline-color .4s}
+article.card.flash{outline:3px solid #e3c46a;outline-offset:2px;transition:outline-color .4s}
+#rail{position:fixed;left:0;top:72px;bottom:14px;width:34px;z-index:6;touch-action:none;user-select:none;-webkit-user-select:none;cursor:pointer}
+#rail .ticks{position:absolute;left:0;right:0;top:0;bottom:0}
+#rail i{position:absolute;left:7px;height:2px;width:7px;border-radius:2px;opacity:.55;transform:translateY(-1px);transition:width .12s ease,opacity .12s ease}
+#rail i.ten{width:11px;opacity:.8} #rail i.cur{width:15px;opacity:1;height:3px}
+#rail b{position:absolute;left:21px;font-size:9px;font-weight:600;line-height:1;color:var(--muted);transform:translateY(-50%);transition:opacity .12s}
+#rail .here{position:absolute;left:24px;font-style:normal;font-size:11px;font-weight:700;color:var(--accent);background:var(--bg);padding:0 2px;border-radius:4px;transform:translateY(-50%);pointer-events:none}
+#rail.active b,#rail.active .here{opacity:0} #rail.active i{opacity:.9}
+#rail .bubble{position:absolute;left:44px;transform:translateY(-50%);background:var(--accent);color:#fff;border-radius:14px;padding:6px 14px 7px;font-size:26px;font-weight:700;line-height:1.1;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.18);pointer-events:none}
+#rail .bubble small{display:block;font-size:12px;font-weight:500;opacity:.85}
+@media (max-width:1219px){.wrap{padding-left:44px}} @media (max-width:640px){.wrap{padding-left:38px} #rail{width:30px} #rail i{left:5px} #rail b{left:18px} #rail .here{left:20px}}
 .ownchip{font-size:13px;background:#e1f5ee;color:#085041;border-radius:999px;padding:3px 10px;white-space:nowrap}
 .season{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:-4px 0 16px;font-size:14px}
 .season .months{font-weight:600} .season .temps{color:var(--accent)} .season .tip{color:var(--muted);flex-basis:100%}
@@ -81,7 +91,7 @@ section,article{scroll-margin-top:64px}
 .fit h3{margin:0 0 6px;font-size:16px} .fit ul{margin:0;padding-left:18px} .fit li{margin:4px 0}
 .extras{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 12px 12px 30px} .extras li{margin:4px 0} .extras a{color:var(--accent)}
 .foot{margin-top:40px;color:var(--muted);font-size:13px}
-@media (max-width:640px){nav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch} nav::-webkit-scrollbar{display:none} nav a,.jump{flex:0 0 auto;white-space:nowrap} .tots{margin-left:40px;justify-content:flex-start} .altc,.uses,th:nth-child(3),th:nth-child(4){display:none}}
+@media (max-width:640px){nav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch} nav::-webkit-scrollbar{display:none} nav a{flex:0 0 auto;white-space:nowrap} .tots{margin-left:40px;justify-content:flex-start} .altc,.uses,th:nth-child(3),th:nth-child(4){display:none}}
 </style></head><body><div class="wrap">
 <h1>Your outfits for every season</h1>
 <p class="lede"><b>Your style: relaxed, clean casual with an old-money touch, like Ralph Lauren meets Copenhagen.</b> Your Pinterest board sets the direction, not a copy of it. Knits, shirts, sweatshirts, hoodies and tees, with jeans or wide trousers, Sambas and Gazelles, a puffer or vest. It ranges from street to classy, so there's always something for the occasion. 90 outfits mixing new pieces with clothes you already own. Click any piece to open the shop page.</p>
@@ -97,7 +107,7 @@ section,article{scroll-margin-top:64px}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><form class="jump" role="search" autocomplete="off"><input id="jump" type="search" inputmode="numeric" list="jumplist" placeholder="Outfit #" aria-label="Go to outfit number"><datalist id="jumplist"></datalist><button type="submit">Go</button><span id="jumpmsg"></span></form><a href="#favourites" class="navfav">★ Favourites</a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
@@ -1697,6 +1707,7 @@ section,article{scroll-margin-top:64px}
 <div class="why">A plain band with five struck hallmarks, in the same darkened silver as your Serge DeNimes pendant. About €213 for Portugal (£145, VAT and duty included). Check your ring size with their guide.</div></td><td class="altc"><a href="https://www.cos.com/en-eu/men/accessories/jewellery/rings/product/indented-signet-ring-silver-1322671001" target="_blank" rel="noopener">COS: Indented Signet Ring · €25</a></td><td class="uses">3 outfits</td></tr></tbody></table><h3 class="cat">Optional extras</h3><p class="lede">You already own something that does this job, so these are only worth buying if you want a second option.</p><ul class="extras"><li><b>Cream cable knit:</b> <a href="https://aranwoollenmills.com/products/omey-cream-mens-aran-crew-neck-sweater" target="_blank" rel="noopener">Aran Woollen Mills: Omey Aran Crew Neck</a> · €150 · or <a href="https://www.ralphlauren.pt/en/cable-knit-cotton-jumper-515061.html" target="_blank" rel="noopener">Polo Ralph Lauren (€215)</a></li><li><b>Half-zip knit:</b> <a href="https://www.percivalclo.com/products/meyer-knitted-turtle-neck-fisherman-cotton-blue" target="_blank" rel="noopener">Percival: Meyer Boxy Quarter-Zip</a> · €250 · or <a href="https://www.abercrombie.com/shop/eu/p/quarter-zip-sweater-63845821" target="_blank" rel="noopener">Abercrombie &amp; Fitch (€75)</a></li><li><b>Navy suede Premiata:</b> <a href="https://premiata.eu/products/boe08589" target="_blank" rel="noopener">Premiata: Bonnie 8589</a> · €240 · or <a href="https://premiata.eu/products/lucy-7770" target="_blank" rel="noopener">Premiata (€275)</a></li><li><b>Cream &amp; burgundy Premiata:</b> <a href="https://premiata.eu/products/steven-7628" target="_blank" rel="noopener">Premiata: Steven 7628</a> · €305 · or <a href="https://premiata.eu/products/russell-8028" target="_blank" rel="noopener">Premiata (€230)</a></li><li><b>Cream &amp; black Premiata:</b> <a href="https://premiata.eu/products/bonnie-8123" target="_blank" rel="noopener">Premiata: Bonnie 8123</a> · €240</li><li><b>Cream &amp; navy Golden Goose:</b> <a href="https://www.goldengoose.com/pt/en/men%E2%80%99s-super-star-in-white-leather-with-dark-blue-star-cod-GMF00101.F004164.15430.html" target="_blank" rel="noopener">Golden Goose: Super-Star</a> · €485</li><li><b>White &amp; black Golden Goose:</b> <a href="https://www.goldengoose.com/pt/en/men-s-super-star-with-black-heel-tab-and-metal-stud-lettering-cod-GMF00102.F000318.10220.html" target="_blank" rel="noopener">Golden Goose: Super-Star</a> · €460</li><li><b>Cream &amp; brown Onitsuka Mexico 66:</b> <a href="https://www.onitsukatiger.com/pt/en-pt/mexico-66-sd-vin/p/1183c015-204.html" target="_blank" rel="noopener">Onitsuka Tiger: Mexico 66 SD VIN</a> · €210</li></ul></section>
 <p class="foot">Prices and stock were checked on 6 October 2026 and can change. Sizing and fit vary by brand, so check each shop's size guide. Tiles marked "You have this" are things you already own. A green outline means a photo of your piece (or the closest match); striped tiles are pieces without a photo yet.</p>
 </div>
+<div id="rail" role="navigation" aria-label="Outfit index"><div class="ticks"></div><em class="here"></em><div class="bubble" hidden></div></div>
 <script>
 document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('.vibes button').forEach(x=>x.classList.toggle('on',x===b));
@@ -1737,24 +1748,48 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   render();
 })();
 (function(){
-  const form=document.querySelector('form.jump'), box=document.getElementById('jump'), msg=document.getElementById('jumpmsg');
-  const cards=[...document.querySelectorAll('section:not(#favourites) article.card')];
-  const dl=document.getElementById('jumplist');
-  cards.forEach(c=>{const o=document.createElement('option');o.value=parseInt(c.querySelector('.num').textContent,10)+' '+c.dataset.name;dl.appendChild(o);});
-  function go(){
-    const v=box.value.trim(); if(!v) return;
-    const n=parseInt(v,10);
-    let t=!isNaN(n)?document.getElementById('o'+n):cards.find(c=>c.dataset.name.toLowerCase().includes(v.toLowerCase()));
-    if(!t){msg.textContent=isNaN(n)?'No match':'No outfit '+n;setTimeout(()=>msg.textContent='',2000);return;}
+  const COL={spring:'#6f9a5b',summer:'#c99a2e',autumn:'#b0602f',winter:'#56739a',special:'#8a63b3'};
+  const rail=document.getElementById('rail'), ticks=rail.querySelector('.ticks'), bub=rail.querySelector('.bubble'), here=rail.querySelector('.here'), nav=document.querySelector('nav');
+  const cards=[...document.querySelectorAll('section:not(#favourites) article.card')], N=cards.length, els=[], labels=[];
+  const num=c=>parseInt(c.querySelector('.num').textContent,10);
+  cards.forEach((c,i)=>{
+    const t=document.createElement('i'), top=((i+.5)/N*100)+'%', n=num(c);
+    t.style.top=top; t.style.background=COL[c.closest('section').id]||'#999';
+    if(n%10===0){t.className='ten';const b=document.createElement('b');b.textContent=n;b.style.top=top;ticks.appendChild(b);labels.push([i,b]);}
+    ticks.appendChild(t); els.push(t);
+  });
+  const fit=()=>{rail.style.top=(nav.offsetHeight+12)+'px';};
+  const idxAt=y=>{const r=ticks.getBoundingClientRect();return Math.max(0,Math.min(N-1,Math.floor((y-r.top)/r.height*N)));};
+  function jump(i){
+    const t=cards[i];
     if(t.style.display==='none'){const all=document.querySelector('.vibes button[data-f="all"]');if(all)all.click();}
-    box.blur();
-    const nav=document.querySelector('nav');
     const place=()=>window.scrollTo(0,t.getBoundingClientRect().top+window.scrollY-nav.offsetHeight-8);
-    place();setTimeout(place,250);setTimeout(place,700);
-    t.classList.add('flash');setTimeout(()=>t.classList.remove('flash'),1800);
+    place();setTimeout(place,250);
   }
-  form.addEventListener('submit',ev=>{ev.preventDefault();go();});
-  box.addEventListener('change',()=>{if(/^[0-9]+ /.test(box.value)) go();});
-  box.addEventListener('focus',()=>box.select());
+  function show(i){
+    const c=cards[i], sec=c.closest('section').querySelector('h2').textContent;
+    bub.innerHTML=num(c)+'<small></small>'; bub.querySelector('small').textContent=c.dataset.name+' · '+sec;
+    bub.style.top=els[i].style.top; bub.hidden=false; rail.classList.add('active');
+    els.forEach((t,j)=>{const d=Math.abs(j-i);t.style.width=d<5?(7+(5-d)*4)+'px':'';});
+  }
+  function hide(){bub.hidden=true;rail.classList.remove('active');els.forEach(t=>t.style.width='');}
+  let drag=false,last=-1,hideT=0;
+  rail.addEventListener('pointerdown',e=>{e.preventDefault();clearTimeout(hideT);drag=true;try{rail.setPointerCapture(e.pointerId);}catch(_){}const i=idxAt(e.clientY);show(i);if(i!==last){jump(i);last=i;}});
+  rail.addEventListener('pointermove',e=>{const i=idxAt(e.clientY);if(drag){show(i);if(i!==last){jump(i);last=i;}}else if(e.pointerType==='mouse'){show(i);}});
+  const end=()=>{if(!drag)return;drag=false;if(last>=0){const t=cards[last];t.classList.add('flash');setTimeout(()=>t.classList.remove('flash'),1500);}last=-1;hideT=setTimeout(hide,700);};
+  rail.addEventListener('pointerup',end); rail.addEventListener('pointercancel',end);
+  rail.addEventListener('pointerleave',()=>{if(!drag)hide();});
+  let raf=0;
+  function current(){
+    raf=0; const y=nav.getBoundingClientRect().bottom+60; let k=-1;
+    for(let i=0;i<N;i++){const r=cards[i].getBoundingClientRect();if(!r.height)continue;if(r.top<=y)k=i;else break;}
+    const past=k===N-1&&cards[k].getBoundingClientRect().bottom<y;
+    els.forEach((t,j)=>t.classList.toggle('cur',j===k&&!past));
+    if(k>=0&&!past){here.textContent=num(cards[k]);here.style.top=els[k].style.top;here.hidden=false;labels.forEach(([j,b])=>b.style.opacity=Math.abs(j-k)<3?0:'');}
+    else{here.hidden=true;labels.forEach(([,b])=>b.style.opacity='');}
+  }
+  window.addEventListener('scroll',()=>{if(!raf)raf=requestAnimationFrame(current);},{passive:true});
+  window.addEventListener('resize',()=>{fit();current();});
+  fit(); current();
 })();
 </script></body></html>
