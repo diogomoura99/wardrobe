@@ -1,18 +1,6 @@
 [
  {
   "role": "jacket_varsity",
-  "brand": "Abercrombie & Fitch",
-  "name": "Vegan Suede Bomber Jacket",
-  "colour": "Espresso",
-  "price_eur": 160,
-  "url": "https://www.abercrombie.com/shop/eu/p/suede-bomber-jacket-63616658",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_132-6380-00417-420_prod1?policy=product-large",
-  "verified": true,
-  "fit_note": "Hip-length suede-look bomber with rib trim. A&F's closest to a clean varsity (their current varsities are logo-heavy).",
-  "rank": "alt"
- },
- {
-  "role": "jacket_varsity",
   "brand": "COS",
   "name": "Leather-Panelled Wool Bomber Jacket",
   "colour": "Midnight",

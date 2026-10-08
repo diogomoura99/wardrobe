@@ -1,0 +1,122 @@
+[
+ {
+  "role": "jacket_varsity",
+  "rank": "primary",
+  "brand": "Golden Bear",
+  "name": "The Hayes Leather-Panelled Wool-Blend Varsity Jacket",
+  "colour": "Navy with ivory leather panels",
+  "price_eur": 545,
+  "url": "https://www.mrporter.com/en-pt/mens/product/golden-bear/clothing/lightweight-waterproof-jackets/the-hayes-leather-panelled-wool-blend-varsity-jacket/30828384629118197",
+  "image_url": "https://www.mrporter.com/variants/images/30828384629118197/in/w960_q60.jpg",
+  "fit_note": "From the San Francisco maker of the classic American varsity: wool-blend body, leather panels, no lettering. Regular fit, take M. Pricier than most picks, but it won't date. At MR PORTER Portugal.",
+  "verified": true
+ },
+ {
+  "role": "jacket_varsity",
+  "rank": "alt",
+  "brand": "Golden Bear",
+  "name": "The Albany Wool-Blend and Leather Varsity Jacket",
+  "colour": "Navy wool, navy leather sleeves",
+  "price_eur": 610,
+  "url": "https://www.mrporter.com/en-pt/mens/product/golden-bear/clothing/leather-jackets/the-albany-wool-blend-and-leather-varsity-jacket/30828384629118198",
+  "image_url": "https://www.mrporter.com/variants/images/30828384629118198/in/w960_q60.jpg",
+  "fit_note": "The quieter all-navy version. Take M (only two left).",
+  "verified": true
+ },
+ {
+  "role": "sweat_grey",
+  "rank": "primary",
+  "brand": "Merz b. Schwanen",
+  "name": "3S48 Loopwheeled Heavyweight Sweatshirt",
+  "colour": "Grey Melange",
+  "price_eur": 230,
+  "url": "https://www.merzbschwanen.com/products/mens-loopwheeled-sweatshirt-heavy-12-4oz-sq-yd-classic-fit-1",
+  "image_url": "https://cdn.shopify.com/s/files/1/0904/5468/8068/files/3S48_80_10.jpg?v=1754032083",
+  "fit_note": "Loopwheeled heavyweight cotton made in Germany, a sweatshirt for decades. Classic fit: take 5/M, or 6/L for the boxy look.",
+  "verified": true
+ },
+ {
+  "role": "sweat_grey",
+  "rank": "alt",
+  "brand": "Merz b. Schwanen",
+  "name": "3M46 Loopback Sweatshirt",
+  "colour": "Grey Melange",
+  "price_eur": 165,
+  "url": "https://www.merzbschwanen.com/products/sturdy-loopback-fleece-sweatshirt-side-seams-10oz-sq-yd-classic-fit",
+  "image_url": "https://cdn.shopify.com/s/files/1/0904/5468/8068/files/3M46_80_10.jpg?v=1754032077",
+  "fit_note": "Lighter 10 oz version, cheaper. Take 5/M.",
+  "verified": true
+ },
+ {
+  "role": "sweat_grey",
+  "rank": "alt2",
+  "brand": "Sunspel",
+  "name": "Loopback Sweatshirt",
+  "colour": "Grey Melange",
+  "price_eur": 170,
+  "url": "https://www.mrporter.com/en-pt/mens/product/sunspel/clothing/sweatshirts/brushed-loopback-cotton-jersey-sweatshirt/1473020371506217",
+  "image_url": "https://cdn.shopify.com/s/files/1/0636/5154/5319/files/mswe1516-gyaa-1_0ddb6d0f-d84f-4835-a9f8-2eca851779a5.jpg?v=1755775605",
+  "fit_note": "The textbook timeless grey sweatshirt, neat fit; take L for a boxier look. M at MR PORTER (sold out on Sunspel's own site).",
+  "verified": true
+ },
+ {
+  "role": "knit_polo",
+  "rank": "alt",
+  "brand": "Norse Projects",
+  "name": "Ristinge Lambswool Polo",
+  "colour": "Heathland Brown",
+  "price_eur": 265,
+  "url": "https://www.norseprojects.com/products/ristinge-merino-lambswool-polo-heathland-brown",
+  "image_url": "https://cdn.shopify.com/s/files/1/0960/6738/7723/files/N45-0701-2040_3033.jpg?v=1790861660",
+  "fit_note": "Lambswool, relaxed fit, Copenhagen-made in spirit. Take M.",
+  "verified": true
+ },
+ {
+  "role": "shoe_premiata",
+  "rank": "alt",
+  "brand": "Premiata",
+  "name": "Lucy 7770",
+  "colour": "Midnight blue with cream accents",
+  "price_eur": 275,
+  "url": "https://premiata.eu/products/lucy-7770",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/LUC07770_1.jpg?v=1783002739",
+  "fit_note": "Slim retro runner in midnight blue. Take 43, like your Bonnies.",
+  "verified": true
+ },
+ {
+  "role": "shoe_premiata_burgundy",
+  "rank": "primary",
+  "brand": "Premiata",
+  "name": "Lander 8411",
+  "colour": "Burgundy suede and nylon, cream sole",
+  "price_eur": 275,
+  "url": "https://premiata.eu/products/lan08411",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/LAN08411_1.jpg?v=1790062404",
+  "fit_note": "The timeless take on your burgundy Sambas: a slim retro runner in burgundy. Take 43, like your Bonnies (check the size guide, it's a different model).",
+  "verified": true
+ },
+ {
+  "role": "shoe_premiata_cream",
+  "rank": "primary",
+  "brand": "Premiata",
+  "name": "Steven 7628",
+  "colour": "Cream leather with burgundy and dark brown",
+  "price_eur": 305,
+  "url": "https://premiata.eu/products/steven-7628",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/STE07628_1.jpg?v=1783002900",
+  "fit_note": "Almost a twin of your off-white Spezials (cream with a burgundy accent), but timeless. Take 43, like your Bonnies (check the size guide, it's a different model).",
+  "verified": true
+ },
+ {
+  "role": "shoe_premiata_cream",
+  "rank": "alt",
+  "brand": "Premiata",
+  "name": "Russell 8028",
+  "colour": "White with navy details",
+  "price_eur": 230,
+  "url": "https://premiata.eu/products/russell-8028",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/RUS08028_1.jpg?v=1786102735",
+  "fit_note": "Cleaner white-and-navy court shape. Take 43.",
+  "verified": true
+ }
+]

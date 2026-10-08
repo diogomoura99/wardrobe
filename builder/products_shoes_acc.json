@@ -36,42 +36,6 @@
   "fit_note": "Axel Arigato's take on the Samba shape. Price includes VAT and duties."
  },
  {
-  "role": "shoe_adidas_suede",
-  "rank": "primary",
-  "brand": "adidas Originals",
-  "name": "Gazelle Indoor",
-  "colour": "Dusky Bronze / Off White",
-  "price_eur": 120,
-  "url": "https://www.adidas.pt/sapatilhas-gazelle-indoor/KH9705.html",
-  "image_url": "https://assets.adidas.com/images/w_1000,f_auto,q_auto/2ee09677e2bf4c819ef01d0d363aef7d_9366/SAPATILHAS_GAZELLE_INDOOR_Castanho_KH9705_01_00_standard.jpg",
-  "verified": true,
-  "fit_note": "Brown suede, low profile, translucent sole. Great with ecru or grey."
- },
- {
-  "role": "shoe_adidas_suede",
-  "rank": "alt",
-  "brand": "adidas Originals",
-  "name": "Samba OG",
-  "colour": "Khaki / White / Gum",
-  "price_eur": 120,
-  "url": "https://www.adidas.pt/sapatilhas-samba-og/KK2272.html",
-  "image_url": "https://assets.adidas.com/images/w_1000,f_auto,q_auto/ad072f5a2ea14037afa9985d7c0a1053_9366/SAPATILHAS_SAMBA_OG_Bege_KK2272_01_00_standard.jpg",
-  "verified": true,
-  "fit_note": "Tan suede Samba. Your favourite shape in the stone part of the palette."
- },
- {
-  "role": "shoe_adidas_suede",
-  "rank": "alt2",
-  "brand": "Axel Arigato",
-  "name": "Dice T-Toe Sneaker",
-  "colour": "Dark Brown",
-  "price_eur": 250,
-  "url": "https://axelarigato.com/men/footwear/dice/dice-t-toe-sneaker-f4058002",
-  "image_url": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/1d697eb7-b0c6-5f37-94ef-ea9a05a2f305/F4058002_PRODUCTPAGE.png",
-  "verified": true,
-  "fit_note": "Dark-brown nubuck and suede, handmade in Portugal. A more elevated option."
- },
- {
   "role": "shoe_premiata",
   "rank": "primary",
   "brand": "Premiata",
@@ -82,30 +46,6 @@
   "image_url": "https://premiata.eu/cdn/shop/files/BOE08589_1_1200x.jpg?v=1784826270",
   "verified": true,
   "fit_note": "Low, Samba-like Premiata in navy suede with a cream sole."
- },
- {
-  "role": "shoe_premiata",
-  "rank": "alt",
-  "brand": "Premiata",
-  "name": "Steven 7897",
-  "colour": "Dark brown suede",
-  "price_eur": 305,
-  "url": "https://premiata.eu/products/steven-7897",
-  "image_url": "https://premiata.eu/cdn/shop/files/STE07897_1_4b0a5cbe-e3f5-4403-98a5-8d9551a14e6a_1200x.jpg?v=1786102778",
-  "verified": true,
-  "fit_note": "Dark-brown suede court sneaker with a worn-in cream sole."
- },
- {
-  "role": "shoe_premiata",
-  "rank": "alt2",
-  "brand": "Premiata",
-  "name": "Russell 8556",
-  "colour": "Cream with dark brown",
-  "price_eur": 250,
-  "url": "https://premiata.eu/products/rus08556",
-  "image_url": "https://premiata.eu/cdn/shop/files/RUS08556_1_1200x.jpg?v=1788512651",
-  "verified": true,
-  "fit_note": "Cream leather with brown trims, for ecru-heavy outfits. Some sizes sold out."
  },
  {
   "role": "shoe_leather_clean",
