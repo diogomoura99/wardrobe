@@ -49,18 +49,6 @@
  },
  {
   "role": "shoe_leather_clean",
-  "rank": "primary",
-  "brand": "Axel Arigato",
-  "name": "Clean 90 Sneaker",
-  "colour": "White leather",
-  "price_eur": 230,
-  "url": "https://axelarigato.com/men/footwear/clean-90/clean-90-28102",
-  "image_url": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/5cb4122b-09de-5f42-a204-8f4e450aa076/28102_PRODUCTPAGE.png",
-  "verified": true,
-  "fit_note": "Minimal white leather low-top for smarter and night-out looks. Price includes VAT and duties."
- },
- {
-  "role": "shoe_leather_clean",
   "rank": "alt",
   "brand": "Filling Pieces",
   "name": "Court All White",
@@ -70,18 +58,6 @@
   "image_url": "https://cdn.shopify.com/s/files/1/1809/9621/files/8720133922957-1_3766b4d8-ca23-4dd8-bb51-702226dc3eaf.jpg?v=1749652862",
   "verified": true,
   "fit_note": "Dutch label, clean tonal court shape. On sale (was €200)."
- },
- {
-  "role": "shoe_leather_clean",
-  "rank": "alt2",
-  "brand": "Axel Arigato",
-  "name": "Clean 90 Sneaker",
-  "colour": "Black leather",
-  "price_eur": 230,
-  "url": "https://axelarigato.com/men/footwear/clean-90/clean-90-28115",
-  "image_url": "https://media.occtoo.com/a5fb66f4-a21f-4b8f-97f8-f0c65eaef780/4149701c-2e34-595b-93f3-cd36cdab022a/28115_PRODUCTPAGE.png",
-  "verified": true,
-  "fit_note": "The dark version, sharp with charcoal or navy at night."
  },
  {
   "role": "scarf_check",

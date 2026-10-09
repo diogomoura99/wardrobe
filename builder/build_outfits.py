@@ -34,7 +34,7 @@ ROLE_INFO = {
     "jewelry_ring": ("Accessories", "Silver ring"),
 }
 ALIAS = {}
-BLOCK_BRANDS_SHOES = ("Axel Arigato", "Filling Pieces")
+BLOCK_BRANDS_SHOES = ("Filling Pieces",)
 NO_CAPS = False
 OWNED = {
     "own_brown_puffer": ("Outerwear", "Your brown Ultra puffer"),
