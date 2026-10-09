@@ -12,18 +12,6 @@
   "verified": true
  },
  {
-  "role": "jacket_tweed_track",
-  "brand": "COS",
-  "name": "Tweed Track Jacket",
-  "colour": "Black and white salt-and-pepper tweed",
-  "price_eur": 179,
-  "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/jackets/product/tweed-track-jacket-black-1305314001",
-  "image_url": "https://media.cos.com/assets/001/0a/d9/0ad9730378583ac49e3caf72c84ab26e336deaff_xxl-1.jpg",
-  "fit_note": "Take M. Only 3 left in M on 9 Oct. More trendy: the track jacket is at its peak, and tweed is the refined late version.",
-  "rank": "primary",
-  "verified": true
- },
- {
   "role": "jacket_houndstooth",
   "brand": "Pop Trading Company",
   "name": "Harrington Jacket",
@@ -48,18 +36,6 @@
   "verified": true
  },
  {
-  "role": "shoe_sl72_rust",
-  "brand": "adidas Originals",
-  "name": "SL 72 PT (KJ2471)",
-  "colour": "Rust hairy suede, gold logo, gum sole",
-  "price_eur": 113.99,
-  "url": "https://en.afew-store.com/products/adidas-originals-sl-72-pt-bursie-bursie-royblu",
-  "image_url": "https://cdn.shopify.com/s/files/1/2718/4356/files/adidas-originals-sl-72-pt-bursie-bursie-royblu-kj2471-footwear_20_3E_20sneaker.jpg?v=1788953844",
-  "fit_note": "Take US 10 (EU 44), like your adidas. Dry days only. More trendy: the SL 72 is at its peak, hairy suede is rising.",
-  "rank": "primary",
-  "verified": true
- },
- {
   "role": "shoe_tokuten_pink",
   "brand": "Onitsuka Tiger",
   "name": "Tokuten (1183C431.001)",
@@ -80,18 +56,6 @@
   "url": "https://axelarigato.com/men/footwear/daze/daze-runner-f4330002",
   "image_url": "img/axel-arigato-daze-blue-grey.jpg",
   "fit_note": "Ultra-slim 70s runner, handmade in Portugal. Runs small: take EU 44, or 45 if you're at the long end of 44. More trendy, rising (the slim-runner wave).",
-  "rank": "primary",
-  "verified": true
- },
- {
-  "role": "shoe_karintha",
-  "brand": "adidas x Wales Bonner",
-  "name": "Karintha Basketry (HP3710)",
-  "colour": "Dark brown hand-woven",
-  "price_eur": 269,
-  "url": "https://www.asphaltgold.com/products/adidas-x-wales-bonner-karintha-basketry-dark-brown-dark-brown-dark-brown",
-  "image_url": "img/wales-bonner-karintha-basketry.jpg",
-  "fit_note": "Down from €599. Take EU 44, like your adidas. Warm weather only, and the weave shows socks. More trendy: Wales Bonner is late, woven shoes are rising.",
   "rank": "primary",
   "verified": true
  },

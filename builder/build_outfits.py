@@ -33,13 +33,10 @@ ROLE_INFO = {
     "shirt_terry": ("Knitwear & tops", "Navy terry shirt"),
     "jewelry_ring": ("Accessories", "Silver ring"),
     "knit_colourblock": ("Knitwear & tops", "Navy & wine colour-block Shetland"),
-    "jacket_tweed_track": ("Outerwear", "Tweed track jacket"),
     "jacket_houndstooth": ("Outerwear", "Houndstooth Harrington"),
     "jacket_cord_burgundy": ("Outerwear", "Burgundy cord jacket"),
-    "shoe_sl72_rust": ("Shoes", "Rust hairy-suede adidas SL 72"),
     "shoe_tokuten_pink": ("Shoes", "Black & pink Onitsuka Tokuten"),
     "shoe_daze_runner": ("Shoes", "Axel Arigato Daze runner"),
-    "shoe_karintha": ("Shoes", "Wales Bonner woven adidas"),
     "shoe_diadora_cord": ("Shoes", "Navy corduroy Diadora Equipe"),
 }
 ALIAS = {}
@@ -407,15 +404,9 @@ OUTFITS = [
   ("Special Autumn", "Colour-block Shetland", "Standout: Howlin' navy and wine Shetland",
    "Howlin's navy Shetland crew with wine raglan sleeves and grey trims, your Studio Nicholson cream cords and burgundy Sambas. The wine sleeves pick up the Sambas, and the cream cords keep it light.",
    ["knit_colourblock", "own_sn_paolo", "own_samba_maroon", "own_watch", "own_cuban_bracelet"]),
-  ("Special Autumn", "Tweed track", "Standout: COS tweed track jacket",
-   "COS's salt-and-pepper tweed track jacket open over your white heavyweight tee, black pleated trousers and white Premiatas, with the IX chain and the Rolex. A sporty shape in a heritage fabric: the fabric is the statement.",
-   ["jacket_tweed_track", "own_af_white_tee", "own_af_black_pleated", "own_white_sneakers", "own_ix_figaro", "own_watch"]),
   ("Special Autumn", "Houndstooth & green", "Standout: Pop houndstooth Harrington",
    "Pop Trading Company's brown houndstooth Harrington over your cream tee and cream baggy jeans, with your green Spezials. The jacket's green quilted lining answers the shoes, so the two standouts talk to each other on a calm cream base.",
    ["jacket_houndstooth", "own_af_tee_cream", "own_af_cream", "own_samba_green", "own_ix_figaro", "own_watch"]),
-  ("Special Autumn", "Rust suede & navy", "Standout: rust hairy-suede SL 72s",
-   "Your cream ladder-stitch knit and COS navy wide-leg trousers, with adidas SL 72s in shaggy rust suede. Navy and cream let the rust and the texture do the talking. Dry days only: hairy suede hates rain.",
-   ["own_cos_cream", "own_cos_navy_trouser", "shoe_sl72_rust", "own_watch", "own_cuban_bracelet"]),
   ("Special Autumn", "Burgundy cord", "Standout: Percival burgundy cord jacket",
    "Percival's cropped burgundy cord jacket over your grey heavyweight tee, grey Levi's and the off-white Spezials, whose burgundy stripes pick up the jacket. Grey keeps the burgundy rich, not loud.",
    ["jacket_cord_burgundy", "own_af_tee_grey", "own_levis_grey", "own_spezial_cream", "own_ix_figaro", "own_watch"]),
@@ -425,9 +416,6 @@ OUTFITS = [
   ("Special Spring", "Blue runner day", "Standout: Axel Arigato Daze runners",
    "Your light-blue linen shirt with the top buttons open over the white tank, grey Levi's and Axel Arigato's slim Daze runners in blue suede and grey, with a burgundy heel tab. Blues and greys with one warm accent. Jaconellis by day.",
    ["own_blue_linen", "own_af_tank_white", "own_levis_grey", "shoe_daze_runner", "own_sunnies_jaconelli", "own_sd_pendant"]),
-  ("Special Summer", "Woven summer night", "Standout: Wales Bonner woven adidas",
-   "Your navy linen shirt with the top buttons open over the white tank, white linen trousers, and Wales Bonner's hand-woven adidas in dark brown. A real object of a shoe on a quiet navy-and-white base, for a dinner by the sea.",
-   ["own_navy_linen", "own_af_tank_white", "own_white_linen", "shoe_karintha", "own_ix_figaro", "own_watch"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -537,11 +525,9 @@ NECK_WEAR = {
   "Tonal brown": ("Outside the knit, inside the puffer", "over the cream jumper. Wear the puffer open so it shows."),
   "Waxed & cream cord": ("Outside the knit, inside the jacket", "over the cream knit. Wear the jacket open so it shows."),
   "Seersucker whites": ("On skin, inside the shirt", "in the open collar of the seersucker shirt."),
-  "Tweed track": ("Outside the tee, inside the jacket", "on the white tee, framed by the open track jacket."),
   "Houndstooth & green": ("Outside the tee, inside the jacket", "on the cream tee, framed by the open Harrington."),
   "Burgundy cord": ("Outside the tee, inside the jacket", "on the grey tee, framed by the open cord jacket."),
   "Blue runner day": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
-  "Woven summer night": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -664,13 +650,10 @@ VIBE = {
   "Blue & brown Riviera": ("Classy", "Holiday dinner"),
   "Stripes & navy tank": ("Classy", "Lunch / dinner"),
   "Colour-block Shetland": ("In between", "Weekend lunch"),
-  "Tweed track": ("Street", "Night out"),
   "Houndstooth & green": ("In between", "Weekend"),
-  "Rust suede & navy": ("Classy", "Lunch / date"),
   "Burgundy cord": ("Street", "Weekend"),
   "Pink stripe night": ("Street", "Night out"),
   "Blue runner day": ("In between", "Daytime"),
-  "Woven summer night": ("Classy", "Holiday dinner"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
