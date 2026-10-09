@@ -1,0 +1,110 @@
+[
+ {
+  "role": "knit_colourblock",
+  "brand": "Howlin'",
+  "name": "Megatron Man",
+  "colour": "Navy body, wine sleeves, grey trims",
+  "price_eur": 279.54,
+  "url": "https://howlinknitwear.com/products/megatron-man-wine-aw26",
+  "image_url": "https://cdn.shopify.com/s/files/1/0465/5477/5710/files/AW26_MEGATRON_MAN_WINE_1.jpg?v=1779266360",
+  "fit_note": "100% Shetland wool, made in Scotland. True to size: take M. More timeless; colour-block knits are rising.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "jacket_tweed_track",
+  "brand": "COS",
+  "name": "Tweed Track Jacket",
+  "colour": "Black and white salt-and-pepper tweed",
+  "price_eur": 179,
+  "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/jackets/product/tweed-track-jacket-black-1305314001",
+  "image_url": "https://media.cos.com/assets/001/0a/d9/0ad9730378583ac49e3caf72c84ab26e336deaff_xxl-1.jpg",
+  "fit_note": "Take M. Only 3 left in M on 9 Oct. More trendy: the track jacket is at its peak, and tweed is the refined late version.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "jacket_houndstooth",
+  "brand": "Pop Trading Company",
+  "name": "Harrington Jacket",
+  "colour": "Brown houndstooth, green quilted lining",
+  "price_eur": 300,
+  "url": "https://poptradingcompany.com/products/pop-harrington-jacket-houndstooth",
+  "image_url": "https://cdn.shopify.com/s/files/1/0859/3598/0892/files/POP_13jan-11_abc38d5f-053b-4b31-afd4-b625db83a9ab.jpg?v=1785481551",
+  "fit_note": "Cropped and boxy, wool houndstooth. Take M. Ships from the Netherlands. More timeless; heritage checks are rising.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "jacket_cord_burgundy",
+  "brand": "Percival",
+  "name": "Marcel Cord Jacket",
+  "colour": "Burgundy deep-wale cord",
+  "price_eur": 235,
+  "url": "https://percivalclo.com/products/marcel-cord-jacket-burgundy",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/MarcelCordJacket_Burgundy_PERCIVAL_MENSWEAR6.jpg?v=1791202530",
+  "fit_note": "Slightly cropped, stand collar, two-way zip. Take M. Duties included to Portugal. More trendy: burgundy is at its peak.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shoe_sl72_rust",
+  "brand": "adidas Originals",
+  "name": "SL 72 PT (KJ2471)",
+  "colour": "Rust hairy suede, gold logo, gum sole",
+  "price_eur": 113.99,
+  "url": "https://en.afew-store.com/products/adidas-originals-sl-72-pt-bursie-bursie-royblu",
+  "image_url": "https://cdn.shopify.com/s/files/1/2718/4356/files/adidas-originals-sl-72-pt-bursie-bursie-royblu-kj2471-footwear_20_3E_20sneaker.jpg?v=1788953844",
+  "fit_note": "Take US 10 (EU 44), like your adidas. Dry days only. More trendy: the SL 72 is at its peak, hairy suede is rising.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shoe_tokuten_pink",
+  "brand": "Onitsuka Tiger",
+  "name": "Tokuten (1183C431.001)",
+  "colour": "Black suede, pink stripes",
+  "price_eur": 175,
+  "url": "https://www.onitsukatiger.com/pt/pt-pt/tokuten/p/1183c431-001.html",
+  "image_url": "https://images.asics.com/is/image/asics/1183C431_001_SR_RT_GLB?qlt=80&wid=750&hei=1000&bgc=255,255,255&resMode=bisharp",
+  "fit_note": "Onitsuka says to size up for this model: take EU 44.5. More timeless, rising: the dark twin of your green and pink Spezials.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shoe_daze_runner",
+  "brand": "Axel Arigato",
+  "name": "Daze Runner (F4330002)",
+  "colour": "Blue suede and grey, burgundy heel tab",
+  "price_eur": 235,
+  "url": "https://axelarigato.com/men/footwear/daze/daze-runner-f4330002",
+  "image_url": "img/axel-arigato-daze-blue-grey.jpg",
+  "fit_note": "Ultra-slim 70s runner, handmade in Portugal. Runs small: take EU 44, or 45 if you're at the long end of 44. More trendy, rising (the slim-runner wave).",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shoe_karintha",
+  "brand": "adidas x Wales Bonner",
+  "name": "Karintha Basketry (HP3710)",
+  "colour": "Dark brown hand-woven",
+  "price_eur": 269,
+  "url": "https://www.asphaltgold.com/products/adidas-x-wales-bonner-karintha-basketry-dark-brown-dark-brown-dark-brown",
+  "image_url": "img/wales-bonner-karintha-basketry.jpg",
+  "fit_note": "Down from €599. Take EU 44, like your adidas. Warm weather only, and the weave shows socks. More trendy: Wales Bonner is late, woven shoes are rising.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shoe_diadora_cord",
+  "brand": "Diadora",
+  "name": "Equipe Corduroy SW",
+  "colour": "Navy corduroy and suede",
+  "price_eur": 180,
+  "url": "https://www.diadora.com/en/pt/equipe_corduroy_sw/201.183754_60066.html",
+  "image_url": "img/diadora-equipe-corduroy-blue.jpg",
+  "fit_note": "Take EU 44 (UK 9.5). An archive 70s runner in corduroy. More timeless; corduroy sneakers are at an early stage.",
+  "rank": "primary",
+  "verified": true
+ }
+]
