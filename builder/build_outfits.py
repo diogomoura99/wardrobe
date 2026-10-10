@@ -1084,28 +1084,12 @@ body.cmpopen{{overflow:hidden}}
 .cv-btns{{display:flex;gap:6px;flex-wrap:wrap}}
 .cv-btns button{{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}}
 .cv-close{{margin-left:auto;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}}
-.cv-scroll{{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;scroll-padding-left:var(--lab)}}
-#cmpgrid{{--lab:104px;--col:270px;display:grid;grid-template-columns:var(--lab) repeat(var(--n),minmax(0,1fr));width:max(100%,calc(var(--lab) + var(--n) * var(--col)))}}
-#cmpgrid > div{{border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding:10px;background:#fff;min-width:0}}
-#cmpgrid .cl{{position:sticky;left:0;z-index:2;background:var(--bg);font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}}
-#cmpgrid .ch{{position:sticky;top:0;z-index:3;background:#fff;scroll-snap-align:start}}
-#cmpgrid .ch.cl{{z-index:4;background:var(--bg)}}
-.ch-top{{display:flex;align-items:flex-start;gap:8px}} .ch-num{{font-weight:700;color:var(--accent);font-size:18px}} .ch-name{{font-weight:700;font-size:15px;line-height:1.25;flex:1}}
-.ch-x{{border:0;background:var(--chip);border-radius:999px;width:26px;height:26px;cursor:pointer;font-size:14px;line-height:26px;flex:0 0 auto}}
-.ch-chips{{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0}} .ch-go{{font:inherit;font-size:13px;color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}}
-.c-status{{font-size:13px}} .c-status .ownchip{{display:inline-block;margin:0 4px 4px 0}} .c-note{{font-size:13px;line-height:1.45;color:var(--text)}}
-.ci{{display:flex;gap:8px;align-items:flex-start;text-decoration:none;color:var(--text);padding:4px 0}}
-.ci + .ci{{border-top:1px dashed var(--line)}}
-.ci-ph{{flex:0 0 52px;width:52px;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:var(--chip)}} .ci-ph img{{width:100%;height:100%;object-fit:cover;display:block;background:#fff}}
-.ci-t{{display:flex;flex-direction:column;gap:2px;min-width:0;font-size:12.5px;line-height:1.3}}
-.ci-n{{font-weight:600}} .ci-p{{color:var(--muted)}} .ci-p.own{{color:#085041}}
-.ci-sh{{align-self:flex-start;font-size:11px;background:#fff4d6;color:#7a5a00;border-radius:999px;padding:1px 7px}}
-.c-empty{{color:var(--muted);font-size:13px}}
+.cv-scroll{{flex:1;overflow:auto;-webkit-overflow-scrolling:touch}}
+#cmpgrid{{max-width:1100px;margin:0 auto;padding:16px}} .cv-card{{margin-bottom:16px}} .cv-cardbar{{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin:-4px 0 8px}} .ch-go{{font:inherit;font-size:13px;color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}} .ch-x{{border:0;background:var(--chip);border-radius:999px;padding:4px 10px;cursor:pointer;font:inherit;font-size:13px}} .cv-card .tiles{{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:6px;-webkit-overflow-scrolling:touch}} .cv-card .tiles > .tile{{flex:0 0 150px;scroll-snap-align:start}} mark.cv-sh{{display:block;font-style:normal;inset:auto;width:auto;height:auto;line-height:1.3;text-align:left;position:absolute;left:6px;bottom:6px;z-index:3;font-size:11px;font-weight:600;background:#fff4d6;color:#7a5a00;border-radius:999px;padding:2px 8px;box-shadow:0 1px 3px rgba(0,0,0,.12)}}
 .cv-none{{max-width:520px;margin:60px auto;padding:0 16px;text-align:center;color:var(--muted)}} .cv-none b{{color:var(--text)}}
 @media (max-width:640px){{
   #cmpgrid{{--lab:66px;--col:min(78vw,280px)}}
-  #cmpgrid .cl{{font-size:10.5px;letter-spacing:0;padding:8px 6px}}
-  .cv-scroll{{scroll-snap-type:x mandatory}}
+  .cv-card .tiles > .tile{{flex-basis:132px}} #cmpgrid{{padding:12px}}
   .cv-t{{min-width:0}} .cv-t h2{{font-size:17px}}
   .ct-lab{{display:none}}
   .cv-bar{{padding:10px 12px;gap:8px}} .cv-btns{{flex-wrap:nowrap;overflow-x:auto;width:100%;scrollbar-width:none}} .cv-btns::-webkit-scrollbar{{display:none}} .cv-btns button{{flex:0 0 auto}}
@@ -1250,51 +1234,33 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
     if(favs.length>room) say('Added '+room+'. The limit is '+MAX+' at a time.');
   }}
 
-  function pieces(card){{
-    return [...card.querySelectorAll('.tiles > .tile')].map(t=>{{
-      const img=t.querySelector('.ph img'), a=t.querySelector('a[href]');
-      const nm=(t.querySelector('.meta .nm')||{{}}).textContent||'';
-      const br=(t.querySelector('.meta .br')||{{}}).textContent||'';
-      const owned=t.classList.contains('owned')||t.classList.contains('owned-img');
-      const pr=owned?'You have it':(((t.querySelector('.meta .pr')||{{}}).textContent||'').split('·')[0].trim()+' · to buy');
-      return {{key:t.dataset.key,cat:t.dataset.cat,src:img?img.getAttribute('src'):'',href:a?a.href:'',nm:nm.trim(),br:br.trim(),owned,pr}};
-    }});
-  }}
   function render(){{
     const list=ordered();
-    $('cmpsub').textContent=list.length?list.length+' outfit'+(list.length>1?'s':'')+(list.length<2?' · add one more to compare':''):'';
+    $('cmpsub').textContent=list.length?list.length+' outfit'+(list.length>1?'s':'')+(list.length>1?' · shared pieces marked in gold':' · add one more to compare'):'';
+    const sc=$('cvscroll'), none=sc.querySelector('.cv-none');
     if(!list.length){{
-      grid.style.removeProperty('--n'); grid.innerHTML='';
-      $('cvscroll').querySelector('.cv-none')||$('cvscroll').insertAdjacentHTML('beforeend','<div class="cv-none"><p><b>Nothing to compare yet.</b></p><p>Tap <b>＋ Compare</b> on any outfit card, or use <b>＋ Add favourites</b> above to add your favourites in one go.</p></div>');
+      grid.innerHTML='';
+      if(!none) sc.insertAdjacentHTML('beforeend','<div class="cv-none"><p><b>Nothing to compare yet.</b></p><p>Tap <b>＋ Compare</b> on any outfit card, or use <b>＋ Add favourites</b> above to add your favourites in one go.</p></div>');
       return;
     }}
-    const none=$('cvscroll').querySelector('.cv-none'); if(none) none.remove();
-    const data=list.map(c=>({{c,n:num(c),p:pieces(c)}}));
-    const where={{}}; data.forEach(d=>d.p.forEach(x=>{{(where[x.key]=where[x.key]||[]).push(d.n);}}));
-    grid.style.setProperty('--n',list.length);
-    let h='<div class="cl ch"></div>';
-    data.forEach(d=>{{
-      const chipsH=[...d.c.querySelectorAll('.inspo .vchip, .inspo .ochip')].map(x=>x.outerHTML).join('');
-      h+='<div class="ch"><div class="ch-top"><span class="ch-num">'+d.n+'</span><span class="ch-name">'+esc(d.c.dataset.name)+'</span><button class="ch-x" type="button" data-rm="'+esc(d.c.dataset.name)+'" aria-label="Remove from compare">✕</button></div><div class="ch-chips">'+chipsH+'</div><button class="ch-go" type="button" data-go="'+d.n+'">Go to outfit</button></div>';
-    }});
-    h+='<div class="cl">Status</div>';
-    data.forEach(d=>{{const o=d.c.querySelector('.ownchip'),t=d.c.querySelector('.tot');h+='<div class="c-status">'+(o?o.outerHTML:'')+(t?'<div>'+esc(t.textContent)+'</div>':'')+'</div>';}});
-    h+='<div class="cl">The idea</div>';
-    data.forEach(d=>{{const n=d.c.querySelector('.note');h+='<div class="c-note">'+esc(n?n.textContent:'')+'</div>';}});
-    CATS.forEach(([cat,lab])=>{{
-      if(!data.some(d=>d.p.some(x=>x.cat===cat))) return;
-      h+='<div class="cl">'+lab+'</div>';
-      data.forEach(d=>{{
-        const xs=d.p.filter(x=>x.cat===cat);
-        h+='<div>'+(xs.length?xs.map(x=>{{
-          const others=(where[x.key]||[]).filter(n=>n!==d.n);
-          return '<a class="ci" href="'+esc(x.href||'#')+'" target="_blank" rel="noopener"><span class="ci-ph">'+(x.src?'<img referrerpolicy="no-referrer" src="'+esc(x.src)+'" alt="">':'')+'</span><span class="ci-t"><span class="ci-n">'+esc(x.nm)+'</span>'+(x.br&&!x.owned?'<span class="ci-p">'+esc(x.br)+'</span>':'')+'<span class="ci-p'+(x.owned?' own':'')+'">'+esc(x.pr)+'</span>'+(others.length?'<span class="ci-sh">Also in #'+others.join(', #')+'</span>':'')+'</span></a>';
-        }}).join(''):'<span class="c-empty">—</span>')+'</div>';
+    if(none) none.remove();
+    const where={{}};
+    list.forEach(c=>c.querySelectorAll('.tiles > .tile').forEach(t=>{{(where[t.dataset.key]=where[t.dataset.key]||[]).push(num(c));}}));
+    grid.innerHTML='';
+    list.forEach(c=>{{
+      const n=num(c), k=c.cloneNode(true);
+      k.removeAttribute('id'); k.querySelectorAll('[id]').forEach(x=>x.removeAttribute('id'));
+      k.classList.remove('flash'); k.classList.add('cv-card'); k.style.display=''; k.querySelectorAll('img[loading="lazy"]').forEach(i=>i.loading='eager');
+      const bar=document.createElement('div'); bar.className='cv-cardbar';
+      bar.innerHTML='<button class="ch-go" type="button" data-go="'+n+'">Go to outfit</button><button class="ch-x" type="button" data-rm="'+esc(c.dataset.name)+'">✕ Remove</button>';
+      k.insertBefore(bar,k.firstChild);
+      k.querySelectorAll('.tiles > .tile').forEach(t=>{{
+        const others=(where[t.dataset.key]||[]).filter(x=>x!==n);
+        if(others.length){{const b=document.createElement('mark');b.className='cv-sh';b.textContent='Also in #'+others.join(', #');(t.querySelector('.ph')||t).appendChild(b);}}
       }});
+      grid.appendChild(k);
     }});
-    grid.innerHTML=h;
   }}
-
   let lastFocus=null;
   function open(push){{
     lastFocus=document.activeElement; render(); view.hidden=false; document.body.classList.add('cmpopen'); sync();
@@ -1339,6 +1305,11 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   }});
   const m=location.hash.match(/^#compare=([0-9,]+)/);
   if(m){{const nums=m[1].split(',').map(Number);const names=cards.filter(c=>nums.includes(num(c))).map(c=>c.dataset.name).slice(0,MAX);if(names.length){{sel=names;save();}}}}
+  window.addEventListener('hashchange',()=>{{
+    const h=location.hash.match(/^#compare=([0-9,]+)/); if(!h||!view.hidden) return;
+    const nums=h[1].split(',').map(Number); const names=cards.filter(c=>nums.includes(num(c))).map(c=>c.dataset.name).slice(0,MAX);
+    if(names.length){{sel=names;save();sync();open(false);}}
+  }});
   sync();
   if(m&&sel.length){{try{{history.replaceState(null,'',location.pathname+location.search);history.pushState({{cmp:1}},'',location.pathname+location.search+'#compare='+ordered().map(num).join(','));}}catch(e){{}} open(false);}}
 }})();
