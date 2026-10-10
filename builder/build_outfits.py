@@ -751,10 +751,10 @@ def tile(key, prod, swap=""):
                 info = dict(info, image_url="data:image/jpeg;base64," + base64.b64encode(open(fp, "rb").read()).decode())
         if info and info.get("image_url"):
             note = "" if info.get("match") == "exact" else '<div class="pr">Closest match to yours</div>'
-            return f'''<div class="tile owned-img"><a class="ph" href="{e(info["url"])}" target="_blank" rel="noopener">
+            return f'''<div class="tile owned-img" data-key="{key}" data-cat="{e(cat)}"><a class="ph" href="{e(info["url"])}" target="_blank" rel="noopener">
 <em class="owntag">✓ You have it</em><img loading="lazy" referrerpolicy="no-referrer" src="{e(info["image_url"])}" alt="{e(label)}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(label)}</span></a>
 <div class="meta"><div class="br">{e(info.get("brand",""))}</div><div class="nm">{e(label)}</div>{note}{swap}</div></div>'''
-        return f'''<div class="tile owned"><div class="ph"><em class="owntag">✓ You have it</em><span>{e(label)}</span></div>
+        return f'''<div class="tile owned" data-key="{key}" data-cat="{e(cat)}"><div class="ph"><em class="owntag">✓ You have it</em><span>{e(label)}</span></div>
 <div class="meta"><div class="nm">{e(label)}</div></div></div>'''
     p = prod.get(key, {}).get("primary")
     cat, label = ROLE_INFO[key]
@@ -762,7 +762,7 @@ def tile(key, prod, swap=""):
         return ""
     alts = sorted_alts(prod[key])
     alt_html = "".join(f'<a class="alt" href="{e(a["url"])}" target="_blank" rel="noopener">or {e(a["brand"])} · {money(a.get("price_eur"))}</a>' for a in alts)
-    return f'''<div class="tile"><a class="ph" href="{e(p["url"])}" target="_blank" rel="noopener">
+    return f'''<div class="tile" data-key="{key}" data-cat="{e(cat)}"><a class="ph" href="{e(p["url"])}" target="_blank" rel="noopener">
 <img loading="lazy" referrerpolicy="no-referrer" src="{e(p.get("image_url",""))}" alt="{e(p["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(label)}</span></a>
 <div class="meta"><div class="br">{e(p["brand"])}</div><a class="nm" href="{e(p["url"])}" target="_blank" rel="noopener">{e(p["name"])}</a>
 <div class="pr">{money(p.get("price_eur"))}{' · ' + e(p.get("colour","")) if p.get("colour") else ''}</div>{alt_html}{swap}</div></div>'''
@@ -868,7 +868,7 @@ def build():
             vibe, occ = VIBE.get(name, ("In between", "Everyday"))
             vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}[vibe]
             cards.append(f'''<article id="o{n}" class="card{' hero' if hero else ''}" data-name="{e(name)}" data-vibe="{vcls}" data-ready="{'yes' if n_all and n_own == n_all else ('one' if n_all - n_own == 1 else 'no')}">{'<div class="herotag">Your reference look</div>' if hero else ''}<header><span class="num">{n:02d}</span><div><h3>{e(name)}</h3>
-<p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><button class="fav" type="button" aria-pressed="false" aria-label="Save to favourites">☆ Favourite</button><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
+<p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><button class="fav" type="button" aria-pressed="false" aria-label="Save to favourites">☆ Favourite</button><button class="cmp" type="button" aria-pressed="false" aria-label="Add to compare">＋ Compare</button><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
 <p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
         info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s == "Special occasions" else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
@@ -1063,6 +1063,53 @@ article.card.flash{{outline:3px solid #e3c46a;outline-offset:2px;transition:outl
 #rail .bubble{{position:absolute;left:44px;transform:translateY(-50%);background:var(--accent);color:#fff;border-radius:14px;padding:6px 14px 7px;font-size:26px;font-weight:700;line-height:1.1;white-space:nowrap;box-shadow:0 6px 18px rgba(0,0,0,.18);pointer-events:none}}
 #rail .bubble small{{display:block;font-size:12px;font-weight:500;opacity:.85}}
 @media (max-width:1219px){{.wrap{{padding-left:44px}}}} @media (max-width:640px){{.wrap{{padding-left:38px}} #rail{{width:30px}} #rail i{{left:5px}} #rail b{{left:18px}} #rail .here{{left:20px}}}}
+.cmp{{border:1px solid var(--line);background:#fff;border-radius:999px;padding:3px 10px;font:inherit;font-size:13px;cursor:pointer;white-space:nowrap;color:var(--muted)}}
+.cmp.on{{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}}
+nav a.navcmp{{background:#e6ebf4;color:var(--accent)}} .cmpcount:not(:empty){{margin-left:6px;background:var(--accent);color:#fff;border-radius:999px;padding:0 7px;font-size:12px}}
+#cmptray{{position:fixed;left:50%;transform:translateX(-50%);bottom:max(12px,env(safe-area-inset-bottom));z-index:20;width:min(760px,calc(100vw - 24px))}}
+#cmptray .ct-in{{display:flex;align-items:center;gap:8px;background:var(--accent);color:#fff;border-radius:16px;padding:8px 8px 8px 14px;box-shadow:0 10px 30px rgba(0,0,0,.25)}}
+.ct-lab{{font-size:13px;font-weight:600;opacity:.85}}
+#cmpchips{{display:flex;gap:6px;overflow-x:auto;flex:1;scrollbar-width:none;min-width:0}} #cmpchips::-webkit-scrollbar{{display:none}}
+.cchip{{flex:0 0 auto;display:inline-flex;align-items:center;gap:4px;background:rgba(255,255,255,.14);border:0;color:#fff;border-radius:999px;padding:4px 6px 4px 10px;font:inherit;font-size:13px;cursor:pointer}}
+.cchip b{{font-weight:700}} .cchip i{{font-style:normal;opacity:.7;padding:0 4px}}
+.ct-go{{border:0;background:#fff;color:var(--accent);border-radius:999px;padding:8px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}}
+.ct-clr{{border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;border-radius:999px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer;white-space:nowrap}}
+#cmptoast{{position:fixed;left:50%;transform:translateX(-50%);bottom:96px;z-index:60;font-size:13px;color:var(--text);pointer-events:none}} #cmptoast:not(:empty){{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;box-shadow:0 6px 18px rgba(0,0,0,.15);max-width:calc(100vw - 32px)}}
+body.hastray .wrap{{padding-bottom:130px}} body.hastray #rail{{bottom:86px}}
+body.cmpopen{{overflow:hidden}}
+#cmpview{{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column}}
+#cmpview[hidden]{{display:none}}
+.cv-bar{{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid var(--line);background:var(--bg)}}
+.cv-t{{display:flex;align-items:baseline;gap:10px;flex:1;min-width:200px}} .cv-t h2{{margin:0;font-size:20px}}
+.cv-btns{{display:flex;gap:6px;flex-wrap:wrap}}
+.cv-btns button{{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}}
+.cv-close{{margin-left:auto;border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}}
+.cv-scroll{{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;scroll-padding-left:var(--lab)}}
+#cmpgrid{{--lab:104px;--col:270px;display:grid;grid-template-columns:var(--lab) repeat(var(--n),minmax(0,1fr));width:max(100%,calc(var(--lab) + var(--n) * var(--col)))}}
+#cmpgrid > div{{border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding:10px;background:#fff;min-width:0}}
+#cmpgrid .cl{{position:sticky;left:0;z-index:2;background:var(--bg);font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}}
+#cmpgrid .ch{{position:sticky;top:0;z-index:3;background:#fff;scroll-snap-align:start}}
+#cmpgrid .ch.cl{{z-index:4;background:var(--bg)}}
+.ch-top{{display:flex;align-items:flex-start;gap:8px}} .ch-num{{font-weight:700;color:var(--accent);font-size:18px}} .ch-name{{font-weight:700;font-size:15px;line-height:1.25;flex:1}}
+.ch-x{{border:0;background:var(--chip);border-radius:999px;width:26px;height:26px;cursor:pointer;font-size:14px;line-height:26px;flex:0 0 auto}}
+.ch-chips{{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0}} .ch-go{{font:inherit;font-size:13px;color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}}
+.c-status{{font-size:13px}} .c-status .ownchip{{display:inline-block;margin:0 4px 4px 0}} .c-note{{font-size:13px;line-height:1.45;color:var(--text)}}
+.ci{{display:flex;gap:8px;align-items:flex-start;text-decoration:none;color:var(--text);padding:4px 0}}
+.ci + .ci{{border-top:1px dashed var(--line)}}
+.ci-ph{{flex:0 0 52px;width:52px;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:var(--chip)}} .ci-ph img{{width:100%;height:100%;object-fit:cover;display:block;background:#fff}}
+.ci-t{{display:flex;flex-direction:column;gap:2px;min-width:0;font-size:12.5px;line-height:1.3}}
+.ci-n{{font-weight:600}} .ci-p{{color:var(--muted)}} .ci-p.own{{color:#085041}}
+.ci-sh{{align-self:flex-start;font-size:11px;background:#fff4d6;color:#7a5a00;border-radius:999px;padding:1px 7px}}
+.c-empty{{color:var(--muted);font-size:13px}}
+.cv-none{{max-width:520px;margin:60px auto;padding:0 16px;text-align:center;color:var(--muted)}} .cv-none b{{color:var(--text)}}
+@media (max-width:640px){{
+  #cmpgrid{{--lab:66px;--col:min(78vw,280px)}}
+  #cmpgrid .cl{{font-size:10.5px;letter-spacing:0;padding:8px 6px}}
+  .cv-scroll{{scroll-snap-type:x mandatory}}
+  .cv-t{{min-width:0}} .cv-t h2{{font-size:17px}}
+  .ct-lab{{display:none}}
+  .cv-bar{{padding:10px 12px;gap:8px}} .cv-btns{{flex-wrap:nowrap;overflow-x:auto;width:100%;scrollbar-width:none}} .cv-btns::-webkit-scrollbar{{display:none}} .cv-btns button{{flex:0 0 auto}}
+}}
 .ownchip{{font-size:13px;background:#e1f5ee;color:#085041;border-radius:999px;padding:3px 10px;white-space:nowrap}}
 .season{{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:-4px 0 16px;font-size:14px}}
 .season .months{{font-weight:600}} .season .temps{{color:var(--accent)}} .season .tip{{color:var(--muted);flex-basis:100%}}
@@ -1102,10 +1149,10 @@ article.card.flash{{outline:3px solid #e3c46a;outline-offset:2px;transition:outl
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
-<div id="favlist"></div><p id="favtools" hidden><button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
+<div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
 {"".join(sec)}
 {sg_section}
 {nk_section}
@@ -1116,6 +1163,9 @@ article.card.flash{{outline:3px solid #e3c46a;outline-offset:2px;transition:outl
 {"".join(rows)}</section>
 <p class="foot">Prices and stock were checked on 6 October 2026 and can change. Sizing and fit vary by brand, so check each shop's size guide. Tiles marked "You have this" are things you already own. A green outline means a photo of your piece (or the closest match); striped tiles are pieces without a photo yet.</p>
 </div>
+<div id="cmptray" hidden><div class="ct-in"><span class="ct-lab">Compare</span><div id="cmpchips"></div><button id="cmpgo" type="button" class="ct-go">Compare</button><button id="cmpclr" type="button" class="ct-clr">Clear all</button></div></div>
+<div id="cmptoast" role="status" aria-live="polite"></div>
+<div id="cmpview" hidden role="dialog" aria-modal="true" aria-labelledby="cmptitle"><div class="cv-bar"><div class="cv-t"><h2 id="cmptitle">Compare outfits</h2><span id="cmpsub" class="muted"></span><button id="cvclose" type="button" class="cv-close" aria-label="Close compare">✕ Close</button></div><div class="cv-btns"><button id="cvfav" type="button">＋ Add favourites</button><button id="cvlink" type="button">Copy link</button><button id="cvclr" type="button">Clear all</button></div></div><div class="cv-scroll" id="cvscroll"><div id="cmpgrid"></div></div></div>
 <div id="rail" role="navigation" aria-label="Outfit index"><div class="ticks"></div><em class="here"></em><div class="bubble" hidden></div></div>
 <script>
 document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click',()=>{{
@@ -1155,6 +1205,142 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
     try{{navigator.clipboard.writeText(txt).then(done,()=>{{msg.textContent=txt;}});}}catch(e){{msg.textContent=txt;}}
   }});
   render();
+}})();
+(function(){{
+  const KEY='wardrobe-compare', MAX=8;
+  const CATS=[["Outerwear","Outerwear"],["Knitwear & tops","Tops & knits"],["Trousers","Trousers"],["Shoes","Shoes"],["Accessories","Accessories"]];
+  const cards=[...document.querySelectorAll('section:not(#favourites) article.card')];
+  const byName=new Map(cards.map(c=>[c.dataset.name,c]));
+  const num=c=>parseInt(c.querySelector('.num').textContent,10);
+  const $=id=>document.getElementById(id);
+  const tray=$('cmptray'), chips=$('cmpchips'), view=$('cmpview'), grid=$('cmpgrid'), toast=$('cmptoast');
+  let sel=[];
+  try{{sel=JSON.parse(localStorage.getItem(KEY)||'[]')||[];}}catch(e){{sel=[];}}
+  sel=sel.filter(n=>byName.has(n));
+  const save=()=>{{try{{localStorage.setItem(KEY,JSON.stringify(sel));}}catch(e){{}}}};
+  const ordered=()=>sel.map(n=>byName.get(n)).filter(Boolean).sort((a,b)=>num(a)-num(b));
+  const esc=t=>String(t).replace(/[&<>"]/g,ch=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[ch]));
+  let toastT=0; function say(m){{toast.textContent=m;clearTimeout(toastT);toastT=setTimeout(()=>toast.textContent='',2200);}}
+
+  function sync(){{
+    const list=ordered();
+    document.querySelectorAll('article.card').forEach(c=>{{
+      const b=c.querySelector('.cmp'); if(!b) return;
+      const on=sel.includes(c.dataset.name);
+      b.classList.toggle('on',on); b.setAttribute('aria-pressed',on); b.textContent=on?'✓ Comparing':'＋ Compare';
+    }});
+    chips.innerHTML=list.map(c=>'<button class="cchip" type="button" data-rm="'+esc(c.dataset.name)+'" title="Remove '+esc(c.dataset.name)+'"><b>'+num(c)+'</b> '+esc(c.dataset.name)+'<i aria-hidden="true">✕</i></button>').join('');
+    $('cmpgo').textContent='Compare ('+list.length+')';
+    tray.hidden=list.length===0 || !view.hidden;
+    document.body.classList.toggle('hastray',!tray.hidden);
+    document.querySelectorAll('.cmpcount').forEach(x=>x.textContent=list.length||'');
+  }}
+  function toggle(name){{
+    if(sel.includes(name)) sel=sel.filter(n=>n!==name);
+    else if(sel.length>=MAX){{say('Up to '+MAX+' outfits at a time. Remove one first.');return;}}
+    else sel=sel.concat([name]);
+    save(); sync(); if(!view.hidden) render();
+  }}
+  function clearAll(){{sel=[];save();sync();if(!view.hidden)render();}}
+  function addFavs(){{
+    let favs=[]; try{{favs=JSON.parse(localStorage.getItem('wardrobe-favs')||'[]')||[];}}catch(e){{}}
+    favs=favs.filter(n=>byName.has(n)&&!sel.includes(n));
+    if(!favs.length){{say('No favourites to add yet: tap ☆ Favourite on an outfit.');return;}}
+    const room=MAX-sel.length; sel=sel.concat(favs.slice(0,room)); save(); sync(); if(!view.hidden) render();
+    if(favs.length>room) say('Added '+room+'. The limit is '+MAX+' at a time.');
+  }}
+
+  function pieces(card){{
+    return [...card.querySelectorAll('.tiles > .tile')].map(t=>{{
+      const img=t.querySelector('.ph img'), a=t.querySelector('a[href]');
+      const nm=(t.querySelector('.meta .nm')||{{}}).textContent||'';
+      const br=(t.querySelector('.meta .br')||{{}}).textContent||'';
+      const owned=t.classList.contains('owned')||t.classList.contains('owned-img');
+      const pr=owned?'You have it':(((t.querySelector('.meta .pr')||{{}}).textContent||'').split('·')[0].trim()+' · to buy');
+      return {{key:t.dataset.key,cat:t.dataset.cat,src:img?img.getAttribute('src'):'',href:a?a.href:'',nm:nm.trim(),br:br.trim(),owned,pr}};
+    }});
+  }}
+  function render(){{
+    const list=ordered();
+    $('cmpsub').textContent=list.length?list.length+' outfit'+(list.length>1?'s':'')+(list.length<2?' · add one more to compare':''):'';
+    if(!list.length){{
+      grid.style.removeProperty('--n'); grid.innerHTML='';
+      $('cvscroll').querySelector('.cv-none')||$('cvscroll').insertAdjacentHTML('beforeend','<div class="cv-none"><p><b>Nothing to compare yet.</b></p><p>Tap <b>＋ Compare</b> on any outfit card, or use <b>＋ Add favourites</b> above to add your favourites in one go.</p></div>');
+      return;
+    }}
+    const none=$('cvscroll').querySelector('.cv-none'); if(none) none.remove();
+    const data=list.map(c=>({{c,n:num(c),p:pieces(c)}}));
+    const where={{}}; data.forEach(d=>d.p.forEach(x=>{{(where[x.key]=where[x.key]||[]).push(d.n);}}));
+    grid.style.setProperty('--n',list.length);
+    let h='<div class="cl ch"></div>';
+    data.forEach(d=>{{
+      const chipsH=[...d.c.querySelectorAll('.inspo .vchip, .inspo .ochip')].map(x=>x.outerHTML).join('');
+      h+='<div class="ch"><div class="ch-top"><span class="ch-num">'+d.n+'</span><span class="ch-name">'+esc(d.c.dataset.name)+'</span><button class="ch-x" type="button" data-rm="'+esc(d.c.dataset.name)+'" aria-label="Remove from compare">✕</button></div><div class="ch-chips">'+chipsH+'</div><button class="ch-go" type="button" data-go="'+d.n+'">Go to outfit</button></div>';
+    }});
+    h+='<div class="cl">Status</div>';
+    data.forEach(d=>{{const o=d.c.querySelector('.ownchip'),t=d.c.querySelector('.tot');h+='<div class="c-status">'+(o?o.outerHTML:'')+(t?'<div>'+esc(t.textContent)+'</div>':'')+'</div>';}});
+    h+='<div class="cl">The idea</div>';
+    data.forEach(d=>{{const n=d.c.querySelector('.note');h+='<div class="c-note">'+esc(n?n.textContent:'')+'</div>';}});
+    CATS.forEach(([cat,lab])=>{{
+      if(!data.some(d=>d.p.some(x=>x.cat===cat))) return;
+      h+='<div class="cl">'+lab+'</div>';
+      data.forEach(d=>{{
+        const xs=d.p.filter(x=>x.cat===cat);
+        h+='<div>'+(xs.length?xs.map(x=>{{
+          const others=(where[x.key]||[]).filter(n=>n!==d.n);
+          return '<a class="ci" href="'+esc(x.href||'#')+'" target="_blank" rel="noopener"><span class="ci-ph">'+(x.src?'<img referrerpolicy="no-referrer" src="'+esc(x.src)+'" alt="">':'')+'</span><span class="ci-t"><span class="ci-n">'+esc(x.nm)+'</span>'+(x.br&&!x.owned?'<span class="ci-p">'+esc(x.br)+'</span>':'')+'<span class="ci-p'+(x.owned?' own':'')+'">'+esc(x.pr)+'</span>'+(others.length?'<span class="ci-sh">Also in #'+others.join(', #')+'</span>':'')+'</span></a>';
+        }}).join(''):'<span class="c-empty">—</span>')+'</div>';
+      }});
+    }});
+    grid.innerHTML=h;
+  }}
+
+  let lastFocus=null;
+  function open(push){{
+    lastFocus=document.activeElement; render(); view.hidden=false; document.body.classList.add('cmpopen'); sync();
+    if(push!==false){{try{{history.pushState({{cmp:1}},'',location.pathname+location.search+'#compare='+ordered().map(num).join(','));}}catch(e){{}}}}
+    $('cvclose').focus();
+  }}
+  function close(fromPop){{
+    if(view.hidden) return;
+    view.hidden=true; document.body.classList.remove('cmpopen'); sync();
+    if(!fromPop){{try{{if(history.state&&history.state.cmp) history.back(); else history.replaceState(null,'',location.pathname+location.search);}}catch(e){{}}}}
+    if(lastFocus&&lastFocus.focus) lastFocus.focus();
+  }}
+  window.addEventListener('popstate',()=>{{if(!view.hidden) close(true);}});
+  document.addEventListener('keydown',e=>{{if(e.key==='Escape'&&!view.hidden) close();}});
+
+  document.addEventListener('click',e=>{{
+    const b=e.target.closest('.cmp'); if(b){{toggle(b.closest('article.card').dataset.name);return;}}
+    const rm=e.target.closest('[data-rm]'); if(rm){{toggle(rm.dataset.rm);return;}}
+    const nav=e.target.closest('a.navcmp'); if(nav){{e.preventDefault(); open(); return;}}
+    const go=e.target.closest('[data-go]');
+    if(go){{
+      const t=document.getElementById('o'+go.dataset.go); close();
+      setTimeout(()=>{{ if(t.style.display==='none'){{const all=document.querySelector('.vibes button[data-f="all"]');if(all)all.click();}}
+        const nv=document.querySelector('nav'); const place=()=>window.scrollTo(0,t.getBoundingClientRect().top+window.scrollY-nv.offsetHeight-8);
+        place(); setTimeout(place,250); t.classList.add('flash'); setTimeout(()=>t.classList.remove('flash'),1600);}},60);
+    }}
+  }});
+  $('cmpgo').addEventListener('click',()=>open());
+  $('cmpclr').addEventListener('click',clearAll);
+  $('cvclr').addEventListener('click',clearAll);
+  $('cvfav').addEventListener('click',addFavs);
+  $('cvclose').addEventListener('click',()=>close());
+  $('favcmp').addEventListener('click',()=>{{
+    let favs=[]; try{{favs=JSON.parse(localStorage.getItem('wardrobe-favs')||'[]')||[];}}catch(e){{}}
+    favs=favs.filter(n=>byName.has(n)); if(!favs.length) return;
+    sel=favs.slice(0,MAX); save(); sync(); open(); if(favs.length>MAX) say('Showing the first '+MAX+' favourites.');
+  }});
+  $('cvlink').addEventListener('click',()=>{{
+    const url=location.origin+location.pathname+'#compare='+ordered().map(num).join(',');
+    const done=()=>{{const b=$('cvlink');b.textContent='Link copied';setTimeout(()=>b.textContent='Copy link',1600);}};
+    try{{navigator.clipboard.writeText(url).then(done,()=>prompt('Copy this link:',url));}}catch(e){{prompt('Copy this link:',url);}}
+  }});
+  const m=location.hash.match(/^#compare=([0-9,]+)/);
+  if(m){{const nums=m[1].split(',').map(Number);const names=cards.filter(c=>nums.includes(num(c))).map(c=>c.dataset.name).slice(0,MAX);if(names.length){{sel=names;save();}}}}
+  sync();
+  if(m&&sel.length){{try{{history.replaceState(null,'',location.pathname+location.search);history.pushState({{cmp:1}},'',location.pathname+location.search+'#compare='+ordered().map(num).join(','));}}catch(e){{}} open(false);}}
 }})();
 (function(){{
   const COL={{spring:'#6f9a5b',summer:'#c99a2e',autumn:'#b0602f',winter:'#56739a',special:'#8a63b3'}};
