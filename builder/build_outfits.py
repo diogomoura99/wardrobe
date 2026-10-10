@@ -389,6 +389,9 @@ OUTFITS = [
   ("Winter", "Waxed & cream cord", "The COS waxed jacket, winter",
    "Your COS waxed jacket over your cream ladder-stitch knit, taupe Levi's cord and burgundy Sambas. The chocolate cord collar picks up the cord trousers, and the leather Sambas cope with rain.",
    ["own_cos_waxed", "own_cos_cream", "own_levis_taupe", "own_samba_maroon", "own_watch", "own_sd_pendant"]),
+  ("Autumn", "Sage stripes & khaki", "Your casino-night look in Espinho",
+   "Your sage striped linen shirt with the top buttons open over the white tank, khaki baggy jeans and brown suede Premiatas, with the Serge DeNimes pendant and the Rolex. Earthy and easy: the darker suede anchors the sage and khaki. For warm early-autumn evenings; bring the brown barn jacket if it cools down.",
+   ["own_ms_sage_stripe", "own_af_tank_white", "own_beige_jeans", "own_premiata", "own_sd_pendant", "own_watch"]),
   ("Special Summer", "Navy terry Riviera", "New piece: navy cable-terry shirt",
    "Navy cable-terry shirt with the top buttons open, your light beige linen baggy trousers, brown suede Premiatas, the IX chain and the Rolex. The Riviera in the evening.",
    ["shirt_terry", "own_af_linen_baggy", "own_premiata", "own_ix_figaro", "own_watch"]),
@@ -528,6 +531,7 @@ NECK_WEAR = {
   "Houndstooth & green": ("Outside the tee, inside the jacket", "on the cream tee, framed by the open Harrington."),
   "Burgundy cord": ("Outside the tee, inside the jacket", "on the grey tee, framed by the open cord jacket."),
   "Blue runner day": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
+  "Sage stripes & khaki": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -654,6 +658,7 @@ VIBE = {
   "Burgundy cord": ("Street", "Weekend"),
   "Pink stripe night": ("Street", "Night out"),
   "Blue runner day": ("In between", "Daytime"),
+  "Sage stripes & khaki": ("In between", "Evening out"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
