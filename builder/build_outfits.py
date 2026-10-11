@@ -968,6 +968,28 @@ def build():
 <div class="why">Size: {e(q["sizing"])}</div></div></div>'''
     BT = [("affordable", "Affordable"), ("mid", "Mid-range"), ("investment", "Investment pieces")]
     brand_html = "".join(f'<h3 class="cat">{t}</h3><div class="sgrid">' + "".join(brand_card(q) for q in brands if q["tier"] == k) + "</div>" for k, t in BT if any(q["tier"] == k for q in brands))
+    # inspiration board
+    looks = []
+    for f in sorted(os.listdir(HERE)):
+        if f.startswith("inspo_") and f.endswith(".json"):
+            d = json.load(open(os.path.join(HERE, f)))
+            looks += d["looks"] if isinstance(d, dict) else d
+    SEASON_ORDER = ["Spring", "Summer", "Autumn", "Winter"]
+    looks.sort(key=lambda q: (SEASON_ORDER.index(q.get("season", "Autumn")) if q.get("season") in SEASON_ORDER else 9, q.get("id", "")))
+    def look_card(q):
+        vcls = {"Street": "v-street", "In between": "v-mid", "Classy": "v-classy"}.get(q.get("vibe", ""), "v-mid")
+        pcs = "".join(f"<li>{e(p)}</li>" for p in q.get("pieces", []))
+        return (f'''<article class="lk" data-id="{e(q["id"])}" data-season="{e(q.get("season",""))}"><a class="lk-ph" href="{e(q.get("source_url","#"))}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q.get("formula",""))}" onerror="this.closest('.lk').classList.add('lk-noimg');this.remove()"></a>
+<div class="lk-b"><div class="lk-top"><span class="vchip {vcls}">{e(q.get("vibe",""))}</span><span class="ochip">{e(q.get("season",""))}</span><span class="ochip">{e(q.get("occasion",""))}</span><button class="lk-love" type="button" aria-pressed="false" aria-label="Love this look">♡</button></div>
+<div class="lk-f">{e(q.get("formula",""))}</div><ul class="lk-p">{pcs}</ul><p class="lk-why">{e(q.get("why",""))}</p><p class="lk-you"><b>For you:</b> {e(q.get("fit_for_him",""))}</p>
+<div class="lk-src"><a href="{e(q.get("source_url","#"))}" target="_blank" rel="noopener">{e(q.get("source",""))}</a> · {e(q.get("trend",""))} · <span class="lk-id">{e(q["id"])}</span></div></div></article>''')
+    inspo_cards = "".join(look_card(q) for q in looks)
+    inspo_section = f'''<section id="inspiration"><h2>Inspiration</h2>
+<p class="lede">Real outfits to learn from, picked for your shape and taste. <b>Tap ♡ on the looks you love</b>, then send me your picks. I'll turn them into formulas and pieces, show you the pieces first, and only then build outfits.</p>
+<div class="lk-diag"><b>What will lift your outfits most:</b> all 87 of your fundamentals use sneakers or clogs, none use wool trousers, and only 24 have a jacket. The common formula is knit + jeans + adidas (18 outfits). Great outfits add a statement jacket or coat, a wool or textured trouser, a refined shoe, and two or three textures that work together.</div>
+<div class="lk-bar"><span class="vlabel">Show:</span><button data-ls="all" class="on">All</button><button data-ls="Spring">Spring</button><button data-ls="Summer">Summer</button><button data-ls="Autumn">Autumn</button><button data-ls="Winter">Winter</button><button data-ls="loved">♥ My picks <span id="lkcount"></span></button><button id="lkcopy" type="button" class="lk-copy">Copy my picks to send me</button><span id="lkmsg" class="muted"></span></div>
+<div class="lk-grid">{inspo_cards}</div></section>''' if looks else ""
+
     brand_section = f'''<section id="brands"><h2>Brands for you</h2><p class="lede">New brands that fit your style (relaxed, old-money, Ralph Lauren meets Copenhagen), on top of A&F, COS, Les Deux and Arket. Each has one piece picked for your shape. All ship to Portugal; EU brands have no customs.</p>{brand_html}</section>''' if brands else ""
 
     # shopping list
@@ -1099,6 +1121,24 @@ body.cmpopen{{overflow:hidden}}
   .ct-lab{{display:none}}
   .cv-bar{{padding:10px 12px;gap:8px}} .cv-btns{{flex-wrap:nowrap;overflow-x:auto;width:100%;scrollbar-width:none}} .cv-btns::-webkit-scrollbar{{display:none}} .cv-btns button{{flex:0 0 auto}}
 }}
+nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
+.lk-diag{{background:#fff;border:1px solid var(--line);border-left:4px solid #5b3f86;border-radius:12px;padding:12px 14px;font-size:14px;margin:0 0 14px;max-width:820px}}
+.lk-bar{{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:0 0 14px}}
+.lk-bar button{{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}}
+.lk-bar button.on{{background:var(--accent);color:#fff;border-color:var(--accent)}} .lk-bar .lk-copy{{margin-left:auto}}
+.lk-grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}}
+.lk{{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}}
+.lk.loved{{border-color:#d46a8a;box-shadow:0 0 0 2px #f6d3de}}
+.lk-ph{{display:block;aspect-ratio:2/3;background:#efede7;overflow:hidden}} .lk-ph img{{width:100%;height:100%;object-fit:contain;display:block}}
+.lk.lk-noimg .lk-ph{{display:none}}
+.lk-b{{padding:12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}}
+.lk-top{{display:flex;gap:4px;align-items:center;flex-wrap:wrap}}
+.lk-love{{margin-left:auto;border:1px solid var(--line);background:#fff;border-radius:999px;width:34px;height:34px;font-size:17px;line-height:1;cursor:pointer;color:#c2456b}}
+.lk-love.on{{background:#c2456b;color:#fff;border-color:#c2456b}}
+.lk-f{{font-weight:700;font-size:14px;line-height:1.3}}
+.lk-p{{margin:0;padding-left:18px;font-size:13px;color:var(--text)}} .lk-p li{{margin:1px 0}}
+.lk-why{{margin:0;font-size:13px;color:var(--muted)}} .lk-you{{margin:0;font-size:13px}}
+.lk-src{{margin-top:auto;font-size:12px;color:var(--muted)}} .lk-src a{{color:var(--muted)}} .lk-id{{font-family:ui-monospace,Menlo,monospace}}
 .ownchip{{font-size:13px;background:#e1f5ee;color:#085041;border-radius:999px;padding:3px 10px;white-space:nowrap}}
 .season{{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:-4px 0 16px;font-size:14px}}
 .season .months{{font-weight:600}} .season .temps{{color:var(--accent)}} .season .tip{{color:var(--muted);flex-basis:100%}}
@@ -1138,11 +1178,12 @@ body.cmpopen{{overflow:hidden}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#inspiration" class="navinspo">✦ Inspiration</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
 {"".join(sec)}
+{inspo_section}
 {sg_section}
 {nk_section}
 {cap_section}
@@ -1195,6 +1236,30 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   }});
   render();
 }})();
+(function(){{
+  const sec=document.getElementById('inspiration'); if(!sec) return;
+  const KEY='wardrobe-inspo'; let loved=[];
+  try{{loved=JSON.parse(localStorage.getItem(KEY)||'[]')||[];}}catch(e){{loved=[];}}
+  const save=()=>{{try{{localStorage.setItem(KEY,JSON.stringify(loved));}}catch(e){{}}}};
+  const cards=[...sec.querySelectorAll('.lk')]; let filt='all';
+  function sync(){{
+    cards.forEach(c=>{{const on=loved.includes(c.dataset.id);c.classList.toggle('loved',on);const b=c.querySelector('.lk-love');b.classList.toggle('on',on);b.textContent=on?'♥':'♡';b.setAttribute('aria-pressed',on);
+      c.style.display=(filt==='all'||(filt==='loved'?on:c.dataset.season===filt))?'':'none';}});
+    document.getElementById('lkcount').textContent=loved.length?'('+loved.length+')':'';
+  }}
+  sec.addEventListener('click',e=>{{
+    const l=e.target.closest('.lk-love'); if(l){{const id=l.closest('.lk').dataset.id; loved=loved.includes(id)?loved.filter(x=>x!==id):loved.concat([id]); save(); sync(); return;}}
+    const f=e.target.closest('[data-ls]'); if(f){{filt=f.dataset.ls; sec.querySelectorAll('[data-ls]').forEach(b=>b.classList.toggle('on',b===f)); sync();}}
+  }});
+  document.getElementById('lkcopy').addEventListener('click',()=>{{
+    const msg=document.getElementById('lkmsg');
+    if(!loved.length){{msg.textContent='Tap ♡ on a few looks first.';return;}}
+    const txt='My inspiration picks: '+cards.filter(c=>loved.includes(c.dataset.id)).map(c=>c.dataset.id+' ('+c.querySelector('.lk-f').textContent+')').join('; ');
+    try{{navigator.clipboard.writeText(txt).then(()=>{{msg.textContent='Copied.';}},()=>{{msg.textContent=txt;}});}}catch(e){{msg.textContent=txt;}}
+  }});
+  sync();
+}})();
+
 (function(){{
   const KEY='wardrobe-compare', MAX=8;
   const CATS=[["Outerwear","Outerwear"],["Knitwear & tops","Tops & knits"],["Trousers","Trousers"],["Shoes","Shoes"],["Accessories","Accessories"]];
