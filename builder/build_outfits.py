@@ -984,6 +984,7 @@ def build():
 <div class="lk-f">{e(q.get("formula",""))}</div><ul class="lk-p">{pcs}</ul><p class="lk-why">{e(q.get("why",""))}</p><p class="lk-you"><b>For you:</b> {e(q.get("fit_for_him",""))}</p>
 <div class="lk-src"><a href="{e(q.get("source_url","#"))}" target="_blank" rel="noopener">{e(q.get("source",""))}</a> · {e(q.get("trend",""))} · <span class="lk-id">{e(q["id"])}</span></div></div></article>''')
     inspo_cards = "".join(look_card(q) for q in looks)
+    inspo_nav = '<a href="#inspiration" class="navinspo">✦ Inspiration</a>' if looks else ""
     inspo_section = f'''<section id="inspiration"><h2>Inspiration</h2>
 <p class="lede">Real outfits to learn from, picked for your shape and taste. <b>Tap ♡ on the looks you love</b>, then send me your picks. I'll turn them into formulas and pieces, show you the pieces first, and only then build outfits.</p>
 <div class="lk-diag"><b>What will lift your outfits most:</b> all 87 of your fundamentals use sneakers or clogs, none use wool trousers, and only 24 have a jacket. The common formula is knit + jeans + adidas (18 outfits). Great outfits add a statement jacket or coat, a wool or textured trouser, a refined shoe, and two or three textures that work together.</div>
@@ -1178,7 +1179,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#inspiration" class="navinspo">✦ Inspiration</a><a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
