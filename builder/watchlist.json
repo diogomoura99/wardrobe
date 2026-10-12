@@ -153,6 +153,43 @@
    ]
   },
   {
+   "id": "percival-meyer-qz",
+   "tier": "want",
+   "brand": "Percival",
+   "name": "Meyer Boxy Quarter-Zip (heavy cotton)",
+   "colour": "Navy",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/meyer-knitted-turtle-neck-fisherman-cotton-blue",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/MeyerBoxyQuarterZipPERCIVAL_MENSWEAR3.jpg?v=1787132629",
+   "full": 250,
+   "target": 200,
+   "great": 165,
+   "outfits": [
+    48,
+    73
+   ],
+   "when": "Black Friday or Percival's winter sale (late Dec–Jan)",
+   "why": "You prefer it over your Ralph Lauren half-zip: boxy, slightly cropped chunky-rib cotton, for #48 and #73.",
+   "check": {
+    "type": "shopify",
+    "variant": "M",
+    "js_url": "https://percivalclo.com/products/meyer-knitted-turtle-neck-fisherman-cotton-blue.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 250,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 250
+    }
+   ]
+  },
+  {
    "id": "birk-boston",
    "tier": "later",
    "brand": "Birkenstock",

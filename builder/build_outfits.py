@@ -490,8 +490,8 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
-  "Striped half-zip": [("own_polo_halfzip", "Also great here", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_suede_bomber"])],
-  "Date night": [("own_polo_halfzip", "Also great here", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_wool_blouson"])],
+  "Striped half-zip": [("own_polo_halfzip", "Upgrade: your preferred half-zip", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_suede_bomber"])],
+  "Date night": [("own_polo_halfzip", "Upgrade: your preferred half-zip", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_wool_blouson"])],
   "Camp collar": ("own_af_cream", "Lighter for hot days", ["own_af_linen_baggy"]),
   "Brown linen day": [("own_af_cream", "Lighter for hot days", ["own_af_linen_baggy"]),
                       ("own_af_tank_white", "Even better here", ["tank_cream"])],
