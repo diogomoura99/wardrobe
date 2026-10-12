@@ -1045,7 +1045,7 @@ def build():
     def sz_rows(cat):
         return "".join(f'''<tr><td>{e(r["brand"])}</td><td>{e(r["item"])}</td><td class="sz">{e(r["size"])}</td><td><span class="szst sz-{e(r["status"].lower().replace(" ","-"))}">{e(r["status"])}</span></td><td class="why">{e(r["notes"])}</td></tr>''' for r in sz if r["cat"] == cat)
     SZ_CATS = ["Trousers", "Tops & knits", "Jackets", "Shoes", "Accessories"]
-    sizes_section = ('<section id="sizes"><h2>Sizes &amp; fit</h2><p class="lede">What fits you, brand by brand. Tell me how each piece fits when it arrives and I\'ll update it here, so we can predict sizes for new brands. <b>Quick guide:</b> tops M · A&amp;F trousers 32x30 (= Massimo Dutti 40) · Levi\'s 32x32 (hem it) · adidas 44 = Premiata 43.</p>'
+    sizes_section = ('<section id="sizes"><h2>Sizes &amp; fit</h2><p class="lede">What fits you, brand by brand. Tell me how each piece fits when it arrives and I\'ll update it here, so we can predict sizes for new brands. <b>Quick guide:</b> tops M (A&amp;F knits run a little long) · A&amp;F trousers and jeans 32x30 (= Massimo Dutti 40) · Studio Nicholson M with a belt · Levi\'s 32x32 (hem it) · adidas 44 = Premiata 43.</p>'
                      + "".join(f'<h3 class="cat">{e(c)}</h3><table class="sztable"><thead><tr><th>Brand</th><th>Piece</th><th>Size</th><th>Status</th><th>How it fits</th></tr></thead><tbody>{sz_rows(c)}</tbody></table>' for c in SZ_CATS if any(r["cat"] == c for r in sz))
                      + "</section>") if sz else ""
 
