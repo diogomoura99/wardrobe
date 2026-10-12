@@ -34,6 +34,7 @@ ROLE_INFO = {
     "jewelry_ring": ("Accessories", "Silver ring"),
     "jacket_suede_bomber": ("Outerwear", "Dark brown suede bomber"),
     "jacket_wool_blouson": ("Outerwear", "Dark brown wool blouson"),
+    "jacket_leather_black": ("Outerwear", "Black nappa leather blouson"),
     "knit_colourblock": ("Knitwear & tops", "Navy & wine colour-block Shetland"),
     "jacket_houndstooth": ("Outerwear", "Houndstooth Harrington"),
     "jacket_cord_burgundy": ("Outerwear", "Burgundy cord jacket"),
@@ -394,6 +395,9 @@ OUTFITS = [
   ("Winter", "Waxed & cream cord", "The COS waxed jacket, winter",
    "Your COS waxed jacket over your cream ladder-stitch knit, taupe Levi's cord and burgundy Sambas. The chocolate cord collar picks up the cord trousers, and the leather Sambas cope with rain.",
    ["own_cos_waxed", "own_cos_cream", "own_levis_taupe", "own_samba_maroon", "own_watch", "own_sd_pendant"]),
+  ("Autumn", "Paolo & white tee", "Your fitting: Studio Nicholson cords + A&F tee",
+   "Your white heavyweight tee with the Studio Nicholson Paolo cords in Panna and brown suede Premiatas, with the IX chain and bracelet. Simple, but the cord's texture and the cream-on-white make it look expensive. Add the brown barn jacket when it cools down.",
+   ["own_af_white_tee", "own_sn_paolo", "own_premiata", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Special Summer", "Navy terry Riviera", "New piece: navy cable-terry shirt",
    "Navy cable-terry shirt with the top buttons open, your light beige linen baggy trousers, brown suede Premiatas, the IX chain and the Rolex. The Riviera in the evening.",
    ["shirt_terry", "own_af_linen_baggy", "own_premiata", "own_ix_figaro", "own_watch"]),
@@ -421,6 +425,9 @@ OUTFITS = [
   ("Special Spring", "Blue runner day", "Standout: Axel Arigato Daze runners",
    "Your light-blue linen shirt with the top buttons open over the white tank, grey Levi's and Axel Arigato's slim Daze runners in blue suede and grey, with a burgundy heel tab. Blues and greys with one warm accent. Jaconellis by day.",
    ["own_blue_linen", "own_af_tank_white", "own_levis_grey", "shoe_daze_runner", "own_sunnies_jaconelli", "own_sd_pendant"]),
+  ("Special Autumn", "Black leather & cream", "Standout: Massimo Dutti black nappa blouson",
+   "Massimo Dutti's black nappa blouson over your cream ladder-stitch knit, light-wash baggy jeans and the off-white Spezials. Black leather against cream and washed blue is the classic contrast; the knit's texture keeps it from looking hard, and the burgundy stripes on the shoes add one warm note.",
+   ["jacket_leather_black", "own_cos_cream", "own_lightwash", "own_spezial_cream", "own_watch", "own_cuban_bracelet"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -491,6 +498,8 @@ PIECE_ALT = {
   "Grey tee & navy": ("own_af_tee_grey", "Upgrade: add on top", ["own_polo_harrington"]),
   "Cream tee & light denim": ("own_af_tee_cream", "Upgrade: add on top", ["own_sage_jacket"]),
   "Knit & jeans": [("own_cos_cream", "Upgrade: add on top", ["jacket_suede_bomber"]), ("own_cos_cream", "Upgrade: collar showing", ["own_blue_linen"])],
+  "Paolo & white tee": [("own_af_white_tee", "Other tee colour", ["own_af_tee_black", "own_af_tee_grey", "own_af_tee_cream"]), ("own_af_white_tee", "Upgrade: add on top", ["jacket_leather_black"])],
+  "Black leather & cream": [("own_cos_cream", "Lighter for warm days", ["own_af_white_tee"]), ("own_spezial_cream", "Also great here", ["own_samba_maroon"])],
 }
 
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
@@ -540,6 +549,7 @@ NECK_WEAR = {
   "Burgundy cord": ("Outside the tee, inside the jacket", "on the grey tee, framed by the open cord jacket."),
   "Blue runner day": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Sage stripes & khaki": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
+  "Paolo & white tee": ("Outside the tee", "at the collar, at your usual 45 cm."),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -667,6 +677,8 @@ VIBE = {
   "Pink stripe night": ("Street", "Night out"),
   "Blue runner day": ("In between", "Daytime"),
   "Sage stripes & khaki": ("In between", "Evening out"),
+  "Paolo & white tee": ("In between", "Weekend / city day"),
+  "Black leather & cream": ("In between", "Night out / city"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
