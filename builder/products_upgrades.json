@@ -1,0 +1,62 @@
+[
+ {
+  "role": "jacket_suede_bomber",
+  "rank": "primary",
+  "brand": "COS",
+  "name": "Suede Funnel-Neck Bomber Jacket",
+  "colour": "Mahogany (dark chocolate brown)",
+  "price_eur": 449,
+  "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/bomberjackets/product/suede-funnel-neck-bomber-jacket-mahogany-1340988001",
+  "image_url": "https://media.cos.com/assets/001/67/3a/673a922d10064bded4060941aff230e260621dcb_xxl-1.jpg",
+  "fit_note": "100% goat suede, boxy and hip length with a ribbed funnel neck, cuffs and hem. Take M. Dry days only. More timeless.",
+  "verified": true
+ },
+ {
+  "role": "jacket_suede_bomber",
+  "rank": "alt",
+  "brand": "Massimo Dutti",
+  "name": "Combined Suede Bomber Jacket",
+  "colour": "Mole brown",
+  "price_eur": 269,
+  "url": "https://www.massimodutti.com/pt/en/combined-suede-bomber-jacket-l03454440?pelement=64760326",
+  "image_url": "https://static.massimodutti.net/assets/public/90f5/a395/e0eb4fc49035/5cef607fd073/03454440830-o1/03454440830-o1.jpg?ts=1",
+  "fit_note": "Suede with rib-knit trims, sportier. Take M.",
+  "verified": true
+ },
+ {
+  "role": "jacket_suede_bomber",
+  "rank": "alt2",
+  "brand": "Massimo Dutti",
+  "name": "Suede Stand Collar Bomber Jacket",
+  "colour": "Chocolate",
+  "price_eur": 249,
+  "url": "https://www.massimodutti.com/pt/en/suede-stand-collar-bomber-jacket-with-zip-l03434453?pelement=61733796",
+  "image_url": "https://static.massimodutti.net/assets/public/4dac/d415/31ed489dac81/56097810db33/03434453717-o1/03434453717-o1.jpg?ts=1",
+  "fit_note": "Clean zip bomber, best value. Take M (low stock on 12 Oct).",
+  "verified": true
+ },
+ {
+  "role": "jacket_wool_blouson",
+  "rank": "primary",
+  "brand": "Arket",
+  "name": "Doublé Blouson",
+  "colour": "Dark brown",
+  "price_eur": 229,
+  "url": "https://www.arket.com/en-eu/product/doubl-blouson-dark-brown-1363347001/",
+  "image_url": "https://media.arket.com/assets/006/cc/71/cc7168987326793d579144e5a571208cff4d818a_xxl-1.jpg",
+  "fit_note": "80% wool doublé, cropped and boxy with a funnel collar and two-way zip. Unlined: for dry cool days, not deep cold. Take 48 (M).",
+  "verified": true
+ },
+ {
+  "role": "jacket_wool_blouson",
+  "rank": "alt",
+  "brand": "Samsøe Samsøe",
+  "name": "Sapaulo Jacket",
+  "colour": "Dark grey melange",
+  "price_eur": 280,
+  "url": "https://www.samsoe.com/en-PT/product/sapaulo-jacket-15772-dark-grey-mel",
+  "image_url": "https://samsoe.centracdn.net/client/dynamic/images/23341_M26300039-CLR000659-10-2400.jpg",
+  "fit_note": "The charcoal version, for your grey and black outfits. Take M.",
+  "verified": true
+ }
+]

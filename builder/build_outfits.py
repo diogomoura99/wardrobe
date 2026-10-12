@@ -32,6 +32,8 @@ ROLE_INFO = {
     "knit_check": ("Knitwear & tops", "Cream checkerboard knit"),
     "shirt_terry": ("Knitwear & tops", "Navy terry shirt"),
     "jewelry_ring": ("Accessories", "Silver ring"),
+    "jacket_suede_bomber": ("Outerwear", "Dark brown suede bomber"),
+    "jacket_wool_blouson": ("Outerwear", "Dark brown wool blouson"),
     "knit_colourblock": ("Knitwear & tops", "Navy & wine colour-block Shetland"),
     "jacket_houndstooth": ("Outerwear", "Houndstooth Harrington"),
     "jacket_cord_burgundy": ("Outerwear", "Burgundy cord jacket"),
@@ -463,8 +465,8 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
-  "Striped half-zip": ("own_polo_halfzip", "Also great here", ["knit_halfzip"]),
-  "Date night": ("own_polo_halfzip", "Also great here", ["knit_halfzip"]),
+  "Striped half-zip": [("own_polo_halfzip", "Also great here", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_suede_bomber"])],
+  "Date night": [("own_polo_halfzip", "Also great here", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_wool_blouson"])],
   "Camp collar": ("own_af_cream", "Lighter for hot days", ["own_af_linen_baggy"]),
   "Brown linen day": [("own_af_cream", "Lighter for hot days", ["own_af_linen_baggy"]),
                       ("own_af_tank_white", "Even better here", ["tank_cream"])],
@@ -479,10 +481,16 @@ PIECE_ALT = {
   "Granny squares": ("own_af_tank_white", "Even better here", ["tank_cream"]),
   "Sage crochet": ("own_af_tank_white", "Even better here", ["tank_cream"]),
   "Knit polo & white jeans": ("own_spezial_navy", "Timeless option", ["shoe_premiata"]),
-  "Blue & cream": ("own_spezial_navy", "Timeless option", ["shoe_premiata"]),
+  "Blue & cream": [("own_spezial_navy", "Timeless option", ["shoe_premiata"]), ("own_cos_blue", "Upgrade: add on top", ["jacket_suede_bomber"])],
   "Harrington & white": ("own_spezial_cream", "Other shoes to try", ["shoe_premiata_cream", "shoe_mexico66", "shoe_gg_navy"]),
   "Black knit & cream": ("own_spezial_cream", "Other shoes to try", ["shoe_premiata_cream", "shoe_premiata_black", "shoe_gg_black"]),
   "Houndstooth & green": ("own_samba_green", "Calmer option", ["shoe_diadora_cord"]),
+  "Blue cable & grey": ("own_blue_cable", "Upgrade: add on top", ["jacket_suede_bomber"]),
+  "Tonal brown": ("own_aircloud_brown", "Upgrade for dry days", ["jacket_wool_blouson"]),
+  "Tonal grey": ("own_aircloud_brown", "Upgrade for dry days", ["jacket_wool_blouson"]),
+  "Grey tee & navy": ("own_af_tee_grey", "Upgrade: add on top", ["own_polo_harrington"]),
+  "Cream tee & light denim": ("own_af_tee_cream", "Upgrade: add on top", ["own_sage_jacket"]),
+  "Knit & jeans": [("own_cos_cream", "Upgrade: add on top", ["jacket_suede_bomber"]), ("own_cos_cream", "Upgrade: collar showing", ["own_blue_linen"])],
 }
 
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
@@ -831,7 +839,7 @@ def swaps_for(name, pieces, prod):
     if name in OUTER_ALT:
         outer = next((k for k in pieces if (ROLE_INFO.get(k) or OWNED.get(k))[0] == "Outerwear"), None)
         if outer:
-            out[outer] = swap_box("Other jacket to try", OUTER_ALT[name], prod)
+            out[outer] = out.get(outer, "") + swap_box("Other jacket to try", OUTER_ALT[name], prod)
     worn = [k for k in NECKLACES if k in pieces]
     if worn:
         if name not in NECK_WEAR:
@@ -858,12 +866,14 @@ def build():
     special = sorted([o for o in OUTFITS if o[0].startswith("Special ")], key=lambda o: order.index(o[0].split(" ", 1)[1]))
     sec = []
     n = 0
+    outfit_num = {}
     for s in seasons:
         cards = []
         for season, name, inspo, note, pieces in (special if s == "Special occasions" else OUTFITS):
             if s != "Special occasions" and season != s:
                 continue
             n += 1
+            outfit_num[name] = n
             sw = swaps_for(name, pieces, prod)
             tiles = "".join(tile(k, prod, sw.get(k, "")) for k in sorted(pieces, key=lambda k: CATS.index((ROLE_INFO.get(k) or OWNED.get(k))[0])))
             total = sum(float(prod[k]["primary"].get("price_eur") or 0) for k in pieces if k in ROLE_INFO and prod.get(k, {}).get("primary"))
@@ -1011,7 +1021,24 @@ def build():
         if lis:
             rows.append(f'<h3 class="cat">{e(c)}</h3><table><thead><tr><th></th><th>Main pick</th><th>Alternatives</th><th>Used in</th></tr></thead><tbody>{"".join(lis)}</tbody></table>')
 
-    ex = [r for r in ROLE_INFO if prod.get(r, {}).get("primary") and usage[r] == 0]
+    ups = {}
+    for oname, entries in PIECE_ALT.items():
+        for piece, label, alts in (entries if isinstance(entries, list) else [entries]):
+            if label.startswith("Upgrade"):
+                for a in alts:
+                    if a in ROLE_INFO and oname in outfit_num:
+                        ups.setdefault(a, []).append(outfit_num[oname])
+    if ups:
+        lis = []
+        for r, nums in ups.items():
+            p = prod[r]["primary"]
+            alts = sorted_alts(prod[r])
+            alt = "<br>".join(f'<a href="{e(a["url"])}" target="_blank" rel="noopener">{e(a["brand"])}: {e(a["name"])} · {money(a.get("price_eur"))}</a>' for a in alts) or '<span class="muted">-</span>'
+            lis.append(f'''<tr><td class="thumb"><a href="{e(p["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(p.get("image_url",""))}" alt="" onerror="this.remove()"></a></td>
+<td><div class="role">{e(ROLE_INFO[r][1])}</div><a href="{e(p["url"])}" target="_blank" rel="noopener">{e(p["brand"])}: {e(p["name"])}</a> · <b>{money(p.get("price_eur"))}</b>
+<div class="why">{e(p.get("fit_note",""))}</div></td><td class="altc">{alt}</td><td class="uses">Upgrades #{", #".join(str(x) for x in sorted(nums))}</td></tr>''')
+        rows.append(f'<h3 class="cat">Upgrades</h3><p class="lede">Pieces you picked to lift outfits you already wear. They show as "Upgrade" boxes on those outfits.</p><table><thead><tr><th></th><th>Main pick</th><th>Alternatives</th><th>Lifts</th></tr></thead><tbody>{"".join(lis)}</tbody></table>')
+    ex = [r for r in ROLE_INFO if prod.get(r, {}).get("primary") and usage[r] == 0 and r not in ups]
     if ex:
         exl = []
         for r in ex:
