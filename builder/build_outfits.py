@@ -34,7 +34,6 @@ ROLE_INFO = {
     "jewelry_ring": ("Accessories", "Silver ring"),
     "jacket_suede_bomber": ("Outerwear", "Dark brown suede bomber"),
     "jacket_wool_blouson": ("Outerwear", "Dark brown wool blouson"),
-    "jacket_leather_black": ("Outerwear", "Black nappa leather blouson"),
     "shoe_premiata_allblack": ("Shoes", "Black Premiata Bonnie"),
     "knit_black_textured": ("Knitwear & tops", "Black textured knit"),
     "jacket_leather_brown": ("Outerwear", "Chocolate nappa leather jacket"),
@@ -61,6 +60,7 @@ OWNED = {
     "own_cream_cord_jacket": ("Outerwear", "Your cream cord jacket"),
     "own_brown_jacket_af": ("Outerwear", "Your brown barn jacket"),
     "own_cos_waxed": ("Outerwear", "Your COS waxed jacket"),
+    "own_md_leather": ("Outerwear", "Your black Massimo Dutti nappa blouson"),
     "own_stripe_knit": ("Knitwear & tops", "Your green & cream striped knit"),
     "own_blue_linen": ("Knitwear & tops", "Your light-blue linen shirt"),
     "own_navy_linen": ("Knitwear & tops", "Your navy linen shirt"),
@@ -433,13 +433,13 @@ OUTFITS = [
    ["own_blue_linen", "own_af_tank_white", "own_levis_grey", "shoe_daze_runner", "own_sunnies_jaconelli", "own_sd_pendant"]),
   ("Special Autumn", "Black leather & cream", "Standout: Massimo Dutti black nappa blouson",
    "Massimo Dutti's black nappa blouson over your cream ladder-stitch knit, light-wash baggy jeans and the off-white Spezials. Black leather against cream and washed blue is the classic contrast; the knit's texture keeps it from looking hard, and the burgundy stripes on the shoes add one warm note.",
-   ["jacket_leather_black", "own_cos_cream", "own_lightwash", "own_spezial_cream", "own_watch", "own_cuban_bracelet"]),
+   ["own_md_leather", "own_cos_cream", "own_lightwash", "own_spezial_cream", "own_watch", "own_cuban_bracelet"]),
   ("Special Autumn", "Black leather, white tee", "Built around the black nappa blouson",
    "Massimo Dutti's black nappa blouson over your white heavyweight tee, black pleated baggy trousers and black Premiata Bonnies with silver stripes, plus the IX chain and the Rolex. Black from shoulder to shoe; the white tee at the neck and hem keeps it sharp, and the silver picks up the shoes' stripes.",
-   ["jacket_leather_black", "own_af_white_tee", "own_af_black_pleated", "shoe_premiata_allblack", "own_ix_figaro", "own_watch"]),
+   ["own_md_leather", "own_af_white_tee", "own_af_black_pleated", "shoe_premiata_allblack", "own_ix_figaro", "own_watch"]),
   ("Special Winter", "All black, textured", "Full black: leather, waffle knit, wool-feel trousers",
    "The black nappa blouson over A&F's black waffle-texture knit, black pleated baggy trousers and black Premiata Bonnies, with the Rolex and the IX bracelet. Full black works because every layer has a different texture: smooth leather, waffle cotton, matte trousers and suede. The silver on the wrists and shoes does the lifting.",
-   ["jacket_leather_black", "knit_black_textured", "own_af_black_pleated", "shoe_premiata_allblack", "own_watch", "own_ix_figaro_bracelet"]),
+   ["own_md_leather", "knit_black_textured", "own_af_black_pleated", "shoe_premiata_allblack", "own_watch", "own_ix_figaro_bracelet"]),
   ("Special Autumn", "Tonal chocolate", "Elegant, one colour: the suede bomber you picked",
    "All chocolate in four textures: the COS mahogany suede bomber, your Howlin' brown Shetland, the dark brown pleated trousers and brown suede Bonnies, with the Rolex and the IX bracelet. One colour, so the textures do the work, and the silver lifts it.",
    ["jacket_suede_bomber", "own_howlin_brown", "own_af_brown", "own_premiata", "own_watch", "own_ix_figaro_bracelet"]),
@@ -516,7 +516,7 @@ PIECE_ALT = {
   "Grey tee & navy": ("own_af_tee_grey", "Upgrade: add on top", ["own_polo_harrington"]),
   "Cream tee & light denim": ("own_af_tee_cream", "Upgrade: add on top", ["own_sage_jacket"]),
   "Knit & jeans": [("own_cos_cream", "Upgrade: add on top", ["jacket_suede_bomber"]), ("own_cos_cream", "Upgrade: collar showing", ["own_blue_linen"])],
-  "Paolo & white tee": [("own_af_white_tee", "Other tee colour", ["own_af_tee_black", "own_af_tee_grey", "own_af_tee_cream"]), ("own_af_white_tee", "Upgrade: add on top", ["jacket_leather_black"])],
+  "Paolo & white tee": [("own_af_white_tee", "Other tee colour", ["own_af_tee_black", "own_af_tee_grey", "own_af_tee_cream"]), ("own_af_white_tee", "Upgrade: add on top", ["own_md_leather"])],
   "Black leather & cream": [("own_cos_cream", "Lighter for warm days", ["own_af_white_tee"]), ("own_spezial_cream", "Also great here", ["own_samba_maroon"])],
   "Black leather, white tee": [("own_af_white_tee", "Other tee colour", ["own_af_tee_grey", "own_af_tee_black"]), ("own_af_black_pleated", "Also great here", ["own_af_black_jeans"])],
   "All black, textured": [("knit_black_textured", "Softer version", ["own_ymc_grey"]), ("own_af_black_pleated", "Also great here", ["own_af_black_jeans"])],
@@ -1040,6 +1040,15 @@ def build():
 <div class="lk-bar"><span class="vlabel">Show:</span><button data-ls="all" class="on">All</button><button data-ls="Spring">Spring</button><button data-ls="Summer">Summer</button><button data-ls="Autumn">Autumn</button><button data-ls="Winter">Winter</button><button data-ls="loved">♥ My picks <span id="lkcount"></span></button><button id="lkcopy" type="button" class="lk-copy">Copy my picks to send me</button><span id="lkmsg" class="muted"></span></div>
 <div class="lk-grid">{inspo_cards}</div></section>''' if looks else ""
 
+    # sizes and fit profile
+    sz = json.load(open(os.path.join(HERE, "sizes.json"))) if os.path.exists(os.path.join(HERE, "sizes.json")) else []
+    def sz_rows(cat):
+        return "".join(f'''<tr><td>{e(r["brand"])}</td><td>{e(r["item"])}</td><td class="sz">{e(r["size"])}</td><td><span class="szst sz-{e(r["status"].lower().replace(" ","-"))}">{e(r["status"])}</span></td><td class="why">{e(r["notes"])}</td></tr>''' for r in sz if r["cat"] == cat)
+    SZ_CATS = ["Trousers", "Tops & knits", "Jackets", "Shoes", "Accessories"]
+    sizes_section = ('<section id="sizes"><h2>Sizes &amp; fit</h2><p class="lede">What fits you, brand by brand. Tell me how each piece fits when it arrives and I\'ll update it here, so we can predict sizes for new brands. <b>Quick guide:</b> tops M · A&amp;F trousers 32x30 (= Massimo Dutti 40) · Levi\'s 32x32 (hem it) · adidas 44 = Premiata 43.</p>'
+                     + "".join(f'<h3 class="cat">{e(c)}</h3><table class="sztable"><thead><tr><th>Brand</th><th>Piece</th><th>Size</th><th>Status</th><th>How it fits</th></tr></thead><tbody>{sz_rows(c)}</tbody></table>' for c in SZ_CATS if any(r["cat"] == c for r in sz))
+                     + "</section>") if sz else ""
+
     brand_section = f'''<section id="brands"><h2>Brands for you</h2><p class="lede">New brands that fit your style (relaxed, old-money, Ralph Lauren meets Copenhagen), on top of A&F, COS, Les Deux and Arket. Each has one piece picked for your shape. All ship to Portugal; EU brands have no customs.</p>{brand_html}</section>''' if brands else ""
 
     # shopping list
@@ -1206,6 +1215,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 .lk-p{{margin:0;padding-left:18px;font-size:13px;color:var(--text)}} .lk-p li{{margin:1px 0}}
 .lk-why{{margin:0;font-size:13px;color:var(--muted)}} .lk-you{{margin:0;font-size:13px}}
 .lk-src{{margin-top:auto;font-size:12px;color:var(--muted)}} .lk-src a{{color:var(--muted)}} .lk-id{{font-family:ui-monospace,Menlo,monospace}}
+.sztable td.sz{{font-weight:700;white-space:nowrap}} .szst{{font-size:12px;border-radius:999px;padding:2px 8px;white-space:nowrap;background:var(--chip)}} .sz-confirmed{{background:#e1f5ee;color:#085041}} .sz-to-check{{background:#fff4d6;color:#7a5a00}} .sz-arriving,.sz-bought{{background:#e6ebf4;color:var(--accent)}} .sz-predicted,.sz-measured{{background:#efe7f6;color:#5b3f86}}
 .ownchip{{font-size:13px;background:#e1f5ee;color:#085041;border-radius:999px;padding:3px 10px;white-space:nowrap}}
 .season{{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:-4px 0 16px;font-size:14px}}
 .season .months{{font-weight:600}} .season .temps{{color:var(--accent)}} .season .tip{{color:var(--muted);flex-basis:100%}}
@@ -1245,7 +1255,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
@@ -1258,6 +1268,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <section id="shopping-list"><h2>Shopping list</h2>
 <p class="lede">Every piece once, with a main pick and up to two alternatives (often a cheaper one and an independent-label one). Pieces marked "Buy first" appear in the most outfits, so start with those. Outfit totals use the main picks.</p>
 {"".join(rows)}</section>
+{sizes_section}
 <p class="foot">Prices and stock were checked on 6 October 2026 and can change. Sizing and fit vary by brand, so check each shop's size guide. Tiles marked "You have this" are things you already own. A green outline means a photo of your piece (or the closest match); striped tiles are pieces without a photo yet.</p>
 </div>
 <div id="cmptray" hidden><div class="ct-in"><span class="ct-lab">Compare</span><div id="cmpchips"></div><button id="cmpgo" type="button" class="ct-go">Compare</button><button id="cmpclr" type="button" class="ct-clr">Clear all</button></div></div>

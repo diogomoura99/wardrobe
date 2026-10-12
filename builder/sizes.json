@@ -1,0 +1,194 @@
+[
+ {
+  "cat": "Trousers",
+  "brand": "Abercrombie & Fitch",
+  "item": "Cotton-Blend Pleated Baggy Trouser",
+  "size": "32x30",
+  "status": "Confirmed",
+  "notes": "Perfect waist and length (dark brown pair, 12 Oct)."
+ },
+ {
+  "cat": "Trousers",
+  "brand": "Abercrombie & Fitch",
+  "item": "Baggy Jean",
+  "size": "32x30",
+  "status": "To check",
+  "notes": "Same size as the pleated trousers (your black rigid pair). Confirm waist, thigh and length."
+ },
+ {
+  "cat": "Trousers",
+  "brand": "Levi's",
+  "item": "578 Baggy (denim and cord)",
+  "size": "32x32",
+  "status": "Confirmed",
+  "notes": "Great fit; about 2 cm long, so hem them and keep the original hem."
+ },
+ {
+  "cat": "Trousers",
+  "brand": "Studio Nicholson",
+  "item": "Paolo cord wide leg",
+  "size": "M",
+  "status": "To check",
+  "notes": "Looks great with the A&F tee. Confirm waist, rise and length."
+ },
+ {
+  "cat": "Trousers",
+  "brand": "COS",
+  "item": "Pleated wide-leg trousers",
+  "size": "EU 48",
+  "status": "Arriving",
+  "notes": "Due 13–15 Oct."
+ },
+ {
+  "cat": "Trousers",
+  "brand": "Massimo Dutti",
+  "item": "Trousers",
+  "size": "40",
+  "status": "Predicted",
+  "notes": "Their chart: 82–83 cm waist, 77–78 cm inseam, close to A&F 32x30."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Abercrombie & Fitch",
+  "item": "Premium Heavyweight Cropped Tee",
+  "size": "?",
+  "status": "To check",
+  "notes": "Size and how the length and shoulders sit."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Nude Project",
+  "item": "Hotel Tee",
+  "size": "M",
+  "status": "To check",
+  "notes": "Arrived 12 Oct."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Abercrombie & Fitch",
+  "item": "Coastal crew sweater",
+  "size": "M",
+  "status": "To check",
+  "notes": "Arrived 12 Oct."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Polo Ralph Lauren",
+  "item": "Wool quarter-zip",
+  "size": "M",
+  "status": "To check",
+  "notes": ""
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "COS",
+  "item": "Boiled merino crew / ladder-stitch jumper",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "Due 12–14 Oct."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Arket",
+  "item": "Brushed wool jumper",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "DPD pickup locker, ~13–14 Oct."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Howlin'",
+  "item": "Birth of the Cool",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "FedEx."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "YMC",
+  "item": "Suedehead crew",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "DPD."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Abercrombie & Fitch",
+  "item": "Embroidered linen-blend shirt",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "Due Thu 15 Oct."
+ },
+ {
+  "cat": "Jackets",
+  "brand": "Massimo Dutti",
+  "item": "Nappa leather blouson (Limited Edition)",
+  "size": "M",
+  "status": "Bought",
+  "notes": "Check on arrival. In M: 126 cm chest, 53 cm shoulders, 63 cm sleeves; their 188 cm model wears L."
+ },
+ {
+  "cat": "Jackets",
+  "brand": "COS",
+  "item": "Corduroy-detail waxed jacket",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "By 16 Oct."
+ },
+ {
+  "cat": "Shoes",
+  "brand": "adidas",
+  "item": "Samba / Handball Spezial",
+  "size": "EU 44",
+  "status": "Confirmed",
+  "notes": "UK 9.5."
+ },
+ {
+  "cat": "Shoes",
+  "brand": "Premiata",
+  "item": "Bonnie",
+  "size": "43",
+  "status": "Confirmed",
+  "notes": ""
+ },
+ {
+  "cat": "Shoes",
+  "brand": "Onitsuka Tiger",
+  "item": "Mexico 66 / Tokuten",
+  "size": "44 (44.5 in SD and Tokuten)",
+  "status": "Predicted",
+  "notes": "Follow each model's own advice."
+ },
+ {
+  "cat": "Shoes",
+  "brand": "Birkenstock",
+  "item": "Boston clog",
+  "size": "?",
+  "status": "To check",
+  "notes": "Not bought yet."
+ },
+ {
+  "cat": "Accessories",
+  "brand": "Rings",
+  "item": "Index finger",
+  "size": "UK S / US 9.5",
+  "status": "Measured",
+  "notes": "Your Oura US 9 is tight on the index finger."
+ },
+ {
+  "cat": "Accessories",
+  "brand": "IX Studios",
+  "item": "Figaro chain",
+  "size": "45 cm",
+  "status": "Confirmed",
+  "notes": "Your preferred length, at the collar."
+ },
+ {
+  "cat": "Accessories",
+  "brand": "Les Deux",
+  "item": "Victor braided belt",
+  "size": "85",
+  "status": "Arriving",
+  "notes": "Due Thu 15 Oct."
+ }
+]

@@ -664,5 +664,14 @@
   "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/jackets/product/corduroy-detail-waxed-cotton-jacket-khaki-chocolate-1340998001",
   "image_url": "https://media.cos.com/assets/001/92/a0/92a033ece18ce831aeaef70fa345e2ef808a4be9_xxl-1.jpg?imwidth=1200",
   "match": "exact"
+ },
+ "own_md_leather": {
+  "brand": "Massimo Dutti",
+  "name": "Nappa leather blouson with pocket details (Limited Edition)",
+  "colour": "Black",
+  "size": "M",
+  "url": "https://www.massimodutti.com/pt/blusao-com-detalhe-de-bolsos-em-pele-napa--limited-edition-l03463880?colorId=800",
+  "image_url": "https://static.massimodutti.net/assets/public/86ac/1485/a8304a3092bf/5eacecb8dfac/03463880800-o6/03463880800-o6.jpg?ts=1790949006398&f=auto&w=800",
+  "match": "exact"
  }
 }
