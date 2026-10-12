@@ -116,43 +116,6 @@
    }
   },
   {
-   "id": "af-oxford",
-   "tier": "want",
-   "brand": "Abercrombie & Fitch",
-   "name": "Signature Icon Oxford Shirt",
-   "colour": "Light blue",
-   "size": "M",
-   "url": "https://www.abercrombie.com/shop/eu/p/signature-icon-oxford-shirt-61816346",
-   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-6040-00335-220_prod1?policy=product-medium",
-   "full": 55,
-   "target": 47,
-   "great": 40,
-   "outfits": [
-    4,
-    75
-   ],
-   "when": "Last day today (12 Oct): €46.75 with the free myA&F membership (15% off everything, 9–12 Oct). After that, A&F's Cyber Week (25–50% plus an extra 15% code last year) could take it near €40.",
-   "why": "Completes #4 and #75; with a tank, or the collar showing under knits.",
-   "check": {
-    "type": "browser",
-    "how": "text",
-    "note": "A&F shows the regular price and a 'myA&F Price'"
-   },
-   "last": {
-    "date": "2026-10-12",
-    "price": 55,
-    "member": 46.75,
-    "stock": "in",
-    "note": "myA&F offer 9–12 Oct 2026"
-   },
-   "history": [
-    {
-     "date": "2026-10-12",
-     "price": 55
-    }
-   ]
-  },
-  {
    "id": "af-merino-polo",
    "tier": "want",
    "brand": "Abercrombie & Fitch",

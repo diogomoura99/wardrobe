@@ -216,18 +216,6 @@
   "fit_note": "Pima cotton, relaxed. Longer body: wear open or half-tucked."
  },
  {
-  "role": "shirt_oxford",
-  "rank": "alt2",
-  "brand": "Abercrombie & Fitch",
-  "name": "Signature Icon Oxford Shirt",
-  "colour": "Light Blue",
-  "price_eur": 55,
-  "url": "https://www.abercrombie.com/shop/eu-es/p/signature-icon-oxford-shirt-61816346?seq=05",
-  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-6040-00335-220_prod1?policy=product-medium",
-  "verified": true,
-  "fit_note": "Relaxed button-down, small moose icon. Budget pick."
- },
- {
   "role": "hoodie_graphic_blue",
   "rank": "primary",
   "brand": "Abercrombie & Fitch",
