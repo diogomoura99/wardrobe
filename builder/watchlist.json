@@ -1,0 +1,304 @@
+{
+ "items": [
+  {
+   "id": "cos-suede-bomber",
+   "tier": "want",
+   "brand": "COS",
+   "name": "Suede Funnel-Neck Bomber Jacket",
+   "colour": "Mahogany",
+   "size": "M",
+   "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/bomberjackets/product/suede-funnel-neck-bomber-jacket-mahogany-1340988001",
+   "image_url": "https://media.cos.com/assets/001/67/3a/673a922d10064bded4060941aff230e260621dcb_xxl-1.jpg",
+   "full": 449,
+   "target": 340,
+   "great": 250,
+   "outfits": [
+    8,
+    44,
+    48,
+    64,
+    97
+   ],
+   "when": "Black Friday (25% off the last two years; members and subscribers get in first, ~24–25 Nov), or the winter sale from ~26 Dec (up to 50%)",
+   "why": "Your brown hero jacket: lifts four outfits and completes #97.",
+   "check": {
+    "type": "browser",
+    "how": "jsonld",
+    "sku": "1340988001003",
+    "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 449,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 449
+    }
+   ]
+  },
+  {
+   "id": "premiata-bonnie-black",
+   "tier": "want",
+   "brand": "Premiata",
+   "name": "Bonnie 8591",
+   "colour": "Black with silver accents",
+   "size": "43",
+   "url": "https://premiata.eu/products/boe08591",
+   "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/BOE08591_1.jpg?v=1785746574",
+   "full": 240,
+   "target": 200,
+   "great": 170,
+   "outfits": [
+    96,
+    102
+   ],
+   "when": "premiata.eu has no Black Friday. Best chance: the Italian winter sales from ~3 Jan at boutiques and Farfetch (20–45% off). Buy now if you want the all-black looks sooner.",
+   "why": "Black sneakers for the leather-jacket looks (#96, #102).",
+   "check": {
+    "type": "shopify",
+    "variant": "43"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 240.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 240
+    }
+   ]
+  },
+  {
+   "id": "arket-double-blouson",
+   "tier": "want",
+   "brand": "Arket",
+   "name": "Doublé Blouson",
+   "colour": "Dark brown",
+   "size": "48",
+   "url": "https://www.arket.com/en-eu/product/doubl-blouson-dark-brown-1363347001/",
+   "image_url": "https://media.arket.com/assets/006/cc/71/cc7168987326793d579144e5a571208cff4d818a_xxl-1.jpg",
+   "full": 229,
+   "target": 185,
+   "great": 140,
+   "outfits": [
+    73,
+    81,
+    87
+   ],
+   "when": "Black Weekend (~20% off autumn/winter styles last year), or the winter sale in late Dec (up to 50%)",
+   "why": "Wool blouson upgrade for three outfits.",
+   "check": {
+    "type": "browser",
+    "how": "text"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 229,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 229
+    }
+   ],
+   "deal": {
+    "text": "On sale now: Arket's Wool Doublé Jacket in fudge brown, €160.30 (−30%). Same wool, shirt collar instead of the funnel neck, a warmer mid-brown.",
+    "url": "https://www.arket.com/en-eu/product/wool-doubl-jacket-fudge-brown-1320667002/"
+   }
+  },
+  {
+   "id": "af-oxford",
+   "tier": "want",
+   "brand": "Abercrombie & Fitch",
+   "name": "Signature Icon Oxford Shirt",
+   "colour": "Light blue",
+   "size": "M",
+   "url": "https://www.abercrombie.com/shop/eu/p/signature-icon-oxford-shirt-61816346",
+   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_125-6040-00335-220_prod1?policy=product-medium",
+   "full": 55,
+   "target": 47,
+   "great": 40,
+   "outfits": [
+    4,
+    75
+   ],
+   "when": "Last day today (12 Oct): €46.75 with the free myA&F membership (15% off everything, 9–12 Oct). After that, A&F's Cyber Week (25–50% plus an extra 15% code last year) could take it near €40.",
+   "why": "Completes #4 and #75; with a tank, or the collar showing under knits.",
+   "check": {
+    "type": "browser",
+    "how": "text",
+    "note": "A&F shows the regular price and a 'myA&F Price'"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 55,
+    "member": 46.75,
+    "stock": "in",
+    "note": "myA&F offer 9–12 Oct 2026"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 55
+    }
+   ]
+  },
+  {
+   "id": "af-merino-polo",
+   "tier": "want",
+   "brand": "Abercrombie & Fitch",
+   "name": "100% Merino Wool 3-Button Collared Sweater",
+   "colour": "Brown",
+   "size": "M",
+   "url": "https://www.abercrombie.com/shop/eu/p/100-merino-wool-3-button-collared-sweater-63845824",
+   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6276-00816-400_prod1?policy=product-large",
+   "full": 80,
+   "target": 64,
+   "great": 55,
+   "outfits": [
+    1,
+    46
+   ],
+   "when": "Last day today (12 Oct): €68 with myA&F. Otherwise Cyber Week (late Nov) should bring it near €55–60.",
+   "why": "The knit polo for #1 and #46.",
+   "check": {
+    "type": "browser",
+    "how": "text",
+    "note": "A&F shows the regular price and a 'myA&F Price'"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 80,
+    "member": 68,
+    "stock": "in",
+    "note": "myA&F offer 9–12 Oct 2026"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 80
+    }
+   ]
+  },
+  {
+   "id": "birk-boston",
+   "tier": "later",
+   "brand": "Birkenstock",
+   "name": "Boston Soft Footbed Suede",
+   "colour": "Taupe",
+   "size": "43 regular (runs large: try first)",
+   "url": "https://www.birkenstock.com/pt-en/boston-soft-footbed-suede-leather/boston-suede-suedeleather-softfootbed-eva-u_46.html",
+   "image_url": "https://www.birkenstock.com/on/demandware.static/-/Sites-master-catalog-emea/default/dwca7b1c97/560773/560773.jpg",
+   "full": 165,
+   "target": 140,
+   "great": 125,
+   "outfits": [
+    13,
+    14,
+    15,
+    17,
+    22,
+    49
+   ],
+   "when": "Spring. Birkenstock's newsletter gives 15% off a first full-price order (min €80): that's €140. Retailers like Zalando sometimes go lower on less popular colours.",
+   "why": "Main shoe in six warm-weather outfits.",
+   "check": {
+    "type": "browser",
+    "how": "text"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 165,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 165
+    }
+   ]
+  }
+ ],
+ "brands": [
+  {
+   "brand": "COS",
+   "signup": "Newsletter, plus the free COS membership if it's offered",
+   "perks": "10% off a first order; first to know about sales; early access to Black Friday (last year subscribers also got an extra 15% on the last day in some countries)",
+   "sales": "Black Friday ~25%; winter sale from ~26 Dec, up to 50%"
+  },
+  {
+   "brand": "Arket",
+   "signup": "ARKET Membership (free)",
+   "perks": "10% off a first purchase, free shipping over €80, early access to promotions",
+   "sales": "Black Weekend ~20%; winter sale late Dec, up to 50%; older styles up to 60% off now"
+  },
+  {
+   "brand": "Abercrombie & Fitch",
+   "signup": "myAbercrombie (free)",
+   "perks": "Member prices (~15% off right now), points worth ~4% back, a birthday offer, early access to promotions",
+   "sales": "Frequent 15–25% events; Cyber Week 25–50% plus an extra 15% code"
+  },
+  {
+   "brand": "Massimo Dutti",
+   "signup": "Massimo Dutti Feel (free, in the app)",
+   "perks": "Early access: last year's winter sale opened in the app first; 45-day returns; free alterations",
+   "sales": "Black Friday ~40% (2025); winter sale from the evening of 26 Dec"
+  },
+  {
+   "brand": "Birkenstock",
+   "signup": "Newsletter",
+   "perks": "15% off a first full-price order over €80, valid 30 days: sign up when you're ready to buy the clogs",
+   "sales": "Rarely discounts the Boston; retailers sometimes do"
+  },
+  {
+   "brand": "Zalando",
+   "signup": "App wishlist",
+   "perks": "Price-drop and back-in-stock alerts on wishlist items (the only real price alert we found); newsletter 10%",
+   "sales": "Black Friday / Cyber Week 10–50%; seasonal sales"
+  },
+  {
+   "brand": "Premiata",
+   "signup": "Nothing useful on premiata.eu",
+   "perks": "No Black Friday, newsletter discount or loyalty programme",
+   "sales": "Italian sales from ~3 Jan and ~early Jul: watch boutiques and Farfetch"
+  },
+  {
+   "brand": "Les Deux / Olaf Hussein",
+   "signup": "Newsletters",
+   "perks": "Les Deux 15% and Olaf Hussein 10% off a first order",
+   "sales": "Both have sales running now: Les Deux 30–50%, Olaf Hussein 50%"
+  }
+ ],
+ "calendar": [
+  {
+   "when": "24–30 Nov",
+   "what": "Black Friday week. COS ~25% (members and subscribers first), Arket ~20% on autumn/winter, A&F 25–50% plus an extra-15% code, Massimo Dutti ~40% (app first, 27 Nov last year). You fly to Riga on Fri 27 Nov, so order before you leave or from your phone."
+  },
+  {
+   "when": "From 26 Dec",
+   "what": "Winter sales. Massimo Dutti opens in the app on the evening of 26 Dec (~30%, later 50–60%). COS and Arket from late Dec, up to 50% and deeper in January. A&F clearance plus codes."
+  },
+  {
+   "when": "From ~3 Jan",
+   "what": "Italian winter sales: the best time for Premiata at Italian boutiques and Farfetch (20–45% off)."
+  },
+  {
+   "when": "Late June",
+   "what": "Summer sales: Inditex (Massimo Dutti) from ~24 Jun online, COS ~1 Jul with 24h early access for members. Good for linen, clogs and summer knits."
+  },
+  {
+   "when": "Good to know",
+   "what": "Portugal has no fixed sale dates, but the 'was' price must be the lowest price of the last 90 days, so a sale price is a real discount."
+  }
+ ]
+}

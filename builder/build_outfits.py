@@ -1049,6 +1049,46 @@ def build():
                      + "".join(f'<h3 class="cat">{e(c)}</h3><table class="sztable"><thead><tr><th>Brand</th><th>Piece</th><th>Size</th><th>Status</th><th>How it fits</th></tr></thead><tbody>{sz_rows(c)}</tbody></table>' for c in SZ_CATS if any(r["cat"] == c for r in sz))
                      + "</section>") if sz else ""
 
+    # sale watch: pieces we want, waiting for the right price (watchlist.json, updated by check_prices.py)
+    wl = json.load(open(os.path.join(HERE, "watchlist.json"))) if os.path.exists(os.path.join(HERE, "watchlist.json")) else {"items": []}
+    def wl_status(it):
+        l = it.get("last") or {}
+        b = min(p for p in (l.get("price"), l.get("member"), it["full"]) if p)
+        if l.get("stock") == "out":
+            return "out", f"Sold out in {it['size']}"
+        if b <= it["great"]:
+            return "great", "Great price: buy"
+        if b <= it["target"]:
+            return "target", "At target: buy"
+        if l.get("price", it["full"]) < it["full"]:
+            return "sale", "On sale: not yet at target"
+        return "wait", "Waiting"
+    def wl_row(it):
+        l = it.get("last") or {}
+        k, label = wl_status(it)
+        now = money(l.get("price", it["full"]))
+        if l.get("price", it["full"]) < it["full"]:
+            now = f'<s>{money(it["full"])}</s> <b>{now}</b>'
+        if l.get("member"):
+            now += f'<br><span class="muted">{money(l["member"])} for members</span>'
+        low = ' · <b class="lowst">low stock</b>' if l.get("stock") == "low" else ""
+        hist = " → ".join(f'{money(h.get("member") or h["price"])}' for h in it.get("history", [])[-4:])
+        lifts = "Lifts #" + ", #".join(str(n) for n in it.get("outfits", []))
+        return f'''<tr><td class="thumb"><a href="{e(it["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(it.get("image_url",""))}" alt="" onerror="this.remove()"></a></td>
+<td><a href="{e(it["url"])}" target="_blank" rel="noopener"><b>{e(it["brand"])}</b>: {e(it["name"])}</a><div class="why">{e(it["colour"])} · size {e(it["size"])} · {lifts}. {e(it.get("why",""))}</div>{(f'<div class="wdeal"><a href="{e(it["deal"]["url"])}" target="_blank" rel="noopener">{e(it["deal"]["text"])}</a></div>') if it.get("deal") else ""}</td>
+<td class="wnow">{now}{low}<div class="why">Checked {e(l.get("date",""))}{(" · " + hist) if len(it.get("history", [])) > 1 else ""}</div></td>
+<td class="wtgt">{money(it["target"])}<div class="why">great: {money(it["great"])}</div></td>
+<td><span class="wst w-{k}">{label}</span><div class="why">{e(it.get("when",""))}</div></td></tr>'''
+    WL_TIERS = [("want", "Want now"), ("later", "Later")]
+    wl_tables = "".join(f'<h3 class="cat">{t}</h3><table class="wtable"><thead><tr><th></th><th>Piece</th><th>Price now</th><th>Target</th><th>Status · best moment</th></tr></thead><tbody>{"".join(wl_row(it) for it in wl["items"] if it["tier"] == k)}</tbody></table>' for k, t in WL_TIERS if any(it["tier"] == k for it in wl["items"]))
+    wl_cal = "".join(f'<li><b>{e(c["when"])}</b>: {e(c["what"])}</li>' for c in wl.get("calendar", []))
+    wl_brands = "".join(f'<tr><td><b>{e(b["brand"])}</b></td><td>{e(b["signup"])}</td><td class="why">{e(b["perks"])}</td><td class="why">{e(b["sales"])}</td></tr>' for b in wl.get("brands", []))
+    sale_section = ('<section id="sale-watch"><h2>Sale watch</h2><p class="lede">The pieces we really want, the price we\'re waiting for, and the best moment to buy. Prices are checked automatically on Mondays and Thursdays, and daily in sale weeks. "Great" is the price to jump at.</p>'
+                    + wl_tables
+                    + (f'<h3 class="cat">Sales calendar</h3><ul class="wcal">{wl_cal}</ul>' if wl_cal else "")
+                    + (f'<h3 class="cat">Sign up for these</h3><p class="lede">Free memberships and newsletters that give early access or member prices. Sign up yourself, with your own email.</p><table class="wbrands"><thead><tr><th>Brand</th><th>What to join</th><th>What you get</th><th>When they have sales</th></tr></thead><tbody>{wl_brands}</tbody></table>' if wl_brands else "")
+                    + "</section>") if wl["items"] else ""
+
     brand_section = f'''<section id="brands"><h2>Brands for you</h2><p class="lede">New brands that fit your style (relaxed, old-money, Ralph Lauren meets Copenhagen), on top of A&F, COS, Les Deux and Arket. Each has one piece picked for your shape. All ship to Portugal; EU brands have no customs.</p>{brand_html}</section>''' if brands else ""
 
     # shopping list
@@ -1215,6 +1255,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 .lk-p{{margin:0;padding-left:18px;font-size:13px;color:var(--text)}} .lk-p li{{margin:1px 0}}
 .lk-why{{margin:0;font-size:13px;color:var(--muted)}} .lk-you{{margin:0;font-size:13px}}
 .lk-src{{margin-top:auto;font-size:12px;color:var(--muted)}} .lk-src a{{color:var(--muted)}} .lk-id{{font-family:ui-monospace,Menlo,monospace}}
+.wst{{font-size:12px;border-radius:999px;padding:2px 8px;white-space:nowrap;background:var(--chip);display:inline-block}} .w-great,.w-target{{background:#e1f5ee;color:#085041;font-weight:700}} .w-sale{{background:#fff4d6;color:#7a5a00}} .w-out{{background:#fde8e8;color:#8a1f1f}} .lowst{{color:#8a1f1f}} .wtable td.wnow,.wtable td.wtgt{{white-space:nowrap}} .wcal{{margin:0 0 8px;padding-left:20px;line-height:1.6}} .wdeal{{margin-top:6px;font-size:13px;background:#e1f5ee;border-radius:8px;padding:6px 8px}} .wdeal a{{color:#085041}}
 .sztable td.sz{{font-weight:700;white-space:nowrap}} .szst{{font-size:12px;border-radius:999px;padding:2px 8px;white-space:nowrap;background:var(--chip)}} .sz-confirmed{{background:#e1f5ee;color:#085041}} .sz-to-check{{background:#fff4d6;color:#7a5a00}} .sz-arriving,.sz-bought{{background:#e6ebf4;color:var(--accent)}} .sz-predicted,.sz-measured{{background:#efe7f6;color:#5b3f86}}
 .ownchip{{font-size:13px;background:#e1f5ee;color:#085041;border-radius:999px;padding:3px 10px;white-space:nowrap}}
 .season{{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:-4px 0 16px;font-size:14px}}
@@ -1239,7 +1280,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 .fit h3{{margin:0 0 6px;font-size:16px}} .fit ul{{margin:0;padding-left:18px}} .fit li{{margin:4px 0}}
 .extras{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 12px 12px 30px}} .extras li{{margin:4px 0}} .extras a{{color:var(--accent)}}
 .foot{{margin-top:40px;color:var(--muted);font-size:13px}}
-@media (max-width:640px){{nav{{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}} nav::-webkit-scrollbar{{display:none}} nav a{{flex:0 0 auto;white-space:nowrap}} .tots{{margin-left:40px;justify-content:flex-start}} .altc,.uses,th:nth-child(3),th:nth-child(4){{display:none}} .sztable thead{{display:none}} .sztable tr{{display:grid;grid-template-columns:1fr auto;grid-template-areas:"b s" "p t" "n n";gap:2px 10px;padding:10px 12px;border-bottom:1px solid var(--line)}} .sztable td{{display:block;padding:0;border:0}} .sztable td:nth-child(1){{grid-area:b;font-size:12px;color:var(--muted)}} .sztable td:nth-child(2){{grid-area:p;font-weight:600}} .sztable td:nth-child(3){{grid-area:s;text-align:right}} .sztable td:nth-child(4){{grid-area:t;text-align:right}} .sztable td:nth-child(5){{grid-area:n;margin-top:4px}} .sztable td:nth-child(5):empty{{display:none}}}}
+@media (max-width:640px){{nav{{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}} nav::-webkit-scrollbar{{display:none}} nav a{{flex:0 0 auto;white-space:nowrap}} .tots{{margin-left:40px;justify-content:flex-start}} .altc,.uses,th:nth-child(3),th:nth-child(4){{display:none}} .sztable thead{{display:none}} .sztable tr{{display:grid;grid-template-columns:1fr auto;grid-template-areas:"b s" "p t" "n n";gap:2px 10px;padding:10px 12px;border-bottom:1px solid var(--line)}} .sztable td{{display:block;padding:0;border:0}} .sztable td:nth-child(1){{grid-area:b;font-size:12px;color:var(--muted)}} .sztable td:nth-child(2){{grid-area:p;font-weight:600}} .sztable td:nth-child(3){{grid-area:s;text-align:right}} .sztable td:nth-child(4){{grid-area:t;text-align:right}} .sztable td:nth-child(5){{grid-area:n;margin-top:4px}} .sztable td:nth-child(5):empty{{display:none}} .wtable thead,.wbrands thead{{display:none}} .wtable tr{{display:grid;grid-template-columns:64px 1fr auto;grid-template-areas:"i p p" "i n t" "s s s";gap:4px 10px;padding:10px 12px;border-bottom:1px solid var(--line)}} .wtable td{{display:block;padding:0;border:0}} .wtable td:nth-child(1){{grid-area:i}} .wtable td:nth-child(2){{grid-area:p}} .wtable td:nth-child(3){{grid-area:n}} .wtable td:nth-child(4){{grid-area:t;text-align:right}} .wtable td:nth-child(5){{grid-area:s}} .wbrands tr{{display:block;padding:10px 12px;border-bottom:1px solid var(--line)}} .wbrands td{{display:block;padding:2px 0;border:0}}}}
 </style></head><body><div class="wrap">
 <h1>Your outfits for every season</h1>
 <p class="lede"><b>Your style: relaxed, clean casual with an old-money touch, like Ralph Lauren meets Copenhagen.</b> Your Pinterest board sets the direction, not a copy of it. Knits, shirts, sweatshirts, hoodies and tees, with jeans or wide trousers, Sambas and Gazelles, a puffer or vest. It ranges from street to classy, so there's always something for the occasion. {n} outfits mixing new pieces with clothes you already own. Click any piece to open the shop page.</p>
@@ -1255,7 +1296,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a><a href="#sale-watch">Sale watch</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
@@ -1269,6 +1310,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <p class="lede">Every piece once, with a main pick and up to two alternatives (often a cheaper one and an independent-label one). Pieces marked "Buy first" appear in the most outfits, so start with those. Outfit totals use the main picks.</p>
 {"".join(rows)}</section>
 {sizes_section}
+{sale_section}
 <p class="foot">Prices and stock were checked on 6 October 2026 and can change. Sizing and fit vary by brand, so check each shop's size guide. Tiles marked "You have this" are things you already own. A green outline means a photo of your piece (or the closest match); striped tiles are pieces without a photo yet.</p>
 </div>
 <div id="cmptray" hidden><div class="ct-in"><span class="ct-lab">Compare</span><div id="cmpchips"></div><button id="cmpgo" type="button" class="ct-go">Compare</button><button id="cmpclr" type="button" class="ct-clr">Clear all</button></div></div>
