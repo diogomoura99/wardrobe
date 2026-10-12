@@ -52,11 +52,35 @@ def record(wl, iid, price, member=None, stock="in", note=None):
     return changed
 
 
+def fetch(url, cookie=None):
+    h = {"User-Agent": UA, "Accept-Language": "en"}
+    if cookie:
+        h["Cookie"] = cookie
+    return urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=20).read().decode("utf-8", "replace")
+
+
 def shopify(it):
-    req = urllib.request.Request(it["url"].split("?")[0] + ".js", headers={"User-Agent": UA})
-    d = json.load(urllib.request.urlopen(req, timeout=20))
-    v = next(v for v in d["variants"] if v["title"].strip() == it["check"]["variant"])
+    c = it["check"]
+    d = json.loads(fetch(c.get("js_url") or it["url"].split("?")[0] + ".js", c.get("cookie")))
+    v = next(v for v in d["variants"] if v["title"].strip() == c["variant"])
     return v["price"] / 100, v["available"]
+
+
+def jsonld(it):
+    """Product pages that serve schema.org JSON-LD without a browser (e.g. Les Deux): find the offer for one SKU."""
+    import re
+    html = fetch(it["url"])
+    for m in re.findall(r'<script[^>]*application/ld\+json[^>]*>(.*?)</script>', html, re.S):
+        try:
+            j = json.loads(m)
+        except Exception:
+            continue
+        for n in (j if isinstance(j, list) else [j]):
+            for v in [n] + (n.get("hasVariant") or []) if isinstance(n, dict) else []:
+                if v.get("sku") == it["check"]["sku"]:
+                    o = v["offers"][0] if isinstance(v["offers"], list) else v["offers"]
+                    return float(o["price"]), o.get("availability", "").endswith("InStock")
+    raise ValueError("SKU not found on the page")
 
 
 def cmd_auto(_):
@@ -68,9 +92,9 @@ def cmd_auto(_):
     browser = []
     for it in wl["items"]:
         c = it["check"]
-        if c["type"] == "shopify":
+        if c["type"] in ("shopify", "jsonld"):
             try:
-                price, avail = shopify(it)
+                price, avail = (shopify if c["type"] == "shopify" else jsonld)(it)
                 ch = record(wl, it["id"], price, None, "in" if avail else "out")
                 print(f"checked {it['id']}: €{price:g}, {'in stock' if avail else 'SOLD OUT'} in {it['size']}{' (changed)' if ch else ''}")
             except Exception as ex:

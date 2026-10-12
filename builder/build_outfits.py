@@ -1079,7 +1079,7 @@ def build():
 <td class="wnow">{now}{low}<div class="why">Checked {e(l.get("date",""))}{(" · " + hist) if len(it.get("history", [])) > 1 else ""}</div></td>
 <td class="wtgt">{money(it["target"])}<div class="why">great: {money(it["great"])}</div></td>
 <td><span class="wst w-{k}">{label}</span><div class="why">{e(it.get("when",""))}</div></td></tr>'''
-    WL_TIERS = [("want", "Want now"), ("later", "Later")]
+    WL_TIERS = [("want", "Want now"), ("later", "Later"), ("maybe", "Specials and maybes")]
     wl_tables = "".join(f'<h3 class="cat">{t}</h3><table class="wtable"><thead><tr><th></th><th>Piece</th><th>Price now</th><th>Target</th><th>Status · best moment</th></tr></thead><tbody>{"".join(wl_row(it) for it in wl["items"] if it["tier"] == k)}</tbody></table>' for k, t in WL_TIERS if any(it["tier"] == k for it in wl["items"]))
     wl_cal = "".join(f'<li><b>{e(c["when"])}</b>: {e(c["what"])}</li>' for c in wl.get("calendar", []))
     wl_brands = "".join(f'<tr><td><b>{e(b["brand"])}</b></td><td>{e(b["signup"])}</td><td class="why">{e(b["perks"])}</td><td class="why">{e(b["sales"])}</td></tr>' for b in wl.get("brands", []))

@@ -227,6 +227,316 @@
      "price": 165
     }
    ]
+  },
+  {
+   "id": "md-leather-chocolate",
+   "tier": "maybe",
+   "brand": "Massimo Dutti",
+   "name": "Nappa Leather Jacket (3442/461)",
+   "colour": "Deep chocolate",
+   "size": "M",
+   "url": "https://www.massimodutti.com/pt/en/nappa-leather-jacket-l03442461?pelement=62812139",
+   "image_url": "https://static.massimodutti.net/assets/public/3c36/b7c6/c8c64c69a18d/c294cb21e6bc/03442461700-o1/03442461700-o1.jpg?ts=1785226208942",
+   "full": 269,
+   "target": 190,
+   "great": 160,
+   "outfits": [
+    98
+   ],
+   "when": "Black Friday (~40% last year, from 27 Nov in the app) or the winter sale from the evening of 26 Dec",
+   "why": "The chocolate twin of your black leather jacket (#98).",
+   "check": {
+    "type": "browser",
+    "how": "text"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 269,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 269
+    }
+   ]
+  },
+  {
+   "id": "arket-wool-coat",
+   "tier": "maybe",
+   "brand": "Arket",
+   "name": "Double-Face Wool Coat",
+   "colour": "Dark brown (chocolate)",
+   "size": "48",
+   "url": "https://www.arket.com/en-eu/product/double-face-wool-coat-dark-brown-1297767003/",
+   "image_url": "https://media.arket.com/assets/006/e0/f0/e0f0494466f6d958f6f517947238312d985b1612.jpg?imwidth=1280",
+   "full": 299,
+   "target": 240,
+   "great": 180,
+   "outfits": [
+    99
+   ],
+   "when": "Black Weekend (~20%) or the winter sale in late Dec (up to 50%)",
+   "why": "Double-face wool coat for #99.",
+   "check": {
+    "type": "browser",
+    "how": "text"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 299,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 299
+    }
+   ]
+  },
+  {
+   "id": "lesdeux-check-knit",
+   "tier": "maybe",
+   "brand": "Les Deux",
+   "name": "Check Knit",
+   "colour": "Eggnog white (cream and oat check)",
+   "size": "M",
+   "url": "https://lesdeux.com/eu/products/check-knit-eggnog-white",
+   "image_url": "https://cdn.shopify.com/s/files/1/2987/0758/files/19851958_1001357_211-Eggnog-White_01.webp?v=1787675578",
+   "full": 199,
+   "target": 150,
+   "great": 120,
+   "outfits": [
+    100
+   ],
+   "when": "Black Friday or the winter sale; Les Deux's mid-season sale is already 30–50% on other styles",
+   "why": "The checkerboard knit for #100.",
+   "check": {
+    "type": "jsonld",
+    "sku": "1001357-211-M"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 199.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 199
+    }
+   ]
+  },
+  {
+   "id": "rl-terry-shirt",
+   "tier": "maybe",
+   "brand": "Polo Ralph Lauren",
+   "name": "Relaxed Fit Cable-Pattern Terry Shirt",
+   "colour": "Newport navy",
+   "size": "M",
+   "url": "https://www.ralphlauren.pt/pt/camisa-em-tecido-terry-tran%C3%A7ada-folgada-100094168.html",
+   "image_url": "https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI710B19621001_alternate10",
+   "full": 195,
+   "target": 145,
+   "great": 115,
+   "outfits": [
+    90
+   ],
+   "when": "Black Friday or the winter sale (late Dec)",
+   "why": "Navy cable-terry shirt for #90.",
+   "check": {
+    "type": "browser",
+    "how": "text"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 195,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 195
+    }
+   ]
+  },
+  {
+   "id": "howlin-megatron",
+   "tier": "maybe",
+   "brand": "Howlin'",
+   "name": "Megatron Man",
+   "colour": "Navy body, wine sleeves, grey trims",
+   "size": "M",
+   "url": "https://howlinknitwear.com/products/megatron-man-wine-aw26",
+   "image_url": "https://cdn.shopify.com/s/files/1/0465/5477/5710/files/AW26_MEGATRON_MAN_WINE_1.jpg?v=1779266360",
+   "full": 279.54,
+   "target": 220,
+   "great": 180,
+   "outfits": [
+    92
+   ],
+   "when": "Season-end sale/clearance on Howlin's own shop; Black Friday unconfirmed",
+   "why": "Colour-block Shetland standout for #92 (price with Portuguese VAT).",
+   "check": {
+    "type": "shopify",
+    "variant": "M",
+    "js_url": "https://howlinknitwear.com/products/megatron-man-wine-aw26.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 279.54,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 279.54
+    }
+   ]
+  },
+  {
+   "id": "pop-harrington",
+   "tier": "maybe",
+   "brand": "Pop Trading Company",
+   "name": "Harrington Jacket",
+   "colour": "Brown houndstooth, green lining",
+   "size": "Medium",
+   "url": "https://poptradingcompany.com/products/pop-harrington-jacket-houndstooth",
+   "image_url": "https://cdn.shopify.com/s/files/1/0859/3598/0892/files/POP_13jan-11_abc38d5f-053b-4b31-afd4-b625db83a9ab.jpg?v=1785481551",
+   "full": 300,
+   "target": 225,
+   "great": 180,
+   "outfits": [
+    93
+   ],
+   "when": "End-of-season sale (Dec–Jan)",
+   "why": "Houndstooth Harrington standout for #93.",
+   "check": {
+    "type": "shopify",
+    "variant": "Medium"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 300.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 300
+    }
+   ]
+  },
+  {
+   "id": "percival-cord",
+   "tier": "maybe",
+   "brand": "Percival",
+   "name": "Marcel Cord Jacket",
+   "colour": "Burgundy deep-wale cord",
+   "size": "M",
+   "url": "https://percivalclo.com/products/marcel-cord-jacket-burgundy",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/MarcelCordJacket_Burgundy_PERCIVAL_MENSWEAR6.jpg?v=1791202530",
+   "full": 235,
+   "target": 180,
+   "great": 140,
+   "outfits": [
+    94
+   ],
+   "when": "Black Friday or the winter sale",
+   "why": "Burgundy cord jacket standout for #94.",
+   "check": {
+    "type": "shopify",
+    "variant": "M",
+    "js_url": "https://percivalclo.com/products/marcel-cord-jacket-burgundy.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 235.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 235
+    }
+   ]
+  },
+  {
+   "id": "onitsuka-tokuten",
+   "tier": "maybe",
+   "brand": "Onitsuka Tiger",
+   "name": "Tokuten (1183C431.001)",
+   "colour": "Black suede, pink stripes",
+   "size": "44.5",
+   "url": "https://www.onitsukatiger.com/pt/pt-pt/tokuten/p/1183c431-001.html",
+   "image_url": "https://images.asics.com/is/image/asics/1183C431_001_SR_RT_GLB?qlt=80&wid=750&hei=1000&bgc=255,255,255&resMode=bisharp",
+   "full": 175,
+   "target": 135,
+   "great": 110,
+   "outfits": [
+    101
+   ],
+   "when": "Black Friday or seasonal sales",
+   "why": "Black and pink Tokuten for #101.",
+   "check": {
+    "type": "browser",
+    "how": "text"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 175,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 175
+    }
+   ]
+  },
+  {
+   "id": "axel-daze",
+   "tier": "maybe",
+   "brand": "Axel Arigato",
+   "name": "Daze Runner (F4330002)",
+   "colour": "Blue suede and grey",
+   "size": "44",
+   "url": "https://axelarigato.com/men/footwear/daze/daze-runner-f4330002",
+   "image_url": "img/axel-arigato-daze-blue-grey.jpg",
+   "full": 235,
+   "target": 175,
+   "great": 140,
+   "outfits": [
+    89
+   ],
+   "when": "Black Friday or the winter sale",
+   "why": "Slim blue Daze runner for #89 (runs small: 44, or 45).",
+   "check": {
+    "type": "browser",
+    "how": "text"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 235,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 235
+    }
+   ]
   }
  ],
  "brands": [
