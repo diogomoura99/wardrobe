@@ -178,7 +178,7 @@
    },
    "last": {
     "date": "2026-10-12",
-    "price": 250,
+    "price": 250.0,
     "member": null,
     "stock": "in"
    },
@@ -186,6 +186,43 @@
     {
      "date": "2026-10-12",
      "price": 250
+    }
+   ]
+  },
+  {
+   "id": "norse-falster-oxford",
+   "tier": "want",
+   "brand": "Norse Projects",
+   "name": "Falster Oversize Oxford BD Shirt",
+   "colour": "White",
+   "size": "M",
+   "url": "https://www.norseprojects.com/products/falster-oversize-oxford-bd-shirt-white",
+   "image_url": "https://cdn.shopify.com/s/files/1/0960/6738/7723/files/N40-0884-0001-0065.jpg?v=1784537062",
+   "full": 195,
+   "target": 135,
+   "great": 100,
+   "outfits": [
+    4,
+    75
+   ],
+   "when": "Black Friday or the winter sale (late Dec). Full price is too much for a basic, so this one is worth waiting for.",
+   "why": "Oversized with a wider body but regular length, a button-down collar that sits neatly above a crewneck, washed organic oxford, and no chest logo (only a small tab at the side seam). Completes #4 and #75.",
+   "check": {
+    "type": "shopify",
+    "variant": "M",
+    "js_url": "https://www.norseprojects.com/products/falster-oversize-oxford-bd-shirt-white.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-10-12",
+    "price": 195.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-10-12",
+     "price": 195
     }
    ]
   },
