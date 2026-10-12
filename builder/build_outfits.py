@@ -38,17 +38,9 @@ ROLE_INFO = {
     "shoe_premiata_allblack": ("Shoes", "Black Premiata Bonnie"),
     "knit_black_textured": ("Knitwear & tops", "Black textured knit"),
     "jacket_leather_brown": ("Outerwear", "Chocolate nappa leather jacket"),
-    "jacket_navy_hero": ("Outerwear", "Navy leather-panelled bomber"),
-    "jacket_grey_hero": ("Outerwear", "Steel-grey leather blouson"),
-    "jacket_cream_hero": ("Outerwear", "Butter-cream wool-cashmere jacket"),
     "knit_cashmere_brown": ("Knitwear & tops", "Brown cashmere crew"),
-    "knit_navy_cable": ("Knitwear & tops", "Navy cashmere cable polo"),
-    "knit_charcoal_zip": ("Knitwear & tops", "Charcoal cashmere zip cardigan"),
     "trouser_wool_brown": ("Trousers", "Dark brown wool wide-leg trousers"),
-    "trouser_wool_charcoal": ("Trousers", "Charcoal wool relaxed trousers"),
     "shoe_premiata_browntonal": ("Shoes", "Dark brown tonal Premiata"),
-    "shoe_premiata_anthracite": ("Shoes", "Anthracite Premiata"),
-    "shoe_premiata_creamtonal": ("Shoes", "Cream tonal Premiata"),
     "knit_colourblock": ("Knitwear & tops", "Navy & wine colour-block Shetland"),
     "jacket_houndstooth": ("Outerwear", "Houndstooth Harrington"),
     "jacket_cord_burgundy": ("Outerwear", "Burgundy cord jacket"),
@@ -454,15 +446,6 @@ OUTFITS = [
   ("Special Autumn", "Chocolate leather", "Elegant: the warm twin of your black leather jacket",
    "Massimo Dutti's chocolate nappa jacket over your cream ladder-stitch knit, dark brown pleated trousers and brown suede Bonnies, with the Rolex and the IX bracelet. Cream between two browns keeps it light; the same idea as your black leather looks, warmer.",
    ["jacket_leather_brown", "own_cos_cream", "own_af_brown", "own_premiata", "own_watch", "own_ix_figaro_bracelet"]),
-  ("Special Autumn", "Tonal navy", "Elegant, one colour: navy leather and wool",
-   "All navy in four textures: COS's leather-panelled wool bomber, your Arket brushed-wool jumper, the COS pleated wide-leg trousers and navy suede Premiatas, with the Rolex and the IX bracelet. Deep navy with silver reads quietly expensive.",
-   ["jacket_navy_hero", "own_arket_navy", "own_cos_navy_trouser", "shoe_premiata", "own_watch", "own_ix_figaro_bracelet"]),
-  ("Special Winter", "Steel grey leather", "Elegant, one colour: steel-grey leather",
-   "Grey from top to toe: COS's steel-grey crinkled leather blouson, your YMC grey knit, Massimo Dutti's charcoal wool trousers and black Premiatas, with the Rolex and the IX bracelet. The taupe cast in the leather warms the greys.",
-   ["jacket_grey_hero", "own_ymc_grey", "trouser_wool_charcoal", "shoe_premiata_allblack", "own_watch", "own_ix_figaro_bracelet"]),
-  ("Special Winter", "Winter whites", "Elegant, one colour: cream on cream",
-   "Cream on cream in different textures: Sandro's butter-cream wool-cashmere jacket with its small shearling collar, your ladder-stitch knit, the Studio Nicholson cords and cream Premiatas, with the Rolex and the IX bracelet. Quietly expensive; keep it for dry days.",
-   ["jacket_cream_hero", "own_cos_cream", "own_sn_paolo", "shoe_premiata_creamtonal", "own_watch", "own_ix_figaro_bracelet"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -539,9 +522,6 @@ PIECE_ALT = {
   "All black, textured": [("knit_black_textured", "Softer version", ["own_ymc_grey"]), ("own_af_black_pleated", "Also great here", ["own_af_black_jeans"])],
   "Tonal chocolate": [("own_howlin_brown", "Smoother option", ["knit_cashmere_brown"]), ("own_af_brown", "Wool upgrade", ["trouser_wool_brown"]), ("own_premiata", "Fully tonal", ["shoe_premiata_browntonal"])],
   "Chocolate leather": [("own_cos_cream", "Lighter for warm days", ["own_af_white_tee"]), ("own_af_brown", "Also great here", ["own_sn_paolo"])],
-  "Tonal navy": [("own_arket_navy", "Cashmere option", ["knit_navy_cable"])],
-  "Steel grey leather": [("own_ymc_grey", "Cashmere option", ["knit_charcoal_zip"]), ("trouser_wool_charcoal", "Also great here", ["own_levis_grey"]), ("shoe_premiata_allblack", "Fully tonal", ["shoe_premiata_anthracite"])],
-  "Winter whites": [("shoe_premiata_creamtonal", "Also great here", ["own_spezial_cream"])],
 }
 
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
@@ -726,9 +706,6 @@ VIBE = {
   "All black, textured": ("In between", "Night out"),
   "Tonal chocolate": ("Classy", "Dinner / city"),
   "Chocolate leather": ("Classy", "Dinner / night out"),
-  "Tonal navy": ("Classy", "Dinner / family event"),
-  "Steel grey leather": ("Classy", "City / dinner"),
-  "Winter whites": ("Classy", "Lunch / dinner"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}

@@ -24,78 +24,6 @@
   "verified": true
  },
  {
-  "role": "jacket_navy_hero",
-  "rank": "primary",
-  "brand": "COS",
-  "name": "Leather-Panelled Wool Bomber Jacket",
-  "colour": "Midnight navy",
-  "price_eur": 549,
-  "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/jackets/product/leather-panelled-wool-bomber-jacket-midnight-1359432001",
-  "image_url": "https://media.cos.com/assets/001/38/f2/38f233064f7d4edf7a2cbe13a1e52248816bfeab_xxl-1.jpg",
-  "fit_note": "Lambskin front panels with Italian wool sleeves and back, cropped (63 cm). Take M; only a few left on 12 Oct.",
-  "verified": true
- },
- {
-  "role": "jacket_navy_hero",
-  "rank": "alt",
-  "brand": "Massimo Dutti",
-  "name": "Suede Bomber Jacket (3447/466)",
-  "colour": "Very deep navy",
-  "price_eur": 269,
-  "url": "https://www.massimodutti.com/pt/en/suede-bomber-jacket-l03447466?pelement=63782578",
-  "image_url": "https://static.massimodutti.net/assets/public/530d/4604/08ab4a04852c/89874e00aacb/03447466401-o1/03447466401-o1.jpg?ts=1788859538515",
-  "fit_note": "Navy goat suede in the same shape as your black blouson; reads almost black in photos. Take M. Half the price.",
-  "verified": true
- },
- {
-  "role": "jacket_grey_hero",
-  "rank": "primary",
-  "brand": "COS",
-  "name": "Leather Blouson Jacket",
-  "colour": "Steel (grey with a taupe cast)",
-  "price_eur": 549,
-  "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/jackets/product/leather-blouson-jacket-steel-1324237001",
-  "image_url": "https://media.cos.com/assets/001/91/c5/91c528c06fb6c9a7977303162a1c6d454c54a8d3_xxl-1.jpg",
-  "fit_note": "Crinkled lambskin, funnel neck, drawn hem. Take M; stock low on 12 Oct. The most special jacket in the search.",
-  "verified": true
- },
- {
-  "role": "jacket_grey_hero",
-  "rank": "alt",
-  "brand": "Samsøe Samsøe",
-  "name": "Sapaulo Jacket 15772",
-  "colour": "Charcoal melange",
-  "price_eur": 280,
-  "url": "https://www.samsoe.com/en-PT/product/sapaulo-jacket-15772-dark-grey-mel",
-  "image_url": "https://samsoe.centracdn.net/client/dynamic/images/23341_M26300039-CLR000659-10-2400.jpg",
-  "fit_note": "Boxy charcoal wool-blend, for a softer, cheaper grey look. Take M.",
-  "verified": true
- },
- {
-  "role": "jacket_cream_hero",
-  "rank": "primary",
-  "brand": "Sandro",
-  "name": "Wool and Cashmere Jacket (SHPBL01437)",
-  "colour": "Butter cream",
-  "price_eur": 575,
-  "url": "https://eu.sandro-paris.com/en/p/wool-and-cashmere-jacket/SHPBL01437_A450.html",
-  "image_url": "https://eu.sandro-paris.com/dw/image/v2/BCMW_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1e29e9f1/images/hi-res/Sandro_SHPBL01437-A450_H_V.jpg",
-  "fit_note": "70% wool, 10% cashmere, zip front, small shearling collar, short. Take M.",
-  "verified": true
- },
- {
-  "role": "jacket_cream_hero",
-  "rank": "alt",
-  "brand": "Massimo Dutti",
-  "name": "Double Fabric Wool Blend Jacket (ref 2606/362)",
-  "colour": "Mink (light grey-stone)",
-  "price_eur": 179,
-  "url": "https://www.massimodutti.com/pt/en/double-fabric-wool-blend-jacket-l02606362?pelement=61729583",
-  "image_url": "https://static.massimodutti.net/assets/public/eb21/1f77/ce874742ba98/75f15cd1c844/02606362706-o1/02606362706-o1.jpg?ts=1779873607368",
-  "fit_note": "Stand collar, boxy, buttoned. Take M. A third of the price.",
-  "verified": true
- },
- {
   "role": "knit_cashmere_brown",
   "rank": "primary",
   "brand": "Massimo Dutti",
@@ -105,42 +33,6 @@
   "url": "https://www.massimodutti.com/pt/en/knit-100-cashmere-round-neck-sweater-l01270215?colorId=724",
   "image_url": "https://static.massimodutti.net/assets/public/edf1/3009/dc534d77b057/0b990f2ce35b/01270215724-o1/01270215724-o1.jpg?ts=1777460016427",
   "fit_note": "Smoother and dressier than your Shetland. Take M (L for boxier).",
-  "verified": true
- },
- {
-  "role": "knit_navy_cable",
-  "rank": "primary",
-  "brand": "COS",
-  "name": "Cable-Knit Pure Cashmere Polo Jumper",
-  "colour": "Navy",
-  "price_eur": 169,
-  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/product/cable-knit-cashmere-polo-jumper-navy-1357429002",
-  "image_url": "https://media.cos.com/assets/001/74/e2/74e2944a7bd9ef672be1a7f39571b9b6d85d3ed2_xxl-1.jpg",
-  "fit_note": "Pure cashmere with a cable texture, so all-navy doesn't look flat. Take M.",
-  "verified": true
- },
- {
-  "role": "knit_charcoal_zip",
-  "rank": "primary",
-  "brand": "COS",
-  "name": "Pure Cashmere Funnel-Neck Zip-Up Cardigan",
-  "colour": "Charcoal melange",
-  "price_eur": 199,
-  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/cardigans/product/cashmere-funnel-neck-zip-up-cardigan-charcoal-mlange-1306989003",
-  "image_url": "https://media.cos.com/assets/001/71/2a/712a3b1785afeb4dcae4833304541fa98f253e39_xxl-1.jpg",
-  "fit_note": "Pure cashmere, funnel neck, zip. Take M.",
-  "verified": true
- },
- {
-  "role": "trouser_wool_charcoal",
-  "rank": "primary",
-  "brand": "Massimo Dutti",
-  "name": "100% Cool Wool Relaxed Trousers with Darts",
-  "colour": "Dark grey",
-  "price_eur": 89.95,
-  "url": "https://www.massimodutti.com/pt/en/100-cool-wool-relaxed-fit-pants-with-darts-l00170008?colorId=802",
-  "image_url": "https://static.massimodutti.net/assets/public/13a6/35e6/656f45f7b6b8/a4923e81a129/00170008802-o1/00170008802-o1.jpg?ts=1791385410577",
-  "fit_note": "Relaxed and wide like your A&F pleats. Take Massimo Dutti size 40 (= A&F 32x30).",
   "verified": true
  },
  {
@@ -165,30 +57,6 @@
   "url": "https://premiata.eu/products/rus08558",
   "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/RUS08558_1.jpg?v=1785778044",
   "fit_note": "Tonal dark brown with a worn-in finish. Take 43.",
-  "verified": true
- },
- {
-  "role": "shoe_premiata_anthracite",
-  "rank": "primary",
-  "brand": "Premiata",
-  "name": "Russell 8555",
-  "colour": "Anthracite with black sole",
-  "price_eur": 250,
-  "url": "https://premiata.eu/products/rus08555",
-  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/RUS08555_1.jpg?v=1788512640",
-  "fit_note": "Take 43.",
-  "verified": true
- },
- {
-  "role": "shoe_premiata_creamtonal",
-  "rank": "primary",
-  "brand": "Premiata",
-  "name": "Russell 8072",
-  "colour": "Cream on cream",
-  "price_eur": 250,
-  "url": "https://premiata.eu/products/russell-8072",
-  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/RUS08072_1.jpg?v=1786102746",
-  "fit_note": "Cream sole, worn-in finish. Take 43.",
   "verified": true
  }
 ]
