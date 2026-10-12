@@ -35,6 +35,8 @@ ROLE_INFO = {
     "jacket_suede_bomber": ("Outerwear", "Dark brown suede bomber"),
     "jacket_wool_blouson": ("Outerwear", "Dark brown wool blouson"),
     "jacket_leather_black": ("Outerwear", "Black nappa leather blouson"),
+    "shoe_premiata_allblack": ("Shoes", "Black Premiata Bonnie"),
+    "knit_black_textured": ("Knitwear & tops", "Black textured knit"),
     "knit_colourblock": ("Knitwear & tops", "Navy & wine colour-block Shetland"),
     "jacket_houndstooth": ("Outerwear", "Houndstooth Harrington"),
     "jacket_cord_burgundy": ("Outerwear", "Burgundy cord jacket"),
@@ -428,6 +430,12 @@ OUTFITS = [
   ("Special Autumn", "Black leather & cream", "Standout: Massimo Dutti black nappa blouson",
    "Massimo Dutti's black nappa blouson over your cream ladder-stitch knit, light-wash baggy jeans and the off-white Spezials. Black leather against cream and washed blue is the classic contrast; the knit's texture keeps it from looking hard, and the burgundy stripes on the shoes add one warm note.",
    ["jacket_leather_black", "own_cos_cream", "own_lightwash", "own_spezial_cream", "own_watch", "own_cuban_bracelet"]),
+  ("Special Autumn", "Black leather, white tee", "Built around the black nappa blouson",
+   "Massimo Dutti's black nappa blouson over your white heavyweight tee, black pleated baggy trousers and black Premiata Bonnies with silver stripes, plus the IX chain and the Rolex. Black from shoulder to shoe; the white tee at the neck and hem keeps it sharp, and the silver picks up the shoes' stripes.",
+   ["jacket_leather_black", "own_af_white_tee", "own_af_black_pleated", "shoe_premiata_allblack", "own_ix_figaro", "own_watch"]),
+  ("Special Winter", "All black, textured", "Full black: leather, waffle knit, wool-feel trousers",
+   "The black nappa blouson over A&F's black waffle-texture knit, black pleated baggy trousers and black Premiata Bonnies, with the Rolex and the IX bracelet. Full black works because every layer has a different texture: smooth leather, waffle cotton, matte trousers and suede. The silver on the wrists and shoes does the lifting.",
+   ["jacket_leather_black", "knit_black_textured", "own_af_black_pleated", "shoe_premiata_allblack", "own_watch", "own_ix_figaro_bracelet"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -500,6 +508,8 @@ PIECE_ALT = {
   "Knit & jeans": [("own_cos_cream", "Upgrade: add on top", ["jacket_suede_bomber"]), ("own_cos_cream", "Upgrade: collar showing", ["own_blue_linen"])],
   "Paolo & white tee": [("own_af_white_tee", "Other tee colour", ["own_af_tee_black", "own_af_tee_grey", "own_af_tee_cream"]), ("own_af_white_tee", "Upgrade: add on top", ["jacket_leather_black"])],
   "Black leather & cream": [("own_cos_cream", "Lighter for warm days", ["own_af_white_tee"]), ("own_spezial_cream", "Also great here", ["own_samba_maroon"])],
+  "Black leather, white tee": [("own_af_white_tee", "Other tee colour", ["own_af_tee_grey", "own_af_tee_black"]), ("own_af_black_pleated", "Also great here", ["own_af_black_jeans"])],
+  "All black, textured": [("knit_black_textured", "Softer version", ["own_ymc_grey"]), ("own_af_black_pleated", "Also great here", ["own_af_black_jeans"])],
 }
 
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
@@ -550,6 +560,7 @@ NECK_WEAR = {
   "Blue runner day": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Sage stripes & khaki": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Paolo & white tee": ("Outside the tee", "at the collar, at your usual 45 cm."),
+  "Black leather, white tee": ("Outside the tee, inside the jacket", "on the white tee at the collar, at your usual 45 cm."),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -679,6 +690,8 @@ VIBE = {
   "Sage stripes & khaki": ("In between", "Evening out"),
   "Paolo & white tee": ("In between", "Weekend / city day"),
   "Black leather & cream": ("In between", "Night out / city"),
+  "Black leather, white tee": ("In between", "Night out / dinner"),
+  "All black, textured": ("In between", "Night out"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}

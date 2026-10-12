@@ -1,0 +1,62 @@
+[
+ {
+  "role": "shoe_premiata_allblack",
+  "rank": "primary",
+  "brand": "Premiata",
+  "name": "Bonnie 8591",
+  "colour": "Black with silver accents",
+  "price_eur": 240,
+  "url": "https://premiata.eu/products/boe08591",
+  "image_url": "https://cdn.shopify.com/s/files/1/0574/2129/9921/files/BOE08591_1.jpg?v=1785746574",
+  "fit_note": "Black leather and suede with silver stitched stripes and a dark sole. Take 43, like your Bonnies. More timeless.",
+  "verified": true
+ },
+ {
+  "role": "shoe_premiata_allblack",
+  "rank": "alt",
+  "brand": "adidas Originals",
+  "name": "Handball Spezial (DB3021)",
+  "colour": "Core black / white / gum",
+  "price_eur": 98.99,
+  "url": "https://www.futbolemotion.com/pt/comprar/sapatilha/adidas/handball-spezial-core-black-white-gum",
+  "image_url": "https://www.futbolemotion.com/imagesarticulos/147410/750/zapatilla-adidas-handball-spezial-negro-0.jpg",
+  "fit_note": "The black/gum Spezial: livelier, cheaper. EU 44.",
+  "verified": true
+ },
+ {
+  "role": "knit_black_textured",
+  "rank": "primary",
+  "brand": "Abercrombie & Fitch",
+  "name": "Textured-Stitch Cotton Rolled-Crew Sweater",
+  "colour": "Black",
+  "price_eur": 75,
+  "url": "https://www.abercrombie.com/shop/eu-es/p/suter-texturizado-de-algodn-100-con-cuello-redondo-vuelto-63392331",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6116-00729-900_prod1?policy=product-large",
+  "fit_note": "100% cotton waffle texture, rolled crew neck, easy fit. Take M (A&F says it runs a bit large). The link is A&F's Spanish-language EU store: pick 'Negro'.",
+  "verified": true
+ },
+ {
+  "role": "knit_black_textured",
+  "rank": "alt",
+  "brand": "Studio Nicholson",
+  "name": "Portland Knit",
+  "colour": "Black",
+  "price_eur": 245,
+  "url": "https://www.studionicholson.com/products/portland-knit-in-black",
+  "image_url": "https://cdn.shopify.com/s/files/1/1070/4650/files/PORTLANDSNM-1460CASHMEREWAFFLEBLACK_1667.jpg?v=1759921179",
+  "fit_note": "Merino-cashmere waffle, dropped shoulders; half price. Take M. Prices for Portugal include duties.",
+  "verified": true
+ },
+ {
+  "role": "knit_black_textured",
+  "rank": "alt2",
+  "brand": "COS",
+  "name": "Boiled Merino Wool Crew-Neck Jumper",
+  "colour": "Black",
+  "price_eur": 99,
+  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/merino/product/boiled-merino-wool-crew-neck-jumper-black-1338797001",
+  "image_url": "https://media.cos.com/assets/001/e4/84/e48460a458b8b0565345f582345c6a259f8a4a7c_xxl-1.jpg",
+  "fit_note": "Clean boiled merino, relaxed. Take M.",
+  "verified": true
+ }
+]
