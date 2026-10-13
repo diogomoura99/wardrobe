@@ -61,6 +61,7 @@ OWNED = {
     "own_brown_jacket_af": ("Outerwear", "Your brown barn jacket"),
     "own_cos_waxed": ("Outerwear", "Your COS waxed jacket"),
     "own_md_leather": ("Outerwear", "Your black Massimo Dutti nappa blouson"),
+    "own_adidas_track_tan": ("Outerwear", "Your adidas tan track jacket"),
     "own_stripe_knit": ("Knitwear & tops", "Your green & cream striped knit"),
     "own_blue_linen": ("Knitwear & tops", "Your light-blue linen shirt"),
     "own_navy_linen": ("Knitwear & tops", "Your navy linen shirt"),
@@ -447,8 +448,8 @@ OUTFITS = [
    "Massimo Dutti's chocolate nappa jacket over your cream ladder-stitch knit, dark brown pleated trousers and brown suede Bonnies, with the Rolex and the IX bracelet. Cream between two browns keeps it light; the same idea as your black leather looks, warmer.",
    ["jacket_leather_brown", "own_cos_cream", "own_af_brown", "own_premiata", "own_watch", "own_ix_figaro_bracelet"]),
   ("Special Autumn", "Poker table", "Poker night: give nothing away",
-   "Your Nude Project Hotel tee and the Studio Nicholson cream cords, framed in navy: the Ralph Lauren harrington for the walk (it hangs on your chair at the table) and the navy suede Sporty & Rich Spezials. Add your A&F Western snapback, the Kaleos sunglasses if you want them, and the IX chain. Navy and cream is the quietest combination you own, and the cap's brown brim adds one warm note. Dressed the way poker players do: the cap and sunglasses hide your eyes, a layer you can take off for hours in casino air-conditioning, quiet colours that give nothing away, and no Rolex or bracelets, so nothing signals money or clinks against the chips.",
-   ["own_hotel_tee", "own_sn_paolo", "own_polo_harrington", "own_spezial_navy", "own_cap_western", "own_sunnies_jaconelli", "own_ix_figaro"]),
+   "Tonal from the top down: your adidas tan cotton track jacket over the Nude Project ivory tee, the Studio Nicholson cream cords and your A&F Western snapback, with the navy suede Sporty & Rich Spezials as the one dark anchor, plus the Kaleos sunglasses if you want them and the IX chain. The boxy, cropped jacket over wide cords is your best shape, and a track top is a poker-room classic: comfortable for hours and easy to unzip or hang on the chair. Dressed the way poker players do: the cap and sunglasses hide your eyes, a layer you can take off for hours in casino air-conditioning, quiet colours that give nothing away, and no Rolex or bracelets, so nothing signals money or clinks against the chips.",
+   ["own_adidas_track_tan", "own_hotel_tee", "own_sn_paolo", "own_spezial_navy", "own_cap_western", "own_sunnies_jaconelli", "own_ix_figaro"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -525,7 +526,7 @@ PIECE_ALT = {
   "All black, textured": [("knit_black_textured", "Softer version", ["own_ymc_grey"]), ("own_af_black_pleated", "Also great here", ["own_af_black_jeans"])],
   "Tonal chocolate": [("own_howlin_brown", "Smoother option", ["knit_cashmere_brown"]), ("own_af_brown", "Wool upgrade", ["trouser_wool_brown"]), ("own_premiata", "Fully tonal", ["shoe_premiata_browntonal"])],
   "Chocolate leather": [("own_cos_cream", "Lighter for warm days", ["own_af_white_tee"]), ("own_af_brown", "Also great here", ["own_sn_paolo"])],
-  "Poker table": [("own_polo_harrington", "Other layers", ["own_navy_zip_knit", "own_brown_jacket_af"]), ("own_spezial_navy", "Warmer option (with the brown barn jacket)", ["own_samba_maroon"])],
+  "Poker table": [("own_adidas_track_tan", "Other layers", ["own_polo_harrington", "own_navy_zip_knit", "own_brown_jacket_af"]), ("own_spezial_navy", "Warmer option (with the brown barn jacket)", ["own_samba_maroon"])],
 }
 
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile

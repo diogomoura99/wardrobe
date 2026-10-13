@@ -673,5 +673,13 @@
   "url": "https://www.massimodutti.com/pt/blusao-com-detalhe-de-bolsos-em-pele-napa--limited-edition-l03463880?colorId=800",
   "image_url": "https://static.massimodutti.net/assets/public/86ac/1485/a8304a3092bf/5eacecb8dfac/03463880800-o6/03463880800-o6.jpg?ts=1790949006398&f=auto&w=800",
   "match": "exact"
+ },
+ "own_adidas_track_tan": {
+  "brand": "adidas Originals",
+  "name": "Cotton twill track jacket (tonal 3-Stripes)",
+  "colour": "Tan / khaki",
+  "url": "https://www.adidas.pt/originals",
+  "image_url": "img/adidas-track-jacket-tan.jpg",
+  "match": "your photo"
  }
 }
