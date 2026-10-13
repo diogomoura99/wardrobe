@@ -61,7 +61,7 @@ OWNED = {
     "own_brown_jacket_af": ("Outerwear", "Your brown barn jacket"),
     "own_cos_waxed": ("Outerwear", "Your COS waxed jacket"),
     "own_md_leather": ("Outerwear", "Your black Massimo Dutti nappa blouson"),
-    "own_adidas_track_tan": ("Outerwear", "Your adidas tan track jacket"),
+    "own_adidas_track_tan": ("Outerwear", "Your adidas Firebird twill track jacket"),
     "own_stripe_knit": ("Knitwear & tops", "Your green & cream striped knit"),
     "own_blue_linen": ("Knitwear & tops", "Your light-blue linen shirt"),
     "own_navy_linen": ("Knitwear & tops", "Your navy linen shirt"),
@@ -448,7 +448,7 @@ OUTFITS = [
    "Massimo Dutti's chocolate nappa jacket over your cream ladder-stitch knit, dark brown pleated trousers and brown suede Bonnies, with the Rolex and the IX bracelet. Cream between two browns keeps it light; the same idea as your black leather looks, warmer.",
    ["jacket_leather_brown", "own_cos_cream", "own_af_brown", "own_premiata", "own_watch", "own_ix_figaro_bracelet"]),
   ("Special Autumn", "Poker table", "Poker night: give nothing away",
-   "Tonal from the top down: your adidas tan cotton track jacket over the Nude Project ivory tee, the Studio Nicholson cream cords and your A&F Western snapback, with the navy suede Sporty & Rich Spezials as the one dark anchor, plus the Kaleos sunglasses if you want them and the IX chain. The boxy, cropped jacket over wide cords is your best shape, and a track top is a poker-room classic: comfortable for hours and easy to unzip or hang on the chair. Dressed the way poker players do: the cap and sunglasses hide your eyes, a layer you can take off for hours in casino air-conditioning, quiet colours that give nothing away, and no Rolex or bracelets, so nothing signals money or clinks against the chips.",
+   "Tonal from the top down: your adidas Firebird cotton-twill track jacket (Blanch Cargo) over the Nude Project ivory tee, the Studio Nicholson cream cords and your A&F Western snapback, with the navy suede Sporty & Rich Spezials as the one dark anchor, plus the Kaleos sunglasses if you want them and the IX chain. The boxy, cropped jacket over wide cords is your best shape, and a track top is a poker-room classic: comfortable for hours and easy to unzip or hang on the chair. Dressed the way poker players do: the cap and sunglasses hide your eyes, a layer you can take off for hours in casino air-conditioning, quiet colours that give nothing away, and no Rolex or bracelets, so nothing signals money or clinks against the chips.",
    ["own_adidas_track_tan", "own_hotel_tee", "own_sn_paolo", "own_spezial_navy", "own_cap_western", "own_sunnies_jaconelli", "own_ix_figaro"]),
 ]
 

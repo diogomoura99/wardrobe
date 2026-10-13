@@ -676,10 +676,10 @@
  },
  "own_adidas_track_tan": {
   "brand": "adidas Originals",
-  "name": "Cotton twill track jacket (tonal 3-Stripes)",
-  "colour": "Tan / khaki",
-  "url": "https://www.adidas.pt/originals",
-  "image_url": "img/adidas-track-jacket-tan.jpg",
-  "match": "your photo"
+  "name": "Woven Firebird Track Suit Jacket (KC0685)",
+  "colour": "Blanch Cargo (khaki-beige), 100% cotton twill",
+  "url": "https://www.adidas.com.sg/adidas-originals-woven-firebird-track-suit-jacket/KC0685.html",
+  "image_url": "https://assets.adidas.com/images/w_800,f_auto,q_auto/572faac0fc8c484ca5b4d16c55490306_9366/KC0685_01_laydown.jpg",
+  "match": "exact"
  }
 }
