@@ -446,6 +446,9 @@ OUTFITS = [
   ("Special Autumn", "Chocolate leather", "Elegant: the warm twin of your black leather jacket",
    "Massimo Dutti's chocolate nappa jacket over your cream ladder-stitch knit, dark brown pleated trousers and brown suede Bonnies, with the Rolex and the IX bracelet. Cream between two browns keeps it light; the same idea as your black leather looks, warmer.",
    ["jacket_leather_brown", "own_cos_cream", "own_af_brown", "own_premiata", "own_watch", "own_ix_figaro_bracelet"]),
+  ("Special Autumn", "Poker table", "Poker night: give nothing away",
+   "Your Nude Project Hotel tee with the Studio Nicholson cream cords and brown suede Premiatas, the A&F dark coffee barn jacket for the walk (it hangs on your chair at the table), your A&F Western snapback, the Kaleos sunglasses if you want them, and the IX chain. Dressed the way poker players do: the cap and sunglasses hide your eyes, a layer you can take off for hours in casino air-conditioning, quiet colours that give nothing away, and no Rolex or bracelets, so nothing signals money or clinks against the chips.",
+   ["own_hotel_tee", "own_sn_paolo", "own_brown_jacket_af", "own_premiata", "own_cap_western", "own_sunnies_jaconelli", "own_ix_figaro"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -522,6 +525,7 @@ PIECE_ALT = {
   "All black, textured": [("knit_black_textured", "Softer version", ["own_ymc_grey"]), ("own_af_black_pleated", "Also great here", ["own_af_black_jeans"])],
   "Tonal chocolate": [("own_howlin_brown", "Smoother option", ["knit_cashmere_brown"]), ("own_af_brown", "Wool upgrade", ["trouser_wool_brown"]), ("own_premiata", "Fully tonal", ["shoe_premiata_browntonal"])],
   "Chocolate leather": [("own_cos_cream", "Lighter for warm days", ["own_af_white_tee"]), ("own_af_brown", "Also great here", ["own_sn_paolo"])],
+  "Poker table": [("own_brown_jacket_af", "Other layers", ["own_polo_harrington", "own_navy_zip_knit"]), ("own_premiata", "More relaxed", ["own_samba_maroon"])],
 }
 
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
@@ -573,6 +577,7 @@ NECK_WEAR = {
   "Sage stripes & khaki": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Paolo & white tee": ("Outside the tee", "at the collar, at your usual 45 cm."),
   "Black leather, white tee": ("Outside the tee, inside the jacket", "on the white tee at the collar, at your usual 45 cm."),
+  "Poker table": ("Outside the tee", "at the collar, at your usual 45 cm. Keep it still: playing with a chain at the table is a tell."),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -706,6 +711,7 @@ VIBE = {
   "All black, textured": ("In between", "Night out"),
   "Tonal chocolate": ("Classy", "Dinner / city"),
   "Chocolate leather": ("Classy", "Dinner / night out"),
+  "Poker table": ("In between", "Casino / poker night"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
@@ -1073,7 +1079,12 @@ def build():
             now += f'<br><span class="muted">{money(l["member"])} for members</span>'
         low = ' · <b class="lowst">low stock</b>' if l.get("stock") == "low" else ""
         hist = " → ".join(f'{money(h.get("member") or h["price"])}' for h in it.get("history", [])[-4:])
-        lifts = "Lifts #" + ", #".join(str(n) for n in it.get("outfits", []))
+        nums = it.get("outfits", [])
+        if it.get("role"):   # live numbers: outfits that use the piece, or offer it in an option box
+            nums = sorted({outfit_num[o[1]] for o in OUTFITS if it["role"] in o[4] and o[1] in outfit_num}
+                          | {outfit_num[on] for on, ents in PIECE_ALT.items() if on in outfit_num
+                             for _, _, alts in (ents if isinstance(ents, list) else [ents]) if it["role"] in alts})
+        lifts = "Lifts #" + ", #".join(str(n) for n in nums)
         return f'''<tr><td class="thumb"><a href="{e(it["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(it.get("image_url",""))}" alt="" onerror="this.remove()"></a></td>
 <td><a href="{e(it["url"])}" target="_blank" rel="noopener"><b>{e(it["brand"])}</b>: {e(it["name"])}</a><div class="why">{e(it["colour"])} · size {e(it["size"])} · {lifts}. {e(it.get("why",""))}</div>{(f'<div class="wdeal"><a href="{e(it["deal"]["url"])}" target="_blank" rel="noopener">{e(it["deal"]["text"])}</a></div>') if it.get("deal") else ""}</td>
 <td class="wnow">{now}{low}<div class="why">Checked {e(l.get("date",""))}{(" · " + hist) if len(it.get("history", [])) > 1 else ""}</div></td>

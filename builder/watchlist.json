@@ -38,7 +38,8 @@
      "date": "2026-10-12",
      "price": 449
     }
-   ]
+   ],
+   "role": "jacket_suede_bomber"
   },
   {
    "id": "premiata-bonnie-black",
@@ -73,7 +74,8 @@
      "date": "2026-10-12",
      "price": 240
     }
-   ]
+   ],
+   "role": "shoe_premiata_allblack"
   },
   {
    "id": "arket-double-blouson",
@@ -113,7 +115,8 @@
    "deal": {
     "text": "On sale now: Arket's Wool Doublé Jacket in fudge brown, €160.30 (−30%). Same wool, shirt collar instead of the funnel neck, a warmer mid-brown.",
     "url": "https://www.arket.com/en-eu/product/wool-doubl-jacket-fudge-brown-1320667002/"
-   }
+   },
+   "role": "jacket_wool_blouson"
   },
   {
    "id": "af-merino-polo",
@@ -149,7 +152,8 @@
      "date": "2026-10-12",
      "price": 80
     }
-   ]
+   ],
+   "role": "knit_polo"
   },
   {
    "id": "percival-meyer-qz",
@@ -186,7 +190,8 @@
      "date": "2026-10-12",
      "price": 250
     }
-   ]
+   ],
+   "role": "knit_halfzip"
   },
   {
    "id": "norse-falster-oxford",
@@ -223,7 +228,8 @@
      "date": "2026-10-12",
      "price": 195
     }
-   ]
+   ],
+   "role": "shirt_oxford"
   },
   {
    "id": "birk-boston",
@@ -263,7 +269,8 @@
      "date": "2026-10-12",
      "price": 165
     }
-   ]
+   ],
+   "role": "clog_suede"
   },
   {
    "id": "md-leather-chocolate",
@@ -297,7 +304,8 @@
      "date": "2026-10-12",
      "price": 269
     }
-   ]
+   ],
+   "role": "jacket_leather_brown"
   },
   {
    "id": "arket-wool-coat",
@@ -331,7 +339,8 @@
      "date": "2026-10-12",
      "price": 299
     }
-   ]
+   ],
+   "role": "coat_wool"
   },
   {
    "id": "lesdeux-check-knit",
@@ -365,7 +374,8 @@
      "date": "2026-10-12",
      "price": 199
     }
-   ]
+   ],
+   "role": "knit_check"
   },
   {
    "id": "rl-terry-shirt",
@@ -399,7 +409,8 @@
      "date": "2026-10-12",
      "price": 195
     }
-   ]
+   ],
+   "role": "shirt_terry"
   },
   {
    "id": "howlin-megatron",
@@ -435,7 +446,8 @@
      "date": "2026-10-12",
      "price": 279.54
     }
-   ]
+   ],
+   "role": "knit_colourblock"
   },
   {
    "id": "pop-harrington",
@@ -469,7 +481,8 @@
      "date": "2026-10-12",
      "price": 300
     }
-   ]
+   ],
+   "role": "jacket_houndstooth"
   },
   {
    "id": "percival-cord",
@@ -505,7 +518,8 @@
      "date": "2026-10-12",
      "price": 235
     }
-   ]
+   ],
+   "role": "jacket_cord_burgundy"
   },
   {
    "id": "onitsuka-tokuten",
@@ -539,7 +553,8 @@
      "date": "2026-10-12",
      "price": 175
     }
-   ]
+   ],
+   "role": "shoe_tokuten_pink"
   },
   {
    "id": "axel-daze",
@@ -573,7 +588,8 @@
      "date": "2026-10-12",
      "price": 235
     }
-   ]
+   ],
+   "role": "shoe_daze_runner"
   }
  ],
  "brands": [
