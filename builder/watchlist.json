@@ -28,8 +28,8 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 449,
+    "date": "2026-10-13",
+    "price": 449.0,
     "member": null,
     "stock": "in"
    },
@@ -99,8 +99,8 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 229,
+    "date": "2026-10-13",
+    "price": 229.0,
     "member": null,
     "stock": "in"
    },
@@ -139,11 +139,10 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 80,
-    "member": 68,
-    "stock": "in",
-    "note": "myA&F offer 9–12 Oct 2026"
+    "date": "2026-10-13",
+    "price": 80.0,
+    "member": 68.0,
+    "stock": "in"
    },
    "history": [
     {
@@ -253,10 +252,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 165,
+    "date": "2026-10-13",
+    "price": 165.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "43 selectable (width not chosen)"
    },
    "history": [
     {
@@ -287,8 +287,8 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 269,
+    "date": "2026-10-13",
+    "price": 269.0,
     "member": null,
     "stock": "in"
    },
@@ -321,8 +321,8 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 299,
+    "date": "2026-10-13",
+    "price": 299.0,
     "member": null,
     "stock": "in"
    },
@@ -389,8 +389,8 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 195,
+    "date": "2026-10-13",
+    "price": 195.0,
     "member": null,
     "stock": "in"
    },
@@ -529,8 +529,8 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 175,
+    "date": "2026-10-13",
+    "price": 175.0,
     "member": null,
     "stock": "in"
    },
@@ -563,8 +563,8 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-12",
-    "price": 235,
+    "date": "2026-10-13",
+    "price": 235.0,
     "member": null,
     "stock": "in"
    },

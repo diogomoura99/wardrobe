@@ -190,5 +190,21 @@
   "size": "85",
   "status": "Arriving",
   "notes": "Due Thu 15 Oct."
+ },
+ {
+  "cat": "Accessories",
+  "brand": "Abercrombie & Fitch",
+  "item": "Western Snapback Hat (cream/brown)",
+  "size": "One size",
+  "status": "Confirmed",
+  "notes": "Your best-fitting cap: rounded mid-depth crown that sits deep, soft-to-medium front, pre-curved brim, strap with buckle."
+ },
+ {
+  "cat": "Accessories",
+  "brand": "'47",
+  "item": "Yankees Base Runner Cap (navy)",
+  "size": "One size",
+  "status": "Too small",
+  "notes": "Arrived 13 Oct: a little small and shallow. '47's one-size caps run small; look for a sized or roomier cap."
  }
 ]
