@@ -232,6 +232,41 @@
    "role": "shirt_oxford"
   },
   {
+   "id": "af-crop-tee-white",
+   "tier": "want",
+   "restock": true,
+   "role": "own_af_white_tee",
+   "brand": "Abercrombie & Fitch",
+   "name": "Premium Heavyweight Cropped Tee",
+   "colour": "White",
+   "size": "M (Regular)",
+   "url": "https://www.abercrombie.com/shop/eu/p/premium-heavyweight-cropped-tee-55001821",
+   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-5094-00405-100_prod1?policy=product-medium",
+   "full": 35,
+   "target": 35,
+   "great": 28,
+   "outfits": [],
+   "when": "Restock watch: sold out in M on 14 Oct (only XL Tall left). It's an A&F core tee, so it restocks; buy two or three when M is back, ideally with myA&F's 15%.",
+   "why": "Your most-used tee: it's the inner layer in many outfits.",
+   "check": {
+    "type": "browser",
+    "how": "text",
+    "note": "On the page, pick colour White (swatch input value 58875223), then size M and length Regular. If the page says 'This item is sold out', record --stock out; otherwise read the price (and the myA&F price) and record --stock in."
+   },
+   "last": {
+    "date": "2026-10-14",
+    "price": 35,
+    "member": null,
+    "stock": "out"
+   },
+   "history": [
+    {
+     "date": "2026-10-14",
+     "price": 35
+    }
+   ]
+  },
+  {
    "id": "birk-boston",
    "tier": "later",
    "brand": "Birkenstock",

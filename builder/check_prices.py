@@ -133,9 +133,14 @@ def cmd_summary(_):
             tag = "AT TARGET"
         elif b is not None and b < it["full"] and it["last"].get("price", it["full"]) < it["full"]:
             tag = "ON SALE"
-        if it["last"].get("stock") in ("low", "out"):
-            tag = (tag + ", " if tag else "") + ("LOW STOCK" if it["last"]["stock"] == "low" else "SOLD OUT") + f" in {it['size']}"
         ch = st.get("changes", {}).get(it["id"])
+        stock = it["last"].get("stock")
+        if it.get("restock"):   # restock watches only report stock changes, not their (full) price
+            tag = None
+        if ch and ch["was"].get("stock") == "out" and stock in ("in", "low"):
+            tag = (tag + ", " if tag else "") + f"BACK IN STOCK in {it['size']}"
+        elif stock in ("low", "out") and ch:   # only news when the stock status just changed
+            tag = (tag + ", " if tag else "") + ("LOW STOCK" if stock == "low" else "SOLD OUT") + f" in {it['size']}"
         if tag or ch:
             was = ch["was"].get("price") if ch else None
             news.append(f"{it['brand']} {it['name']} ({it['size']}): €{b:g} now (full €{it['full']:g}, target €{it['target']:g})"
