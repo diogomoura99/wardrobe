@@ -450,6 +450,9 @@ OUTFITS = [
   ("Special Autumn", "Poker table", "Poker night: give nothing away",
    "Tonal from the top down: your adidas Firebird cotton-twill track jacket (Blanch Cargo) over the Nude Project ivory tee, the Studio Nicholson cream cords and your A&F Western snapback, with the navy suede Sporty & Rich Spezials as the one dark anchor, plus the Kaleos sunglasses if you want them and the IX chain. The boxy, cropped jacket over wide cords is your best shape, and a track top is a poker-room classic: comfortable for hours and easy to unzip or hang on the chair. Dressed the way poker players do: the cap and sunglasses hide your eyes, a layer you can take off for hours in casino air-conditioning, quiet colours that give nothing away, and no Rolex or bracelets, so nothing signals money or clinks against the chips.",
    ["own_adidas_track_tan", "own_hotel_tee", "own_sn_paolo", "own_spezial_navy", "own_cap_western", "own_sunnies_jaconelli", "own_ix_figaro"]),
+  ("Special Autumn", "Embroidered shirt & black", "Day to dinner: the embroidered shirt with black",
+   "Your A&F embroidered linen shirt in warm beige, top two buttons open, with the black pleated baggy trousers and white Premiatas, plus the IX chain. Warm beige against black looks dressed up without trying, and the linen keeps you cool through a warm day. Wear the Kaleos sunglasses in the daytime and swap them for the Rolex at dinner.",
+   ["own_af_embroidered", "own_af_black_pleated", "own_white_sneakers", "own_ix_figaro", "own_sunnies_jaconelli", "own_watch"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -527,6 +530,7 @@ PIECE_ALT = {
   "Tonal chocolate": [("own_howlin_brown", "Smoother option", ["knit_cashmere_brown"]), ("own_af_brown", "Wool upgrade", ["trouser_wool_brown"]), ("own_premiata", "Fully tonal", ["shoe_premiata_browntonal"])],
   "Chocolate leather": [("own_cos_cream", "Lighter for warm days", ["own_af_white_tee"]), ("own_af_brown", "Also great here", ["own_sn_paolo"])],
   "Poker table": [("own_adidas_track_tan", "Other layers", ["own_polo_harrington", "own_navy_zip_knit", "own_brown_jacket_af"]), ("own_spezial_navy", "Warmer option (with the brown barn jacket)", ["own_samba_maroon"])],
+  "Embroidered shirt & black": [("own_white_sneakers", "Also great here", ["own_spezial_cream"])],
 }
 
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
@@ -579,6 +583,7 @@ NECK_WEAR = {
   "Paolo & white tee": ("Outside the tee", "at the collar, at your usual 45 cm."),
   "Black leather, white tee": ("Outside the tee, inside the jacket", "on the white tee at the collar, at your usual 45 cm."),
   "Poker table": ("Outside the tee", "at the collar, at your usual 45 cm. Keep it still: playing with a chain at the table is a tell."),
+  "Embroidered shirt & black": ("On skin, inside the shirt", "in the open collar, with the top two buttons undone."),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -713,6 +718,7 @@ VIBE = {
   "Tonal chocolate": ("Classy", "Dinner / city"),
   "Chocolate leather": ("Classy", "Dinner / night out"),
   "Poker table": ("In between", "Casino / poker night"),
+  "Embroidered shirt & black": ("Classy", "Day out / dinner"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
