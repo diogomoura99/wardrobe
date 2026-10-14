@@ -48,6 +48,22 @@
   "notes": "Their chart: 82–83 cm waist, 77–78 cm inseam, close to A&F 32x30."
  },
  {
+  "cat": "Trousers",
+  "brand": "Abercrombie & Fitch",
+  "item": "Cotton-Blend Pleated Baggy Trouser (black, ash, olive)",
+  "size": "32x30",
+  "status": "To check",
+  "notes": "Arrived 14 Oct. Same model as your perfect dark brown pair; quick check that each colour fits the same."
+ },
+ {
+  "cat": "Trousers",
+  "brand": "Abercrombie & Fitch",
+  "item": "Linen-Blend Baggy Trouser (light beige)",
+  "size": "32x30",
+  "status": "To check",
+  "notes": "Arrived 14 Oct. Different block from the pleated ones: check waist, length and how the linen drapes."
+ },
+ {
   "cat": "Tops & knits",
   "brand": "Abercrombie & Fitch",
   "item": "Premium Heavyweight Cropped Tee",
@@ -100,8 +116,8 @@
   "brand": "Howlin'",
   "item": "Birth of the Cool",
   "size": "M",
-  "status": "Arriving",
-  "notes": "FedEx."
+  "status": "To check",
+  "notes": "Arrived 14 Oct. Howlin' says true to size. Confirm shoulders, body length and sleeves."
  },
  {
   "cat": "Tops & knits",
@@ -187,9 +203,9 @@
   "cat": "Accessories",
   "brand": "Les Deux",
   "item": "Victor braided belt",
-  "size": "85",
-  "status": "Arriving",
-  "notes": "Due Thu 15 Oct."
+  "size": "85 → 95",
+  "status": "Too small",
+  "notes": "85 felt too short (14 Oct). Les Deux has no 90 and doesn't exchange: order the 95 and return the 85 within 30 days."
  },
  {
   "cat": "Accessories",
