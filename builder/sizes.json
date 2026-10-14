@@ -98,10 +98,18 @@
  {
   "cat": "Tops & knits",
   "brand": "COS",
-  "item": "Boiled merino crew / ladder-stitch jumper",
+  "item": "Ladder-stitch wool jumper (cream)",
+  "size": "M",
+  "status": "Confirmed",
+  "notes": "Your best-fitting knit (14 Oct): relaxed and slightly cropped. Reference for any new knit: 118 cm chest (59 cm armpit to armpit), 49.5 cm shoulder, 62.5 cm back length."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "COS",
+  "item": "Boiled merino crew (blue)",
   "size": "M",
   "status": "Arriving",
-  "notes": "Ladder-stitch (cream) arrived 14 Oct: relaxed and cropped, 118 cm chest, 62.5 cm long; check it. Boiled merino (blue) still coming: relaxed, 116 cm chest, 65 cm long; if the sleeves stop before your wrist, exchange to L."
+  "notes": "Due. Relaxed: 116 cm chest, 65 cm long. If the sleeves stop before your wrist, exchange to L."
  },
  {
   "cat": "Tops & knits",
@@ -124,8 +132,8 @@
   "brand": "YMC",
   "item": "Suedehead crew",
   "size": "M",
-  "status": "To check",
-  "notes": "Arrived 14 Oct. Relaxed: 114 cm chest, 68 cm long. Check body length (L only adds length)."
+  "status": "Confirmed",
+  "notes": "Body and overall fit are perfect; the sleeves are a little long, so push them up a little. M: 114 cm chest, 68 cm long."
  },
  {
   "cat": "Tops & knits",
@@ -140,8 +148,8 @@
   "brand": "Massimo Dutti",
   "item": "Nappa leather blouson (Limited Edition)",
   "size": "M",
-  "status": "To check",
-  "notes": "Arrived 14 Oct. M is the roomy cut: 126 cm chest, 53 cm shoulder, 63 cm sleeve. Check that the shoulders sit right and the sleeves reach your wrist."
+  "status": "Confirmed",
+  "notes": "Fits well (14 Oct). Your jacket reference: M is 126 cm chest, 53 cm shoulder, 63 cm sleeve."
  },
  {
   "cat": "Jackets",
