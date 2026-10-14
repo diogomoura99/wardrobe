@@ -64,7 +64,7 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-10-12",
+    "date": "2026-10-14",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -83,7 +83,7 @@
    "brand": "Arket",
    "name": "Doublé Blouson",
    "colour": "Dark brown",
-   "size": "48",
+   "size": "50",
    "url": "https://www.arket.com/en-eu/product/doubl-blouson-dark-brown-1363347001/",
    "image_url": "https://media.arket.com/assets/006/cc/71/cc7168987326793d579144e5a571208cff4d818a_xxl-1.jpg",
    "full": 229,
@@ -180,7 +180,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-12",
+    "date": "2026-10-14",
     "price": 250.0,
     "member": null,
     "stock": "in"
@@ -218,7 +218,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-12",
+    "date": "2026-10-14",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -278,7 +278,7 @@
    "brand": "Massimo Dutti",
    "name": "Nappa Leather Jacket (3442/461)",
    "colour": "Deep chocolate",
-   "size": "M",
+   "size": "L",
    "url": "https://www.massimodutti.com/pt/en/nappa-leather-jacket-l03442461?pelement=62812139",
    "image_url": "https://static.massimodutti.net/assets/public/3c36/b7c6/c8c64c69a18d/c294cb21e6bc/03442461700-o1/03442461700-o1.jpg?ts=1785226208942",
    "full": 269,
@@ -313,7 +313,7 @@
    "brand": "Arket",
    "name": "Double-Face Wool Coat",
    "colour": "Dark brown (chocolate)",
-   "size": "48",
+   "size": "50",
    "url": "https://www.arket.com/en-eu/product/double-face-wool-coat-dark-brown-1297767003/",
    "image_url": "https://media.arket.com/assets/006/e0/f0/e0f0494466f6d958f6f517947238312d985b1612.jpg?imwidth=1280",
    "full": 299,
@@ -364,7 +364,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-10-12",
+    "date": "2026-10-14",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -436,7 +436,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-12",
+    "date": "2026-10-14",
     "price": 279.54,
     "member": null,
     "stock": "in"
@@ -471,7 +471,7 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-10-12",
+    "date": "2026-10-14",
     "price": 300.0,
     "member": null,
     "stock": "in"
@@ -490,7 +490,7 @@
    "brand": "Percival",
    "name": "Marcel Cord Jacket",
    "colour": "Burgundy deep-wale cord",
-   "size": "M",
+   "size": "L",
    "url": "https://percivalclo.com/products/marcel-cord-jacket-burgundy",
    "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/MarcelCordJacket_Burgundy_PERCIVAL_MENSWEAR6.jpg?v=1791202530",
    "full": 235,
@@ -503,12 +503,12 @@
    "why": "Burgundy cord jacket standout for #94.",
    "check": {
     "type": "shopify",
-    "variant": "M",
+    "variant": "L",
     "js_url": "https://percivalclo.com/products/marcel-cord-jacket-burgundy.js?currency=EUR&country=PT",
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-12",
+    "date": "2026-10-14",
     "price": 235.0,
     "member": null,
     "stock": "in"
