@@ -502,7 +502,7 @@ PIECE_ALT = {
   "Camp collar": ("own_af_cream", "Lighter for hot days", ["own_af_linen_baggy"]),
   "Brown linen day": [("own_af_cream", "Lighter for hot days", ["own_af_linen_baggy"]),
                       ("own_af_tank_white", "Even better here", ["tank_cream"])],
-  "Brown tee & cream": ("own_af_cream", "Lighter for hot days", ["own_af_linen_baggy"]),
+  "Brown tee & cream": [("own_af_cream", "Lighter for hot days", ["own_af_linen_baggy"]), ("own_brown_tee", "Add on top when it cools down", ["own_brown_jacket_af", "own_adidas_track_tan", "own_cream_cord_jacket"])],
   "Embroidered linen night": ("own_premiata", "Also great here", ["shoe_mexico66"]),
   "Linen layers": ("own_af_tank_white", "Other tank colour", ["tank_navy"]),
   "Blue linen & olive": ("own_af_tank_white", "Other tank colour", ["tank_navy"]),
