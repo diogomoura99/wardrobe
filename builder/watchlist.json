@@ -28,7 +28,7 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 449.0,
     "member": null,
     "stock": "in"
@@ -64,7 +64,7 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -101,7 +101,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 229.0,
     "member": null,
     "stock": "in"
@@ -142,10 +142,11 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 80.0,
-    "member": 68.0,
-    "stock": "in"
+    "member": null,
+    "stock": "out",
+    "note": "Brown M Regular sold out 15 Oct (only L left); no myA&F price shown"
    },
    "history": [
     {
@@ -180,7 +181,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "price": 250.0,
     "member": null,
     "stock": "in"
@@ -218,7 +219,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -254,15 +255,20 @@
     "note": "On the page, pick colour White (swatch input value 58875223), then size M and length Regular. If the page says 'This item is sold out', record --stock out; otherwise read the price (and the myA&F price) and record --stock in."
    },
    "last": {
-    "date": "2026-10-14",
-    "price": 35,
+    "date": "2026-10-15",
+    "price": 32.0,
     "member": null,
-    "stock": "out"
+    "stock": "out",
+    "note": "White M Regular still sold out 15 Oct"
    },
    "history": [
     {
      "date": "2026-10-14",
      "price": 35
+    },
+    {
+     "date": "2026-10-15",
+     "price": 32.0
     }
    ]
   },
@@ -293,11 +299,10 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 165.0,
     "member": null,
-    "stock": "in",
-    "note": "43 selectable (width not chosen)"
+    "stock": "in"
    },
    "history": [
     {
@@ -329,7 +334,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 269.0,
     "member": null,
     "stock": "in"
@@ -364,7 +369,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 299.0,
     "member": null,
     "stock": "in"
@@ -399,7 +404,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -434,7 +439,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -471,7 +476,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "price": 279.54,
     "member": null,
     "stock": "in"
@@ -506,7 +511,7 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "price": 300.0,
     "member": null,
     "stock": "in"
@@ -543,7 +548,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "price": 235.0,
     "member": null,
     "stock": "in"
@@ -578,7 +583,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 175.0,
     "member": null,
     "stock": "in"
@@ -613,7 +618,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-13",
+    "date": "2026-10-15",
     "price": 235.0,
     "member": null,
     "stock": "in"
