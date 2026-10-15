@@ -1012,7 +1012,7 @@ def build():
         return (f'''<div class="sg"><a class="ph" href="{e(q["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(q["image_url"])}" alt="{e(q["name"])}" onerror="this.parentElement.classList.add('noimg');this.remove()"><span>{e(q["brand"])}</span></a>
 <div class="meta"><div class="br">{e(q["brand"])}{' · <b>Top pick</b>' if q.get("rank")=="main" else ''}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{' <span class="start">On sale</span>' if q.get("on_sale") else ''}</div><div class="pr">{e(q.get("colour",""))}</div>
-<div class="fwid">{e(q.get("construction",""))}</div>{'<div class="fitb fb-ok">✓ Shape very close to yours</div>' if q.get("similarity")=="high" else ('<div class="fitb fb-mid">Shallower than yours</div>' if q.get("similarity")=="medium" else '')}<div class="why">{e(q.get("fit_note",""))}</div></div></div>''')
+<div class="fwid">{e(q.get("construction",""))}</div>{'<div class="fitb fb-ok">✓ Shape very close to yours</div>' if q.get("similarity")=="high" else ('<div class="fitb fb-mid">Close, with one compromise</div>' if q.get("similarity")=="medium" else '')}<div class="why">{e(q.get("fit_note",""))}</div></div></div>''')
     CAP_GROUPS = [("best", "Best fit for you", "A rounded crown and curved brim like your Western, with room for your head."),
                   ("yankees", "If you want the Yankees NY", "The classic white NY on navy, in caps that open wider than the '47."),
                   ("also", "Also good", "More room or a lower price, with one compromise each.")]
