@@ -50,6 +50,8 @@ ROLE_INFO = {
 ALIAS = {}
 BLOCK_BRANDS_SHOES = ("Filling Pieces",)
 NO_CAPS = False
+SHOW_SUNGLASSES = False   # bought (Kaleos Jaconelli); the lookbook code stays for future searches
+SHOW_NECKLACES = False    # bought (IX figaro, Serge DeNimes pendant)
 OWNED = {
     "own_brown_puffer": ("Outerwear", "Your brown Ultra puffer"),
     "own_aircloud_brown": ("Outerwear", "Your brown AirCloud puffer"),
@@ -1011,14 +1013,12 @@ def build():
 <div class="meta"><div class="br">{e(q["brand"])}{' · <b>Top pick</b>' if q.get("rank")=="main" else ''}</div><a class="nm" href="{e(q["url"])}" target="_blank" rel="noopener">{e(q["name"])}</a>
 <div class="pr">{money(q.get("price_eur"))}{' <span class="start">On sale</span>' if q.get("on_sale") else ''}</div><div class="pr">{e(q.get("colour",""))}</div>
 <div class="fwid">{e(q.get("construction",""))}</div>{'<div class="fitb fb-ok">✓ Shape very close to yours</div>' if q.get("similarity")=="high" else ('<div class="fitb fb-mid">Shallower than yours</div>' if q.get("similarity")=="medium" else '')}<div class="why">{e(q.get("fit_note",""))}</div></div></div>''')
-    CAP_GROUPS = [("green", "Washed green: the one colour worth adding", "For your green adidas, the Eagles sweater and sage pieces."),
-                  ("navy", "Navy: only if your '47 Base Runner doesn't fit", "Your navy cap already covers 16 outfits."),
-                  ("brown", "Chocolate brown (optional)", "Your Western cap already covers the brown outfits."),
-                  ("stone", "Stone and cream (optional)", "Would overlap with your cream/brown Western."),
-                  ("burgundy", "Burgundy (just for variety)", "Navy already does this job.")]
+    CAP_GROUPS = [("best", "Best fit for you", "A rounded crown and curved brim like your Western, with room for your head."),
+                  ("yankees", "If you want the Yankees NY", "The classic white NY on navy, in caps that open wider than the '47."),
+                  ("also", "Also good", "More room or a lower price, with one compromise each.")]
     cap_cards = "".join(f'<h3 class="cat">{e(t)} <span class="muted" style="font-weight:400;font-size:14px">— {e(d)}</span></h3><div class="sgrid">' + "".join(cap_card(q) for q in caps if q.get("colour_group") == g) + '</div>' for g, t, d in CAP_GROUPS if any(q.get("colour_group") == g for q in caps))
 
-    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede">What suits you, going by your A&F Western snapback (which looks nothing like A&F's current snapbacks): <b>a pre-curved brim and a rounded crown that holds its shape</b>, classy rather than a flat-brim, boxy "classic snapback". Soft dad hats that collapse flat on your thick hair don't work either. <b>You're covered with your two caps:</b> navy for the cool and denim outfits (and with burgundy Sambas), cream/brown for the warm ones. Try your navy '47 Base Runner first; it's the same relaxed, curved type as your Western. All caps below are matched to your Western cap's shape.</p>{cap_cards}</section>''' if caps else ""
+    cap_section = f'''<section id="caps"><h2>Caps</h2><p class="lede"><b>Replacing the navy cap.</b> Your '47 Base Runner is too small: '47's one-size caps only open to about 57–58 cm, so return it to Asphaltgold by about 27 Oct. Every cap here is navy, opens wider (or comes in real sizes) and has the shape of your A&F Western: a rounded crown that sits deep and a pre-curved brim. <b>Before ordering, measure your head:</b> a tape around the forehead, just above the ears. Up to about 60 cm, everything here fits; over 60 cm, go for the A.P.C. in 60, the Kith × '47 in XL, the ALD Washed Script Chino or the Carhartt. Ranked #1–#8.</p>{cap_cards}</section>''' if caps else ""
 
     # brands for you
     brands = all_for_role("brand_pick")
@@ -1314,14 +1314,14 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#sunglasses">Sunglasses</a><a href="#necklaces">Necklaces</a><a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a><a href="#sale-watch">Sale watch</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a><a href="#sale-watch">Sale watch</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
 {"".join(sec)}
 {inspo_section}
-{sg_section}
-{nk_section}
+{sg_section if SHOW_SUNGLASSES else ''}
+{nk_section if SHOW_NECKLACES else ''}
 {cap_section}
 {brand_section}
 <section id="shopping-list"><h2>Shopping list</h2>
