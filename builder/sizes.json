@@ -36,8 +36,8 @@
   "brand": "COS",
   "item": "Pleated wide-leg trousers",
   "size": "EU 48",
-  "status": "Arriving",
-  "notes": "Due 13–15 Oct. Kept 48: waist 86.5 cm (about 1 inch easier than A&F 32, like your Paolo with a belt), inseam 74.7 cm."
+  "status": "To check",
+  "notes": "Arrived 15 Oct. 48: 86.5 cm waist (about 1 inch easier than A&F 32, wear a belt), 74.7 cm inseam. Check the waist and where the hem lands."
  },
  {
   "cat": "Trousers",
@@ -156,8 +156,8 @@
   "brand": "COS",
   "item": "Corduroy-detail waxed jacket",
   "size": "M",
-  "status": "Arriving",
-  "notes": "By 16 Oct. Kept M (relaxed). On arrival, lay it flat: under about 60 cm armpit to armpit, or clearly narrower shoulders, means exchange to L."
+  "status": "To check",
+  "notes": "Arrived 15 Oct. COS gives no measurements: lay it flat, and under about 60 cm armpit to armpit (or clearly narrower shoulders than your Massimo Dutti blouson) means exchange to L."
  },
  {
   "cat": "Shoes",
@@ -230,5 +230,13 @@
   "size": "One size",
   "status": "Too small",
   "notes": "Arrived 13 Oct: a little small and shallow. '47's one-size caps run small; look for a sized or roomier cap."
+ },
+ {
+  "cat": "Accessories",
+  "brand": "All Blues",
+  "item": "Cuban bracelet (silver)",
+  "size": "M",
+  "status": "To check",
+  "notes": "Arrived 15 Oct. All Blues M fits a 16–17.5 cm wrist, L fits 17.5–19 cm. If it sits tight, or your wrist is 17.5 cm or more, exchange to L."
  }
 ]
