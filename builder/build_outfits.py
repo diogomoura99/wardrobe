@@ -118,6 +118,7 @@ OWNED = {
     "own_af_black_pleated": ("Trousers", "Your black pleated baggy trousers"),
     "own_af_ash_pleated": ("Trousers", "Your ash pleated baggy trousers"),
     "own_cos_navy_trouser": ("Trousers", "Your COS navy pleated wide-leg trousers"),
+    "own_becay_stripe": ("Trousers", "Your Becay cream pinstripe linen trousers"),
     "own_sn_paolo": ("Trousers", "Your Studio Nicholson Paolo cream cords"),
     "own_samba_green": ("Shoes", "Your green Handball Spezials"),
     "own_samba_maroon": ("Shoes", "Your burgundy Sambas"),
@@ -386,6 +387,15 @@ OUTFITS = [
   ("Summer", "Stripes & navy tank", "A navy tank under blue stripes",
    "Blue striped linen shirt, top two buttons open over a navy ribbed tank, ash pleated trousers, white Premiatas and the Rolex. Blue, navy and stone: easy old money for lunch.",
    ["own_ms_blue_stripe", "tank_navy", "own_af_ash_pleated", "own_white_sneakers", "own_watch", "own_cuban_bracelet"]),
+  ("Summer", "Black polo & pinstripe", "Riviera evening: black knit polo, cream pinstripe linen",
+   "Your black Johnny-collar knit polo with the Becay cream pinstripe linen trousers and the off-white Spezials, plus the IX chain and the Rolex. Black against cream is the classic summer-evening contrast, the knit polo keeps it smart, and the fine tan stripe gives the linen more interest than plain cream.",
+   ["own_johnny_black", "own_becay_stripe", "own_spezial_cream", "own_ix_figaro", "own_watch"]),
+  ("Summer", "Blue linen & pinstripe", "Day out: light-blue linen over a tank, cream pinstripe",
+   "Your light-blue linen shirt, top two buttons open over the white tank, with the Becay cream pinstripe linen trousers and brown suede Premiatas, plus the Kaleos sunglasses and the IX chain. Light blue, cream and brown is the easiest Riviera palette, and the tan pinstripe ties the trousers to the brown suede.",
+   ["own_blue_linen", "own_af_tank_white", "own_becay_stripe", "own_premiata", "own_sunnies_jaconelli", "own_ix_figaro"]),
+  ("Summer", "Brown linen & pinstripe", "Warm and tonal: dark brown linen, cream pinstripe",
+   "Your dark brown linen shirt, top two buttons open over the white tank, with the Becay cream pinstripe linen trousers and the light-blue Spezials, plus the Kaleos sunglasses and the IX chain. The tan stripe picks up the brown shirt, so the outfit reads as one warm piece, and the light-blue shoes are the one cool accent.",
+   ["own_ms_brown_linen", "own_af_tank_white", "own_becay_stripe", "own_gazelle", "own_sunnies_jaconelli", "own_ix_figaro"]),
   ("Autumn", "Navy & taupe cord", "Your new Levi's taupe cord",
    "Your Arket navy jumper with the taupe Levi's cord, burgundy Sambas and the navy cap. Navy and taupe are softer than navy and khaki, and the burgundy gives it a lift.",
    ["own_arket_navy", "own_levis_taupe", "own_samba_maroon", "own_cap_navy", "own_cuban_bracelet"]),
@@ -586,6 +596,9 @@ NECK_WEAR = {
   "Black leather, white tee": ("Outside the tee, inside the jacket", "on the white tee at the collar, at your usual 45 cm."),
   "Poker table": ("Outside the tee", "at the collar, at your usual 45 cm. Keep it still: playing with a chain at the table is a tell."),
   "Embroidered shirt & black": ("On skin, inside the shirt", "in the open collar, with the top two buttons undone."),
+  "Black polo & pinstripe": ("On skin, inside the polo", "in the V of the Johnny collar, where the silver stands out against the black."),
+  "Blue linen & pinstripe": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
+  "Brown linen & pinstripe": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
 }
 
 # other jackets to try on in the mirror (owned first; same colour family and warmth)
@@ -721,6 +734,9 @@ VIBE = {
   "Chocolate leather": ("Classy", "Dinner / night out"),
   "Poker table": ("In between", "Casino / poker night"),
   "Embroidered shirt & black": ("Classy", "Day out / dinner"),
+  "Black polo & pinstripe": ("Classy", "Summer evening"),
+  "Blue linen & pinstripe": ("In between", "Lunch / day out"),
+  "Brown linen & pinstripe": ("In between", "Daytime"),
 }
 
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}

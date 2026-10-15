@@ -681,5 +681,13 @@
   "url": "https://www.adidas.com.sg/adidas-originals-woven-firebird-track-suit-jacket/KC0685.html",
   "image_url": "https://assets.adidas.com/images/w_800,f_auto,q_auto/572faac0fc8c484ca5b4d16c55490306_9366/KC0685_01_laydown.jpg",
   "match": "exact"
+ },
+ "own_becay_stripe": {
+  "brand": "Becay",
+  "name": "Stripes Linen Pants",
+  "colour": "Sand: cream linen with a fine tan pinstripe",
+  "url": "https://becay.com/products/stripes-linen-pants-sand",
+  "image_url": "https://cdn.shopify.com/s/files/1/0474/7785/0274/files/2026_05_28BECAY11736.webp?v=1780307464",
+  "match": "exact"
  }
 }
