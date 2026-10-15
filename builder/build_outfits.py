@@ -1048,7 +1048,7 @@ def build():
     inspo_cards = "".join(look_card(q) for q in looks)
     inspo_nav = '<a href="#inspiration" class="navinspo">✦ Inspiration</a>' if looks else ""
     inspo_section = f'''<section id="inspiration"><h2>Inspiration</h2>
-<p class="lede">The best version of how you already dress: knits, shirts over a tank, boxy tees, baggy jeans and relaxed chinos, low sneakers and clogs, and your kinds of jackets. <b>Tap ♡ on the looks you love</b>, then send me your picks. I'll show you the pieces first, and only then build outfits.</p>
+<p class="lede">Pinterest looks found from your own board (Outfits 2025): new pins in the same spirit, checked one by one. Each card says which of your pieces recreate it; most need nothing new. <b>Tap ♡ on the looks you love, then tap "Copy my picks" and send them to me.</b> I'll turn them into outfits, swapping pieces where it helps.</p>
 <div class="lk-diag"><b>What lifts these looks, same style, better execution:</b> one special jacket (suede, cord, quilted or denim), two or three textures together, layers that show (a collar or tee hem under a knit), tonal or two-colour palettes, a clean boxy-top/full-leg proportion, and one sneaker colour that ties it together.</div>
 <div class="lk-bar"><span class="vlabel">Show:</span><button data-ls="all" class="on">All</button><button data-ls="Spring">Spring</button><button data-ls="Summer">Summer</button><button data-ls="Autumn">Autumn</button><button data-ls="Winter">Winter</button><button data-ls="loved">♥ My picks <span id="lkcount"></span></button><button id="lkcopy" type="button" class="lk-copy">Copy my picks to send me</button><span id="lkmsg" class="muted"></span></div>
 <div class="lk-grid">{inspo_cards}</div></section>''' if looks else ""
