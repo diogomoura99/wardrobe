@@ -109,7 +109,7 @@
   "item": "Boiled merino crew (blue)",
   "size": "M → L",
   "status": "Too small",
-  "notes": "Arrived 16 Oct: much less roomy than your ladder-stitch M. M is 116 cm chest with a ribbed hem pulling in to 100 cm, and 65 cm long. L (122 chest, 66 long) is closer to the ladder-stitch; blue L was sold out online on 16 Oct."
+  "notes": "Returning the M (too snug: ribbed hem pulls in to 100 cm). Replaced by the Arket Heavy Knit in blue; restock alert set for the L."
  },
  {
   "cat": "Tops & knits",
@@ -124,8 +124,8 @@
   "brand": "Howlin'",
   "item": "Birth of the Cool",
   "size": "M",
-  "status": "To check",
-  "notes": "Arrived 14 Oct. Howlin' says true to size. Confirm shoulders, body length and sleeves."
+  "status": "Returning",
+  "notes": "Returning (by 28 Oct): M is 55 cm armpit to armpit and 69 cm long, too narrow; an L (58 cm / 71 cm) would be too long. Shetland is also too scratchy. Replaced by the Arket alpaca-merino."
  },
  {
   "cat": "Tops & knits",
@@ -142,6 +142,22 @@
   "size": "M",
   "status": "To check",
   "notes": "Arrived 13 Oct. Confirm shoulders, body length, sleeves and how the collar sits open."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Arket",
+  "item": "Heavy Knit Wool Jumper (blue)",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "Ordered 16 Oct (UPS, 18–19 Oct). Relaxed, boxy and cropped; chunky, so it can't be folded. Check: 57–60 cm armpit to armpit, 61.5–64 cm long."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Arket",
+  "item": "Alpaca-Merino Wool Blend Jumper (dark brown)",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "Ordered 16 Oct (UPS, 18–19 Oct). Brushed alpaca, boxy, short, straight hem. Check: 57–60 cm armpit to armpit, 61.5–64 cm long."
  },
  {
   "cat": "Jackets",

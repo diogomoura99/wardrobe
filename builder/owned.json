@@ -689,5 +689,21 @@
   "url": "https://becay.com/products/stripes-linen-pants-sand",
   "image_url": "https://cdn.shopify.com/s/files/1/0474/7785/0274/files/2026_05_28BECAY11736.webp?v=1780307464",
   "match": "exact"
+ },
+ "own_arket_blue_heavy": {
+  "brand": "Arket",
+  "name": "Heavy Knit Wool Jumper",
+  "colour": "Blue (dusty powder blue), M",
+  "url": "https://www.arket.com/en-eu/product/heavy-knit-wool-jumper-blue-1296629017/",
+  "image_url": "https://media.arket.com/assets/006/90/32/903242dc03ee23772853197f468b6eec8d6f35a0_xxl-1.jpg",
+  "match": "exact"
+ },
+ "own_arket_alpaca_brown": {
+  "brand": "Arket",
+  "name": "Alpaca-Merino Wool Blend Jumper",
+  "colour": "Dark Brown (brushed chocolate), M",
+  "url": "https://www.arket.com/en-eu/product/alpaca-merino-wool-blend-jumper-dark-brown-1348493002/",
+  "image_url": "https://media.arket.com/assets/006/e6/eb/e6eba05033c98ee6e3976ce94f825d531cec976f.jpg?imwidth=1280",
+  "match": "exact"
  }
 }
