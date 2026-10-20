@@ -1,0 +1,265 @@
+{
+ "basics": [
+  "<b>Wash less, air more.</b> Knits only after 4–5 wears unless they're dirty: hang them by a window overnight instead. Jeans and trousers: every 5–10 wears.",
+  "<b>Always cold (30 °C), inside out, with similar colours.</b> Use a laundry bag for knits and anything with embroidery.",
+  "<b>Knits:</b> the wool programme or a hand wash with a wool detergent. Press the water out by rolling the knit in a towel (never wring it), then dry it flat on a towel. Never hang a wet knit or put it in the dryer.",
+  "<b>Steam instead of ironing</b> whenever you can. If you iron, do it inside out, or through a cotton cloth on knits.",
+  "<b>Leather and waxed cotton never go in water.</b> Wipe them, and send them to a specialist cleaner when needed.",
+  "<b>Before a tailor hems anything cotton, wash it once:</b> cotton can shrink 1–2 cm in length in the first wash."
+ ],
+ "items": [
+  {
+   "cat": "Trousers",
+   "brand": "Abercrombie & Fitch",
+   "item": "Cotton-Blend Pleated Baggy Trouser (dark brown, black, ash, olive)",
+   "fabric": "60% lyocell, 40% cotton",
+   "url": "https://www.abercrombie.com/shop/eu/p/cotton-blend-pleated-baggy-trouser-63718506",
+   "wash": "Machine, cold, with similar colours. Inside out.",
+   "dry": "Label allows tumble dry low, but hanging is better: hang by the hem or waistband straight after the wash.",
+   "iron": "Warm, only if needed. Steam is best.",
+   "tips": "Lyocell creases if left in the drum, so take them out right away. Wash the black pair separately for the first few washes. Press the pleats only lightly at the top; they don't need a sharp crease. No bleach (only non-chlorine), no dry cleaning."
+  },
+  {
+   "cat": "Trousers",
+   "brand": "Abercrombie & Fitch",
+   "item": "Linen-Blend Baggy Trouser (light beige)",
+   "fabric": "78% cotton, 21% linen, 1% elastane",
+   "url": "https://www.abercrombie.com/shop/eu/p/linen-blend-baggy-trouser-61822820",
+   "wash": "Machine, cold, with whites and light colours.",
+   "dry": "Hang while damp. Skip the dryer even though the label allows low.",
+   "iron": "Warm, only if needed.",
+   "tips": "Light colour: keep it away from darks and denim. The length is already at the ankle, and a dryer can take off a bit more. A few linen creases are normal. No dry cleaning."
+  },
+  {
+   "cat": "Trousers",
+   "brand": "COS",
+   "item": "Pleated Cotton Wide-Leg Trousers (dark blue)",
+   "fabric": "100% cotton twill",
+   "url": "https://www.cos.com/en-eu/men/menswear/trousers/relaxed-fit/wideleg/product/pleated-cotton-relaxed-fit-wide-leg-trousers-dark-blue-1294676009",
+   "wash": "Machine, cold, gentle cycle. Inside out.",
+   "dry": "Line dry.",
+   "iron": "Hot is fine (cotton). Inside out, to avoid shine on navy.",
+   "tips": "Wash them once before the tailor hems them. Dry cleaning is also allowed. Only non-chlorine bleach."
+  },
+  {
+   "cat": "Trousers",
+   "brand": "Studio Nicholson",
+   "item": "Paolo Corduroy Wide Leg Pant (panna)",
+   "fabric": "98% cotton, 2% elastane, garment-dyed corduroy",
+   "url": "https://www.studionicholson.com/products/paolo-corduroy-wide-leg-pant-in-panna",
+   "wash": "Machine, delicate cycle, up to 40 °C (30 °C is safer). Inside out, with light colours. Or dry clean.",
+   "dry": "Hang to dry; no dryer.",
+   "iron": "Medium, inside out, so the cord's ridges don't flatten.",
+   "tips": "Garment-dyed cream fades a little each wash, so wash it rarely and spot-clean marks. Heat from a dryer shrinks the elastane and the length. Brush the cord lightly along the ridges to lift it again."
+  },
+  {
+   "cat": "Trousers",
+   "brand": "Levi's",
+   "item": "578 Baggy (Small Grey Step denim)",
+   "fabric": "100% cotton denim, rigid; leather back patch",
+   "url": "https://www.zalando.pt/levis-578-baggy-calcas-de-ganga-largas-small-grey-step-le222g0f3-c16.html",
+   "wash": "Machine, 30 °C or cold, inside out, with dark colours. At most every 10 wears.",
+   "dry": "Hang to dry. Levi's allows tumble dry medium, but hanging keeps the grey and the length.",
+   "iron": "Hot, if needed. Or dry clean.",
+   "tips": "Wash them once before you take them to be hemmed. No bleach. Hang them to air out between wears instead of washing."
+  },
+  {
+   "cat": "Trousers",
+   "brand": "Levi's",
+   "item": "578 Baggy (Smokey Taupe fine corduroy)",
+   "fabric": "100% cotton corduroy; leather back patch",
+   "url": "https://www.zalando.pt/levis-578-baggy-calcas-de-ganga-largas-smokey-taupe-le222g0f3-b13.html",
+   "wash": "Machine, 30 °C or cold, inside out, with similar colours.",
+   "dry": "Hang to dry.",
+   "iron": "Inside out only, so the cord stays raised.",
+   "tips": "Turning cord inside out stops it pilling and going shiny. No bleach."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "COS",
+   "item": "Ladder-Stitch Wool Jumper (cream)",
+   "fabric": "100% RWS wool",
+   "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/wool/product/ladder-stitch-wool-jumper-cream-1314507001",
+   "wash": "Machine, cold, gentle or wool programme, with a wool detergent. Or dry clean.",
+   "dry": "Flat, on a towel.",
+   "iron": "Medium, only if needed: steam is better.",
+   "tips": "Open ladder stitch can snag: use a laundry bag and keep it away from zips and velcro. Cream shows marks, so spot-clean small stains instead of washing the whole jumper. Fold it, don't hang it."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "Arket",
+   "item": "Heavy Knit Wool Jumper (blue)",
+   "fabric": "100% RWS wool",
+   "url": "https://www.arket.com/en-eu/product/heavy-knit-wool-jumper-blue-1296629017/",
+   "wash": "Hand wash cold, or the machine's wool programme, with a mild wool detergent. Or dry clean.",
+   "dry": "Flat, on a towel.",
+   "iron": "Medium, only if needed.",
+   "tips": "Very heavy when wet: lift it with both hands, roll it in a towel and dry it flat, never hang it. While it's damp, you can gently push the body 1–2 cm shorter and let it dry like that. Fold it on a shelf."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "Arket",
+   "item": "Alpaca-Merino Wool Blend Jumper (dark brown)",
+   "fabric": "31% wool, 31% alpaca, 35% polyester, 3% elastane",
+   "url": "https://www.arket.com/en-eu/product/alpaca-merino-wool-blend-jumper-dark-brown-1348493002/",
+   "wash": "Hand wash cold, or the wool programme, with a mild detergent. Wash it on its own. Or dry clean.",
+   "dry": "Reshape while damp and dry flat.",
+   "iron": "Medium, only if needed.",
+   "tips": "Alpaca sheds a little in the first wears; that stops. Dark brown can bleed, which is why the label says to wash it separately. De-fuzz pills with a knit comb."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "Arket",
+   "item": "Brushed Wool Jumper (dark navy)",
+   "fabric": "80% wool, 20% polyamide",
+   "url": "https://www.arket.com/en-eu/product/brushed-wool-jumper-dark-navy-1358336001/",
+   "wash": "Hand wash cold only (no machine on this label). Or dry clean.",
+   "dry": "Flat, on a towel.",
+   "iron": "Low, only if needed.",
+   "tips": "Don't rub the brushed surface while washing: just press it gently in the water. A soft clothes brush, used downwards, brings the brushed look back."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "Abercrombie & Fitch",
+   "item": "Coastal Crew Sweater",
+   "fabric": "60% cotton, 40% acrylic",
+   "url": "https://www.abercrombie.com/shop/eu/p/diamond-stitch-crew-sweater-62948842",
+   "wash": "Machine, cold, with similar colours.",
+   "dry": "Reshape and lay flat.",
+   "iron": "Low, only if needed.",
+   "tips": "It's already a little long: drying it flat (not hanging) stops it stretching longer. No dry cleaning; only non-chlorine bleach."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "Abercrombie & Fitch",
+   "item": "Embroidered Linen-Blend Button-Up Shirt",
+   "fabric": "57% cotton, 23% viscose, 20% linen; embroidery 92% viscose, 8% modal",
+   "url": "https://www.abercrombie.com/shop/eu/p/embroidered-linen-blend-button-up-shirt-62215833",
+   "wash": "Machine, cold, with similar colours. Inside out, ideally in a laundry bag.",
+   "dry": "Lay flat (no dryer).",
+   "iron": "Low, only if needed, and never on the embroidery.",
+   "tips": "Iron it inside out on a folded towel so the embroidery stays raised. Viscose shrinks with heat, so keep it cold. No dry cleaning."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "YMC",
+   "item": "Suedehead Crew Knit (grey)",
+   "fabric": "100% brushed lambswool, made in Scotland",
+   "url": "https://www.youmustcreate.com/products/p8cza02-suedehead-jumper-grey",
+   "wash": "Hand wash cold only, with a wool detergent.",
+   "dry": "Roll it in a towel, then dry it flat.",
+   "iron": "Cool, or steam, only if needed.",
+   "tips": "Never in the dryer, and never hang it wet: lambswool stretches and felts easily. While it's damp, you can ease the sleeves about 1 cm shorter, since they're a little long. Use a knit comb for pills."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "Nude Project",
+   "item": "Hotel Tee",
+   "fabric": "100% heavyweight cotton (400 gsm), screen print",
+   "url": "https://nude-project.com/products/versalles-tee-marshmallow",
+   "wash": "Machine, 30 °C, inside out, with similar colours. No softener.",
+   "dry": "Hang to dry; no dryer.",
+   "iron": "Inside out, never on the print.",
+   "tips": "Nude Project doesn't publish care for it, so check the sewn-in label. A dryer shrinks heavy cotton, and you already find it a little short. Keep it inside out so the print doesn't crack."
+  },
+  {
+   "cat": "Jackets",
+   "brand": "Massimo Dutti",
+   "item": "Nappa Leather Blouson (Limited Edition)",
+   "fabric": "100% sheepskin (nappa and suede finish); lining 100% viscose",
+   "url": "https://www.massimodutti.com/pt/blusao-com-detalhe-de-bolsos-em-pele-napa--limited-edition-l03463880?colorId=800",
+   "wash": "Never. Specialist leather cleaning only.",
+   "dry": "If it gets wet, let it dry on a hanger at room temperature, away from radiators and sun.",
+   "iron": "Never.",
+   "tips": "Label: no washing, bleach, ironing, normal dry cleaning or dryer. Wipe dust with a soft dry cloth. Feed it with a leather conditioner once or twice a year (test inside a pocket first). Keep it on a wide hanger, never in plastic."
+  },
+  {
+   "cat": "Jackets",
+   "brand": "COS",
+   "item": "Corduroy-Detail Waxed-Cotton Jacket",
+   "fabric": "100% waxed cotton; corduroy collar 100% cotton; lining 100% polyester",
+   "url": "https://www.cos.com/en-eu/men/menswear/coatsjackets/jackets/product/corduroy-detail-waxed-cotton-jacket-khaki-chocolate-1340998001",
+   "wash": "Never in the machine or dry cleaner: it strips the wax. Label: specialist clean.",
+   "dry": "Hang it to dry naturally, away from heat.",
+   "iron": "Never.",
+   "tips": "Sponge off mud with cold water only, no soap. Re-wax it once a year, or when it looks patchy, with a wax dressing (e.g. Barbour Wax Thornproof Dressing). When new it can rub a little wax onto light clothes. Store it hung, in a cool place."
+  },
+  {
+   "cat": "Shoes",
+   "brand": "adidas",
+   "item": "Handball Spezial (off-white / shadow red / gum)",
+   "fabric": "Leather with suede overlays, leather lining, gum sole",
+   "url": "https://www.asphaltgold.com/en/products/adidas-handball-spezial-off-white-shadow-red-gum-2",
+   "wash": "Never in the washing machine. Leather: wipe with a soft cloth, lukewarm water and a drop of mild soap. Suede parts: no water; dry-brush them and use a suede eraser on marks.",
+   "dry": "Air dry at room temperature with paper inside, away from heaters.",
+   "iron": "",
+   "tips": "Spray them with a suede and nubuck protector before the first wear, and again every few weeks, since off-white shows dirt fast. Clean the gum sole with a firmer brush. Wash the laces by hand."
+  },
+  {
+   "cat": "Shoes",
+   "brand": "adidas",
+   "item": "Samba OG (Noble Maroon / Cream White / Gum)",
+   "fabric": "Leather upper and lining, gum sole",
+   "url": "https://www.asphaltgold.com/en/products/adidas-samba-og-noble-maroon-cream-white-gum-5",
+   "wash": "Never in the washing machine. Wipe the leather with a soft cloth, lukewarm water and mild soap. If the toe is suede (napped), dry-brush it instead.",
+   "dry": "Air dry with paper inside, away from heaters.",
+   "iron": "",
+   "tips": "A little leather conditioner every couple of months keeps it from creasing and cracking. Protect the maroon from rain with a spray."
+  },
+  {
+   "cat": "Accessories",
+   "brand": "IX Studios",
+   "item": "Figaro Chain and Figaro Bracelet (silver)",
+   "fabric": "100% recycled 925 sterling silver, solid (not plated)",
+   "url": "https://ixstudioscph.com/pages/care-guide",
+   "wash": "Polish with a silver cloth or IX's silver cleaner, or wipe with a soft damp cloth and dry it straight away.",
+   "dry": "Always dry it fully before storing.",
+   "iron": "",
+   "tips": "Take them off to shower, swim, sleep or work out, and put them on after perfume and creams. Store each piece in its own pouch so they don't scratch or tangle. Never use rough cloths or non-silver cleaners. IX stores also clean them for you."
+  },
+  {
+   "cat": "Accessories",
+   "brand": "All Blues",
+   "item": "Cuban Bracelet (silver)",
+   "fabric": "Recycled 925 sterling silver",
+   "url": "https://www.allblues.se/services/product-care",
+   "wash": "Polish with a silver cloth, or use a silver dip bath when it darkens.",
+   "dry": "Dry fully after any water.",
+   "iron": "",
+   "tips": "A soft patina is normal on silver. Keep it somewhere dry, away from your IX pieces so they don't scratch each other. All Blues can re-plate it if it ever oxidises heavily."
+  },
+  {
+   "cat": "Accessories",
+   "brand": "Les Deux",
+   "item": "Victor Braided Belt (brown)",
+   "fabric": "100% Italian cow leather, metal buckle",
+   "url": "https://lesdeux.com/products/victor-braided-belt-brown",
+   "wash": "Never soak it. Wipe it with a soft dry cloth.",
+   "dry": "If it gets wet, let it dry flat, away from heat.",
+   "iron": "",
+   "tips": "Les Deux publishes no care, so this is standard leather care. A little leather conditioner a couple of times a year stops the braid drying out. Store it rolled loosely or hung by the buckle, not tightly bent. Applies to the 95 too."
+  },
+  {
+   "cat": "Accessories",
+   "brand": "Les Deux",
+   "item": "Signature Check Scarf (dark navy)",
+   "fabric": "70% recycled wool, 25% polyamide, 5% other fibres",
+   "url": "https://lesdeux.com/products/signature-check-scarf-dark-navy",
+   "wash": "Hand wash cold with a wool detergent, or dry clean.",
+   "dry": "Press the water out in a towel and dry it flat.",
+   "iron": "Cool, or steam.",
+   "tips": "Les Deux publishes no care for it, and retailers' listings for the same fabric say hand wash only. Wash it once or twice a season at most, and air it out in between. Comb the fringe straight while it's damp."
+  },
+  {
+   "cat": "Accessories",
+   "brand": "Kaleos",
+   "item": "Jaconelli sunglasses (dark havana)",
+   "fabric": "Handmade acetate frame; grey gradient category 3 lenses with anti-reflective coating",
+   "url": "https://kaleoscollection.com/en-pt/pages/frequently-ask-questions",
+   "wash": "Clean the lenses with the microfibre cloth and a lens spray. Rinse off sand or salt with cold water first.",
+   "dry": "Pat dry with the microfibre cloth.",
+   "iron": "",
+   "tips": "Never use your T-shirt, paper or tissues: they scratch the coating. Keep them in the case, never lens-down. Don't leave them in a hot car, because acetate warps with heat."
+  }
+ ]
+}
