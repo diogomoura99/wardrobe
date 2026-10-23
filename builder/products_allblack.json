@@ -27,36 +27,36 @@
   "role": "knit_black_textured",
   "rank": "primary",
   "brand": "Abercrombie & Fitch",
+  "name": "100% Cotton Crew Sweater",
+  "colour": "Black",
+  "price_eur": 75,
+  "url": "https://www.abercrombie.com/shop/eu/p/100-cotton-crew-sweater-63392327",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6144-00721-900_prod1?policy=product-large",
+  "fit_note": "All-over rib, raglan sleeves, oversized. Take M: listed 64 cm long, a touch shorter than your striped Essentials.",
+  "verified": true
+ },
+ {
+  "role": "knit_black_textured",
+  "rank": "alt",
+  "brand": "Abercrombie & Fitch",
+  "name": "A&F Essential Crew Sweater",
+  "colour": "Black",
+  "price_eur": 75,
+  "url": "https://www.abercrombie.com/shop/eu/p/a-and-f-essential-crew-sweater-63845823",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6266-00782-900_prod1?policy=product-large",
+  "fit_note": "Boxier, like your Eagles, with a marled waffle stitch. Take M; the longest of the three (66.7 cm listed).",
+  "verified": true
+ },
+ {
+  "role": "knit_black_textured",
+  "rank": "alt2",
+  "brand": "Abercrombie & Fitch",
   "name": "Textured-Stitch Cotton Rolled-Crew Sweater",
   "colour": "Black",
   "price_eur": 75,
   "url": "https://www.abercrombie.com/shop/eu-es/p/suter-texturizado-de-algodn-100-con-cuello-redondo-vuelto-63392331",
   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6116-00729-900_prod1?policy=product-large",
   "fit_note": "100% cotton waffle texture, rolled crew neck, easy fit. Take M (A&F says it runs a bit large). The link is A&F's Spanish-language EU store: pick 'Negro'.",
-  "verified": true
- },
- {
-  "role": "knit_black_textured",
-  "rank": "alt",
-  "brand": "Howlin'",
-  "name": "Boxy Space Knit",
-  "colour": "Black (slightly inky in photos)",
-  "price_eur": 259.21,
-  "url": "https://howlinknitwear.com/products/boxy-space-knit-black-aw26",
-  "image_url": "https://cdn.shopify.com/s/files/1/0465/5477/5710/files/BOXYSPACEKNIT_BLACK_1_0e7fae9a-4f7b-4c8a-b913-6ef1771ab2e6.jpg?v=1783612012",
-  "verified": true,
-  "fit_note": "Boxy Shetland wool, made in Scotland. Take M. Ships from Belgium (EU), no customs."
- },
- {
-  "role": "knit_black_textured",
-  "rank": "alt2",
-  "brand": "COS",
-  "name": "Boiled Merino Wool Crew-Neck Jumper",
-  "colour": "Black",
-  "price_eur": 99,
-  "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/merino/product/boiled-merino-wool-crew-neck-jumper-black-1338797001",
-  "image_url": "https://media.cos.com/assets/001/e4/84/e48460a458b8b0565345f582345c6a259f8a4a7c_xxl-1.jpg",
-  "fit_note": "Clean boiled merino, relaxed. Take M.",
   "verified": true
  }
 ]
