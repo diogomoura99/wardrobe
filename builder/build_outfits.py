@@ -1181,6 +1181,9 @@ def build():
         rows.append(f'<h3 class="cat">Optional extras</h3><p class="lede">You already own something that does this job, so these are only worth buying if you want a second option.</p><ul class="extras">{"".join(exl)}</ul>')
     pal = [("Ecru","#EDE6D6"),("Stone","#CBBFA8"),("Taupe","#8E7F6E"),("Grey","#BDBDB8"),("Charcoal","#3E3F41"),("Navy","#1F2A44"),("Powder blue","#A9C1DC"),("Denim","#8FA9C4"),("Brown","#5A4030")]
     palette = "".join(f'<span class="sw"><i style="background:{c}"></i>{n}</span>' for n, c in pal)
+    fp = os.path.join(HERE, "favourites.json")
+    saved_favs = [n for n in (json.load(open(fp)).get("saved", []) if os.path.exists(fp) else []) if any(o[1] == n for o in OUTFITS)]
+    saved_favs = json.dumps(saved_favs, ensure_ascii=False).replace("</", "<\\/")
     doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Your Outfits</title>
 <style>
@@ -1344,7 +1347,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
 <nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
-<p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Favourites are saved on this phone or browser.</p>
+<p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Taps are only kept in this browser, and browsers can clear them (Safari does after about a week without a visit). To keep them for good, on every device, tap <b>Copy the list to send me</b> and paste it to me: I'll save them into the page.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
 {"".join(sec)}
 {inspo_section}
@@ -1371,10 +1374,14 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   document.querySelectorAll('article.card').forEach(c=>{{c.style.display=(f==='all'||c.dataset.vibe===f||(f==='ready'&&c.dataset.ready==='yes')||(f==='one'&&c.dataset.ready==='one'))?'':'none';}});
 }}));
 (function(){{
-  const KEY='wardrobe-favs';
+  const KEY='wardrobe-favs', OFF='wardrobe-favs-off', SAVED={saved_favs};
+  let local=[], off=[];
+  try{{local=JSON.parse(localStorage.getItem(KEY)||'[]')||[];}}catch(e){{local=[];}}
+  try{{off=JSON.parse(localStorage.getItem(OFF)||'[]')||[];}}catch(e){{off=[];}}
   let favs=[];
-  try{{favs=JSON.parse(localStorage.getItem(KEY)||'[]')||[];}}catch(e){{favs=[];}}
-  const save=()=>{{try{{localStorage.setItem(KEY,JSON.stringify(favs));}}catch(e){{}}}};
+  const merge=()=>{{favs=[...new Set(local.concat(SAVED.filter(n=>!off.includes(n))))];}};
+  const save=()=>{{try{{localStorage.setItem(KEY,JSON.stringify(local));localStorage.setItem(OFF,JSON.stringify(off));}}catch(e){{}}}};
+  merge(); window.getFavs=()=>favs.slice();
   const list=document.getElementById('favlist');
   const originals=[...document.querySelectorAll('section:not(#favourites) article.card')];
   function render(){{
@@ -1392,8 +1399,9 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   document.addEventListener('click',ev=>{{
     const b=ev.target.closest('.fav'); if(!b) return;
     const n=b.closest('article.card').dataset.name;
-    favs=favs.includes(n)?favs.filter(x=>x!==n):favs.concat([n]);
-    save(); render();
+    if(favs.includes(n)){{local=local.filter(x=>x!==n); if(SAVED.includes(n)&&!off.includes(n)) off.push(n);}}
+    else{{local=local.concat([n]); off=off.filter(x=>x!==n);}}
+    merge(); save(); render();
   }});
   document.getElementById('favcopy').addEventListener('click',()=>{{
     const txt='My favourite outfits: '+originals.filter(c=>favs.includes(c.dataset.name)).map(c=>'#'+parseInt(c.querySelector('.num').textContent,10)+' '+c.dataset.name).join(', ');
@@ -1464,7 +1472,7 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   }}
   function clearAll(){{sel=[];save();sync();if(!view.hidden)render();}}
   function addFavs(){{
-    let favs=[]; try{{favs=JSON.parse(localStorage.getItem('wardrobe-favs')||'[]')||[];}}catch(e){{}}
+    let favs=window.getFavs?window.getFavs():[];
     favs=favs.filter(n=>byName.has(n)&&!sel.includes(n));
     if(!favs.length){{say('No favourites to add yet: tap ☆ Favourite on an outfit.');return;}}
     const room=MAX-sel.length; sel=sel.concat(favs.slice(0,room)); save(); sync(); if(!view.hidden) render();
@@ -1531,7 +1539,7 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   $('cvfav').addEventListener('click',addFavs);
   $('cvclose').addEventListener('click',()=>close());
   $('favcmp').addEventListener('click',()=>{{
-    let favs=[]; try{{favs=JSON.parse(localStorage.getItem('wardrobe-favs')||'[]')||[];}}catch(e){{}}
+    let favs=window.getFavs?window.getFavs():[];
     favs=favs.filter(n=>byName.has(n)); if(!favs.length) return;
     sel=favs.slice(0,MAX); save(); sync(); open(); if(favs.length>MAX) say('Showing the first '+MAX+' favourites.');
   }});
