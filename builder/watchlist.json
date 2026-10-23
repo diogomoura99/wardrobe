@@ -64,7 +64,7 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-10-19",
+    "date": "2026-10-22",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -181,7 +181,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-19",
+    "date": "2026-10-22",
     "price": 250.0,
     "member": null,
     "stock": "in"
@@ -219,7 +219,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-19",
+    "date": "2026-10-22",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -440,7 +440,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-10-19",
+    "date": "2026-10-22",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -489,43 +489,6 @@
    "role": "shirt_terry"
   },
   {
-   "id": "howlin-megatron",
-   "tier": "maybe",
-   "brand": "Howlin'",
-   "name": "Megatron Man",
-   "colour": "Navy body, wine sleeves, grey trims",
-   "size": "M",
-   "url": "https://howlinknitwear.com/products/megatron-man-wine-aw26",
-   "image_url": "https://cdn.shopify.com/s/files/1/0465/5477/5710/files/AW26_MEGATRON_MAN_WINE_1.jpg?v=1779266360",
-   "full": 279.54,
-   "target": 220,
-   "great": 180,
-   "outfits": [
-    92
-   ],
-   "when": "Season-end sale/clearance on Howlin's own shop; Black Friday unconfirmed",
-   "why": "Colour-block Shetland standout for #92 (price with Portuguese VAT).",
-   "check": {
-    "type": "shopify",
-    "variant": "M",
-    "js_url": "https://howlinknitwear.com/products/megatron-man-wine-aw26.js?currency=EUR&country=PT",
-    "cookie": "localization=PT; cart_currency=EUR"
-   },
-   "last": {
-    "date": "2026-10-19",
-    "price": 279.54,
-    "member": null,
-    "stock": "in"
-   },
-   "history": [
-    {
-     "date": "2026-10-12",
-     "price": 279.54
-    }
-   ],
-   "role": "knit_colourblock"
-  },
-  {
    "id": "pop-harrington",
    "tier": "maybe",
    "brand": "Pop Trading Company",
@@ -547,7 +510,7 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-10-19",
+    "date": "2026-10-22",
     "price": 300.0,
     "member": null,
     "stock": "in"
@@ -584,7 +547,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-19",
+    "date": "2026-10-22",
     "price": 235.0,
     "member": null,
     "stock": "in"
