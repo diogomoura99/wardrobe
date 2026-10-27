@@ -177,8 +177,8 @@ OUTFITS = [
    "Your green and cream striped knit over dark brown wide trousers instead of jeans. Warmer and more grown-up.",
    ["own_stripe_knit", "own_af_brown", "own_white_sneakers", "own_ix_figaro", "own_ix_figaro_bracelet"]),
   ("Autumn", "Stripes & sage jacket", "Your sage jacket + blue stripes",
-   "Your sage textured jacket over the blue stripes, khaki jeans and green Spezials. Greens and blues that work together, with the green-and-pink Spezials as the contrast at your feet.",
-   ["own_sage_jacket", "own_stripe_ls", "own_beige_jeans", "own_samba_green", "own_cuban_bracelet", "own_sunnies_jaconelli"]),
+   "Your sage textured jacket over the blue stripes, khaki jeans and navy suede Spezials. The cobalt-and-navy stripes are already the bold part, so the shoes stay calm and repeat the navy; the soft sage and khaki frame it. Want more punch? The green Spezials work too, but then two loud pieces compete.",
+   ["own_sage_jacket", "own_stripe_ls", "own_beige_jeans", "own_spezial_navy", "own_cuban_bracelet", "own_sunnies_jaconelli"]),
   ("Autumn", "Guinness, upgraded", "Your Guinness knit, one step up",
    "Keep the fun knit, with navy wide trousers and your burgundy Sambas so it looks deliberate.",
    ["own_guinness", "own_cos_navy_trouser", "own_samba_maroon", "own_cuban_bracelet"]),
@@ -524,6 +524,7 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "Stripes & sage jacket": [("own_spezial_navy", "Bolder option", ["own_samba_green"])],
   "Seersucker & denim": [("own_midwash", "Also great here: tonal and softer", ["own_af_cream"])],
   "Blue & brown": [("own_arket_blue_heavy", "Also great here: smoother, dressier", ["own_cos_blue"])],
   "Taupe & light blue": [("own_arket_blue_heavy", "Also great here: softer, greyer blue", ["own_cos_blue"])],
