@@ -70,7 +70,7 @@ OWNED = {
     "own_rugby": ("Knitwear & tops", "Your Cowboys rugby polo"),
     "own_stripe_ls": ("Knitwear & tops", "Your blue striped long-sleeve"),
     "own_brown_tee": ("Knitwear & tops", "Your brown tee"),
-    "own_cos_blue": ("Knitwear & tops", "Your COS blue merino jumper"),
+    "own_cos_blue": ("Knitwear & tops", "Your COS slate-blue boiled merino"),
     "own_arket_blue_heavy": ("Knitwear & tops", "Your Arket blue heavy-knit jumper"),
     "own_arket_alpaca_brown": ("Knitwear & tops", "Your Arket brown alpaca-merino jumper"),
     "own_cos_cream": ("Knitwear & tops", "Your COS cream ladder-stitch jumper"),
@@ -475,6 +475,12 @@ OUTFITS = [
   ("Special Autumn", "Black leather & panna cord", "Standout: Massimo Dutti black nappa blouson",
    "The black nappa blouson over a warm cream column: your A&F cream tee, the Studio Nicholson panna cords and the off-white Spezials, with the IX chain and the Rolex. The cream tee instead of a bright white one, because pure white next to panna makes the cords look yellow; the Spezials' off-white and gum sole stay in the same warm family.",
    ["own_md_leather", "own_af_tee_cream", "own_sn_paolo", "own_spezial_cream", "own_ix_figaro", "own_watch"]),
+  ("Special Autumn", "Slate blue & navy", "Your COS boiled merino in L, dressed for dinner",
+   "Your COS slate-blue boiled merino over the COS navy pleated wide-leg trousers and brown suede Premiatas, with the Rolex and the All Blues bracelet. The soft, greyed blue over deep navy is one cool column from light to dark, and the brown suede is the single warm note. Smooth boiled merino is dressier than a chunky knit, so this one works for dinner.",
+   ["own_cos_blue", "own_cos_navy_trouser", "own_premiata", "own_watch", "own_cuban_bracelet"]),
+  ("Special Autumn", "Black leather & slate blue", "Standout: Massimo Dutti black nappa blouson",
+   "The black nappa blouson over your COS slate-blue boiled merino, the neutral grey Levi's and the off-white Premiatas, with the Rolex and the IX bracelet. Everything under the jacket is cool and slightly greyed (blue, grey, off-white with black details), so the black belongs; the Premiatas' black star repeats the jacket at your feet.",
+   ["own_md_leather", "own_cos_blue", "own_levis_grey", "own_white_sneakers", "own_watch", "own_ix_figaro_bracelet"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -518,6 +524,8 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "Blue & brown": [("own_arket_blue_heavy", "Also great here: smoother, dressier", ["own_cos_blue"])],
+  "Taupe & light blue": [("own_arket_blue_heavy", "Also great here: softer, greyer blue", ["own_cos_blue"])],
   "Black leather & panna cord": [("own_spezial_cream", "Sharper: black shoes", ["shoe_premiata_allblack"])],
   "Waxed & navy": [("own_arket_navy", "Also great here", ["own_arket_alpaca_brown"])],
   "Striped half-zip": [("own_polo_halfzip", "Upgrade: your preferred half-zip", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_suede_bomber"])],
@@ -536,7 +544,7 @@ PIECE_ALT = {
   "Granny squares": ("own_af_tank_white", "Even better here", ["tank_cream"]),
   "Sage crochet": ("own_af_tank_white", "Even better here", ["tank_cream"]),
   "Knit polo & white jeans": ("own_spezial_navy", "Timeless option", ["shoe_premiata"]),
-  "Blue & cream": [("own_spezial_navy", "Timeless option", ["shoe_premiata"]), ("own_arket_blue_heavy", "Upgrade: add on top", ["jacket_suede_bomber"])],
+  "Blue & cream": [("own_spezial_navy", "Timeless option", ["shoe_premiata"]), ("own_arket_blue_heavy", "Upgrade: add on top", ["jacket_suede_bomber"]), ("own_arket_blue_heavy", "Also great here: smoother, greyer blue", ["own_cos_blue"])],
   "Harrington & white": ("own_spezial_cream", "Other shoes to try", ["shoe_premiata_cream", "shoe_mexico66", "shoe_gg_navy"]),
   "Black knit & cream": ("own_spezial_cream", "Other shoes to try", ["shoe_premiata_cream", "shoe_premiata_black", "shoe_gg_black"]),
   "Houndstooth & green": ("own_samba_green", "Calmer option", ["shoe_diadora_cord"]),
@@ -742,6 +750,8 @@ VIBE = {
   "Black leather & ivory": ("In between", "Night out / city"),
   "Black leather & ice denim": ("Street", "City day / evening"),
   "Black leather & panna cord": ("In between", "Dinner / city"),
+  "Slate blue & navy": ("Classy", "Dinner"),
+  "Black leather & slate blue": ("In between", "City / evening"),
   "Black leather, white tee": ("In between", "Night out / dinner"),
   "All black, textured": ("In between", "Night out"),
   "Tonal chocolate": ("Classy", "Dinner / city"),
