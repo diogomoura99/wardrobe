@@ -322,9 +322,9 @@ OUTFITS = [
   ("Spring", "Navy zip & khaki", "Your navy zip knit, smarter",
    "Navy zip knit half-open over your light-blue linen shirt, collar out, with khaki jeans, brown suede Premiatas and the Rolex. Navy, light blue and khaki: classic.",
    ["own_navy_zip_knit", "own_blue_linen", "own_beige_jeans", "own_premiata", "own_watch"]),
-  ("Summer", "Seersucker whites", "Your adidas seersucker shirt",
-   "Cream seersucker shirt with your white linen trousers, brown suede Premiatas, the IX chain and the Rolex.",
-   ["own_seersucker_camp", "own_white_linen", "own_premiata", "own_watch", "own_ix_figaro"]),
+  ("Summer", "Seersucker & denim", "Your adidas seersucker shirt",
+   "Your adidas seersucker shirt worn open over nothing, with mid-blue baggy jeans, brown suede Premiatas, the IX chain and the Rolex. The shirt is sporty, so it reads best as relaxed daytime: the warm off-white against mid-blue denim is the classic summer contrast, and the brown suede grounds it. Mid-blue rather than light-wash, because the icy wash looks cold next to the shirt's warm white.",
+   ["own_seersucker_camp", "own_midwash", "own_premiata", "own_watch", "own_ix_figaro"]),
   ("Summer", "Sage stripes", "Your sage striped linen shirt",
    "Sage striped linen shirt, top two buttons open over your white tank, ash pleated trousers, white Premiatas and your clear lilac sunglasses. Soft pastels together.",
    ["own_ms_sage_stripe", "own_af_tank_white", "own_af_ash_pleated", "own_white_sneakers", "own_sunnies_asos", "own_cuban_bracelet"]),
@@ -524,6 +524,7 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "Seersucker & denim": [("own_midwash", "Also great here: tonal and softer", ["own_af_cream"])],
   "Blue & brown": [("own_arket_blue_heavy", "Also great here: smoother, dressier", ["own_cos_blue"])],
   "Taupe & light blue": [("own_arket_blue_heavy", "Also great here: softer, greyer blue", ["own_cos_blue"])],
   "Black leather & panna cord": [("own_spezial_cream", "Sharper: black shoes", ["shoe_premiata_allblack"])],
@@ -604,7 +605,7 @@ NECK_WEAR = {
   "Varsity": ("Outside the tee, inside the jacket", "on the cream tee, framed by the open varsity jacket."),
   "Tonal brown": ("Outside the knit, inside the puffer", "over the cream jumper. Wear the puffer open so it shows."),
   "Waxed & cream cord": ("Outside the knit, inside the jacket", "over the cream knit. Wear the jacket open so it shows."),
-  "Seersucker whites": ("On skin, inside the shirt", "in the open collar of the seersucker shirt."),
+  "Seersucker & denim": ("On skin, inside the shirt", "in the open collar of the seersucker shirt."),
   "Houndstooth & green": ("Outside the tee, inside the jacket", "on the cream tee, framed by the open Harrington."),
   "Burgundy cord": ("Outside the tee, inside the jacket", "on the grey tee, framed by the open cord jacket."),
   "Blue runner day": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
@@ -693,7 +694,7 @@ VIBE = {
   "Harrington & white": ("In between", "Daytime"),
   "Sage & brown": ("In between", "Daytime"),
   "Navy zip & khaki": ("Classy", "Dinner / work"),
-  "Seersucker whites": ("Classy", "Holiday dinner"),
+  "Seersucker & denim": ("Street", "Holiday / daytime"),
   "Sage stripes": ("In between", "Daytime"),
   "Blue stripes & denim": ("Street", "Weekend"),
   "Brown linen day": ("In between", "Daytime"),
