@@ -466,6 +466,15 @@ OUTFITS = [
   ("Special Autumn", "Embroidered shirt & black", "Day to dinner: the embroidered shirt with black",
    "Your A&F embroidered linen shirt in warm beige, top two buttons open, with the black pleated baggy trousers and white Premiatas, plus the IX chain. Warm beige against black looks dressed up without trying, and the linen keeps you cool through a warm day. Wear the Kaleos sunglasses in the daytime and swap them for the Rolex at dinner.",
    ["own_af_embroidered", "own_af_black_pleated", "own_white_sneakers", "own_ix_figaro", "own_sunnies_jaconelli", "own_watch"]),
+  ("Special Autumn", "Black leather & ivory", "Standout: Massimo Dutti black nappa blouson",
+   "The black nappa blouson over one column of ivory: your COS cream ladder-stitch, the A&F cream jeans and the off-white Premiatas, with the Rolex and the IX bracelet. The knit and the jeans are the same soft ivory, so the light half reads as one piece and the leather frames it. The black star on the Premiatas repeats the jacket at your feet, and silver keeps it cool.",
+   ["own_md_leather", "own_cos_cream", "own_af_cream", "own_white_sneakers", "own_watch", "own_ix_figaro_bracelet"]),
+  ("Special Autumn", "Black leather & ice denim", "Standout: Massimo Dutti black nappa blouson",
+   "The classic: the black nappa blouson over your bright white A&F tee, the icy light-wash baggy jeans and the off-white Premiatas, with the IX chain and the Rolex. Everything under the jacket is cool (pure white, pale blue, white shoes with black details), so the black sits naturally on top. Keep the warm creams and gum soles out of this one.",
+   ["own_md_leather", "own_af_white_tee", "own_lightwash", "own_white_sneakers", "own_ix_figaro", "own_watch"]),
+  ("Special Autumn", "Black leather & panna cord", "Standout: Massimo Dutti black nappa blouson",
+   "The black nappa blouson over a warm cream column: your A&F cream tee, the Studio Nicholson panna cords and the off-white Spezials, with the IX chain and the Rolex. The cream tee instead of a bright white one, because pure white next to panna makes the cords look yellow; the Spezials' off-white and gum sole stay in the same warm family.",
+   ["own_md_leather", "own_af_tee_cream", "own_sn_paolo", "own_spezial_cream", "own_ix_figaro", "own_watch"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -509,6 +518,7 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "Black leather & panna cord": [("own_spezial_cream", "Sharper: black shoes", ["shoe_premiata_allblack"])],
   "Waxed & navy": [("own_arket_navy", "Also great here", ["own_arket_alpaca_brown"])],
   "Striped half-zip": [("own_polo_halfzip", "Upgrade: your preferred half-zip", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_suede_bomber"])],
   "Date night": [("own_polo_halfzip", "Upgrade: your preferred half-zip", ["knit_halfzip"]), ("own_polo_halfzip", "Upgrade: add on top", ["jacket_wool_blouson"])],
@@ -592,6 +602,8 @@ NECK_WEAR = {
   "Blue runner day": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Sage stripes & khaki": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Paolo & white tee": ("Outside the tee", "at the collar, at your usual 45 cm."),
+  "Black leather & ice denim": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
+  "Black leather & panna cord": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
   "Black leather, white tee": ("Outside the tee, inside the jacket", "on the white tee at the collar, at your usual 45 cm."),
   "Poker table": ("Outside the tee", "at the collar, at your usual 45 cm. Keep it still: playing with a chain at the table is a tell."),
   "Embroidered shirt & black": ("On skin, inside the shirt", "in the open collar, with the top two buttons undone."),
@@ -727,6 +739,9 @@ VIBE = {
   "Sage stripes & khaki": ("In between", "Evening out"),
   "Paolo & white tee": ("In between", "Weekend / city day"),
   "Black leather & grey": ("In between", "Night out / city"),
+  "Black leather & ivory": ("In between", "Night out / city"),
+  "Black leather & ice denim": ("Street", "City day / evening"),
+  "Black leather & panna cord": ("In between", "Dinner / city"),
   "Black leather, white tee": ("In between", "Night out / dinner"),
   "All black, textured": ("In between", "Night out"),
   "Tonal chocolate": ("Classy", "Dinner / city"),
