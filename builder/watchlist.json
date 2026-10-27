@@ -28,7 +28,7 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-10-19",
+    "date": "2026-10-26",
     "price": 449.0,
     "member": null,
     "stock": "in"
@@ -273,42 +273,6 @@
    ]
   },
   {
-   "id": "cos-boiled-merino-blue-L",
-   "tier": "want",
-   "restock": true,
-   "role": "own_cos_blue",
-   "brand": "COS",
-   "name": "Boiled Merino Wool Crew-Neck Jumper",
-   "colour": "Blue",
-   "size": "L",
-   "url": "https://www.cos.com/en-eu/men/menswear/knitwear/jumpers/merino/product/boiled-merino-wool-crew-neck-jumper-blue-1338797005",
-   "image_url": "https://media.cos.com/assets/001/2d/f5/2df56b32c579d21a430390a94984c4349ea7be69_xxl-1.jpg?imwidth=1200",
-   "full": 99,
-   "target": 99,
-   "great": 80,
-   "outfits": [],
-   "when": "Restock watch: the L was sold out online on 16 Oct. Your M feels snug (the ribbed hem pulls in); the L (122 cm chest, 66 cm long) gives the room you want. When it's back, order the L and return the M.",
-   "why": "Same colour you already style in your blue-knit outfits, one size up.",
-   "check": {
-    "type": "browser",
-    "how": "jsonld",
-    "sku": "1338797005004",
-    "note": "COS JSON-LD offers: SKU suffix 004 = L. If COS shows 'Select your location', pick Portugal first."
-   },
-   "last": {
-    "date": "2026-10-16",
-    "price": 99,
-    "member": null,
-    "stock": "out"
-   },
-   "history": [
-    {
-     "date": "2026-10-16",
-     "price": 99
-    }
-   ]
-  },
-  {
    "id": "birk-boston",
    "tier": "later",
    "brand": "Birkenstock",
@@ -440,7 +404,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-10-22",
+    "date": "2026-10-26",
     "price": 199.0,
     "member": null,
     "stock": "in"
