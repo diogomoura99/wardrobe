@@ -1984,7 +1984,7 @@ document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click'
   document.querySelectorAll('article.card').forEach(c=>{c.style.display=(f==='all'||c.dataset.vibe===f||(f==='ready'&&c.dataset.ready==='yes')||(f==='one'&&c.dataset.ready==='one'))?'':'none';});
 }));
 (function(){
-  const KEY='wardrobe-favs', OFF='wardrobe-favs-off', SAVED=["Cream cord & Eagles", "Oasis day", "Cream & black", "Rainy day", "Poker table"];
+  const KEY='wardrobe-favs', OFF='wardrobe-favs-off', SAVED=["Poker table", "Cream cord & Eagles", "Cream & black", "Rainy day", "Oasis day", "Knit & jeans", "Blue cable & grey", "Blue stripes & denim", "Sage stripes & khaki", "Brown tee & cream", "Navy & white", "Country dinner", "Day in Porto", "Brown tee & AirCloud"];
   let local=[], off=[];
   try{local=JSON.parse(localStorage.getItem(KEY)||'[]')||[];}catch(e){local=[];}
   try{off=JSON.parse(localStorage.getItem(OFF)||'[]')||[];}catch(e){off=[];}
