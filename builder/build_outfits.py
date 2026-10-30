@@ -418,6 +418,9 @@ OUTFITS = [
   ("Autumn", "Paolo & cream tee", "Your fitting: Studio Nicholson cords + A&F tee",
    "Your cream heavyweight tee with the Studio Nicholson Paolo cords in Panna and brown suede Premiatas, with the IX chain and bracelet. Cream on panna is one warm tone, so the cord's texture does the work; bright white next to panna makes the cords look yellow. Add the brown barn jacket when it cools down.",
    ["own_af_tee_cream", "own_sn_paolo", "own_premiata", "own_ix_figaro", "own_ix_figaro_bracelet"]),
+  ("Autumn", "Brown linen & taupe cord", "Between seasons: your brown shirt with the taupe cords",
+   "Your dark brown linen shirt with the top buttons open over the white ribbed tank, the Levi's taupe cords and light-blue Spezials, with the IX chain, the All Blues bracelet and the Kaleos by day. Rich brown over smokey taupe is one earthy family at two depths, and the white tank lifts it at the neck. The clothes are quiet, so the light-blue Spezials are the contrast. Spring or autumn: add a light jacket when it cools.",
+   ["own_ms_brown_linen", "own_af_tank_white", "own_levis_taupe", "own_gazelle", "own_ix_figaro", "own_cuban_bracelet", "own_sunnies_jaconelli"]),
   ("Special Summer", "Navy terry Riviera", "New piece: navy cable-terry shirt",
    "Navy cable-terry shirt with the top buttons open, your light beige linen baggy trousers, brown suede Premiatas, the IX chain and the Rolex. The Riviera in the evening.",
    ["shirt_terry", "own_af_linen_baggy", "own_premiata", "own_ix_figaro", "own_watch"]),
@@ -527,6 +530,7 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "Brown linen & taupe cord": [("own_gazelle", "Also great here", ["own_spezial_cream"]), ("own_ms_brown_linen", "Add on top when it cools", ["own_adidas_track_tan", "own_polo_harrington"])],
   "Brown jacket": [("own_midwash", "Daytime option: fresher, more contrast", ["own_lightwash"])],
   "Stripes & sage jacket": [("own_spezial_navy", "Bolder option", ["own_samba_green"])],
   "Seersucker & denim": [("own_midwash", "Also great here: tonal and softer", ["own_af_cream"])],
@@ -616,6 +620,7 @@ NECK_WEAR = {
   "Blue runner day": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Sage stripes & khaki": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Paolo & cream tee": ("Outside the tee", "at the collar, at your usual 45 cm."),
+  "Brown linen & taupe cord": ("On skin, in the open collar", "over the tank, framed by the open collar of the brown shirt."),
   "Black leather & ice denim": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
   "Black leather & panna cord": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
   "Black leather & grey tee": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
@@ -753,6 +758,7 @@ VIBE = {
   "Blue runner day": ("In between", "Daytime"),
   "Sage stripes & khaki": ("In between", "Evening out"),
   "Paolo & cream tee": ("In between", "Weekend / city day"),
+  "Brown linen & taupe cord": ("In between", "Spring / autumn day"),
   "Black leather & grey": ("In between", "Night out / city"),
   "Black leather & ivory": ("In between", "Night out / city"),
   "Black leather & ice denim": ("Street", "City day / evening"),
