@@ -147,8 +147,8 @@ OUTFITS = [
    "Your core formula, now made entirely from clothes you own: cream knit, mid-blue jeans, burgundy Sambas, navy cap.",
    ["own_cos_cream", "own_midwash", "own_samba_maroon", "cap_ald_yankees", "own_watch"]),
   ("Autumn", "Brown jacket", "Your board: brown jacket open over a knit",
-   "Your brown barn jacket open over the Guinness knit, light jeans and burgundy Sambas. Made entirely from clothes you own.",
-   ["own_brown_jacket_af", "own_guinness", "own_lightwash", "own_samba_maroon", "cap_ald_yankees", "own_cuban_bracelet"]),
+   "Your brown barn jacket open over the Guinness knit, mid-blue jeans and burgundy Sambas. Dark jacket, light knit, mid denim, burgundy shoes: clear steps from dark to light, so the oatmeal knit and its graphic are the one bright thing. Barn jacket and mid-wash is the classic workwear pairing.",
+   ["own_brown_jacket_af", "own_guinness", "own_midwash", "own_samba_maroon", "cap_ald_yankees", "own_cuban_bracelet"]),
   ("Autumn", "Knit polo", "Your board: brown knit polo flat lay",
    "Knit polo with light denim and your brown suede Premiatas. Smart without trying.",
    ["knit_polo", "own_lightwash", "own_premiata", "bracelet_cuff", "own_watch"]),
@@ -527,6 +527,7 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "Brown jacket": [("own_midwash", "Daytime option: fresher, more contrast", ["own_lightwash"])],
   "Stripes & sage jacket": [("own_spezial_navy", "Bolder option", ["own_samba_green"])],
   "Seersucker & denim": [("own_midwash", "Also great here: tonal and softer", ["own_af_cream"])],
   "Blue & brown": [("own_arket_blue_heavy", "Also great here: smoother, dressier", ["own_cos_blue"])],
