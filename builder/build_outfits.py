@@ -524,7 +524,6 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
-  "Black leather & grey": [("own_ymc_grey", "Lighter for warm days", ["own_af_tee_grey", "own_af_tee_black"]), ("own_af_black_pleated", "Also great here", ["own_af_black_jeans"])],
   "Stripes & sage jacket": [("own_spezial_navy", "Bolder option", ["own_samba_green"])],
   "Seersucker & denim": [("own_midwash", "Also great here: tonal and softer", ["own_af_cream"])],
   "Blue & brown": [("own_arket_blue_heavy", "Also great here: smoother, dressier", ["own_cos_blue"])],
