@@ -481,6 +481,9 @@ OUTFITS = [
   ("Special Autumn", "Black leather & slate blue", "Standout: Massimo Dutti black nappa blouson",
    "The black nappa blouson over your COS slate-blue boiled merino, the neutral grey Levi's and the off-white Premiatas, with the Rolex and the IX bracelet. Everything under the jacket is cool and slightly greyed (blue, grey, off-white with black details), so the black belongs; the Premiatas' black star repeats the jacket at your feet.",
    ["own_md_leather", "own_cos_blue", "own_levis_grey", "own_white_sneakers", "own_watch", "own_ix_figaro_bracelet"]),
+  ("Special Autumn", "Black leather & grey tee", "Train by day, Seinfeld at night",
+   "Your grey A&F tee, black baggy jeans and burgundy Sambas all day, then the black nappa blouson on top for the night, with the IX chain and the Rolex. The black jeans repeat the jacket, so the leather belongs; the cool grey tee keeps the black-and-grey idea of #98 but light enough for a warm day, and the burgundy Sambas are the contrast at your feet. By day, Kaleos instead of the Rolex.",
+   ["own_md_leather", "own_af_tee_grey", "own_af_black_jeans", "own_samba_maroon", "own_ix_figaro", "own_watch"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -614,6 +617,7 @@ NECK_WEAR = {
   "Paolo & cream tee": ("Outside the tee", "at the collar, at your usual 45 cm."),
   "Black leather & ice denim": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
   "Black leather & panna cord": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
+  "Black leather & grey tee": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
   "Black leather, white tee": ("Outside the tee, inside the jacket", "on the white tee at the collar, at your usual 45 cm."),
   "Poker table": ("Outside the tee", "at the collar, at your usual 45 cm. Keep it still: playing with a chain at the table is a tell."),
   "Embroidered shirt & black": ("On skin, inside the shirt", "in the open collar, with the top two buttons undone."),
@@ -754,6 +758,7 @@ VIBE = {
   "Black leather & panna cord": ("In between", "Dinner / city"),
   "Slate blue & navy": ("Classy", "Dinner"),
   "Black leather & slate blue": ("In between", "City / evening"),
+  "Black leather & grey tee": ("Street", "Travel day / show night"),
   "Black leather, white tee": ("In between", "Night out / dinner"),
   "All black, textured": ("In between", "Night out"),
   "Tonal chocolate": ("Classy", "Dinner / city"),
