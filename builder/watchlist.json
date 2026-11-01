@@ -28,7 +28,7 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-10-26",
+    "date": "2026-10-29",
     "price": 449.0,
     "member": null,
     "stock": "in"
@@ -64,7 +64,7 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-10-22",
+    "date": "2026-10-29",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -181,7 +181,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-22",
+    "date": "2026-10-29",
     "price": 250.0,
     "member": null,
     "stock": "in"
@@ -219,7 +219,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-22",
+    "date": "2026-10-29",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -404,7 +404,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-10-26",
+    "date": "2026-10-29",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -474,7 +474,7 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-10-22",
+    "date": "2026-10-29",
     "price": 300.0,
     "member": null,
     "stock": "in"
@@ -511,8 +511,8 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-22",
-    "price": 235.0,
+    "date": "2026-10-29",
+    "price": 240.0,
     "member": null,
     "stock": "in"
    },
@@ -520,6 +520,10 @@
     {
      "date": "2026-10-12",
      "price": 235
+    },
+    {
+     "date": "2026-10-29",
+     "price": 240.0
     }
    ],
    "role": "jacket_cord_burgundy"
