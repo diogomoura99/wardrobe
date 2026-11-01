@@ -102,6 +102,7 @@ OWNED = {
     "own_arket_navy": ("Knitwear & tops", "Your Arket navy brushed-wool jumper"),
     "own_howlin_brown": ("Knitwear & tops", "Your Howlin' brown Shetland knit"),
     "own_hotel_tee": ("Knitwear & tops", "Your Nude Project Hotel tee"),
+    "own_nude_bryant": ("Knitwear & tops", "Your Nude Project pinstripe shirt"),
     "own_af_cream": ("Trousers", "Your cream baggy jeans"),
     "own_lightwash": ("Trousers", "Your light-wash baggy jeans"),
     "own_midwash": ("Trousers", "Your mid-blue baggy jeans"),
@@ -424,6 +425,12 @@ OUTFITS = [
   ("Autumn", "Brown tee & AirCloud", "Tonal browns: your AirCloud over the brown tee",
    "Your brown AirCloud open over the brown heavyweight tee, the Levi's taupe cords and off-white Spezials, with the A&F Western snapback, the IX chain and the All Blues bracelet. Three greyed browns in steps, dark jacket, mid tee, lighter taupe, so it reads tonal rather than flat. The clothes are quiet, so the light comes from the ends: the cap's cream crown at the top and the off-white Spezials at your feet.",
    ["own_aircloud_brown", "own_brown_tee", "own_levis_taupe", "own_spezial_cream", "own_cap_western", "own_ix_figaro", "own_cuban_bracelet"]),
+  ("Autumn", "Pinstripe shirt & black jeans", "New piece: your Nude Project Bryant shirt, as you laid it out",
+   "Your Nude Project Bryant shirt, top two buttons open over the white ribbed tank, with the black baggy jeans and burgundy Sambas, plus the IX chain and the All Blues bracelet. Taupe-grey pinstripe over black is a sharp city pairing: the white tank picks up the white pinstripes at the neck, and the burgundy Sambas are the one warm colour. Tuck the tank in so it doesn't peek out under the cropped hem. The boxy, cropped cut ends at your waistband over wide jeans, your best shape, and the yellow print on the back is the surprise when you walk away.",
+   ["own_nude_bryant", "own_af_tank_white", "own_af_black_jeans", "own_samba_maroon", "own_ix_figaro", "own_cuban_bracelet"]),
+  ("Autumn", "Pinstripe shirt & brown", "Your Nude Project shirt, tonal with brown",
+   "Your Nude Project Bryant shirt over the white ribbed tank, with the dark brown pleated trousers and the off-white Spezials, plus the IX chain and the Kaleos by day. Nude calls the shirt brown: it's a greyed taupe, so over chocolate it reads as one earthy family at two depths, and the yellow back print sits warmly on it. The clothes are quiet, so the off-white Spezials lift it at your feet, with burgundy stripes and a gum sole that stay warm. Tuck the tank in under the cropped hem.",
+   ["own_nude_bryant", "own_af_tank_white", "own_af_brown", "own_spezial_cream", "own_ix_figaro", "own_sunnies_jaconelli"]),
   ("Special Summer", "Navy terry Riviera", "New piece: navy cable-terry shirt",
    "Navy cable-terry shirt with the top buttons open, your light beige linen baggy trousers, brown suede Premiatas, the IX chain and the Rolex. The Riviera in the evening.",
    ["shirt_terry", "own_af_linen_baggy", "own_premiata", "own_ix_figaro", "own_watch"]),
@@ -490,10 +497,15 @@ OUTFITS = [
   ("Special Autumn", "Black leather, white tee & jeans", "Train by day, Seinfeld at night",
    "Your bright white A&F tee, black baggy jeans and burgundy Sambas all day, then the black nappa blouson on top for the night, with the IX chain and the Rolex. Black, white and burgundy: the clothes are pure black and white, so the Sambas are the one colour, and the black jeans repeat the jacket so the leather belongs. By day, Kaleos instead of the Rolex.",
    ["own_md_leather", "own_af_white_tee", "own_af_black_jeans", "own_samba_maroon", "own_ix_figaro", "own_watch"]),
+  ("Special Autumn", "Black leather & pinstripe shirt", "Dinner: your Nude Project shirt under the black leather",
+   "Massimo Dutti's black nappa blouson over your Nude Project Bryant shirt, top two buttons open with nothing underneath, black pleated baggy trousers and the off-white Premiatas, with the IX chain and the Rolex. Black from shoulder to shoe frames the taupe-grey pinstripe, the white stripes echo the Premiatas, and their black star repeats the jacket at your feet. The jacket covers the back print, so it reads quiet and elegant at dinner; take it off and the yellow print is the surprise.",
+   ["own_md_leather", "own_nude_bryant", "own_af_black_pleated", "own_white_sneakers", "own_ix_figaro", "own_watch"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
 INNER_ALT = {
+  "Pinstripe shirt & black jeans": ["own_af_white_tee"],
+  "Pinstripe shirt & brown": ["own_af_white_tee"],
   "Striped half-zip": ["own_af_tee_grey", "own_hotel_tee"],
   "Zip cardigan": ["own_af_white_tee", "own_hotel_tee"],
   "Overshirt layers": ["own_af_white_tee", "own_hotel_tee"],
@@ -533,6 +545,9 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "Pinstripe shirt & black jeans": [("own_samba_maroon", "Calmer option", ["own_white_sneakers"])],
+  "Pinstripe shirt & brown": [("own_nude_bryant", "Add on top when it cools", ["own_cos_waxed", "own_aircloud_brown"])],
+  "Black leather & pinstripe shirt": [("own_af_black_pleated", "More casual", ["own_af_black_jeans"])],
   "Black leather, white tee & jeans": [("own_af_white_tee", "Other tee colour", ["own_af_tee_black"])],
   "Brown tee & AirCloud": [("own_levis_taupe", "Lighter, more contrast", ["own_af_cream"])],
   "Brown linen & taupe cord": [("own_gazelle", "Also great here", ["own_spezial_cream"]), ("own_ms_brown_linen", "Add on top when it cools", ["own_adidas_track_tan", "own_polo_harrington"])],
@@ -581,6 +596,9 @@ PIECE_ALT = {
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
 NECKLACES = ("own_ix_figaro", "own_sd_pendant")
 NECK_WEAR = {
+  "Pinstripe shirt & black jeans": ("On skin, in the open collar", "over the tank, framed by the open collar of the pinstripe shirt."),
+  "Pinstripe shirt & brown": ("On skin, in the open collar", "over the tank, framed by the open collar of the pinstripe shirt."),
+  "Black leather & pinstripe shirt": ("On skin, in the open collar", "with nothing underneath, at your usual 45 cm, framed by the shirt collar and the open jacket."),
   "Blue knit & graphic": ("Outside", "over the blue knit, so the pendant sits on the wool. The graphic tee stays underneath."),
   "Sunday lunch": ("Outside", "over the chocolate knit, just below the crew neck. Silver shows up well on dark brown."),
   "Sage & brown": ("Outside the tee, inside the jacket", "on the cream tee, framed by the open sage jacket."),
@@ -667,6 +685,9 @@ OUTER_ALT = {
 }
 
 VIBE = {
+  "Pinstripe shirt & black jeans": ("Street", "Everyday / city"),
+  "Pinstripe shirt & brown": ("In between", "Weekend / lunch"),
+  "Black leather & pinstripe shirt": ("Classy", "Dinner / night out"),
   "Knit & jeans": ("In between", "Everyday"),
   "Brown jacket": ("Street", "Weekend"),
   "Knit polo": ("Classy", "Lunch / drinks"),
