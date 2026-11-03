@@ -96,6 +96,38 @@
   "notes": "Percival says regular fit, true to size: M is 58 cm armpit to armpit and 68 cm long. L (60.5) only for knits underneath. Their Marcel cord jacket is the exception that runs small."
  },
  {
+  "cat": "Jackets",
+  "brand": "Percival",
+  "item": "Wilde Harrington (grey birdseye)",
+  "size": "M",
+  "status": "Predicted",
+  "notes": "Regular fit, true to size: 59 cm armpit to armpit, 65 cm long. L only for chunky knits underneath."
+ },
+ {
+  "cat": "Jackets",
+  "brand": "Percival",
+  "item": "Wallis Grid Check Overshirt",
+  "size": "M",
+  "status": "Predicted",
+  "notes": "Relaxed and boxy: 60.5 cm armpit to armpit, 64.5 cm long."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Percival",
+  "item": "Hinsley Checked Boxy Shirt / Guinness boxy Oxford",
+  "size": "M (38)",
+  "status": "Predicted",
+  "notes": "Same block: 59.5 cm armpit to armpit, 48 cm shoulders, 65 cm long, like your A&F cropped tee. Reviews: true to size, on the short side."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Percival",
+  "item": "Dudley Boxy Popover Sweatshirt",
+  "size": "M",
+  "status": "Predicted",
+  "notes": "Boxy, slightly cropped: 61 cm armpit to armpit, 64 cm long. A reviewer says it hits right at the hips."
+ },
+ {
   "cat": "Tops & knits",
   "brand": "Abercrombie & Fitch",
   "item": "Coastal crew sweater",

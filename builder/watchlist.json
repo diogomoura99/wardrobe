@@ -618,7 +618,8 @@
    "target": 270,
    "great": 235,
    "outfits": [
-    115
+    115,
+    123
    ],
    "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited run with only M and L left, so buy at full price if M starts showing 'last few'.",
    "why": "The Ford look you sent: standout jacket for the Navy & indigo outfit.",
@@ -655,7 +656,9 @@
    "target": 60,
    "great": 52,
    "outfits": [
-    115
+    115,
+    121,
+    123
    ],
    "when": "Black Friday week (24–30 Nov): A&F 25–50% plus an extra-15% code. A core colour, so little risk of 32x30 selling out.",
    "why": "The dark indigo jeans for the Navy & indigo outfit; you don't own a dark rinse yet.",
@@ -677,6 +680,266 @@
     }
    ],
    "role": "jeans_af_darkrinse"
+  },
+  {
+   "id": "percival-wilde",
+   "tier": "want",
+   "brand": "Percival",
+   "name": "Wilde Harrington Jacket",
+   "colour": "Grey birdseye wool blend",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/wilde-harrington-jacket-birdseye-wool-grey",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/WildeJacket_Brown_PERCIVAL_MENSWEAR-13.jpg",
+   "full": 240,
+   "target": 190,
+   "great": 165,
+   "outfits": [
+    116
+   ],
+   "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited runs, so buy at full price if M starts showing 'last few'.",
+   "why": "Grey birdseye wool blend wilde harrington jacket for its new outfit.",
+   "check": {
+    "type": "shopify",
+    "variant": "38",
+    "js_url": "https://percivalclo.com/products/wilde-harrington-jacket-birdseye-wool-grey.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 240.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 240
+    }
+   ],
+   "role": "jacket_wilde"
+  },
+  {
+   "id": "percival-wallis",
+   "tier": "want",
+   "brand": "Percival",
+   "name": "Wallis Grid Check Overshirt",
+   "colour": "Navy, olive and ecru patchwork check",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/wallis-grid-check-overshirt-cotton-navy",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/WallisOvershirt_PERCIVAL_MENSWEAR-3.jpg",
+   "full": 295,
+   "target": 235,
+   "great": 205,
+   "outfits": [
+    117
+   ],
+   "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited runs, so buy at full price if M starts showing 'last few'.",
+   "why": "Navy, olive and ecru patchwork check wallis grid check overshirt for its new outfit.",
+   "check": {
+    "type": "shopify",
+    "variant": "M",
+    "js_url": "https://percivalclo.com/products/wallis-grid-check-overshirt-cotton-navy.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 295.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 295
+    }
+   ],
+   "role": "overshirt_wallis"
+  },
+  {
+   "id": "percival-hinsley-blue",
+   "tier": "want",
+   "brand": "Percival",
+   "name": "Hinsley Checked Boxy Shirt",
+   "colour": "Blue check with green and white lines",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-blue",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR1_5f7923e4-5d69-4fe0-802d-649abe3d2a75.jpg",
+   "full": 195,
+   "target": 155,
+   "great": 135,
+   "outfits": [
+    118
+   ],
+   "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited runs, so buy at full price if M starts showing 'last few'.",
+   "why": "Blue check with green and white lines hinsley checked boxy shirt for its new outfit.",
+   "check": {
+    "type": "shopify",
+    "variant": "38",
+    "js_url": "https://percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-blue.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 195.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 195
+    }
+   ],
+   "role": "shirt_hinsley_blue"
+  },
+  {
+   "id": "percival-hinsley-brown",
+   "tier": "want",
+   "brand": "Percival",
+   "name": "Hinsley Checked Boxy Shirt",
+   "colour": "Brown micro-check, blue, white and red lines",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-brown",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/HinsleyShirt_Brown.jpg",
+   "full": 195,
+   "target": 155,
+   "great": 135,
+   "outfits": [
+    119
+   ],
+   "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited runs, so buy at full price if M starts showing 'last few'.",
+   "why": "Brown micro-check, blue, white and red lines hinsley checked boxy shirt for its new outfit.",
+   "check": {
+    "type": "shopify",
+    "variant": "38",
+    "js_url": "https://percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-brown.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 195.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 195
+    }
+   ],
+   "role": "shirt_hinsley_brown"
+  },
+  {
+   "id": "percival-hinsley-pink",
+   "tier": "want",
+   "brand": "Percival",
+   "name": "Hinsley Checked Boxy Shirt",
+   "colour": "Pink check with blue lines",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-pink",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR4_270fcdf0-8087-4524-a3a8-13ebcf1f5fb9.jpg",
+   "full": 195,
+   "target": 155,
+   "great": 135,
+   "outfits": [
+    121,
+    123
+   ],
+   "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited runs, so buy at full price if M starts showing 'last few'.",
+   "why": "Pink check with blue lines hinsley checked boxy shirt for its new outfit.",
+   "check": {
+    "type": "shopify",
+    "variant": "38",
+    "js_url": "https://percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-pink.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 195.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 195
+    }
+   ],
+   "role": "shirt_hinsley_pink"
+  },
+  {
+   "id": "percival-guinness",
+   "tier": "want",
+   "brand": "Guinness × Percival",
+   "name": "Button Down Embroidered Boxy Shirt",
+   "colour": "White Oxford, embroidered Guinness pocket",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/button-down-boxy-shirt-guinness-x-percival-white",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/GuinnessShirtPERCIVAL_MENSWEAR4.jpg",
+   "full": 170,
+   "target": 135,
+   "great": 120,
+   "outfits": [
+    120
+   ],
+   "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited runs, so buy at full price if M starts showing 'last few'.",
+   "why": "White Oxford, embroidered Guinness pocket button down embroidered boxy shirt for its new outfit.",
+   "check": {
+    "type": "shopify",
+    "variant": "M",
+    "js_url": "https://percivalclo.com/products/button-down-boxy-shirt-guinness-x-percival-white.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 170.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 170
+    }
+   ],
+   "role": "shirt_guinness"
+  },
+  {
+   "id": "percival-dudley-forest",
+   "tier": "want",
+   "brand": "Percival",
+   "name": "Dudley Boxy Popover Sweatshirt",
+   "colour": "Deep forest green",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/dudley-boxy-sweatshirt-cotton-forest",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR4_c4d65c75-a647-4ad4-98b7-da3eb0c4dbe8.jpg",
+   "full": 140,
+   "target": 110,
+   "great": 98,
+   "outfits": [
+    122
+   ],
+   "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited runs, so buy at full price if M starts showing 'last few'.",
+   "why": "Deep forest green dudley boxy popover sweatshirt for its new outfit.",
+   "check": {
+    "type": "shopify",
+    "variant": "M",
+    "js_url": "https://percivalclo.com/products/dudley-boxy-sweatshirt-cotton-forest.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 140.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 140
+    }
+   ],
+   "role": "sweat_dudley_forest"
   }
  ],
  "brands": [

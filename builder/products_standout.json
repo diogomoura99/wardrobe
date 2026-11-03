@@ -94,5 +94,89 @@
   "fit_note": "Same Baggy block as your cream and mid-blue pairs: take 32x30. In stock on 3 Nov; customers say true to size.",
   "rank": "primary",
   "verified": true
+ },
+ {
+  "role": "jacket_wilde",
+  "brand": "Percival",
+  "name": "Wilde Harrington Jacket",
+  "colour": "Grey birdseye wool blend",
+  "price_eur": 240,
+  "url": "https://www.percivalclo.com/products/wilde-harrington-jacket-birdseye-wool-grey",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/WildeJacket_Brown_PERCIVAL_MENSWEAR-13.jpg",
+  "fit_note": "Percival: regular fit, true to size; the 1.83 m model wears M. Take M (59 cm armpit to armpit, 47.5 cm shoulders, 65 cm long, elastic hem); L only for chunky knits underneath. 50% wool, 50% polyester.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "overshirt_wallis",
+  "brand": "Percival",
+  "name": "Wallis Grid Check Overshirt",
+  "colour": "Navy, olive and ecru patchwork check",
+  "price_eur": 295,
+  "url": "https://www.percivalclo.com/products/wallis-grid-check-overshirt-cotton-navy",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/WallisOvershirt_PERCIVAL_MENSWEAR-3.jpg",
+  "fit_note": "Relaxed and boxy: take M (60.5 cm armpit to armpit, 64.5 cm long). 100% cotton with open-grid embroidery, made in Portugal, under 200 made. Snags easily.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shirt_hinsley_blue",
+  "brand": "Percival",
+  "name": "Hinsley Checked Boxy Shirt",
+  "colour": "Blue check with green and white lines",
+  "price_eur": 195,
+  "url": "https://www.percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-blue",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR1_5f7923e4-5d69-4fe0-802d-649abe3d2a75.jpg",
+  "fit_note": "Percival's bestselling boxy shirt, cut to sit at the waistband: take M (59.5 cm armpit to armpit, 48 cm shoulders, 65 cm long, like your A&F cropped tee). 4.9 stars from 33 reviews: true to size, boxy, on the short side. A light blend (40% cotton, 50% polyester, 10% rayon), so in November wear it under a jacket.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shirt_hinsley_brown",
+  "brand": "Percival",
+  "name": "Hinsley Checked Boxy Shirt",
+  "colour": "Brown micro-check, blue, white and red lines",
+  "price_eur": 195,
+  "url": "https://www.percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-brown",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/HinsleyShirt_Brown.jpg",
+  "fit_note": "Percival's bestselling boxy shirt, cut to sit at the waistband: take M (59.5 cm armpit to armpit, 48 cm shoulders, 65 cm long, like your A&F cropped tee). 4.9 stars from 33 reviews: true to size, boxy, on the short side. A light blend (40% cotton, 50% polyester, 10% rayon), so in November wear it under a jacket.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shirt_hinsley_pink",
+  "brand": "Percival",
+  "name": "Hinsley Checked Boxy Shirt",
+  "colour": "Pink check with blue lines",
+  "price_eur": 195,
+  "url": "https://www.percivalclo.com/products/hinsley-checked-boxy-shirt-cotton-pink",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR4_270fcdf0-8087-4524-a3a8-13ebcf1f5fb9.jpg",
+  "fit_note": "Percival's bestselling boxy shirt, cut to sit at the waistband: take M (59.5 cm armpit to armpit, 48 cm shoulders, 65 cm long, like your A&F cropped tee). 4.9 stars from 33 reviews: true to size, boxy, on the short side. A light blend (40% cotton, 50% polyester, 10% rayon), so in November wear it under a jacket.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "shirt_guinness",
+  "brand": "Guinness × Percival",
+  "name": "Button Down Embroidered Boxy Shirt",
+  "colour": "White Oxford, embroidered Guinness pocket",
+  "price_eur": 170,
+  "url": "https://www.percivalclo.com/products/button-down-boxy-shirt-guinness-x-percival-white",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/GuinnessShirtPERCIVAL_MENSWEAR4.jpg",
+  "fit_note": "Same boxy, cropped block as the Hinsley: take M (59.5 × 65 cm). Proper Oxford cloth, 97% cotton and 3% elastane. Limited run.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "sweat_dudley_forest",
+  "brand": "Percival",
+  "name": "Dudley Boxy Popover Sweatshirt",
+  "colour": "Deep forest green",
+  "price_eur": 140,
+  "url": "https://www.percivalclo.com/products/dudley-boxy-sweatshirt-cotton-forest",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR4_c4d65c75-a647-4ad4-98b7-da3eb0c4dbe8.jpg",
+  "fit_note": "Boxy and slightly cropped: take M (61 cm armpit to armpit, 64 cm long, about your A&F cropped tee's length). 100% organic cotton, brushed inside, polo collar and chest pocket.",
+  "rank": "primary",
+  "verified": true
  }
 ]
