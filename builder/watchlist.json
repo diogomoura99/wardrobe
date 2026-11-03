@@ -101,7 +101,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-15",
+    "date": "2026-11-03",
     "price": 229.0,
     "member": null,
     "stock": "in"
@@ -142,11 +142,11 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-10-15",
+    "date": "2026-11-03",
     "price": 80.0,
     "member": null,
     "stock": "out",
-    "note": "Brown M Regular sold out 15 Oct (only L left); no myA&F price shown"
+    "note": "Brown M Regular sold out"
    },
    "history": [
     {
@@ -181,7 +181,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-29",
+    "date": "2026-11-03",
     "price": 250.0,
     "member": null,
     "stock": "in"
@@ -219,7 +219,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-29",
+    "date": "2026-11-03",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -255,11 +255,11 @@
     "note": "On the page, pick colour White (swatch input value 58875223), then size M and length Regular. If the page says 'This item is sold out', record --stock out; otherwise read the price (and the myA&F price) and record --stock in."
    },
    "last": {
-    "date": "2026-10-15",
+    "date": "2026-11-03",
     "price": 32.0,
     "member": null,
     "stock": "out",
-    "note": "White M Regular still sold out 15 Oct"
+    "note": "White M Regular still sold out"
    },
    "history": [
     {
@@ -299,7 +299,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-15",
+    "date": "2026-11-03",
     "price": 165.0,
     "member": null,
     "stock": "in"
@@ -334,10 +334,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-15",
+    "date": "2026-11-03",
     "price": 269.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "size L stock not visible without opening basket picker"
    },
    "history": [
     {
@@ -369,10 +370,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-15",
+    "date": "2026-11-03",
     "price": 299.0,
     "member": null,
-    "stock": "in"
+    "stock": "out",
+    "note": "50 sold out (48 too); notify-when-back shown"
    },
    "history": [
     {
@@ -439,7 +441,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-15",
+    "date": "2026-11-03",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -511,7 +513,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-10-29",
+    "date": "2026-11-03",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -550,7 +552,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-15",
+    "date": "2026-11-03",
     "price": 175.0,
     "member": null,
     "stock": "in"
@@ -585,15 +587,20 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-10-15",
-    "price": 235.0,
+    "date": "2026-11-03",
+    "price": 245.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "price up from 235"
    },
    "history": [
     {
      "date": "2026-10-12",
      "price": 235
+    },
+    {
+     "date": "2026-11-03",
+     "price": 245.0
     }
    ],
    "role": "shoe_daze_runner"
