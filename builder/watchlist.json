@@ -940,6 +940,75 @@
     }
    ],
    "role": "sweat_dudley_forest"
+  },
+  {
+   "id": "af-rib-tank-white",
+   "tier": "want",
+   "brand": "Abercrombie & Fitch",
+   "name": "Heavyweight Rib Tank (a second one)",
+   "colour": "White",
+   "size": "M",
+   "url": "https://www.abercrombie.com/shop/eu/p/heavyweight-rib-tank-63962321",
+   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_124-26031-00076-100_prod1?policy=product-large",
+   "full": 24,
+   "target": 17,
+   "great": 15,
+   "outfits": [],
+   "when": "Restock alert: white is sold out in M (3 Nov, only XXL left) and it's in clearance at €16.99, so buy as soon as M shows up. Clearance pieces rarely come back; the Suitsupply off-white below is the backup.",
+   "why": "A second white tank, the same one you own, because it's the inner layer under most of your shirt outfits.",
+   "check": {
+    "type": "browser",
+    "how": "text",
+    "note": "Select Color: White, then check whether M is crossed out"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 16.99,
+    "member": null,
+    "stock": "out",
+    "note": "White M sold out; only XXL left; clearance €16.99 (was €24)"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 16.99
+    }
+   ],
+   "role": "own_af_tank_white"
+  },
+  {
+   "id": "suitsupply-tank-offwhite",
+   "tier": "maybe",
+   "brand": "Suitsupply",
+   "name": "Ribbed Tank Top, cotton-silk",
+   "colour": "Off-white",
+   "size": "M",
+   "url": "https://suitsupply.com/en-pt/men/knitwear/off-white-tank-top/SW2159.html",
+   "image_url": "https://cdn.suitsupply.com/image/upload/f_auto,q_auto,w_1200/products/knitwear/default/sw2159_25",
+   "full": 79,
+   "target": 63,
+   "great": 55,
+   "outfits": [],
+   "when": "Backup if the A&F white never comes back in M. Suitsupply rarely discounts; its winter sale starts late December. M in stock on 3 Nov (L and up sold out).",
+   "why": "The same closed cut as your A&F tank (high round neck, underarms covered), but warm off-white rather than bright white: best under the cream, pink, blue and brown shirts, less so under the white Guinness Oxford.",
+   "check": {
+    "type": "browser",
+    "how": "text",
+    "note": "Open Select size; a bell icon next to M means sold out"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 79.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 79
+    }
+   ],
+   "role": "tank_cream"
   }
  ],
  "brands": [
