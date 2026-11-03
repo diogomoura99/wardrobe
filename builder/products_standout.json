@@ -70,5 +70,29 @@
   "fit_note": "Take EU 44 (UK 9.5). An archive 70s runner in corduroy. More timeless; corduroy sneakers are at an early stage.",
   "rank": "primary",
   "verified": true
+ },
+ {
+  "role": "jacket_ford_garage",
+  "brand": "Percival × Ford",
+  "name": "Garage Harrington Jacket",
+  "colour": "Navy quilted cotton canvas, white grid stitching, Ford and red Percival Division patches",
+  "price_eur": 335,
+  "url": "https://www.percivalclo.com/products/garage-harrington-jacket-percival-x-ford-navy",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR_eacb5654-f1f6-48bc-9cc0-a14318979a88.jpg",
+  "fit_note": "Percival: regular fit, true to size. Take M (58 cm armpit to armpit, 68 cm long); L (60.5 cm) only if you want knits underneath. Limited edition: only M and L left on 3 Nov. 100% cotton, made in Turkey, dry clean only.",
+  "rank": "primary",
+  "verified": true
+ },
+ {
+  "role": "jeans_af_darkrinse",
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Jean",
+  "colour": "Dark Rinse (rigid indigo)",
+  "price_eur": 80,
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-58482319",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-4255-00264-275_model1?policy=product-large",
+  "fit_note": "Same Baggy block as your cream and mid-blue pairs: take 32x30. In stock on 3 Nov; customers say true to size.",
+  "rank": "primary",
+  "verified": true
  }
 ]

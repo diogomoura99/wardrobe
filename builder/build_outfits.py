@@ -42,6 +42,8 @@ ROLE_INFO = {
     "shoe_premiata_browntonal": ("Shoes", "Dark brown tonal Premiata"),
     "jacket_houndstooth": ("Outerwear", "Houndstooth Harrington"),
     "jacket_cord_burgundy": ("Outerwear", "Burgundy cord jacket"),
+    "jacket_ford_garage": ("Outerwear", "Ford × Percival quilted harrington"),
+    "jeans_af_darkrinse": ("Trousers", "Dark-rinse baggy jeans"),
     "shoe_tokuten_pink": ("Shoes", "Black & pink Onitsuka Tokuten"),
     "shoe_daze_runner": ("Shoes", "Axel Arigato Daze runner"),
     "shoe_diadora_cord": ("Shoes", "Navy corduroy Diadora Equipe"),
@@ -500,10 +502,14 @@ OUTFITS = [
   ("Special Autumn", "Black leather & pinstripe shirt", "Dinner: your Nude Project shirt under the black leather",
    "Massimo Dutti's black nappa blouson over your Nude Project Bryant shirt, top two buttons open with nothing underneath, black pleated baggy trousers and the off-white Premiatas, with the IX chain and the Rolex. Black from shoulder to shoe frames the taupe-grey pinstripe, the white stripes echo the Premiatas, and their black star repeats the jacket at your feet. The jacket covers the back print, so it reads quiet and elegant at dinner; take it off and the yellow print is the surprise.",
    ["own_md_leather", "own_nude_bryant", "own_af_black_pleated", "own_white_sneakers", "own_ix_figaro", "own_watch"]),
+  ("Special Autumn", "Navy & indigo, Ford jacket", "Standout: the Ford × Percival quilted harrington, the look you sent",
+   "Percival's quilted navy Ford jacket over your bright white A&F tee and A&F's dark-rinse baggy jeans, so everything sits in one cool family from navy to indigo, and the white grid stitching repeats the white tee. The off-white Spezials are the one light, warm note at the bottom: the cream lifts the dark jeans, the gum sole brings the warmth the photo's tan suede gives, and the burgundy stripes pick up the red Percival Division patch.",
+   ["jacket_ford_garage", "own_af_white_tee", "jeans_af_darkrinse", "own_spezial_cream", "own_ix_figaro", "own_cuban_bracelet"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
 INNER_ALT = {
+  "Navy & indigo, Ford jacket": ["own_hotel_tee"],
   "Pinstripe shirt & black jeans": ["own_af_white_tee"],
   "Pinstripe shirt & brown": ["own_af_white_tee"],
   "Striped half-zip": ["own_af_tee_grey", "own_hotel_tee"],
@@ -545,6 +551,7 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "Navy & indigo, Ford jacket": [("own_spezial_cream", "Bolder option", ["own_samba_maroon"]), ("jacket_ford_garage", "Backup jacket", ["own_polo_harrington"])],
   "Pinstripe shirt & black jeans": [("own_samba_maroon", "Calmer option", ["own_white_sneakers"])],
   "Pinstripe shirt & brown": [("own_nude_bryant", "Add on top when it cools", ["own_cos_waxed", "own_aircloud_brown"])],
   "Black leather & pinstripe shirt": [("own_af_black_pleated", "More casual", ["own_af_black_jeans"])],
@@ -596,6 +603,7 @@ PIECE_ALT = {
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
 NECKLACES = ("own_ix_figaro", "own_sd_pendant")
 NECK_WEAR = {
+  "Navy & indigo, Ford jacket": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
   "Pinstripe shirt & black jeans": ("On skin, in the open collar", "over the tank, framed by the open collar of the pinstripe shirt."),
   "Pinstripe shirt & brown": ("On skin, in the open collar", "over the tank, framed by the open collar of the pinstripe shirt."),
   "Black leather & pinstripe shirt": ("On skin, in the open collar", "with nothing underneath, at your usual 45 cm, framed by the shirt collar and the open jacket."),
@@ -685,6 +693,7 @@ OUTER_ALT = {
 }
 
 VIBE = {
+  "Navy & indigo, Ford jacket": ("Street", "Everyday / city"),
   "Pinstripe shirt & black jeans": ("Street", "Everyday / city"),
   "Pinstripe shirt & brown": ("In between", "Weekend / lunch"),
   "Black leather & pinstripe shirt": ("Classy", "Dinner / night out"),

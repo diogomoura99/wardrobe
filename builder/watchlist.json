@@ -28,7 +28,7 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-10-29",
+    "date": "2026-11-03",
     "price": 449.0,
     "member": null,
     "stock": "in"
@@ -64,7 +64,7 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-10-29",
+    "date": "2026-11-03",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -404,7 +404,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-10-29",
+    "date": "2026-11-03",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -474,10 +474,10 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-10-29",
+    "date": "2026-11-03",
     "price": 300.0,
     "member": null,
-    "stock": "in"
+    "stock": "out"
    },
    "history": [
     {
@@ -597,6 +597,79 @@
     }
    ],
    "role": "shoe_daze_runner"
+  },
+  {
+   "id": "percival-ford-garage",
+   "tier": "want",
+   "brand": "Percival",
+   "name": "Garage Harrington (Ford × Percival)",
+   "colour": "Navy quilted canvas",
+   "size": "M",
+   "url": "https://www.percivalclo.com/products/garage-harrington-jacket-percival-x-ford-navy",
+   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR_eacb5654-f1f6-48bc-9cc0-a14318979a88.jpg",
+   "full": 335,
+   "target": 270,
+   "great": 235,
+   "outfits": [
+    115
+   ],
+   "when": "Percival's Black Friday sale: it started 14 Nov last year. Limited run with only M and L left, so buy at full price if M starts showing 'last few'.",
+   "why": "The Ford look you sent: standout jacket for the Navy & indigo outfit.",
+   "check": {
+    "type": "shopify",
+    "variant": "M",
+    "js_url": "https://percivalclo.com/products/garage-harrington-jacket-percival-x-ford-navy.js?currency=EUR&country=PT",
+    "cookie": "localization=PT; cart_currency=EUR"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 335.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 335
+    }
+   ],
+   "role": "jacket_ford_garage"
+  },
+  {
+   "id": "af-baggy-darkrinse",
+   "tier": "want",
+   "brand": "Abercrombie & Fitch",
+   "name": "Baggy Jean",
+   "colour": "Dark Rinse",
+   "size": "32x30",
+   "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-58482319",
+   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-4255-00264-275_model1?policy=product-large",
+   "full": 80,
+   "target": 60,
+   "great": 52,
+   "outfits": [
+    115
+   ],
+   "when": "Black Friday week (24–30 Nov): A&F 25–50% plus an extra-15% code. A core colour, so little risk of 32x30 selling out.",
+   "why": "The dark indigo jeans for the Navy & indigo outfit; you don't own a dark rinse yet.",
+   "check": {
+    "type": "browser",
+    "how": "text",
+    "note": "A&F shows the regular price and a 'myA&F Price'"
+   },
+   "last": {
+    "date": "2026-11-03",
+    "price": 80.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-03",
+     "price": 80
+    }
+   ],
+   "role": "jeans_af_darkrinse"
   }
  ],
  "brands": [
