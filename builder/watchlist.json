@@ -28,7 +28,7 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 449.0,
     "member": null,
     "stock": "in"
@@ -64,7 +64,7 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -101,7 +101,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 229.0,
     "member": null,
     "stock": "in"
@@ -142,11 +142,10 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 80.0,
     "member": null,
-    "stock": "out",
-    "note": "Brown M Regular sold out"
+    "stock": "in"
    },
    "history": [
     {
@@ -181,7 +180,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 250.0,
     "member": null,
     "stock": "in"
@@ -219,7 +218,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -255,11 +254,11 @@
     "note": "On the page, pick colour White (swatch input value 58875223), then size M and length Regular. If the page says 'This item is sold out', record --stock out; otherwise read the price (and the myA&F price) and record --stock in."
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 32.0,
     "member": null,
     "stock": "out",
-    "note": "White M Regular still sold out"
+    "note": "White M Regular sold out"
    },
    "history": [
     {
@@ -299,7 +298,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 165.0,
     "member": null,
     "stock": "in"
@@ -334,11 +333,10 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 269.0,
     "member": null,
-    "stock": "in",
-    "note": "size L stock not visible without opening basket picker"
+    "stock": "in"
    },
    "history": [
     {
@@ -370,11 +368,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 299.0,
     "member": null,
-    "stock": "out",
-    "note": "50 sold out (48 too); notify-when-back shown"
+    "stock": "low",
+    "note": "50 back in stock, only a few left (48/52/54 sold out)"
    },
    "history": [
     {
@@ -406,7 +404,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -441,7 +439,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -476,7 +474,7 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 300.0,
     "member": null,
     "stock": "out"
@@ -513,7 +511,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -552,7 +550,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 175.0,
     "member": null,
     "stock": "in"
@@ -587,11 +585,10 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 245.0,
     "member": null,
-    "stock": "in",
-    "note": "price up from 235"
+    "stock": "in"
    },
    "history": [
     {
@@ -630,7 +627,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 335.0,
     "member": null,
     "stock": "in"
@@ -668,7 +665,7 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 80.0,
     "member": null,
     "stock": "in"
@@ -705,7 +702,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -742,7 +739,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 295.0,
     "member": null,
     "stock": "in"
@@ -779,7 +776,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -816,7 +813,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -854,7 +851,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -891,7 +888,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 170.0,
     "member": null,
     "stock": "in"
@@ -928,7 +925,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 140.0,
     "member": null,
     "stock": "in"
@@ -962,11 +959,11 @@
     "note": "Select Color: White, then check whether M is crossed out"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 16.99,
     "member": null,
     "stock": "out",
-    "note": "White M sold out; only XXL left; clearance €16.99 (was €24)"
+    "note": "White no longer offered on page; only Light Brown (EUR 16.99)"
    },
    "history": [
     {
@@ -997,7 +994,7 @@
     "note": "Open Select size; a bell icon next to M means sold out"
    },
    "last": {
-    "date": "2026-11-03",
+    "date": "2026-11-05",
     "price": 79.0,
     "member": null,
     "stock": "in"
