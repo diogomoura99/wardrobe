@@ -142,7 +142,7 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-11",
     "price": 80.0,
     "member": null,
     "stock": "in"
@@ -254,11 +254,11 @@
     "note": "On the page, pick colour White (swatch input value 58875223), then size M and length Regular. If the page says 'This item is sold out', record --stock out; otherwise read the price (and the myA&F price) and record --stock in."
    },
    "last": {
-    "date": "2026-11-05",
-    "price": 32.0,
+    "date": "2026-11-11",
+    "price": 12.99,
     "member": null,
     "stock": "out",
-    "note": "White M Regular sold out"
+    "note": "Clearance: was 35, now 12.99. White M Regular stock not confirmed (no browser check)"
    },
    "history": [
     {
@@ -268,6 +268,10 @@
     {
      "date": "2026-10-15",
      "price": 32.0
+    },
+    {
+     "date": "2026-11-11",
+     "price": 12.99
     }
    ]
   },
@@ -298,7 +302,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-11",
     "price": 165.0,
     "member": null,
     "stock": "in"
@@ -404,7 +408,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-11",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -550,7 +554,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-11",
     "price": 175.0,
     "member": null,
     "stock": "in"
@@ -665,7 +669,7 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-11",
     "price": 80.0,
     "member": null,
     "stock": "in"
@@ -959,11 +963,11 @@
     "note": "Select Color: White, then check whether M is crossed out"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-11",
     "price": 16.99,
     "member": null,
     "stock": "out",
-    "note": "White no longer offered on page; only Light Brown (EUR 16.99)"
+    "note": "Still only Light Brown on the page (sale 16.99, was 24)"
    },
    "history": [
     {
@@ -994,7 +998,7 @@
     "note": "Open Select size; a bell icon next to M means sold out"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-11",
     "price": 79.0,
     "member": null,
     "stock": "in"
