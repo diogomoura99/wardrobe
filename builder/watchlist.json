@@ -1010,6 +1010,39 @@
     }
    ],
    "role": "tank_cream"
+  },
+  {
+   "id": "af-crew-stripe-navy",
+   "tier": "want",
+   "brand": "Abercrombie & Fitch",
+   "name": "A&F Essential Crew Sweater",
+   "colour": "Navy stripe (heathered navy, cream double stripes)",
+   "size": "M",
+   "url": "https://www.abercrombie.com/shop/eu/p/a-and-f-essential-crew-sweater-63845823",
+   "image_url": "https://img.abercrombie.com/is/image/anf/KIC_120-6259-00802-250_prod1?policy=product-large",
+   "full": 75,
+   "target": 60,
+   "great": 52,
+   "outfits": [],
+   "when": "Black Friday week (24–30 Nov) is the likely drop. A&F shows 'Almost Gone!' on it, so if your size starts selling out, €75 is still fair.",
+   "why": "The navy version of your green & cream striped Essential Crew. Same easy, oversized fit; M is 67 cm long. Cotton blend (52% cotton, 46% polyester).",
+   "check": {
+    "type": "browser",
+    "how": "text",
+    "note": "Pick colour 'navy stripe'. A&F shows the regular price and sometimes a 'myA&F Price'."
+   },
+   "last": {
+    "date": "2026-11-12",
+    "price": 75.0,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-12",
+     "price": 75
+    }
+   ]
   }
  ],
  "brands": [

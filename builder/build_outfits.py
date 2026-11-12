@@ -1248,7 +1248,7 @@ def build():
             nums = sorted({outfit_num[o[1]] for o in OUTFITS if it["role"] in o[4] and o[1] in outfit_num}
                           | {outfit_num[on] for on, ents in PIECE_ALT.items() if on in outfit_num
                              for _, _, alts in (ents if isinstance(ents, list) else [ents]) if it["role"] in alts})
-        lifts = "Lifts #" + ", #".join(str(n) for n in nums)
+        lifts = ("Lifts #" + ", #".join(str(n) for n in nums)) if nums else "No outfits yet"
         return f'''<tr><td class="thumb"><a href="{e(it["url"])}" target="_blank" rel="noopener"><img loading="lazy" referrerpolicy="no-referrer" src="{e(it.get("image_url",""))}" alt="" onerror="this.remove()"></a></td>
 <td><a href="{e(it["url"])}" target="_blank" rel="noopener"><b>{e(it["brand"])}</b>: {e(it["name"])}</a><div class="why">{e(it["colour"])} · size {e(it["size"])} · {lifts}. {e(it.get("why",""))}</div>{(f'<div class="wdeal"><a href="{e(it["deal"]["url"])}" target="_blank" rel="noopener">{e(it["deal"]["text"])}</a></div>') if it.get("deal") else ""}</td>
 <td class="wnow">{now}{low}<div class="why">Checked {e(l.get("date",""))}{(" · " + hist) if len(it.get("history", [])) > 1 else ""}</div></td>
