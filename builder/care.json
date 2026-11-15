@@ -271,6 +271,39 @@
    "dry": "Pat dry with the microfibre cloth.",
    "iron": "",
    "tips": "Never use your T-shirt, paper or tissues: they scratch the coating. Keep them in the case, never lens-down. Don't leave them in a hot car, because acetate warps with heat."
+  },
+  {
+   "cat": "Jackets",
+   "brand": "Percival × Ford",
+   "item": "Garage Harrington Jacket (navy, quilted)",
+   "fabric": "100% cotton canvas, quilted, with embroidered patches",
+   "url": "https://www.percivalclo.com/products/garage-harrington-jacket-percival-x-ford-navy",
+   "wash": "Don't wash: Percival says dry clean only.",
+   "dry": "Hang it to air out between wears.",
+   "iron": "No ironing; the quilting and patches can mark.",
+   "tips": "Spot-clean small marks with a damp cloth. Keep it on a wide hanger so the shoulders hold their shape."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "Percival",
+   "item": "Hinsley Boxy Long Sleeve Shirt (cream check)",
+   "fabric": "100% cotton",
+   "url": "https://www.percivalclo.com/products/hinsley-boxy-long-sleeve-shirt-cotton-cream-check",
+   "wash": "Machine, 30 °C, with light colours.",
+   "dry": "Hang to dry on a hanger; no dryer.",
+   "iron": "Medium heat, slightly damp.",
+   "tips": "A dryer would shrink the cropped length. Button it before washing so the placket keeps its shape."
+  },
+  {
+   "cat": "Tops & knits",
+   "brand": "Percival",
+   "item": "Conrad Funnel Neck 1/4 Zip Sweatshirt (navy)",
+   "fabric": "100% cotton, ribbed",
+   "url": "https://www.percivalclo.com/products/conrad-funnel-neck-1-4-zip-jumper-cotton-navy",
+   "wash": "Machine, 30 °C, inside out, with dark colours.",
+   "dry": "Dry flat; no dryer.",
+   "iron": "Not needed; if so, low heat inside out, away from the embroidery.",
+   "tips": "Close the zip before washing so it doesn't snag the rib. Drying flat keeps the cropped length."
   }
  ]
 }

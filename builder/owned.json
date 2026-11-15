@@ -713,5 +713,29 @@
   "url": "https://nude-project.com/products/compo-back-shirt-roustic-cotton",
   "image_url": "https://cdn.shopify.com/s/files/1/0025/3725/9054/files/1front_e296bf65-5272-4c0f-b0e8-651b4da6c074.webp?v=1788786556",
   "match": "exact"
+ },
+ "own_ford_garage": {
+  "brand": "Percival × Ford",
+  "name": "Garage Harrington Jacket",
+  "colour": "Navy quilted cotton canvas, white grid stitching, Ford and red Percival Division patches, size M",
+  "url": "https://www.percivalclo.com/products/garage-harrington-jacket-percival-x-ford-navy",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR_eacb5654-f1f6-48bc-9cc0-a14318979a88.jpg",
+  "match": "exact"
+ },
+ "own_hinsley_cream": {
+  "brand": "Percival",
+  "name": "Hinsley Boxy Long Sleeve Shirt",
+  "colour": "Cream check (soft grey-cream), western-style chest pocket, size M",
+  "url": "https://www.percivalclo.com/products/hinsley-boxy-long-sleeve-shirt-cotton-cream-check",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/PERCIVAL_MENSWEAR1_c76ed8b0-c941-4de5-aa64-697d7324ee88.jpg",
+  "match": "exact"
+ },
+ "own_conrad_navy": {
+  "brand": "Percival",
+  "name": "Conrad Funnel Neck 1/4 Zip Sweatshirt",
+  "colour": "Navy ribbed cotton, small tan Percival script on the chest, size M",
+  "url": "https://www.percivalclo.com/products/conrad-funnel-neck-1-4-zip-jumper-cotton-navy",
+  "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/Conrad_Zip_Up_Navy.jpg",
+  "match": "exact"
  }
 }

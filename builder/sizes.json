@@ -92,8 +92,8 @@
   "brand": "Percival",
   "item": "Garage Harrington (Ford × Percival)",
   "size": "M",
-  "status": "Predicted",
-  "notes": "Percival says regular fit, true to size: M is 58 cm armpit to armpit and 68 cm long. L (60.5) only for knits underneath. Their Marcel cord jacket is the exception that runs small."
+  "status": "Arriving",
+  "notes": "Bought in M on 15 Nov (Black Friday, €270). Percival says regular fit, true to size: 58 cm armpit to armpit, 68 cm long. Tell me how it fits."
  },
  {
   "cat": "Jackets",
@@ -302,5 +302,21 @@
   "size": "M",
   "status": "To check",
   "notes": "Arrived 15 Oct. All Blues M fits a 16–17.5 cm wrist, L fits 17.5–19 cm. If it sits tight, or your wrist is 17.5 cm or more, exchange to L."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Percival",
+  "item": "Hinsley Boxy Long Sleeve Shirt (cream check)",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "Bought 15 Nov (Black Friday, €120). Boxy, slightly cropped: same block as the Hinsley short shirts (about 59.5 × 65 cm in M)."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Percival",
+  "item": "Conrad Funnel Neck 1/4 Zip Sweatshirt (navy)",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "Bought 15 Nov (Black Friday, €92). Percival: regular fit, slightly cropped, ribbed cotton."
  }
 ]
