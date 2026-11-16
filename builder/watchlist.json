@@ -64,7 +64,7 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -412,7 +412,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -1011,6 +1011,210 @@
      "price": 75
     }
    ]
+  },
+  {
+   "id": "gala-md-db-blazer",
+   "tier": "gala",
+   "brand": "Massimo Dutti",
+   "name": "Double-breasted wool blend suit blazer",
+   "colour": "Dark anthracite ('Grey')",
+   "size": "48",
+   "url": "https://www.massimodutti.com/pt/en/doublebreasted-wool-blend-suit-blazer-l03544544?pelement=70043134",
+   "image_url": "https://static.massimodutti.net/assets/public/57ba/2bab/010d49508341/12ffd45cf277/03544544802-t/03544544802-t.jpg",
+   "full": 199,
+   "target": 159,
+   "great": 120,
+   "outfits": [],
+   "when": "Stock is low in every size, so buy now: purchases from 15–30 Nov can be returned until 30 Dec. If Black Friday cuts it (~40% last year, app first ~27 Nov) and 48 is still there, rebuy at the sale price and return the first one.",
+   "why": "The gala suit jacket: soft, unstructured double-breasted in dark textured anthracite.",
+   "check": {
+    "type": "browser",
+    "how": "price",
+    "note": "Massimo Dutti blocks curl: in the browser, read productsArray for id 70043134 (store 34009460, catalog 30359498) and the stock API for size 48"
+   },
+   "last": {
+    "date": "2026-11-16",
+    "price": 199,
+    "member": null,
+    "stock": "low"
+   },
+   "history": [
+    {
+     "date": "2026-11-16",
+     "price": 199
+    }
+   ],
+   "role": "gala_jacket"
+  },
+  {
+   "id": "gala-md-flannel-trousers",
+   "tier": "gala",
+   "brand": "Massimo Dutti",
+   "name": "Flannel suit pants with darts",
+   "colour": "Charcoal",
+   "size": "40",
+   "url": "https://www.massimodutti.com/pt/en/flannel-suit-pants-with-darts-l03677576?pelement=67504299",
+   "image_url": "https://static.massimodutti.net/assets/public/a280/9478/51644149b1ba/a62dbf239af5/03677576801-o1/03677576801-o1.jpg",
+   "full": 89.95,
+   "target": 71.95,
+   "great": 54,
+   "outfits": [],
+   "when": "Same plan as the jacket: buy with it now, rebuy if Black Friday drops it.",
+   "why": "The gala suit trousers (pair with the jacket; compare the two cloths in daylight).",
+   "check": {
+    "type": "browser",
+    "how": "price",
+    "note": "Massimo Dutti: productsArray id 67504299, colour CHARCOAL (801), size 40"
+   },
+   "last": {
+    "date": "2026-11-16",
+    "price": 89.95,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-16",
+     "price": 89.95
+    }
+   ],
+   "role": "gala_trousers"
+  },
+  {
+   "id": "gala-cos-pima-shirt",
+   "tier": "gala",
+   "brand": "COS",
+   "name": "Relaxed Pima cotton-poplin shirt",
+   "colour": "White",
+   "size": "M",
+   "url": "https://www.cos.com/en-eu/men/menswear/shirts/cottonshirts/product/relaxed-pima-cotton-poplin-shirt-white-1289730034",
+   "image_url": "https://media.cos.com/assets/001/ff/ac/ffacf7e932d350bf7204a40ccb7d0e5f5a5b1167_xxl-1.jpg",
+   "full": 59,
+   "target": 45,
+   "great": 40,
+   "outfits": [],
+   "when": "Black Friday (~25% at COS, members first). Buy by ~1 Dec either way.",
+   "why": "100% Pima cotton poplin, relaxed body, classic collar: the gala shirt.",
+   "check": {
+    "type": "browser",
+    "how": "price",
+    "note": "COS blocks curl: open the page, select M, check 'Add to bag' is enabled"
+   },
+   "last": {
+    "date": "2026-11-16",
+    "price": 59,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-16",
+     "price": 59
+    }
+   ],
+   "role": "gala_shirt"
+  },
+  {
+   "id": "gala-viola-black-grenadine",
+   "tier": "gala",
+   "brand": "Viola Milano",
+   "name": "Grenadine garza grossa unlined tie",
+   "colour": "Black, 8 cm",
+   "size": "one size",
+   "url": "https://www.violamilano.com/product/grenadine-garza-grossa-unlined-tie-black-2/",
+   "image_url": "https://www.violamilano.com/wp-content/uploads/2023/02/GRENADINE-GARZA-GROSSA-UNLINED-TIE-%E2%80%93-BLACK-1.jpg",
+   "full": 138,
+   "target": 80,
+   "great": 70,
+   "outfits": [],
+   "when": "Already 42% off (€80 from €138). Free EU shipping over €200 if you add a second tie.",
+   "why": "Look A+ tie (still deciding the tie).",
+   "check": {
+    "type": "browser",
+    "how": "price",
+    "note": "WooCommerce page: read the sale price and 'In stock'"
+   },
+   "last": {
+    "date": "2026-11-16",
+    "price": 80,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-16",
+     "price": 80
+    }
+   ],
+   "role": "gala_tie"
+  },
+  {
+   "id": "gala-morjas-croc-belt",
+   "tier": "gala",
+   "brand": "Morjas",
+   "name": "The Belt, black embossed (croc)",
+   "colour": "Black, rounded silver buckle",
+   "size": "90",
+   "url": "https://www.morjas.com/eu/product/the-belt-black-embossed/",
+   "image_url": "https://morjas.centracdn.net/client/dynamic/images/666_383126512f-morjas-the-belt-black-embossed-1.jpg",
+   "full": 140,
+   "target": 112,
+   "great": 105,
+   "outfits": [],
+   "when": "Black Friday / Black Week promos likely; order by ~1 Dec either way (3–6 days by DHL).",
+   "why": "Look A+ belt: croc texture, rounded silver buckle, handmade in Spain.",
+   "check": {
+    "type": "browser",
+    "how": "price",
+    "note": "Centra page: read the price and the 'items' stock for 90cm"
+   },
+   "last": {
+    "date": "2026-11-16",
+    "price": 140,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-16",
+     "price": 140
+    }
+   ],
+   "role": "gala_belt"
+  },
+  {
+   "id": "gala-bass-larson-black",
+   "tier": "gala",
+   "brand": "G.H. Bass",
+   "name": "Weejuns Larson penny loafers",
+   "colour": "Black leather",
+   "size": "43",
+   "url": "https://www.ghbass-eu.com/en-eu/products/weejuns-larson-penny-loafers-black-leather",
+   "image_url": "https://www.ghbass-eu.com/cdn/shop/files/BA11010H-000-SIDE.jpg",
+   "full": 230,
+   "target": 195,
+   "great": 172,
+   "outfits": [],
+   "when": "Showed €195 earlier on 16 Nov, €230 later: wait for that €195 again (Black Friday likely), but buy by ~5 Dec to break them in.",
+   "why": "His loafers: the classic jeans-and-loafers penny, for the gala and everyday.",
+   "check": {
+    "type": "shopify",
+    "js_url": "https://www.ghbass-eu.com/en-eu/products/weejuns-larson-penny-loafers-black-leather.js",
+    "variant": "9 | 43"
+   },
+   "last": {
+    "date": "2026-11-16",
+    "price": 230,
+    "member": null,
+    "stock": "in"
+   },
+   "history": [
+    {
+     "date": "2026-11-16",
+     "price": 230
+    }
+   ],
+   "role": "gala_shoes"
   }
  ],
  "brands": [
@@ -1061,6 +1265,24 @@
    "signup": "Newsletters",
    "perks": "Les Deux 15% and Olaf Hussein 10% off a first order",
    "sales": "Both have sales running now: Les Deux 30–50%, Olaf Hussein 50%"
+  },
+  {
+   "brand": "Morjas",
+   "signup": "Newsletter",
+   "perks": "Free EU shipping over €150, duties included; free exchanges",
+   "sales": "Watch Black Week (late Nov)"
+  },
+  {
+   "brand": "G.H. Bass (EU store)",
+   "signup": "Newsletter",
+   "perks": "Shopify store; price seen at €195 and €230 on 16 Nov",
+   "sales": "Black Friday promos likely"
+  },
+  {
+   "brand": "Viola Milano",
+   "signup": "Newsletter",
+   "perks": "Free EU shipping over €200",
+   "sales": "Permanent sale section; extra Black Friday codes possible"
   }
  ],
  "calendar": [
