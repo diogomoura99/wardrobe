@@ -28,7 +28,7 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 449.0,
     "member": null,
     "stock": "in"
@@ -101,7 +101,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 229.0,
     "member": null,
     "stock": "in"
@@ -180,8 +180,8 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
-    "price": 250.0,
+    "date": "2026-11-16",
+    "price": 165.0,
     "member": null,
     "stock": "in"
    },
@@ -189,6 +189,10 @@
     {
      "date": "2026-10-12",
      "price": 250
+    },
+    {
+     "date": "2026-11-16",
+     "price": 165.0
     }
    ],
    "role": "knit_halfzip"
@@ -218,7 +222,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -306,7 +310,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-11",
+    "date": "2026-11-16",
     "price": 165.0,
     "member": null,
     "stock": "in"
@@ -341,7 +345,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 269.0,
     "member": null,
     "stock": "in"
@@ -376,11 +380,10 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-16",
     "price": 299.0,
     "member": null,
-    "stock": "low",
-    "note": "50 back in stock, only a few left (48/52/54 sold out)"
+    "stock": "in"
    },
    "history": [
     {
@@ -482,11 +485,10 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 300.0,
     "member": null,
-    "stock": "in",
-    "note": "Back in stock in all sizes"
+    "stock": "in"
    },
    "history": [
     {
@@ -520,7 +522,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -673,7 +675,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -710,7 +712,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 295.0,
     "member": null,
     "stock": "in"
@@ -747,7 +749,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -784,7 +786,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -822,7 +824,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -859,8 +861,8 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
-    "price": 170.0,
+    "date": "2026-11-16",
+    "price": 120.0,
     "member": null,
     "stock": "in"
    },
@@ -868,6 +870,10 @@
     {
      "date": "2026-11-03",
      "price": 170
+    },
+    {
+     "date": "2026-11-16",
+     "price": 120.0
     }
    ],
    "role": "shirt_guinness"
@@ -896,7 +902,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-16",
     "price": 140.0,
     "member": null,
     "stock": "in"
@@ -1034,7 +1040,7 @@
    },
    "last": {
     "date": "2026-11-16",
-    "price": 199,
+    "price": 199.0,
     "member": null,
     "stock": "low"
    },
@@ -1102,7 +1108,7 @@
    },
    "last": {
     "date": "2026-11-16",
-    "price": 59,
+    "price": 59.0,
     "member": null,
     "stock": "in"
    },
@@ -1204,7 +1210,7 @@
    },
    "last": {
     "date": "2026-11-16",
-    "price": 230,
+    "price": 230.0,
     "member": null,
     "stock": "in"
    },
