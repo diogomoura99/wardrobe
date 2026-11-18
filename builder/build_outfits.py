@@ -7,6 +7,7 @@ e = html.escape
 
 CATS = ["Outerwear", "Knitwear & tops", "Trousers", "Shoes", "Accessories"]
 ROLE_INFO = {
+    "tie_gala": ("Accessories", "Gala tie"),
     "vest_puffer": ("Outerwear", "Puffer vest"),
     "jacket_varsity": ("Outerwear", "Varsity jacket"),
     "cap_ald_yankees": ("Accessories", "Navy Yankees cap (ALD × New Era)"),
@@ -151,6 +152,20 @@ OWNED = {
     "own_cuban_bracelet": ("Accessories", "Your All Blues Cuban bracelet"),
     "own_ld_belt": ("Accessories", "Your Les Deux braided brown belt"),
     "own_ld_scarf": ("Accessories", "Your Les Deux navy check scarf"),
+    # bought for the 19 Dec 2026 gala (Suits & gala section)
+    "own_md_db_blazer": ("Outerwear", "Your Massimo Dutti double-breasted blazer"),
+    "own_md_flannel": ("Trousers", "Your Massimo Dutti charcoal flannel trousers"),
+    "own_cos_pima_white": ("Knitwear & tops", "Your COS white Pima poplin shirt"),
+    "own_bass_larson_black": ("Shoes", "Your black Bass Weejuns"),
+    "own_morjas_croc_belt": ("Accessories", "Your Morjas black croc belt"),
+    "own_morjas_socks_dgrey": ("Accessories", "Your Morjas dark grey knee-high socks"),
+    # navy wedding suit from Alfaiataria Lusitana (Porto); shoes bought elsewhere
+    "own_navy_suit_jacket": ("Outerwear", "Your navy Alfaiataria Lusitana suit jacket"),
+    "own_navy_suit_trousers": ("Trousers", "Your navy Alfaiataria Lusitana suit trousers"),
+    "own_lusitana_white_shirt": ("Knitwear & tops", "Your white Alfaiataria Lusitana dress shirt"),
+    "own_panda_tie": ("Accessories", "Your navy panda-print silk tie"),
+    "own_paisley_square": ("Accessories", "Your blue paisley pocket square"),
+    "own_black_double_monk": ("Shoes", "Your black double monk-strap shoes"),
 }
 
 OUTFITS = [
@@ -538,6 +553,34 @@ OUTFITS = [
   ("Special Autumn", "Pink check under the Ford jacket", "A second way to wear #115: the pink Hinsley under the Ford jacket",
    "The pink Hinsley over your white tank, top buttons open, under the navy quilted Ford × Percival jacket, with the dark-rinse jeans. The check's blue lines tie the pink to the navy, and the off-white Spezials' burgundy stripes and the jacket's red patch pick up the pink. Only the shirt is an extra buy: the jacket and jeans are already on your list.",
    ["own_ford_garage", "shirt_hinsley_pink", "own_af_tank_white", "jeans_af_darkrinse", "own_spezial_cream", "own_ix_figaro"]),
+  # ---- Suits & gala: the Massimo Dutti suit and the pieces bought for the 19 Dec 2026 gala ----
+  ("Suits & gala", "The gala", "19 Dec gala: your Massimo Dutti suit, the 'quiet luxury, croc' mix",
+   "The full anthracite double-breasted suit, buttoned, over the crisp white Pima shirt and a black grenadine tie, with the black Weejuns and dark grey knee-high socks. The croc belt only shows when the jacket opens, so the tie stays the one statement. Black on charcoal is the classic evening pairing. Rolex for the dinner. The tie is the last piece to choose: the swaps are your other options.",
+   ["own_md_db_blazer", "own_md_flannel", "own_cos_pima_white", "tie_gala", "own_morjas_croc_belt", "own_morjas_socks_dgrey", "own_bass_larson_black", "own_watch"]),
+  ("Suits & gala", "Suit, open collar", "Weddings and dinners, or the gala once the tie comes off",
+   "The same suit without the tie: the white shirt open at the collar with your IX figaro showing, the croc belt and the Weejuns. Relaxed, Armani-style tailoring, like the open-collar reference that started the gala search.",
+   ["own_md_db_blazer", "own_md_flannel", "own_cos_pima_white", "own_morjas_croc_belt", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
+  ("Suits & gala", "Suit & black tee", "Your mirror photo: the suit over a black tee",
+   "The suit over your black heavyweight tee, the way you tried it on: relaxed tailoring for a night out. The black Weejuns keep it sharp and the figaro chain sits at the collar.",
+   ["own_md_db_blazer", "own_md_flannel", "own_af_tee_black", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
+  ("Suits & gala", "Blazer & jeans", "The double-breasted blazer on its own, with jeans and loafers",
+   "The blazer open over the white Pima shirt, collar open, with your mid-blue baggy jeans, the croc belt and the black Weejuns: the classic jacket-and-jeans dinner, and the jeans-and-loafers look you wanted.",
+   ["own_md_db_blazer", "own_cos_pima_white", "own_midwash", "own_morjas_croc_belt", "own_bass_larson_black", "own_watch"]),
+  ("Suits & gala", "Blazer & cream knit", "Soft knit under sharp tailoring",
+   "The blazer worn open over your cream ladder-stitch jumper, with light-wash jeans and the Weejuns. Cream, light denim and anthracite, with the black shoes as the anchor: classy but relaxed, for lunches and weekends.",
+   ["own_md_db_blazer", "own_cos_cream", "own_lightwash", "own_bass_larson_black", "own_watch"]),
+  ("Suits & gala", "Flannel & grey knit", "The suit trousers on their own: tonal greys",
+   "The charcoal flannel trousers with your grey YMC knit over the white tee (let the hem show), the croc belt and the black Weejuns. Tonal greys with a line of crisp white: easy elegance for winter dinners.",
+   ["own_ymc_grey", "own_af_white_tee", "own_md_flannel", "own_morjas_croc_belt", "own_bass_larson_black", "own_watch"]),
+  ("Suits & gala", "Black leather & flannel", "Your black nappa blouson over the suit trousers",
+   "The black nappa blouson over the black tee with the charcoal flannel trousers and the Weejuns: your all-dark leather look, dressed up with tailored wool. Silver figaro at the collar.",
+   ["own_md_leather", "own_af_tee_black", "own_md_flannel", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
+  ("Suits & gala", "Navy suit, wedding", "The look you wore to a wedding: your navy Alfaiataria Lusitana suit",
+   "The navy two-button suit with the white dress shirt, the navy panda tie and the paisley pocket square, finished with the black double monks. A classic wedding look with a playful tie; navy and black work together when the shoes are polished. Rolex for the dinner.",
+   ["own_navy_suit_jacket", "own_navy_suit_trousers", "own_lusitana_white_shirt", "own_panda_tie", "own_paisley_square", "own_black_double_monk", "own_watch"]),
+  ("Suits & gala", "Navy suit, open collar", "The navy suit, relaxed: no tie, loafers",
+   "The navy suit with the COS white Pima shirt open at the collar, your IX figaro showing and the black Weejuns: for summer weddings, dinners and the end of the night. The softer shirt and loafers make the sharp suit feel relaxed.",
+   ["own_navy_suit_jacket", "own_navy_suit_trousers", "own_cos_pima_white", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -591,6 +634,7 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
+  "The gala": [("own_bass_larson_black", "Dressier shoe", ["own_black_double_monk"])],
   "Grey harrington, all black": [("own_af_black_pleated", "More casual", ["own_af_black_jeans"])],
   "Blue check & chocolate": [("shirt_hinsley_blue", "Add on top when it's cold", ["own_cos_waxed"])],
   "Brown micro-check & mid-blue": [("shirt_hinsley_brown", "Add on top when it's cold", ["own_brown_jacket_af", "own_cos_waxed"])],
@@ -654,6 +698,10 @@ NECK_WEAR = {
   "Brown micro-check & mid-blue": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "The pint": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Pink check under the Ford jacket": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar and the open jacket."),
+  "Suit, open collar": ("On skin, in the open collar", "framed by the open collar of the white shirt, under the jacket."),
+  "Suit & black tee": ("Outside the tee, inside the jacket", "on the black tee at the collar, at your usual 45 cm."),
+  "Black leather & flannel": ("Outside the tee, inside the jacket", "on the black tee at the collar, at your usual 45 cm."),
+  "Navy suit, open collar": ("On skin, in the open collar", "framed by the open collar of the white shirt, under the jacket."),
   "Navy & indigo, Ford jacket": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open jacket."),
   "Pinstripe shirt & black jeans": ("On skin, in the open collar", "over the tank, framed by the open collar of the pinstripe shirt."),
   "Pinstripe shirt & brown": ("On skin, in the open collar", "over the tank, framed by the open collar of the pinstripe shirt."),
@@ -752,6 +800,15 @@ VIBE = {
   "Pink check & dark rinse": ("Street", "Weekend"),
   "Forest popover & cream": ("In between", "Weekend / lunch"),
   "Pink check under the Ford jacket": ("Street", "Weekend"),
+  "The gala": ("Classy", "Gala / wedding"),
+  "Suit, open collar": ("Classy", "Dinner / wedding"),
+  "Suit & black tee": ("Classy", "Dinner / night out"),
+  "Blazer & jeans": ("Classy", "Dinner / night out"),
+  "Blazer & cream knit": ("In between", "Weekend / lunch"),
+  "Flannel & grey knit": ("Classy", "Dinner / office"),
+  "Black leather & flannel": ("Classy", "Dinner / night out"),
+  "Navy suit, wedding": ("Classy", "Wedding / gala"),
+  "Navy suit, open collar": ("Classy", "Wedding / dinner"),
   "Navy & indigo, Ford jacket": ("Street", "Everyday / city"),
   "Pinstripe shirt & black jeans": ("Street", "Everyday / city"),
   "Pinstripe shirt & brown": ("In between", "Weekend / lunch"),
@@ -876,6 +933,7 @@ VIBE = {
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
 
 SEASON_INFO = {
+  "Suits & gala": ("Your suits", "Together for the gala and weddings, apart for dinners and weekends", "The Massimo Dutti anthracite double-breasted (blazer 48, trousers 40) with the pieces bought for the 19 Dec gala, and your navy Alfaiataria Lusitana wedding suit with the black double monks."),
   "Special occasions": ("For a special day", "One standout piece, the rest from your wardrobe", "The outfits above are your fundamentals. These go a step further: each is built around one piece from a modern, young brand that sets you apart, while staying classy."),
   "Spring": ("March – May", "Mornings 7–10 °C, afternoons 16–22 °C", "Showers are common (about 110–120 mm a month), so bring a light jacket you can take off."),
   "Summer": ("June – September", "Mornings 13–16 °C, afternoons 24–28 °C, heatwaves 32–35 °C+", "Dry July and August. Evenings cool down, so a light layer helps. September is still warm."),
@@ -1063,9 +1121,10 @@ def build():
         OUTFITS = [(a, b, c, d, [k for k in pcs if k not in ("own_cap_navy", "cap_ald_yankees")]) for a, b, c, d, pcs in OUTFITS]
     prod = load_products()
     usage = Counter(k for *_, pieces in OUTFITS for k in pieces if k in ROLE_INFO and prod.get(k, {}).get("primary"))
-    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions"]
+    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions", "Suits & gala"]
     sid = {s: s.lower().replace(" ", "-") for s in seasons}
     sid["Special occasions"] = "special"
+    sid["Suits & gala"] = "suits"
     order = ["Spring", "Summer", "Autumn", "Winter"]
     special = sorted([o for o in OUTFITS if o[0].startswith("Special ")], key=lambda o: order.index(o[0].split(" ", 1)[1]))
     sec = []
@@ -1090,7 +1149,7 @@ def build():
 <p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><button class="fav" type="button" aria-pressed="false" aria-label="Save to favourites">☆ Favourite</button><button class="cmp" type="button" aria-pressed="false" aria-label="Add to compare">＋ Compare</button><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
 <p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
-        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s == "Special occasions" else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
+        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s in ("Special occasions", "Suits & gala") else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
         sec.append(f'<section id="{sid[s]}"><h2>{e(s)}</h2>{info}{"".join(cards)}</section>')
 
     # sunglasses lookbook
@@ -1477,7 +1536,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#suits">Suits &amp; gala</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Taps are only kept in this browser, and browsers can clear them (Safari does after about a week without a visit). To keep them for good, on every device, tap <b>Copy the list to send me</b> and paste it to me: I'll save them into the page.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>

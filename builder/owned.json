@@ -743,7 +743,7 @@
   "name": "Weejuns Larson penny loafers",
   "colour": "Black polished leather, hand-sewn moccasin, size EU 42 (UK 8)",
   "url": "https://www.ghbass-eu.com/en-eu/products/weejuns-larson-penny-loafers-black-leather",
-  "image_url": "https://www.ghbass-eu.com/cdn/shop/files/BA11010H-000-SIDE.jpg",
+  "image_url": "img/bass-weejuns-larson-black.jpg",
   "match": "exact"
  },
  "own_cos_pima_white": {
@@ -751,7 +751,55 @@
   "name": "Relaxed Pima cotton-poplin shirt",
   "colour": "White, classic point collar, size M",
   "url": "https://www.cos.com/en-eu/men/menswear/shirts/cottonshirts/product/relaxed-pima-cotton-poplin-shirt-white-1289730034",
-  "image_url": "https://media.cos.com/assets/001/ff/ac/ffacf7e932d350bf7204a40ccb7d0e5f5a5b1167_xxl-1.jpg",
+  "image_url": "img/cos-pima-shirt-white.jpg",
+  "match": "exact"
+ },
+ "own_md_db_blazer": {
+  "brand": "Massimo Dutti",
+  "name": "Double-breasted wool-blend suit blazer",
+  "colour": "Dark anthracite (Massimo Dutti calls it grey), soft notch lapels, patch pockets, size 48",
+  "url": "https://www.massimodutti.com/pt/en/doublebreasted-wool-blend-suit-blazer-l03544544?pelement=70043134",
+  "image_url": "img/md-db-blazer-anthracite.jpg",
+  "match": "exact"
+ },
+ "own_md_flannel": {
+  "brand": "Massimo Dutti",
+  "name": "Flannel suit pants with darts",
+  "colour": "Charcoal wool flannel, size 40 (to be hemmed with the Weejuns)",
+  "url": "https://www.massimodutti.com/pt/en/flannel-suit-pants-with-darts-l03677576?pelement=67504299",
+  "image_url": "img/md-flannel-trousers-charcoal.jpg",
+  "match": "exact"
+ },
+ "own_morjas_croc_belt": {
+  "brand": "Morjas",
+  "name": "The Belt, croc-embossed",
+  "colour": "Black, rounded silver buckle, 30 mm, size 90",
+  "url": "https://www.morjas.com/eu/product/the-belt-black-embossed/",
+  "image_url": "img/morjas-croc-belt-black.jpg",
+  "match": "exact"
+ },
+ "own_morjas_socks_dgrey": {
+  "brand": "Morjas",
+  "name": "The Sock, knee-high",
+  "colour": "Dark grey ribbed mercerized cotton, EU 42–44",
+  "url": "https://www.morjas.com/eu/product/the-sock-dark-grey-ribbed-ribbed-knee-high/",
+  "image_url": "img/morjas-sock-dark-grey.jpg",
+  "match": "exact"
+ },
+ "own_black_double_monk": {
+  "brand": "",
+  "name": "Double monk-strap shoes",
+  "colour": "Black calf, cap toe, two silver buckles, Goodyear-welted leather sole",
+  "url": "img/black-double-monk.jpg",
+  "image_url": "img/black-double-monk.jpg",
+  "match": "exact"
+ },
+ "own_panda_tie": {
+  "brand": "Alfaiataria Lusitana",
+  "name": "Silk tie",
+  "colour": "Navy with a light grey panda print",
+  "url": "img/navy-panda-tie.jpg",
+  "image_url": "img/navy-panda-tie.jpg",
   "match": "exact"
  }
 }

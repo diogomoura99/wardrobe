@@ -1119,40 +1119,6 @@
     }
    ],
    "role": "gala_tie"
-  },
-  {
-   "id": "gala-morjas-croc-belt",
-   "tier": "gala",
-   "brand": "Morjas",
-   "name": "The Belt, black embossed (croc)",
-   "colour": "Black, rounded silver buckle",
-   "size": "90",
-   "url": "https://www.morjas.com/eu/product/the-belt-black-embossed/",
-   "image_url": "https://morjas.centracdn.net/client/dynamic/images/666_383126512f-morjas-the-belt-black-embossed-1.jpg",
-   "full": 140,
-   "target": 112,
-   "great": 105,
-   "outfits": [],
-   "when": "Black Friday / Black Week promos likely; order by ~1 Dec either way (3–6 days by DHL).",
-   "why": "Look A+ belt: croc texture, rounded silver buckle, handmade in Spain.",
-   "check": {
-    "type": "browser",
-    "how": "price",
-    "note": "Centra page: read the price and the 'items' stock for 90cm"
-   },
-   "last": {
-    "date": "2026-11-16",
-    "price": 140,
-    "member": null,
-    "stock": "in"
-   },
-   "history": [
-    {
-     "date": "2026-11-16",
-     "price": 140
-    }
-   ],
-   "role": "gala_belt"
   }
  ],
  "brands": [
