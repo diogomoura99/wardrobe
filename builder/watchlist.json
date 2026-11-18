@@ -1188,41 +1188,6 @@
     }
    ],
    "role": "gala_belt"
-  },
-  {
-   "id": "gala-bass-larson-black",
-   "tier": "gala",
-   "brand": "G.H. Bass",
-   "name": "Weejuns Larson penny loafers",
-   "colour": "Black leather",
-   "size": "42",
-   "url": "https://www.ghbass-eu.com/en-eu/products/weejuns-larson-penny-loafers-black-leather",
-   "image_url": "https://www.ghbass-eu.com/cdn/shop/files/BA11010H-000-SIDE.jpg",
-   "full": 230,
-   "target": 195,
-   "great": 172,
-   "outfits": [],
-   "when": "Buy by Black Friday at the latest: Weejuns need about two weeks of break-in, and the tailor needs them to hem the trousers (~1 Dec). Showed €195 briefly on 16 Nov; €230 since. Size 42 (UK 8): Bass says one full UK size below your usual for the Larson; (all his shoes are US 10; Bass: Larson one full size down = US 9 = EU 42). Orders from 20 Nov get returns until 31 Jan.",
-   "why": "His loafers: the classic jeans-and-loafers penny, for the gala and everyday.",
-   "check": {
-    "type": "shopify",
-    "js_url": "https://www.ghbass-eu.com/en-eu/products/weejuns-larson-penny-loafers-black-leather.js",
-    "variant": "8 | 42"
-   },
-   "last": {
-    "date": "2026-11-18",
-    "price": 230.0,
-    "member": null,
-    "stock": "in",
-    "note": "18 Nov: 42, 42.5 and 43 in stock"
-   },
-   "history": [
-    {
-     "date": "2026-11-16",
-     "price": 230
-    }
-   ],
-   "role": "gala_shoes"
   }
  ],
  "brands": [

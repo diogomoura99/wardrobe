@@ -737,5 +737,13 @@
   "url": "https://www.percivalclo.com/products/conrad-funnel-neck-1-4-zip-jumper-cotton-navy",
   "image_url": "https://cdn.shopify.com/s/files/1/1479/8488/files/Conrad_Zip_Up_Navy.jpg",
   "match": "exact"
+ },
+ "own_bass_larson_black": {
+  "brand": "G.H. Bass",
+  "name": "Weejuns Larson penny loafers",
+  "colour": "Black polished leather, hand-sewn moccasin, size EU 42 (UK 8)",
+  "url": "https://www.ghbass-eu.com/en-eu/products/weejuns-larson-penny-loafers-black-leather",
+  "image_url": "https://www.ghbass-eu.com/cdn/shop/files/BA11010H-000-SIDE.jpg",
+  "match": "exact"
  }
 }
