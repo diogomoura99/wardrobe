@@ -264,6 +264,14 @@
   "notes": "Not bought yet."
  },
  {
+  "cat": "Shoes",
+  "brand": "G.H. Bass",
+  "item": "Weejuns Larson penny loafers",
+  "size": "EU 42.5",
+  "status": "Predicted",
+  "notes": "Bass says the Larson fits generously, so buy half a size below your usual 43. Their fit guide by foot length (standing, heel to longest toe): 276–279 mm = 42, 280–283 mm = 42.5, 284–287 mm = 43. Loafers should feel snug: leather gives a little in width, never in length."
+ },
+ {
   "cat": "Accessories",
   "brand": "Rings",
   "item": "Index finger",
@@ -326,5 +334,13 @@
   "size": "M",
   "status": "Arriving",
   "notes": "Bought 15 Nov (Black Friday, €92). Percival: regular fit, slightly cropped, ribbed cotton."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "COS",
+  "item": "Relaxed Pima cotton-poplin shirt (white)",
+  "size": "M",
+  "status": "Predicted",
+  "notes": "The gala shirt. Relaxed fit, 77 cm back length in M; COS's chart puts a 96–100 cm chest in M. COS's size tool suggests L, but the relaxed cut is already roomy and an L would bunch under the suit jacket. Button the collar with the tie on: one finger should slide in, otherwise swap to L."
  }
 ]
