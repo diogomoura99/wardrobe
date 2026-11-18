@@ -1031,7 +1031,7 @@
    "target": 159,
    "great": 120,
    "outfits": [],
-   "when": "Stock is low in every size, so buy now: purchases from 15–30 Nov can be returned until 30 Dec. If Black Friday cuts it (~40% last year, app first ~27 Nov) and 48 is still there, rebuy at the sale price and return the first one.",
+   "when": "Bought 16 Nov; it fits perfectly (18 Nov). Don't alter it until Black Friday has passed, because altered pieces can't be returned. If Black Friday cuts it (~40% last year, app first ~27 Nov) and 48 is still there, rebuy at the sale price, return this one unworn with its tags (returns until 30 Dec), then take the new one to the tailor.",
    "why": "The gala suit jacket: soft, unstructured double-breasted in dark textured anthracite.",
    "check": {
     "type": "browser",
@@ -1065,7 +1065,7 @@
    "target": 71.95,
    "great": 54,
    "outfits": [],
-   "when": "Same plan as the jacket: buy with it now, rebuy if Black Friday drops it.",
+   "when": "Bought with the jacket; fits, only needs hemming. Same plan: hem only after Black Friday, and if the price drops and 40 is in stock, rebuy and return this pair first.",
    "why": "The gala suit trousers (pair with the jacket; compare the two cloths in daylight).",
    "check": {
     "type": "browser",

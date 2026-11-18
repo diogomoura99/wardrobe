@@ -42,10 +42,10 @@
  {
   "cat": "Trousers",
   "brand": "Massimo Dutti",
-  "item": "Trousers",
+  "item": "Flannel suit pants with darts (charcoal)",
   "size": "40",
-  "status": "Predicted",
-  "notes": "Their chart: 82–83 cm waist, 77–78 cm inseam, close to A&F 32x30."
+  "status": "Confirmed",
+  "notes": "Gala suit, arrived 18 Nov: perfect fit. 87 cm waist, 113 cm hip, 33 cm thigh, 32 cm front rise, 22 cm hem. Only the length needs work: the 78 cm inside leg is too long, so hem them about 2–3 cm with your loafers on. Your reference for Massimo Dutti and suit trousers: 40 (= A&F 32)."
  },
  {
   "cat": "Trousers",
@@ -214,6 +214,14 @@
   "size": "M",
   "status": "Confirmed",
   "notes": "Fits well (14 Oct). Your jacket reference: M is 126 cm chest, 53 cm shoulder, 63 cm sleeve."
+ },
+ {
+  "cat": "Jackets",
+  "brand": "Massimo Dutti",
+  "item": "Double-breasted wool-blend suit blazer (anthracite)",
+  "size": "48",
+  "status": "Confirmed",
+  "notes": "Gala suit, arrived 18 Nov: perfect fit. Your tailoring reference: 120 cm chest, 48 cm shoulder, 74 cm long, 64 cm sleeve. The sleeves are a tiny bit long, so shorten them about 0.5–1 cm (about 63 cm is your length). For any suit or blazer, compare the shoulder first: 48 cm fits you."
  },
  {
   "cat": "Jackets",
