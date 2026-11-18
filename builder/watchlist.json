@@ -1195,19 +1195,19 @@
    "brand": "G.H. Bass",
    "name": "Weejuns Larson penny loafers",
    "colour": "Black leather",
-   "size": "42.5",
+   "size": "42",
    "url": "https://www.ghbass-eu.com/en-eu/products/weejuns-larson-penny-loafers-black-leather",
    "image_url": "https://www.ghbass-eu.com/cdn/shop/files/BA11010H-000-SIDE.jpg",
    "full": 230,
    "target": 195,
    "great": 172,
    "outfits": [],
-   "when": "Buy by Black Friday at the latest: Weejuns need about two weeks of break-in, and the tailor needs them to hem the trousers (~1 Dec). Showed €195 briefly on 16 Nov; €230 since. Size 42.5 per Bass's Larson fit guide (43 if his foot measures 284 mm or more).",
+   "when": "Buy by Black Friday at the latest: Weejuns need about two weeks of break-in, and the tailor needs them to hem the trousers (~1 Dec). Showed €195 briefly on 16 Nov; €230 since. Size 42 (UK 8): Bass says one full UK size below your usual for the Larson; 42.5 if your foot measures 280–283 mm. Orders from 20 Nov get returns until 31 Jan.",
    "why": "His loafers: the classic jeans-and-loafers penny, for the gala and everyday.",
    "check": {
     "type": "shopify",
     "js_url": "https://www.ghbass-eu.com/en-eu/products/weejuns-larson-penny-loafers-black-leather.js",
-    "variant": "8.5 | 42.5"
+    "variant": "8 | 42"
    },
    "last": {
     "date": "2026-11-18",
