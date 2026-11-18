@@ -1087,41 +1087,6 @@
    "role": "gala_trousers"
   },
   {
-   "id": "gala-cos-pima-shirt",
-   "tier": "gala",
-   "brand": "COS",
-   "name": "Relaxed Pima cotton-poplin shirt",
-   "colour": "White",
-   "size": "M",
-   "url": "https://www.cos.com/en-eu/men/menswear/shirts/cottonshirts/product/relaxed-pima-cotton-poplin-shirt-white-1289730034",
-   "image_url": "https://media.cos.com/assets/001/ff/ac/ffacf7e932d350bf7204a40ccb7d0e5f5a5b1167_xxl-1.jpg",
-   "full": 59,
-   "target": 45,
-   "great": 40,
-   "outfits": [],
-   "when": "Black Friday (~25% at COS, members first). Buy by ~1 Dec either way.",
-   "why": "100% Pima cotton poplin, relaxed body, classic collar: the gala shirt.",
-   "check": {
-    "type": "browser",
-    "how": "price",
-    "note": "COS blocks curl: open the page, select M, check 'Add to bag' is enabled"
-   },
-   "last": {
-    "date": "2026-11-18",
-    "price": 59.0,
-    "member": null,
-    "stock": "in",
-    "note": "18 Nov: M in stock; online only"
-   },
-   "history": [
-    {
-     "date": "2026-11-16",
-     "price": 59
-    }
-   ],
-   "role": "gala_shirt"
-  },
-  {
    "id": "gala-viola-black-grenadine",
    "tier": "gala",
    "brand": "Viola Milano",
