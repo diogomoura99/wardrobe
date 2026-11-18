@@ -801,5 +801,29 @@
   "url": "img/navy-panda-tie.jpg",
   "image_url": "img/navy-panda-tie.jpg",
   "match": "exact"
+ },
+ "own_marinella_gold_flowers": {
+  "brand": "E. Marinella",
+  "name": "Silk tie (vintage, from Vinted)",
+  "colour": "Navy with small gold, pale-blue and white flowers",
+  "url": "https://www.vinted.pt/items/10867477555",
+  "image_url": "img/marinella-navy-gold-flowers.jpg",
+  "match": "exact"
+ },
+ "own_marinella_blue_squares": {
+  "brand": "E. Marinella",
+  "name": "Silk tie, 8 cm (from Vinted)",
+  "colour": "Navy with small turquoise squares and white dots",
+  "url": "https://www.vinted.pt/items/10864741901",
+  "image_url": "img/marinella-navy-blue-squares.jpg",
+  "match": "exact"
+ },
+ "own_viola_navy_medallion": {
+  "brand": "Viola Milano",
+  "name": "Mystix Floral self-tipped silk tie, 8 cm",
+  "colour": "Navy with small rust and blue medallions",
+  "url": "https://www.violamilano.com/product/mystix-floral-selftipped-italian-silk-tie-navy/",
+  "image_url": "img/viola-navy-medallion-tie.jpg",
+  "match": "exact"
  }
 }

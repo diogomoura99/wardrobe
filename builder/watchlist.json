@@ -1085,40 +1085,6 @@
     }
    ],
    "role": "gala_trousers"
-  },
-  {
-   "id": "gala-viola-black-grenadine",
-   "tier": "gala",
-   "brand": "Viola Milano",
-   "name": "Grenadine garza grossa unlined tie",
-   "colour": "Black, 8 cm",
-   "size": "one size",
-   "url": "https://www.violamilano.com/product/grenadine-garza-grossa-unlined-tie-black-2/",
-   "image_url": "https://www.violamilano.com/wp-content/uploads/2023/02/GRENADINE-GARZA-GROSSA-UNLINED-TIE-%E2%80%93-BLACK-1.jpg",
-   "full": 138,
-   "target": 80,
-   "great": 70,
-   "outfits": [],
-   "when": "Already 42% off (€80 from €138). Free EU shipping over €200 if you add a second tie.",
-   "why": "Look A+ tie (still deciding the tie).",
-   "check": {
-    "type": "browser",
-    "how": "price",
-    "note": "WooCommerce page: read the sale price and 'In stock'"
-   },
-   "last": {
-    "date": "2026-11-16",
-    "price": 80,
-    "member": null,
-    "stock": "in"
-   },
-   "history": [
-    {
-     "date": "2026-11-16",
-     "price": 80
-    }
-   ],
-   "role": "gala_tie"
   }
  ],
  "brands": [

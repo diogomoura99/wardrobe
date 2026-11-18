@@ -7,7 +7,6 @@ e = html.escape
 
 CATS = ["Outerwear", "Knitwear & tops", "Trousers", "Shoes", "Accessories"]
 ROLE_INFO = {
-    "tie_gala": ("Accessories", "Gala tie"),
     "vest_puffer": ("Outerwear", "Puffer vest"),
     "jacket_varsity": ("Outerwear", "Varsity jacket"),
     "cap_ald_yankees": ("Accessories", "Navy Yankees cap (ALD × New Era)"),
@@ -165,6 +164,9 @@ OWNED = {
     "own_lusitana_white_shirt": ("Knitwear & tops", "Your white Alfaiataria Lusitana dress shirt"),
     "own_panda_tie": ("Accessories", "Your navy panda-print silk tie"),
     "own_paisley_square": ("Accessories", "Your blue paisley pocket square"),
+    "own_marinella_gold_flowers": ("Accessories", "Your E. Marinella navy tie with small gold flowers"),
+    "own_marinella_blue_squares": ("Accessories", "Your E. Marinella navy tie with blue squares"),
+    "own_viola_navy_medallion": ("Accessories", "Your Viola Milano navy foulard tie"),
     "own_black_double_monk": ("Shoes", "Your black double monk-strap shoes"),
 }
 
@@ -555,8 +557,8 @@ OUTFITS = [
    ["own_ford_garage", "shirt_hinsley_pink", "own_af_tank_white", "jeans_af_darkrinse", "own_spezial_cream", "own_ix_figaro"]),
   # ---- Suits & gala: the Massimo Dutti suit and the pieces bought for the 19 Dec 2026 gala ----
   ("Suits & gala", "The gala", "19 Dec gala: your Massimo Dutti suit, the 'quiet luxury, croc' mix",
-   "The full anthracite double-breasted suit, buttoned, over the crisp white Pima shirt and a black grenadine tie, with the black Weejuns and dark grey knee-high socks. The croc belt only shows when the jacket opens, so the tie stays the one statement. Black on charcoal is the classic evening pairing. Rolex for the dinner. The tie is the last piece to choose: the swaps are your other options.",
-   ["own_md_db_blazer", "own_md_flannel", "own_cos_pima_white", "tie_gala", "own_morjas_croc_belt", "own_morjas_socks_dgrey", "own_bass_larson_black", "own_watch"]),
+   "The full anthracite double-breasted suit, buttoned, over the crisp white Pima shirt and your E. Marinella navy tie with small gold flowers, with the black Weejuns and dark grey knee-high socks. A printed silk tie is the classic partner for flannel; the navy stays in the anthracite, white and silver palette, and the little gold flowers catch the light at night. The croc belt only shows when the jacket opens, so the tie stays the one statement. Rolex for the dinner.",
+   ["own_md_db_blazer", "own_md_flannel", "own_cos_pima_white", "own_marinella_gold_flowers", "own_morjas_croc_belt", "own_morjas_socks_dgrey", "own_bass_larson_black", "own_watch"]),
   ("Suits & gala", "Suit, open collar", "Weddings and dinners, or the gala once the tie comes off",
    "The same suit without the tie: the white shirt open at the collar with your IX figaro showing, the croc belt and the Weejuns. Relaxed, Armani-style tailoring, like the open-collar reference that started the gala search.",
    ["own_md_db_blazer", "own_md_flannel", "own_cos_pima_white", "own_morjas_croc_belt", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
@@ -581,6 +583,12 @@ OUTFITS = [
   ("Suits & gala", "Navy suit, open collar", "The navy suit, relaxed: no tie, loafers",
    "The navy suit with the COS white Pima shirt open at the collar, your IX figaro showing and the black Weejuns: for summer weddings, dinners and the end of the night. The softer shirt and loafers make the sharp suit feel relaxed.",
    ["own_navy_suit_jacket", "own_navy_suit_trousers", "own_cos_pima_white", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
+  ("Suits & gala", "Navy suit & blue squares", "The navy wedding suit with your new E. Marinella tie",
+   "The navy Alfaiataria Lusitana suit with its white dress shirt, your E. Marinella navy tie with small turquoise squares, and the black double monks. Navy on navy with a white shirt is calm and polished, and the bright little squares give it life up close. For weddings, christenings and dinners. Rolex for the dinner.",
+   ["own_navy_suit_jacket", "own_navy_suit_trousers", "own_lusitana_white_shirt", "own_marinella_blue_squares", "own_black_double_monk", "own_watch"]),
+  ("Suits & gala", "Suit & navy foulard", "The gala suit for daytime: lunches, christenings, the office",
+   "The anthracite double-breasted suit with the white Pima shirt and your Viola Milano navy foulard with small rust and blue medallions, the croc belt, dark grey socks and black Weejuns. The rust in the medallions warms the charcoal flannel and suits daylight better than the gala's gold flowers. Unbutton the jacket at the table.",
+   ["own_md_db_blazer", "own_md_flannel", "own_cos_pima_white", "own_viola_navy_medallion", "own_morjas_croc_belt", "own_morjas_socks_dgrey", "own_bass_larson_black", "own_watch"]),
 ]
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
@@ -634,7 +642,7 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
-  "The gala": [("own_bass_larson_black", "Dressier shoe", ["own_black_double_monk"])],
+  "The gala": [("own_bass_larson_black", "Dressier shoe", ["own_black_double_monk"]), ("own_marinella_gold_flowers", "Other tie", ["own_viola_navy_medallion", "own_marinella_blue_squares"])],
   "Grey harrington, all black": [("own_af_black_pleated", "More casual", ["own_af_black_jeans"])],
   "Blue check & chocolate": [("shirt_hinsley_blue", "Add on top when it's cold", ["own_cos_waxed"])],
   "Brown micro-check & mid-blue": [("shirt_hinsley_brown", "Add on top when it's cold", ["own_brown_jacket_af", "own_cos_waxed"])],
@@ -809,6 +817,8 @@ VIBE = {
   "Black leather & flannel": ("Classy", "Dinner / night out"),
   "Navy suit, wedding": ("Classy", "Wedding / gala"),
   "Navy suit, open collar": ("Classy", "Wedding / dinner"),
+  "Navy suit & blue squares": ("Classy", "Wedding / dinner"),
+  "Suit & navy foulard": ("Classy", "Lunch / office"),
   "Navy & indigo, Ford jacket": ("Street", "Everyday / city"),
   "Pinstripe shirt & black jeans": ("Street", "Everyday / city"),
   "Pinstripe shirt & brown": ("In between", "Weekend / lunch"),
@@ -933,7 +943,7 @@ VIBE = {
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
 
 SEASON_INFO = {
-  "Suits & gala": ("Your suits", "Together for the gala and weddings, apart for dinners and weekends", "The Massimo Dutti anthracite double-breasted (blazer 48, trousers 40) with the pieces bought for the 19 Dec gala, and your navy Alfaiataria Lusitana wedding suit with the black double monks."),
+  "Suits & gala": ("Your suits", "Together for the gala and weddings, apart for dinners and weekends", "The Massimo Dutti anthracite double-breasted (blazer 48, trousers 40) with the pieces bought for the 19 Dec gala, and your navy Alfaiataria Lusitana wedding suit with the black double monks. Ties: E. Marinella navy with gold flowers (the gala tie), E. Marinella navy with blue squares and a Viola Milano navy foulard."),
   "Special occasions": ("For a special day", "One standout piece, the rest from your wardrobe", "The outfits above are your fundamentals. These go a step further: each is built around one piece from a modern, young brand that sets you apart, while staying classy."),
   "Spring": ("March – May", "Mornings 7–10 °C, afternoons 16–22 °C", "Showers are common (about 110–120 mm a month), so bring a light jacket you can take off."),
   "Summer": ("June – September", "Mornings 13–16 °C, afternoons 24–28 °C, heatwaves 32–35 °C+", "Dry July and August. Evenings cool down, so a light layer helps. September is still warm."),
