@@ -825,5 +825,21 @@
   "url": "https://www.violamilano.com/product/mystix-floral-selftipped-italian-silk-tie-navy/",
   "image_url": "img/viola-navy-medallion-tie.jpg",
   "match": "exact"
+ },
+ "own_armani_aubergine": {
+  "brand": "Giorgio Armani",
+  "name": "Silk tie (vintage, new without tags, from Vinted)",
+  "colour": "Aubergine with small green-gold outlined medallions, about 8.5 cm, with its numbered Armani certificate",
+  "url": "https://www.vinted.pt/items/10874418644",
+  "image_url": "img/armani-aubergine-medallions.jpg",
+  "match": "exact"
+ },
+ "own_armani_xmas": {
+  "brand": "Giorgio Armani",
+  "name": "Silk tie (vintage, new without tags, from Vinted)",
+  "colour": "Burgundy and dark green micro-check with small gold rings, about 8.5 cm",
+  "url": "https://www.vinted.pt/items/10854233238",
+  "image_url": "img/armani-burgundy-green-gold-dots.jpg",
+  "match": "exact"
  }
 }

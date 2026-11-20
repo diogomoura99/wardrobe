@@ -167,6 +167,8 @@ OWNED = {
     "own_marinella_gold_flowers": ("Accessories", "Your E. Marinella navy tie with small gold flowers"),
     "own_marinella_blue_squares": ("Accessories", "Your E. Marinella navy tie with blue squares"),
     "own_viola_navy_medallion": ("Accessories", "Your Viola Milano navy foulard tie"),
+    "own_armani_aubergine": ("Accessories", "Your Giorgio Armani aubergine tie with medallions"),
+    "own_armani_xmas": ("Accessories", "Your Giorgio Armani burgundy & green tie with gold dots"),
     "own_black_double_monk": ("Shoes", "Your black double monk-strap shoes"),
 }
 
@@ -583,16 +585,47 @@ OUTFITS = [
   ("Suits & gala", "Navy suit, open collar", "The navy suit, relaxed: no tie, loafers",
    "The navy suit with the COS white Pima shirt open at the collar, your IX figaro showing and the black Weejuns: for summer weddings, dinners and the end of the night. The softer shirt and loafers make the sharp suit feel relaxed.",
    ["own_navy_suit_jacket", "own_navy_suit_trousers", "own_cos_pima_white", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
-  ("Suits & gala", "Navy suit & blue squares", "The navy wedding suit with your new E. Marinella tie",
-   "The navy Alfaiataria Lusitana suit with its white dress shirt, your E. Marinella navy tie with small turquoise squares, and the black double monks. Navy on navy with a white shirt is calm and polished, and the bright little squares give it life up close. For weddings, christenings and dinners. Rolex for the dinner.",
-   ["own_navy_suit_jacket", "own_navy_suit_trousers", "own_lusitana_white_shirt", "own_marinella_blue_squares", "own_black_double_monk", "own_watch"]),
-  ("Suits & gala", "Suit & navy foulard", "The gala suit for daytime: lunches, christenings, the office",
-   "The anthracite double-breasted suit with the white Pima shirt and your Viola Milano navy foulard with small rust and blue medallions, the croc belt, dark grey socks and black Weejuns. The rust in the medallions warms the charcoal flannel and suits daylight better than the gala's gold flowers. Unbutton the jacket at the table.",
-   ["own_md_db_blazer", "own_md_flannel", "own_cos_pima_white", "own_viola_navy_medallion", "own_morjas_croc_belt", "own_morjas_socks_dgrey", "own_bass_larson_black", "own_watch"]),
+  # ---- Loafers: the black Bass Weejuns outside the suit (classy casual, the penny loafer with jeans) ----
+  ("Loafers", "Black leather, jeans & loafers", "The penny loafer's home ground: black leather, white tee, blue jeans",
+   "Your black nappa blouson open over the white heavyweight tee, mid-blue baggy jeans and the black Weejuns. Black at the top and at the feet frames the blue denim, and the polished loafer makes the leather jacket look grown-up rather than biker. Let the jeans break softly on the shoe, with dark socks. Figaro at the collar, Rolex for dinner.",
+   ["own_md_leather", "own_af_white_tee", "own_midwash", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
+  ("Loafers", "Quarter-zip, grey denim & loafers", "Italian weekend: navy zip, grey jeans, black loafers",
+   "Your Percival navy Conrad quarter-zip over the white tee (let it show at the neck), with the neutral-grey Levi's 578 and the Weejuns. Navy, grey and black are all cool colours, so it reads calm and expensive, and the grey jeans sit between the navy top and the black shoes so the two never touch. Your Levi's are a touch long: hem them so they just reach the loafer. Dark grey socks.",
+   ["own_conrad_navy", "own_af_white_tee", "own_levis_grey", "own_bass_larson_black", "own_cuban_bracelet", "own_watch"]),
+  ("Loafers", "Cream knit & black pleats", "Dinner: a textured light knit over one long black line",
+   "Your COS cream ladder-stitch jumper with the black pleated baggy trousers and the Weejuns. Black trousers running into black loafers make one long, unbroken line, which suits your height, and the open ladder stitch gives the top the texture that makes it look considered. Dark socks, so the line doesn't break when you sit. For dinners and dates.",
+   ["own_cos_cream", "own_af_black_pleated", "own_bass_larson_black", "own_ix_figaro_bracelet", "own_watch"]),
+  ("Loafers", "Stone cord over black", "One light jacket over all black",
+   "Your light-stone cord jacket open over the black tee and black baggy jeans, with the Weejuns: all black underneath and one light, textured layer on top, the reverse of your black-leather-over-light looks. The polished loafers keep the workwear jacket from looking rugged. Silver figaro on the black tee.",
+   ["own_cream_cord_jacket", "own_af_tee_black", "own_af_black_jeans", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
+  ("Loafers", "Black camp & white linen", "Summer: loafers without socks",
+   "Your black camp-collar linen shirt open at the collar with nothing underneath, the white linen trousers and the Weejuns with invisible socks. The black shirt and black shoes bracket the white trousers: the classic Riviera night look. Camp collars can go open on their own, so the figaro sits on skin. Dry evenings only: polished leather and rain don't mix.",
+   ["own_camp_black", "own_white_linen", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
 ]
+
+# tie selector: (tie, when, why). The first tie is the one in the outfit; tap another to swap it in.
+TIE_PICKS = {
+  "The gala": [
+    ("own_marinella_gold_flowers", "Gala night", "The pick: navy with small gold flowers that catch the light at night, and it stays in the anthracite, white and silver palette."),
+    ("own_armani_aubergine", "Evening", "Aubergine with small green-gold medallions: richer and moodier, for dinners and parties."),
+    ("own_armani_xmas", "Christmas", "Burgundy and green micro-check with small gold rings: Christmas colours, woven and dark, never novelty."),
+    ("own_viola_navy_medallion", "Daytime", "Navy foulard with rust and blue medallions: softer, for lunches, christenings and the office. Unbutton the jacket at the table."),
+    ("own_marinella_blue_squares", "Fresher", "Navy with small turquoise squares: lighter and brighter, best by day."),
+  ],
+  "Navy suit, wedding": [
+    ("own_panda_tie", "Playful", "Your navy panda tie, the one you wore to the wedding."),
+    ("own_marinella_blue_squares", "Day wedding", "Navy on navy with small turquoise squares: calm and polished, with life up close."),
+    ("own_viola_navy_medallion", "Warmer", "Rust and blue medallions warm up the navy suit."),
+    ("own_marinella_gold_flowers", "Evening", "Small gold flowers for a wedding that runs into the night."),
+    ("own_armani_aubergine", "Richer", "Aubergine against navy: deep and classic."),
+  ],
+}
 
 # backup inner layer per outfit, for when the main one is in the wash (first is the best swap)
 INNER_ALT = {
+  "Black leather, jeans & loafers": ["own_af_tee_black"],
+  "Quarter-zip, grey denim & loafers": ["own_af_tee_grey"],
+  "Stone cord over black": ["own_af_tee_grey"],
   "Grey harrington, all black": ["own_af_tee_grey"],
   "Grid check & stone": ["own_hotel_tee"],
   "Blue check & chocolate": ["own_af_white_tee"],
@@ -642,7 +675,9 @@ INNER_ALT = {
 
 # other pieces worth showing under a specific tile: (piece, label, [options])
 PIECE_ALT = {
-  "The gala": [("own_bass_larson_black", "Dressier shoe", ["own_black_double_monk"]), ("own_marinella_gold_flowers", "Other tie", ["own_viola_navy_medallion", "own_marinella_blue_squares"])],
+  "The gala": [("own_bass_larson_black", "Dressier shoe", ["own_black_double_monk"])],
+  "Black leather, jeans & loafers": [("own_midwash", "Sharper, more contrast", ["own_lightwash"])],
+  "Cream knit & black pleats": [("own_af_black_pleated", "More casual", ["own_af_black_jeans"])],
   "Grey harrington, all black": [("own_af_black_pleated", "More casual", ["own_af_black_jeans"])],
   "Blue check & chocolate": [("shirt_hinsley_blue", "Add on top when it's cold", ["own_cos_waxed"])],
   "Brown micro-check & mid-blue": [("shirt_hinsley_brown", "Add on top when it's cold", ["own_brown_jacket_af", "own_cos_waxed"])],
@@ -701,6 +736,9 @@ PIECE_ALT = {
 # how to wear the necklaces in each outfit: (where, detail), shown under the chain / pendant tile
 NECKLACES = ("own_ix_figaro", "own_sd_pendant")
 NECK_WEAR = {
+  "Black leather, jeans & loafers": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open blouson."),
+  "Stone cord over black": ("Outside the tee", "at the collar, at your usual 45 cm; silver shows best on the black tee."),
+  "Black camp & white linen": ("On skin, in the open collar", "framed by the open camp collar."),
   "Grey harrington, all black": ("Outside the tee", "at the collar, at your usual 45 cm, framed by the open harrington."),
   "Blue check & chocolate": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Brown micro-check & mid-blue": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
@@ -817,8 +855,11 @@ VIBE = {
   "Black leather & flannel": ("Classy", "Dinner / night out"),
   "Navy suit, wedding": ("Classy", "Wedding / gala"),
   "Navy suit, open collar": ("Classy", "Wedding / dinner"),
-  "Navy suit & blue squares": ("Classy", "Wedding / dinner"),
-  "Suit & navy foulard": ("Classy", "Lunch / office"),
+  "Black leather, jeans & loafers": ("In between", "Dinner / night out"),
+  "Quarter-zip, grey denim & loafers": ("In between", "Weekend in town"),
+  "Cream knit & black pleats": ("Classy", "Dinner / date"),
+  "Stone cord over black": ("In between", "Night out"),
+  "Black camp & white linen": ("Classy", "Summer night"),
   "Navy & indigo, Ford jacket": ("Street", "Everyday / city"),
   "Pinstripe shirt & black jeans": ("Street", "Everyday / city"),
   "Pinstripe shirt & brown": ("In between", "Weekend / lunch"),
@@ -943,7 +984,8 @@ VIBE = {
 OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists(os.path.join(HERE, "owned.json")) else {}
 
 SEASON_INFO = {
-  "Suits & gala": ("Your suits", "Together for the gala and weddings, apart for dinners and weekends", "The Massimo Dutti anthracite double-breasted (blazer 48, trousers 40) with the pieces bought for the 19 Dec gala, and your navy Alfaiataria Lusitana wedding suit with the black double monks. Ties: E. Marinella navy with gold flowers (the gala tie), E. Marinella navy with blue squares and a Viola Milano navy foulard."),
+  "Suits & gala": ("Your suits", "Together for the gala and weddings, apart for dinners and weekends", "The Massimo Dutti anthracite double-breasted (blazer 48, trousers 40) with the pieces bought for the 19 Dec gala, and your navy Alfaiataria Lusitana wedding suit with the black double monks. Tap the small ties under the tie in #128 and in the wedding look to switch between your ties; each one says when it works best."),
+  "Loafers": ("Your black Weejuns", "Classy casual: the penny loafer with jeans", "Your Bass Weejuns outside the suit. Let the trousers break softly on the shoe, wear dark socks (invisible ones in summer), match the belt to the shoes or skip it, and keep them for dry days."),
   "Special occasions": ("For a special day", "One standout piece, the rest from your wardrobe", "The outfits above are your fundamentals. These go a step further: each is built around one piece from a modern, young brand that sets you apart, while staying classy."),
   "Spring": ("March – May", "Mornings 7–10 °C, afternoons 16–22 °C", "Showers are common (about 110–120 mm a month), so bring a light jacket you can take off."),
   "Summer": ("June – September", "Mornings 13–16 °C, afternoons 24–28 °C, heatwaves 32–35 °C+", "Dry July and August. Evenings cool down, so a light layer helps. September is still warm."),
@@ -1096,6 +1138,19 @@ def swap_box(kind, alts, prod):
         items += '<a class="swapitem" href="' + e(u) + '" target="_blank" rel="noopener"><span class="swapph">' + pic + '</span><b>' + e(t) + '</b><small>' + e(sub) + '</small>' + tag + '</a>'
     return '<details class="swapbox"><summary><span class="swaplab">' + kind + ':</span> ' + e(short) + '</summary><div class="swapgrid">' + items + '</div></details>'
 
+TIE_USED = set()
+
+def tie_images_js():
+    """One data-URI per tie used by a selector, shared by every selector on the page."""
+    import base64
+    imgs = {}
+    for k in sorted(TIE_USED):
+        p = OWNED_INFO.get(k, {}).get("image_url", "")
+        fp = os.path.join(os.path.dirname(OUT), p)
+        if p.startswith("img/") and os.path.exists(fp):
+            imgs[k] = "data:image/jpeg;base64," + base64.b64encode(open(fp, "rb").read()).decode()
+    return json.dumps(imgs)
+
 def swaps_for(name, pieces, prod):
     """Which tile gets which swap box: backup inner layer, and other jackets to try."""
     out = {}
@@ -1108,6 +1163,18 @@ def swaps_for(name, pieces, prod):
         for piece, label, alts in (entries if isinstance(entries, list) else [entries]):
             if piece in pieces:
                 out[piece] = out.get(piece, "") + swap_box(label, alts, prod)
+    if name in TIE_PICKS:
+        picks = TIE_PICKS[name]
+        if picks[0][0] in pieces:
+            btns = ""
+            for k, when, why in picks:
+                info = OWNED_INFO.get(k, {})
+                TIE_USED.add(k)
+                btns += ('<button type="button" class="tsb' + (' on' if k == picks[0][0] else '') + '" data-k="' + k + '" data-name="' + e(OWNED[k][1])
+                         + '" data-brand="' + e(info.get("brand", "")) + '" data-url="' + e(info.get("url", "#")) + '" data-why="' + e(why)
+                         + '" aria-pressed="' + ('true' if k == picks[0][0] else 'false') + '"><img data-tk="' + k + '" alt=""><small>' + e(when) + '</small></button>')
+            out[picks[0][0]] = out.get(picks[0][0], "") + ('<div class="tiesel"><span class="tsl">Your ties, tap to switch:</span><div class="tsrow">' + btns
+                                + '</div><p class="tsnote">' + e(picks[0][2]) + '</p></div>')
     if name in OUTER_ALT:
         outer = next((k for k in pieces if (ROLE_INFO.get(k) or OWNED.get(k))[0] == "Outerwear"), None)
         if outer:
@@ -1131,7 +1198,7 @@ def build():
         OUTFITS = [(a, b, c, d, [k for k in pcs if k not in ("own_cap_navy", "cap_ald_yankees")]) for a, b, c, d, pcs in OUTFITS]
     prod = load_products()
     usage = Counter(k for *_, pieces in OUTFITS for k in pieces if k in ROLE_INFO and prod.get(k, {}).get("primary"))
-    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions", "Suits & gala"]
+    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions", "Suits & gala", "Loafers"]
     sid = {s: s.lower().replace(" ", "-") for s in seasons}
     sid["Special occasions"] = "special"
     sid["Suits & gala"] = "suits"
@@ -1159,7 +1226,7 @@ def build():
 <p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><button class="fav" type="button" aria-pressed="false" aria-label="Save to favourites">☆ Favourite</button><button class="cmp" type="button" aria-pressed="false" aria-label="Add to compare">＋ Compare</button><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
 <p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
-        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s in ("Special occasions", "Suits & gala") else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
+        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s in ("Special occasions", "Suits & gala", "Loafers") else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
         sec.append(f'<section id="{sid[s]}"><h2>{e(s)}</h2>{info}{"".join(cards)}</section>')
 
     # sunglasses lookbook
@@ -1385,6 +1452,7 @@ def build():
     fp = os.path.join(HERE, "favourites.json")
     saved_favs = [n for n in (json.load(open(fp)).get("saved", []) if os.path.exists(fp) else []) if any(o[1] == n for o in OUTFITS)]
     saved_favs = json.dumps(saved_favs, ensure_ascii=False).replace("</", "<\\/")
+    tie_imgs = tie_images_js()
     doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Your Outfits</title>
 <style>
@@ -1520,6 +1588,9 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 .swapph{{display:block;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:#fff;margin-bottom:4px}} .swapph img{{width:100%;height:100%;object-fit:cover;display:block}}
 .swapitem b{{display:block;font-weight:600;font-size:11px;line-height:1.25}} .swapitem small{{display:block;color:var(--muted);font-size:11px;line-height:1.25}} .swapitem .trend{{display:inline-block;font-style:normal;font-size:10px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:1px 6px;margin:4px 0 2px}}
 .swap{{display:block;margin-top:6px;font-size:13px;color:var(--muted)}} .swap a{{color:var(--accent)}}
+.tiesel{{margin-top:8px}} .tsl{{display:block;font-size:12px;font-weight:600;color:var(--accent);margin-bottom:5px}} .tsrow{{display:grid;grid-template-columns:repeat(auto-fill,minmax(42px,1fr));gap:5px}}
+.tsb{{border:2px solid transparent;border-radius:8px;padding:2px;background:var(--chip);cursor:pointer;font:inherit;color:var(--text)}} .tsb.on{{border-color:var(--accent)}}
+.tsb img{{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:5px;background:#fff}} .tsb small{{display:block;font-size:9.5px;line-height:1.15;color:var(--muted);margin-top:2px}} .tsnote{{font-size:12px;color:var(--muted);margin:6px 0 0;line-height:1.35}}
 .fitb{{display:inline-block;font-size:11px;font-weight:600;border-radius:999px;padding:2px 8px;margin-top:4px}} .fb-ok{{background:#e1f5ee;color:#085041}} .fb-mid{{background:#faeeda;color:#633806}} .fb-far{{background:#f6e3e3;color:#7a1f1f}} .fb-unk{{background:var(--chip);color:#555}}
 .pgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:8px}}
 .pair{{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}}
@@ -1546,7 +1617,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#suits">Suits &amp; gala</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#suits">Suits &amp; gala</a><a href="#loafers">Loafers</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Taps are only kept in this browser, and browsers can clear them (Safari does after about a week without a visit). To keep them for good, on every device, tap <b>Copy the list to send me</b> and paste it to me: I'll save them into the page.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
@@ -1569,6 +1640,19 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <div id="cmpview" hidden role="dialog" aria-modal="true" aria-labelledby="cmptitle"><div class="cv-bar"><div class="cv-t"><h2 id="cmptitle">Compare outfits</h2><span id="cmpsub" class="muted"></span><button id="cvclose" type="button" class="cv-close" aria-label="Close compare">✕ Close</button></div><div class="cv-btns"><button id="cvfav" type="button">＋ Add favourites</button><button id="cvlink" type="button">Copy link</button><button id="cvclr" type="button">Clear all</button></div></div><div class="cv-scroll" id="cvscroll"><div id="cmpgrid"></div></div></div>
 <div id="rail" role="navigation" aria-label="Outfit index"><div class="ticks"></div><em class="here"></em><div class="bubble" hidden></div></div>
 <script>
+(function(){{
+  const T={tie_imgs};
+  document.querySelectorAll('img[data-tk]').forEach(i=>{{if(T[i.dataset.tk])i.src=T[i.dataset.tk];}});
+  document.addEventListener('click',ev=>{{
+    const b=ev.target.closest('.tsb'); if(!b)return; ev.preventDefault();
+    const tile=b.closest('.tile'); if(!tile)return;
+    tile.querySelectorAll('.tsb').forEach(x=>{{x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false');}});
+    const ph=tile.querySelector('.ph'), img=ph&&ph.querySelector('img'), lab=ph&&ph.querySelector('span');
+    if(ph)ph.href=b.dataset.url; if(img&&T[b.dataset.k]){{img.src=T[b.dataset.k];img.alt=b.dataset.name;}} if(lab)lab.textContent=b.dataset.name;
+    const nm=tile.querySelector('.nm'), br=tile.querySelector('.br'), note=tile.querySelector('.tsnote');
+    if(nm)nm.textContent=b.dataset.name; if(br)br.textContent=b.dataset.brand; if(note)note.textContent=b.dataset.why;
+  }});
+}})();
 document.querySelectorAll('.vibes button').forEach(b=>b.addEventListener('click',()=>{{
   document.querySelectorAll('.vibes button').forEach(x=>x.classList.toggle('on',x===b));
   const f=b.dataset.f;
