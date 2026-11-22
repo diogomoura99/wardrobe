@@ -28,7 +28,7 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 449.0,
     "member": null,
     "stock": "in"
@@ -64,7 +64,7 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 240.0,
     "member": null,
     "stock": "in"
@@ -101,7 +101,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 229.0,
     "member": null,
     "stock": "in"
@@ -142,7 +142,7 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-11-11",
+    "date": "2026-11-22",
     "price": 80.0,
     "member": null,
     "stock": "in"
@@ -180,7 +180,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 165.0,
     "member": null,
     "stock": "in"
@@ -222,7 +222,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -258,11 +258,11 @@
     "note": "On the page, pick colour White (swatch input value 58875223), then size M and length Regular. If the page says 'This item is sold out', record --stock out; otherwise read the price (and the myA&F price) and record --stock in."
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "price": 32.0,
     "member": null,
     "stock": "out",
-    "note": "White is full price (32) and XS-M sold out; only cool gray is on clearance at 12.99"
+    "note": "White €32, XS-M still sold out; only cool gray is on sale (€12.99)"
    },
    "history": [
     {
@@ -310,7 +310,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 165.0,
     "member": null,
     "stock": "in"
@@ -345,7 +345,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 269.0,
     "member": null,
     "stock": "in"
@@ -380,7 +380,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 299.0,
     "member": null,
     "stock": "in"
@@ -415,7 +415,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-11-19",
+    "date": "2026-11-22",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -485,7 +485,7 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 300.0,
     "member": null,
     "stock": "in"
@@ -522,8 +522,8 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
-    "price": 240.0,
+    "date": "2026-11-22",
+    "price": 235.0,
     "member": null,
     "stock": "in"
    },
@@ -535,6 +535,10 @@
     {
      "date": "2026-10-29",
      "price": 240.0
+    },
+    {
+     "date": "2026-11-22",
+     "price": 235.0
     }
    ],
    "role": "jacket_cord_burgundy"
@@ -561,7 +565,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-11",
+    "date": "2026-11-22",
     "price": 175.0,
     "member": null,
     "stock": "in"
@@ -596,7 +600,7 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-05",
+    "date": "2026-11-22",
     "price": 245.0,
     "member": null,
     "stock": "in"
@@ -638,7 +642,7 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-11-11",
+    "date": "2026-11-22",
     "price": 80.0,
     "member": null,
     "stock": "in"
@@ -675,8 +679,8 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
-    "price": 240.0,
+    "date": "2026-11-22",
+    "price": 235.0,
     "member": null,
     "stock": "in"
    },
@@ -684,6 +688,10 @@
     {
      "date": "2026-11-03",
      "price": 240
+    },
+    {
+     "date": "2026-11-22",
+     "price": 235.0
     }
    ],
    "role": "jacket_wilde"
@@ -712,8 +720,8 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
-    "price": 295.0,
+    "date": "2026-11-22",
+    "price": 290.0,
     "member": null,
     "stock": "in"
    },
@@ -721,6 +729,10 @@
     {
      "date": "2026-11-03",
      "price": 295
+    },
+    {
+     "date": "2026-11-22",
+     "price": 290.0
     }
    ],
    "role": "overshirt_wallis"
@@ -749,7 +761,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -786,7 +798,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -824,7 +836,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 195.0,
     "member": null,
     "stock": "in"
@@ -861,10 +873,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
-    "price": 120.0,
+    "date": "2026-11-22",
+    "price": 100.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "Black Friday: €100 (was €170), M in stock"
    },
    "history": [
     {
@@ -874,6 +887,10 @@
     {
      "date": "2026-11-16",
      "price": 120.0
+    },
+    {
+     "date": "2026-11-22",
+     "price": 100.0
     }
    ],
    "role": "shirt_guinness"
@@ -902,7 +919,7 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 140.0,
     "member": null,
     "stock": "in"
@@ -936,11 +953,11 @@
     "note": "Select Color: White, then check whether M is crossed out"
    },
    "last": {
-    "date": "2026-11-11",
+    "date": "2026-11-22",
     "price": 16.99,
     "member": null,
     "stock": "out",
-    "note": "Still only Light Brown on the page (sale 16.99, was 24)"
+    "note": "Still only Light Brown on the page (sale €16.99, was €24); no white"
    },
    "history": [
     {
@@ -971,7 +988,7 @@
     "note": "Open Select size; a bell icon next to M means sold out"
    },
    "last": {
-    "date": "2026-11-11",
+    "date": "2026-11-22",
     "price": 79.0,
     "member": null,
     "stock": "in"
@@ -1005,11 +1022,11 @@
     "note": "Pick colour 'navy stripe'. A&F shows the regular price and sometimes a 'myA&F Price'."
    },
    "last": {
-    "date": "2026-11-15",
+    "date": "2026-11-22",
     "price": 75.0,
     "member": null,
     "stock": "out",
-    "note": "Navy stripe: XS, S, M sold out; L-XXL in stock"
+    "note": "€75 full price; navy stripe stock not rechecked on 22 Nov (was XS-M sold out)"
    },
    "history": [
     {
@@ -1039,7 +1056,7 @@
     "note": "Massimo Dutti blocks curl: in the browser, read productsArray for id 70043134 (store 34009460, catalog 30359498) and the stock API for size 48"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 199.0,
     "member": null,
     "stock": "low"
@@ -1073,7 +1090,7 @@
     "note": "Massimo Dutti: productsArray id 67504299, colour CHARCOAL (801), size 40"
    },
    "last": {
-    "date": "2026-11-16",
+    "date": "2026-11-22",
     "price": 89.95,
     "member": null,
     "stock": "in"
