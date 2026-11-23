@@ -28,10 +28,11 @@
     "note": "COS JSON-LD offers: SKU suffix 001=XS 002=S 003=M 004=L 005=XL"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 449.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: COS Black Friday not started"
    },
    "history": [
     {
@@ -64,10 +65,11 @@
     "variant": "43"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 240.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: no sale on premiata.eu; 43 in stock"
    },
    "history": [
     {
@@ -101,10 +103,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 229.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Arket BF members-only early access, public prices unchanged"
    },
    "history": [
     {
@@ -142,15 +145,20 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-11-22",
-    "price": 80.0,
+    "date": "2026-11-23",
+    "price": 64.0,
     "member": null,
-    "stock": "in"
+    "stock": "out",
+    "note": "23 Nov: A&F Black Friday 20-40% off; brown M, L, XL sold out (XS/S/XXL left)"
    },
    "history": [
     {
      "date": "2026-10-12",
      "price": 80
+    },
+    {
+     "date": "2026-11-23",
+     "price": 64.0
     }
    ],
    "role": "knit_polo"
@@ -180,10 +188,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 165.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Percival Black Friday live (358 items)"
    },
    "history": [
     {
@@ -222,10 +231,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 195.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Norse sale collection has no discounts"
    },
    "history": [
     {
@@ -258,11 +268,11 @@
     "note": "On the page, pick colour White (swatch input value 58875223), then size M and length Regular. If the page says 'This item is sold out', record --stock out; otherwise read the price (and the myA&F price) and record --stock in."
    },
    "last": {
-    "date": "2026-11-22",
-    "price": 32.0,
+    "date": "2026-11-23",
+    "price": 19.2,
     "member": null,
     "stock": "out",
-    "note": "White €32, XS-M still sold out; only cool gray is on sale (€12.99)"
+    "note": "23 Nov: BF €19.20 in white, but XS-M sold out (L+ only)"
    },
    "history": [
     {
@@ -280,6 +290,10 @@
     {
      "date": "2026-11-15",
      "price": 32.0
+    },
+    {
+     "date": "2026-11-23",
+     "price": 19.2
     }
    ]
   },
@@ -310,10 +324,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 165.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Birkenstock BF up to -30%, but the Boston taupe is not included"
    },
    "history": [
     {
@@ -345,10 +360,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 269.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: MD BF not started"
    },
    "history": [
     {
@@ -380,10 +396,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 299.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Arket BF not public yet"
    },
    "history": [
     {
@@ -415,7 +432,7 @@
     "sku": "1001357-211-M"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 199.0,
     "member": null,
     "stock": "in"
@@ -485,10 +502,11 @@
     "variant": "Medium"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 300.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: no Pop sale"
    },
    "history": [
     {
@@ -522,10 +540,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 235.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Percival Black Friday live (358 items)"
    },
    "history": [
     {
@@ -565,10 +584,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 175.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: no discount"
    },
    "history": [
     {
@@ -600,10 +620,11 @@
     "how": "text"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 245.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: no discount"
    },
    "history": [
     {
@@ -642,15 +663,20 @@
     "note": "A&F shows the regular price and a 'myA&F Price'"
    },
    "last": {
-    "date": "2026-11-22",
-    "price": 80.0,
+    "date": "2026-11-23",
+    "price": 64.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: A&F Black Friday price; 32 and 30 both available"
    },
    "history": [
     {
      "date": "2026-11-03",
      "price": 80
+    },
+    {
+     "date": "2026-11-23",
+     "price": 64.0
     }
    ],
    "role": "jeans_af_darkrinse"
@@ -679,10 +705,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 235.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Percival Black Friday live (358 items)"
    },
    "history": [
     {
@@ -720,10 +747,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
-    "price": 290.0,
+    "date": "2026-11-23",
+    "price": 295.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Percival Black Friday live (358 items) back to full price"
    },
    "history": [
     {
@@ -733,6 +761,10 @@
     {
      "date": "2026-11-22",
      "price": 290.0
+    },
+    {
+     "date": "2026-11-23",
+     "price": 295.0
     }
    ],
    "role": "overshirt_wallis"
@@ -761,10 +793,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 195.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Percival Black Friday live (358 items)"
    },
    "history": [
     {
@@ -798,10 +831,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 195.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Percival Black Friday live (358 items)"
    },
    "history": [
     {
@@ -836,10 +870,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 195.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Percival Black Friday live (358 items)"
    },
    "history": [
     {
@@ -873,11 +908,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 100.0,
     "member": null,
     "stock": "in",
-    "note": "Black Friday: €100 (was €170), M in stock"
+    "note": "23 Nov: Percival Black Friday live (358 items)"
    },
    "history": [
     {
@@ -919,10 +954,11 @@
     "cookie": "localization=PT; cart_currency=EUR"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 140.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: Percival Black Friday live (358 items)"
    },
    "history": [
     {
@@ -953,11 +989,11 @@
     "note": "Select Color: White, then check whether M is crossed out"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 16.99,
     "member": null,
     "stock": "out",
-    "note": "Still only Light Brown on the page (sale €16.99, was €24); no white"
+    "note": "23 Nov: white now €16.99 too, but XS-XL sold out (XXL only)"
    },
    "history": [
     {
@@ -988,10 +1024,11 @@
     "note": "Open Select size; a bell icon next to M means sold out"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 79.0,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: no discount"
    },
    "history": [
     {
@@ -1022,16 +1059,20 @@
     "note": "Pick colour 'navy stripe'. A&F shows the regular price and sometimes a 'myA&F Price'."
    },
    "last": {
-    "date": "2026-11-22",
-    "price": 75.0,
+    "date": "2026-11-23",
+    "price": 60.0,
     "member": null,
     "stock": "out",
-    "note": "€75 full price; navy stripe stock not rechecked on 22 Nov (was XS-M sold out)"
+    "note": "23 Nov: BF €60; navy stripe XS-L sold out"
    },
    "history": [
     {
      "date": "2026-11-12",
      "price": 75
+    },
+    {
+     "date": "2026-11-23",
+     "price": 60.0
     }
    ]
   },
@@ -1056,10 +1097,11 @@
     "note": "Massimo Dutti blocks curl: in the browser, read productsArray for id 70043134 (store 34009460, catalog 30359498) and the stock API for size 48"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 199.0,
     "member": null,
-    "stock": "low"
+    "stock": "in",
+    "note": "23 Nov: MD Black Friday not started; 48 in stock"
    },
    "history": [
     {
@@ -1090,10 +1132,11 @@
     "note": "Massimo Dutti: productsArray id 67504299, colour CHARCOAL (801), size 40"
    },
    "last": {
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "price": 89.95,
     "member": null,
-    "stock": "in"
+    "stock": "in",
+    "note": "23 Nov: MD BF not started; 40 in stock"
    },
    "history": [
     {
