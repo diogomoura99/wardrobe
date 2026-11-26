@@ -611,6 +611,28 @@ OUTFITS = [
   ("Hoodies", "Chocolate hoodie & light denim", "New: your dark brown A&F Heritage hoodie",
    "The dark brown hoodie over your white tee, with the light-wash baggy jeans and the off-white Spezials. Chocolate over pale denim is an easy, grown-up contrast: the cream script logo, the white at the neck and the off-white shoes repeat one light tone, and the Spezials' gum sole echoes the brown. The Rolex and the Cuban bracelet for a weekend lunch.",
    ["own_af_hoodie_brown", "own_af_white_tee", "own_lightwash", "own_spezial_cream", "own_cuban_bracelet", "own_watch"]),
+  # ---- Percival: the Conrad quarter-zip, the cream-check Hinsley and the Ford harrington (delivered 25 Nov 2026) ----
+  ("Percival", "Navy zip & panna cord", "New: your Percival Conrad quarter-zip, dressed up",
+   "Your Percival Conrad quarter-zip over the A&F cream tee, with the Studio Nicholson panna cords and the brown suede Premiatas. The cream tee shows at the zip, not the bright white one, because white next to panna makes the cords look yellow; navy over one warm cream column is the old-money contrast. The small tan Percival script is the bridge: it picks up the brown suede at your feet. The Rolex and the Cuban bracelet, one on each wrist. For lunches and dates.",
+   ["own_conrad_navy", "own_af_tee_cream", "own_sn_paolo", "own_premiata", "own_watch", "own_cuban_bracelet"]),
+  ("Percival", "Navy zip & olive", "New: your Percival Conrad quarter-zip with the olive pleats",
+   "The Conrad over the cream tee, with the A&F olive pleated baggies and the off-white Spezials. Navy and olive are a quiet, grown-up pairing, and the script's tan warms them both. The clothes are muted, so the off-white Spezials lift it at your feet, and their cream and gum repeat the cream at the neck. The Kaleos by day.",
+   ["own_conrad_navy", "own_af_tee_cream", "own_af_olive_pleated", "own_spezial_cream", "own_sunnies_jaconelli", "own_cuban_bracelet"]),
+  ("Percival", "Navy zip & light denim", "New: your Percival Conrad quarter-zip, the way Percival wears it",
+   "The Conrad over the white tee (a line of white at the neck), with the light-wash baggy jeans and the burgundy Sambas. Navy, bright white and icy denim are all cool, so it reads clean and easy, and the Sambas are the one pop: your navy-and-burgundy pairing. Nothing fussy, the way Percival styles it.",
+   ["own_conrad_navy", "own_af_white_tee", "own_lightwash", "own_samba_maroon", "own_sunnies_jaconelli", "own_cuban_bracelet"]),
+  ("Percival", "Cream check & black", "New: your cream-check Percival Hinsley, light over black",
+   "Your cream-check Hinsley, boxy and cropped to the waistband (wear it out), over the white tank with the top two or three buttons open, with the black pleated baggies and the white Premiatas. The check's grey lines tie the light shirt to the black trousers, the bright white tank matches the shirt's white ground, and the Premiatas' black star repeats the trousers: light top, black trousers, white shoes. Figaro on the tank, Rolex on the wrist.",
+   ["own_hinsley_cream", "own_af_tank_white", "own_af_black_pleated", "own_white_sneakers", "own_ix_figaro", "own_watch"]),
+  ("Percival", "Cream check & chocolate", "New: your cream-check Percival Hinsley with chocolate",
+   "The cream-check Hinsley over the white tank, top buttons open, with the dark brown pleated baggies and the burgundy Sambas. The check's grey-taupe lines pick up the chocolate, so the light shirt and dark trousers read as one earthy family, and because the check is quiet, the burgundy Sambas give it the pop. The Kaleos and the Cuban bracelet for a weekend lunch.",
+   ["own_hinsley_cream", "own_af_tank_white", "own_af_brown", "own_samba_maroon", "own_sunnies_jaconelli", "own_cuban_bracelet"]),
+  ("Percival", "Ford jacket & khaki", "New: the Ford harrington over your Day in Porto look",
+   "The Ford jacket open over the A&F cream tee, with the khaki baggy jeans and the burgundy Sambas: your Day in Porto look with the Ford on top. The buttery tee and light-stone jeans keep the base warm under the navy, a harrington with khaki is a classic, and the burgundy Sambas pick up the red Percival Division patch. The Kaleos and the Cuban bracelet.",
+   ["own_ford_garage", "own_af_tee_cream", "own_beige_jeans", "own_samba_maroon", "own_sunnies_jaconelli", "own_cuban_bracelet"]),
+  ("Percival", "Cream check under the Ford jacket", "New: both Percival pieces together",
+   "The Ford jacket open over the cream-check Hinsley and the white tank, with the neutral-grey Levi's and the off-white Spezials. Under the navy everything is cool and soft (grey-cream check, white tank, cool grey denim), so the jacket's white grid and the shirt's check read as one family at two scales: a big grid over a small check. The Spezials' burgundy stripes pick up the red patch and their gum sole adds the warmth. Hem the Levi's so they just break on the shoe.",
+   ["own_ford_garage", "own_hinsley_cream", "own_af_tank_white", "own_levis_grey", "own_spezial_cream", "own_ix_figaro", "own_cuban_bracelet"]),
 ]
 
 # tie selector: (tie, when, why). The first tie is the one in the outfit; tap another to swap it in.
@@ -635,6 +657,13 @@ TIE_PICKS = {
 INNER_ALT = {
   "Black leather, jeans & loafers": ["own_af_tee_black"],
   "Quarter-zip, grey denim & loafers": ["own_af_tee_grey"],
+  "Navy zip & panna cord": ["own_hotel_tee"],
+  "Navy zip & olive": ["own_hotel_tee"],
+  "Navy zip & light denim": ["own_af_tee_grey"],
+  "Cream check & black": ["own_af_white_tee"],
+  "Cream check & chocolate": ["own_af_white_tee"],
+  "Ford jacket & khaki": ["own_hotel_tee"],
+  "Cream check under the Ford jacket": ["own_af_white_tee"],
   "Stone cord over black": ["own_af_tee_grey"],
   "Grey harrington, all black": ["own_af_tee_grey"],
   "Grid check & stone": ["own_hotel_tee"],
@@ -695,6 +724,11 @@ PIECE_ALT = {
   "Forest popover & cream": [("own_samba_maroon", "Calmer option", ["own_spezial_cream"])],
   "Pink check under the Ford jacket": [("own_ford_garage", "Backup jacket", ["own_polo_harrington"])],
   "Navy & indigo, Ford jacket": [("own_spezial_cream", "Bolder option", ["own_samba_maroon"]), ("own_ford_garage", "Backup jacket", ["own_polo_harrington"])],
+  "Navy zip & panna cord": [("own_premiata", "Bolder option", ["own_samba_maroon"])],
+  "Cream check & black": [("own_hinsley_cream", "Add on top when it's cold", ["own_md_leather"])],
+  "Cream check & chocolate": [("own_hinsley_cream", "Add on top when it's cold", ["own_brown_jacket_af"])],
+  "Ford jacket & khaki": [("own_ford_garage", "Backup jacket", ["own_polo_harrington"])],
+  "Cream check under the Ford jacket": [("own_ford_garage", "Backup jacket", ["own_polo_harrington"])],
   "Pinstripe shirt & black jeans": [("own_samba_maroon", "Calmer option", ["own_white_sneakers"])],
   "Pinstripe shirt & brown": [("own_nude_bryant", "Add on top when it cools", ["own_cos_waxed", "own_aircloud_brown"])],
   "Black leather & pinstripe shirt": [("own_af_black_pleated", "More casual", ["own_af_black_jeans"])],
@@ -754,6 +788,8 @@ NECK_WEAR = {
   "Brown micro-check & mid-blue": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "The pint": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
   "Pink check under the Ford jacket": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar and the open jacket."),
+  "Cream check & black": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar."),
+  "Cream check under the Ford jacket": ("Outside the tank, inside the shirt", "on the white tank, framed by the open collar and the open jacket."),
   "Suit, open collar": ("On skin, in the open collar", "framed by the open collar of the white shirt, under the jacket."),
   "Suit & black tee": ("Outside the tee, inside the jacket", "on the black tee at the collar, at your usual 45 cm."),
   "Black leather & flannel": ("Outside the tee, inside the jacket", "on the black tee at the collar, at your usual 45 cm."),
@@ -870,6 +906,13 @@ VIBE = {
   "Cream knit & black pleats": ("Classy", "Dinner / date"),
   "Washed blue & cream": ("Street", "Weekend"),
   "Chocolate hoodie & light denim": ("Street", "Weekend / lunch"),
+  "Navy zip & panna cord": ("Classy", "Lunch / date"),
+  "Navy zip & olive": ("In between", "Weekend / city"),
+  "Navy zip & light denim": ("Street", "Weekend"),
+  "Cream check & black": ("Classy", "Lunch / dinner"),
+  "Cream check & chocolate": ("In between", "Weekend / lunch"),
+  "Ford jacket & khaki": ("Street", "Weekend / lunch"),
+  "Cream check under the Ford jacket": ("In between", "City / weekend"),
   "Stone cord over black": ("In between", "Night out"),
   "Black camp & white linen": ("Classy", "Summer night"),
   "Navy & indigo, Ford jacket": ("Street", "Everyday / city"),
@@ -998,6 +1041,7 @@ OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists
 SEASON_INFO = {
   "Suits & gala": ("Your suits", "Together for the gala and weddings, apart for dinners and weekends", "The Massimo Dutti anthracite double-breasted (blazer 48, trousers 40) with the pieces bought for the 19 Dec gala, and your navy Alfaiataria Lusitana wedding suit with the black double monks. Tap the small ties under the tie in #128 and in the wedding look to switch between your ties; each one says when it works best."),
   "Hoodies": ("Your A&F Heritage hoodies", "Weekend street: heavy fleece, small script logo", "Washed blue and dark brown, oversized with a drop shoulder. Wear them over a tee so a line of white shows at the neck, with baggy jeans and sneakers; under the brown puffer or a jacket when it's cold."),
+  "Percival": ("Your Percival pieces", "Conrad quarter-zip, cream-check Hinsley, Ford harrington", "Boxy and cropped, with quiet details: the Conrad's tan script, the Hinsley's western pocket, the Ford's grid and patches. Let them be the interest and keep the rest simple: a line of white or cream at the neck, wide trousers, low sneakers. The Hinsley is cropped to the waistband, so wear it out, never tucked."),
   "Loafers": ("Your black Weejuns", "Classy casual: the penny loafer with jeans", "Your Bass Weejuns outside the suit. Let the trousers break softly on the shoe, wear dark socks (invisible ones in summer), match the belt to the shoes or skip it, and keep them for dry days."),
   "Special occasions": ("For a special day", "One standout piece, the rest from your wardrobe", "The outfits above are your fundamentals. These go a step further: each is built around one piece from a modern, young brand that sets you apart, while staying classy."),
   "Spring": ("March – May", "Mornings 7–10 °C, afternoons 16–22 °C", "Showers are common (about 110–120 mm a month), so bring a light jacket you can take off."),
@@ -1211,7 +1255,7 @@ def build():
         OUTFITS = [(a, b, c, d, [k for k in pcs if k not in ("own_cap_navy", "cap_ald_yankees")]) for a, b, c, d, pcs in OUTFITS]
     prod = load_products()
     usage = Counter(k for *_, pieces in OUTFITS for k in pieces if k in ROLE_INFO and prod.get(k, {}).get("primary"))
-    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions", "Suits & gala", "Loafers", "Hoodies"]
+    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions", "Suits & gala", "Loafers", "Hoodies", "Percival"]
     sid = {s: s.lower().replace(" ", "-") for s in seasons}
     sid["Special occasions"] = "special"
     sid["Suits & gala"] = "suits"
@@ -1239,7 +1283,7 @@ def build():
 <p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><button class="fav" type="button" aria-pressed="false" aria-label="Save to favourites">☆ Favourite</button><button class="cmp" type="button" aria-pressed="false" aria-label="Add to compare">＋ Compare</button><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
 <p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
-        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s in ("Special occasions", "Suits & gala", "Loafers", "Hoodies") else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
+        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s in ("Special occasions", "Suits & gala", "Loafers", "Hoodies", "Percival") else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
         sec.append(f'<section id="{sid[s]}"><h2>{e(s)}</h2>{info}{"".join(cards)}</section>')
 
     # sunglasses lookbook
@@ -1630,7 +1674,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#suits">Suits &amp; gala</a><a href="#loafers">Loafers</a><a href="#hoodies">Hoodies</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#suits">Suits &amp; gala</a><a href="#loafers">Loafers</a><a href="#hoodies">Hoodies</a><a href="#percival">Percival</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Taps are only kept in this browser, and browsers can clear them (Safari does after about a week without a visit). To keep them for good, on every device, tap <b>Copy the list to send me</b> and paste it to me: I'll save them into the page.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>
