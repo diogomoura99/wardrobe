@@ -92,8 +92,8 @@
   "brand": "Percival",
   "item": "Garage Harrington (Ford × Percival)",
   "size": "M",
-  "status": "Arriving",
-  "notes": "Bought in M on 15 Nov (Black Friday, €270). Percival says regular fit, true to size: 58 cm armpit to armpit, 68 cm long. Tell me how it fits."
+  "status": "To check",
+  "notes": "Delivered 25 Nov. Bought in M on 15 Nov (Black Friday, €270). Percival says regular fit, true to size: 58 cm armpit to armpit, 68 cm long. Tell me how it fits."
  },
  {
   "cat": "Jackets",
@@ -268,8 +268,8 @@
   "brand": "G.H. Bass",
   "item": "Weejuns Larson penny loafers",
   "size": "EU 42 (UK 8)",
-  "status": "Arriving",
-  "notes": "Ordered 18 Nov in EU 42. All your shoes are US 10: adidas 44 (Samba and Spezial fit well) and Premiata 43 (Premiata: 43 = US 10). Bass calls US 10 an EU 43, and says the Larson fits large, so take one full size down: US 9 = EU 42. Don't use Bass's foot-length table: it's on a different scale and would point you two sizes too small. A loafer should feel snug at first; if your toes press when you try them indoors, exchange to 42.5."
+  "status": "To check",
+  "notes": "Delivered 24 Nov. Ordered 18 Nov in EU 42. All your shoes are US 10: adidas 44 (Samba and Spezial fit well) and Premiata 43 (Premiata: 43 = US 10). Bass calls US 10 an EU 43, and says the Larson fits large, so take one full size down: US 9 = EU 42. Don't use Bass's foot-length table: it's on a different scale and would point you two sizes too small. A loafer should feel snug at first; if your toes press when you try them indoors, exchange to 42.5."
  },
  {
   "cat": "Accessories",
@@ -324,24 +324,24 @@
   "brand": "Percival",
   "item": "Hinsley Boxy Long Sleeve Shirt (cream check)",
   "size": "M",
-  "status": "Arriving",
-  "notes": "Bought 15 Nov (Black Friday, €120). Boxy, slightly cropped: same block as the Hinsley short shirts (about 59.5 × 65 cm in M)."
+  "status": "To check",
+  "notes": "Delivered 25 Nov. Bought 15 Nov (Black Friday, €120). Boxy, slightly cropped: same block as the Hinsley short shirts (about 59.5 × 65 cm in M)."
  },
  {
   "cat": "Tops & knits",
   "brand": "Percival",
   "item": "Conrad Funnel Neck 1/4 Zip Sweatshirt (navy)",
   "size": "M",
-  "status": "Arriving",
-  "notes": "Bought 15 Nov (Black Friday, €92). Percival: regular fit, slightly cropped, ribbed cotton."
+  "status": "To check",
+  "notes": "Delivered 25 Nov. Bought 15 Nov (Black Friday, €92). Percival: regular fit, slightly cropped, ribbed cotton."
  },
  {
   "cat": "Tops & knits",
   "brand": "COS",
   "item": "Relaxed Pima cotton-poplin shirt (white)",
   "size": "M",
-  "status": "Arriving",
-  "notes": "Ordered 18 Nov in M, due about 24 Nov. The gala shirt. Relaxed fit, 77 cm back length in M; COS's chart puts a 96–100 cm chest in M. COS's size tool suggests L, but the relaxed cut is already roomy and an L would bunch under the suit jacket. Button the collar with the tie on: one finger should slide in, otherwise swap to L."
+  "status": "To check",
+  "notes": "Delivered 25 Nov. Ordered 18 Nov in M, due about 24 Nov. The gala shirt. Relaxed fit, 77 cm back length in M; COS's chart puts a 96–100 cm chest in M. COS's size tool suggests L, but the relaxed cut is already roomy and an L would bunch under the suit jacket. Button the collar with the tie on: one finger should slide in, otherwise swap to L."
  },
  {
   "cat": "Accessories",
@@ -349,7 +349,7 @@
   "item": "The Belt (croc-embossed)",
   "size": "90",
   "status": "Arriving",
-  "notes": "Ordered 18 Nov. Morjas sizes to your usual hole; jeans W31–32 = 90. Your suit trousers measure 87 cm at the waist."
+  "notes": "Waiting at a DHL pickup point since 26 Nov. Ordered 18 Nov. Morjas sizes to your usual hole; jeans W31–32 = 90. Your suit trousers measure 87 cm at the waist."
  },
  {
   "cat": "Accessories",
@@ -357,7 +357,7 @@
   "item": "The Sock, knee-high",
   "size": "EU 42–44",
   "status": "Arriving",
-  "notes": "Ordered 18 Nov; covers your 42 Weejuns and 43–44 sneakers."
+  "notes": "Waiting at a DHL pickup point since 26 Nov. Ordered 18 Nov; covers your 42 Weejuns and 43–44 sneakers."
  },
  {
   "cat": "Accessories",
@@ -373,7 +373,7 @@
   "item": "Silk tie, navy with blue squares (Vinted)",
   "size": "8 cm wide",
   "status": "Arriving",
-  "notes": "Bought 18 Nov on Vinted. 8 cm is right for both of your suits."
+  "notes": "In a DPD pickup locker since 26 Nov. Bought 18 Nov on Vinted. 8 cm is right for both of your suits."
  },
  {
   "cat": "Accessories",
@@ -398,5 +398,21 @@
   "size": "About 8.5 cm wide",
   "status": "Arriving",
   "notes": "Bought 19 Nov on Vinted: the Christmas tie. Width read off the seller's tape photo; check it when it arrives."
+ },
+ {
+  "cat": "Trousers",
+  "brand": "Abercrombie & Fitch",
+  "item": "Baggy Jean (dark rinse)",
+  "size": "32x30",
+  "status": "Arriving",
+  "notes": "Ordered 23 Nov (Black Friday, €59.84). The same Baggy Jean block as your other pairs in 32x30, so it should fit the same. UPS due Wed 2 Dec."
+ },
+ {
+  "cat": "Tops & knits",
+  "brand": "Abercrombie & Fitch",
+  "item": "Heritage Heavyweight Logo Popover Hoodie (washed blue, dark brown)",
+  "size": "M",
+  "status": "Arriving",
+  "notes": "Ordered 23 Nov (Black Friday, €42.08 each). Oversized with a drop shoulder; A&F's 6'1\" model wears M. UPS due Wed 2 Dec."
  }
 ]

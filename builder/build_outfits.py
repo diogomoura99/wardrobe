@@ -114,6 +114,8 @@ OWNED = {
     "own_ford_garage": ("Outerwear", "Your Ford × Percival harrington"),
     "own_hinsley_cream": ("Knitwear & tops", "Your Percival cream-check boxy shirt"),
     "own_conrad_navy": ("Knitwear & tops", "Your Percival navy quarter-zip"),
+    "own_af_hoodie_blue": ("Knitwear & tops", "Your washed-blue A&F Heritage hoodie"),
+    "own_af_hoodie_brown": ("Knitwear & tops", "Your dark brown A&F Heritage hoodie"),
     "own_af_cream": ("Trousers", "Your cream baggy jeans"),
     "own_lightwash": ("Trousers", "Your light-wash baggy jeans"),
     "own_midwash": ("Trousers", "Your mid-blue baggy jeans"),
@@ -126,6 +128,7 @@ OWNED = {
     "own_levis_taupe": ("Trousers", "Your Levi's 578 Baggy cord in smokey taupe"),
     "own_af_olive_pleated": ("Trousers", "Your olive pleated baggy trousers"),
     "own_af_black_jeans": ("Trousers", "Your black baggy jeans"),
+    "own_af_darkrinse": ("Trousers", "Your dark-rinse baggy jeans"),
     "own_white_linen": ("Trousers", "Your white linen trousers"),
     "own_pinstripe": ("Trousers", "Your pinstripe linen trousers"),
     "own_af_black_pleated": ("Trousers", "Your black pleated baggy trousers"),
@@ -242,8 +245,8 @@ OUTFITS = [
    "Your COS waxed jacket over a chocolate knit with your neutral grey Levi's. A true grey with no blue cast sits cleanly with the browns and khaki. Burgundy leather Sambas and the Western cap handle the rain better than suede, and the burgundy warms up the browns.",
    ["own_cos_waxed", "own_arket_alpaca_brown", "own_levis_grey", "own_cuban_bracelet", "own_cap_western", "own_samba_maroon"]),
   ("Winter", "Cold street", "Your board: hoodies + puffers",
-   "Brown puffer over a blue hoodie with khaki jeans and your navy Spezials, which pick up the blue of the hoodie.",
-   ["own_brown_puffer", "hoodie_graphic_blue", "own_beige_jeans", "own_spezial_navy", "cap_ald_yankees", "own_cuban_bracelet"]),
+   "Brown puffer over your washed-blue A&F Heritage hoodie with khaki jeans and your navy Spezials, which pick up the blue of the hoodie.",
+   ["own_brown_puffer", "own_af_hoodie_blue", "own_beige_jeans", "own_spezial_navy", "cap_ald_yankees", "own_cuban_bracelet"]),
   ("Winter", "Coffee run", "Your photo: blue knit + check scarf",
    "Let the white tee show at the hem. Your navy, white and light-blue check scarf is the statement, and it picks up the blue knit and light jeans. The off-white Spezials add the warm contrast at your feet.",
    ["own_arket_blue_heavy", "own_af_white_tee", "own_lightwash", "own_ld_scarf", "own_sunnies_jaconelli", "own_spezial_cream"]),
@@ -531,8 +534,8 @@ OUTFITS = [
    "Massimo Dutti's black nappa blouson over your Nude Project Bryant shirt, top two buttons open with nothing underneath, black pleated baggy trousers and the off-white Premiatas, with the IX chain and the Rolex. Black from shoulder to shoe frames the taupe-grey pinstripe, the white stripes echo the Premiatas, and their black star repeats the jacket at your feet. The jacket covers the back print, so it reads quiet and elegant at dinner; take it off and the yellow print is the surprise.",
    ["own_md_leather", "own_nude_bryant", "own_af_black_pleated", "own_white_sneakers", "own_ix_figaro", "own_watch"]),
   ("Special Autumn", "Navy & indigo, Ford jacket", "Standout: the Ford × Percival quilted harrington, the look you sent",
-   "Percival's quilted navy Ford jacket over your bright white A&F tee and A&F's dark-rinse baggy jeans, so everything sits in one cool family from navy to indigo, and the white grid stitching repeats the white tee. The off-white Spezials are the one light, warm note at the bottom: the cream lifts the dark jeans, the gum sole brings the warmth the photo's tan suede gives, and the burgundy stripes pick up the red Percival Division patch.",
-   ["own_ford_garage", "own_af_white_tee", "jeans_af_darkrinse", "own_spezial_cream", "own_ix_figaro", "own_cuban_bracelet"]),
+   "Percival's quilted navy Ford jacket over your bright white A&F tee and your A&F dark-rinse baggy jeans, so everything sits in one cool family from navy to indigo, and the white grid stitching repeats the white tee. The off-white Spezials are the one light, warm note at the bottom: the cream lifts the dark jeans, the gum sole brings the warmth the photo's tan suede gives, and the burgundy stripes pick up the red Percival Division patch.",
+   ["own_ford_garage", "own_af_white_tee", "own_af_darkrinse", "own_spezial_cream", "own_ix_figaro", "own_cuban_bracelet"]),
   ("Special Autumn", "Grey harrington, all black", "Standout: Percival's Wilde harrington in grey birdseye wool",
    "Percival's grey birdseye wool harrington open over your black heavyweight tee and black pleated baggy trousers: grey wool over all black, a dressier take on #95 and #96. The white Premiatas' black star ties the shoes in, and the Rolex and the IX chain keep it for dinner.",
    ["jacket_wilde", "own_af_tee_black", "own_af_black_pleated", "own_white_sneakers", "own_watch", "own_ix_figaro"]),
@@ -549,14 +552,14 @@ OUTFITS = [
    "Black and white like a pint: the white Guinness Oxford, boxy and cropped, over your white tank with the top buttons open, and your black baggy jeans. A light top and white shoes with black trousers, your rule, and the white Premiatas' black star repeats the black Guinness embroidery on the pocket. For the pub or dinner, with the Rolex.",
    ["shirt_guinness", "own_af_tank_white", "own_af_black_jeans", "own_white_sneakers", "own_ix_figaro", "own_watch"]),
   ("Special Autumn", "Pink check & dark rinse", "Standout: Percival's Hinsley boxy shirt in pink check",
-   "The pink Hinsley (pink with blue lines) over your white tank, top buttons open, with A&F's dark-rinse baggy jeans. The pink is the statement, so the shoe stays calm and light: the white Premiatas keep the bottom half from going dark and match the check's white lines.",
-   ["shirt_hinsley_pink", "own_af_tank_white", "jeans_af_darkrinse", "own_white_sneakers", "own_sunnies_jaconelli", "own_cuban_bracelet"]),
+   "The pink Hinsley (pink with blue lines) over your white tank, top buttons open, with your A&F dark-rinse baggy jeans. The pink is the statement, so the shoe stays calm and light: the white Premiatas keep the bottom half from going dark and match the check's white lines.",
+   ["shirt_hinsley_pink", "own_af_tank_white", "own_af_darkrinse", "own_white_sneakers", "own_sunnies_jaconelli", "own_cuban_bracelet"]),
   ("Special Autumn", "Forest popover & cream", "Standout: Percival's Dudley boxy popover in forest green",
    "Percival's own styling in your pieces: the deep bottle-green Dudley, boxy with a polo collar and a chest pocket, with your cream baggy jeans. Green and burgundy is the classic autumn contrast, so the burgundy Sambas are the pop, and the Western cap's cream and brown keep it warm.",
    ["sweat_dudley_forest", "own_af_cream", "own_samba_maroon", "own_cap_western", "own_cuban_bracelet"]),
   ("Special Autumn", "Pink check under the Ford jacket", "A second way to wear #115: the pink Hinsley under the Ford jacket",
-   "The pink Hinsley over your white tank, top buttons open, under the navy quilted Ford × Percival jacket, with the dark-rinse jeans. The check's blue lines tie the pink to the navy, and the off-white Spezials' burgundy stripes and the jacket's red patch pick up the pink. Only the shirt is an extra buy: the jacket and jeans are already on your list.",
-   ["own_ford_garage", "shirt_hinsley_pink", "own_af_tank_white", "jeans_af_darkrinse", "own_spezial_cream", "own_ix_figaro"]),
+   "The pink Hinsley over your white tank, top buttons open, under the navy quilted Ford × Percival jacket, with the dark-rinse jeans. The check's blue lines tie the pink to the navy, and the off-white Spezials' burgundy stripes and the jacket's red patch pick up the pink. Only the shirt is an extra buy: the jacket and jeans are yours.",
+   ["own_ford_garage", "shirt_hinsley_pink", "own_af_tank_white", "own_af_darkrinse", "own_spezial_cream", "own_ix_figaro"]),
   # ---- Suits & gala: the Massimo Dutti suit and the pieces bought for the 19 Dec 2026 gala ----
   ("Suits & gala", "The gala", "19 Dec gala: your Massimo Dutti suit, the 'quiet luxury, croc' mix",
    "The full anthracite double-breasted suit, buttoned, over the crisp white Pima shirt and your E. Marinella navy tie with small gold flowers, with the black Weejuns and dark grey knee-high socks. A printed silk tie is the classic partner for flannel; the navy stays in the anthracite, white and silver palette, and the little gold flowers catch the light at night. The croc belt only shows when the jacket opens, so the tie stays the one statement. Rolex for the dinner.",
@@ -601,6 +604,13 @@ OUTFITS = [
   ("Loafers", "Black camp & white linen", "Summer: loafers without socks",
    "Your black camp-collar linen shirt open at the collar with nothing underneath, the white linen trousers and the Weejuns with invisible socks. The black shirt and black shoes bracket the white trousers: the classic Riviera night look. Camp collars can go open on their own, so the figaro sits on skin. Dry evenings only: polished leather and rain don't mix.",
    ["own_camp_black", "own_white_linen", "own_bass_larson_black", "own_ix_figaro", "own_watch"]),
+  # ---- Hoodies: the two A&F Heritage hoodies bought on 23 Nov 2026 (Black Friday) ----
+  ("Hoodies", "Washed blue & cream", "New: your washed-blue A&F Heritage hoodie",
+   "The washed-blue hoodie over your white tee (a line of white at the neck), with the cream baggy jeans and the burgundy Sambas. Blue, cream and burgundy is the classic varsity trio: the faded blue keeps it soft, the cream jeans pick up the small cream script logo, and the Sambas are the one pop. The Western snapback's cream and brown keep it warm.",
+   ["own_af_hoodie_blue", "own_af_white_tee", "own_af_cream", "own_samba_maroon", "own_cap_western", "own_cuban_bracelet"]),
+  ("Hoodies", "Chocolate hoodie & light denim", "New: your dark brown A&F Heritage hoodie",
+   "The dark brown hoodie over your white tee, with the light-wash baggy jeans and the off-white Spezials. Chocolate over pale denim is an easy, grown-up contrast: the cream script logo, the white at the neck and the off-white shoes repeat one light tone, and the Spezials' gum sole echoes the brown. The Rolex and the Cuban bracelet for a weekend lunch.",
+   ["own_af_hoodie_brown", "own_af_white_tee", "own_lightwash", "own_spezial_cream", "own_cuban_bracelet", "own_watch"]),
 ]
 
 # tie selector: (tie, when, why). The first tie is the one in the outfit; tap another to swap it in.
@@ -858,6 +868,8 @@ VIBE = {
   "Black leather, jeans & loafers": ("In between", "Dinner / night out"),
   "Quarter-zip, grey denim & loafers": ("In between", "Weekend in town"),
   "Cream knit & black pleats": ("Classy", "Dinner / date"),
+  "Washed blue & cream": ("Street", "Weekend"),
+  "Chocolate hoodie & light denim": ("Street", "Weekend / lunch"),
   "Stone cord over black": ("In between", "Night out"),
   "Black camp & white linen": ("Classy", "Summer night"),
   "Navy & indigo, Ford jacket": ("Street", "Everyday / city"),
@@ -985,6 +997,7 @@ OWNED_INFO = json.load(open(os.path.join(HERE, "owned.json"))) if os.path.exists
 
 SEASON_INFO = {
   "Suits & gala": ("Your suits", "Together for the gala and weddings, apart for dinners and weekends", "The Massimo Dutti anthracite double-breasted (blazer 48, trousers 40) with the pieces bought for the 19 Dec gala, and your navy Alfaiataria Lusitana wedding suit with the black double monks. Tap the small ties under the tie in #128 and in the wedding look to switch between your ties; each one says when it works best."),
+  "Hoodies": ("Your A&F Heritage hoodies", "Weekend street: heavy fleece, small script logo", "Washed blue and dark brown, oversized with a drop shoulder. Wear them over a tee so a line of white shows at the neck, with baggy jeans and sneakers; under the brown puffer or a jacket when it's cold."),
   "Loafers": ("Your black Weejuns", "Classy casual: the penny loafer with jeans", "Your Bass Weejuns outside the suit. Let the trousers break softly on the shoe, wear dark socks (invisible ones in summer), match the belt to the shoes or skip it, and keep them for dry days."),
   "Special occasions": ("For a special day", "One standout piece, the rest from your wardrobe", "The outfits above are your fundamentals. These go a step further: each is built around one piece from a modern, young brand that sets you apart, while staying classy."),
   "Spring": ("March – May", "Mornings 7–10 °C, afternoons 16–22 °C", "Showers are common (about 110–120 mm a month), so bring a light jacket you can take off."),
@@ -1198,7 +1211,7 @@ def build():
         OUTFITS = [(a, b, c, d, [k for k in pcs if k not in ("own_cap_navy", "cap_ald_yankees")]) for a, b, c, d, pcs in OUTFITS]
     prod = load_products()
     usage = Counter(k for *_, pieces in OUTFITS for k in pieces if k in ROLE_INFO and prod.get(k, {}).get("primary"))
-    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions", "Suits & gala", "Loafers"]
+    seasons = ["Spring", "Summer", "Autumn", "Winter", "Special occasions", "Suits & gala", "Loafers", "Hoodies"]
     sid = {s: s.lower().replace(" ", "-") for s in seasons}
     sid["Special occasions"] = "special"
     sid["Suits & gala"] = "suits"
@@ -1226,7 +1239,7 @@ def build():
 <p class="inspo"><span class="vchip {vcls}">{e(vibe)}</span>{('<span class="ochip">' + e(season.split(" ", 1)[1]) + '</span>') if season.startswith("Special ") else ""}<span class="ochip">{e(occ)}</span>{e(inspo)}</p></div><span class="tots"><button class="fav" type="button" aria-pressed="false" aria-label="Save to favourites">☆ Favourite</button><button class="cmp" type="button" aria-pressed="false" aria-label="Add to compare">＋ Compare</button><span class="ownchip">You own {n_own} of {n_all}</span><span class="tot">{("New pieces: " + money(total)) if total else "All pieces you own"}</span></span></header>
 <p class="note">{e(note)}{LAYER_NOTE if "own_ix_figaro" in pieces and "own_sd_pendant" in pieces else ""}</p><div class="tiles">{tiles}</div></article>''')
         si = SEASON_INFO.get(s)
-        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s in ("Special occasions", "Suits & gala", "Loafers") else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
+        info = f'<div class="season"><span class="months">{e(si[0])}</span><span class="temps">{"" if s in ("Special occasions", "Suits & gala", "Loafers", "Hoodies") else "Braga: "}{e(si[1])}</span><span class="tip">{e(si[2])}</span></div>' if si else ""
         sec.append(f'<section id="{sid[s]}"><h2>{e(s)}</h2>{info}{"".join(cards)}</section>')
 
     # sunglasses lookbook
@@ -1617,7 +1630,7 @@ nav a.navinspo{{background:#efe7f6;color:#5b3f86}}
 <li><b>Graphics:</b> one fun graphic piece per outfit (Guinness knit, rugby polo, stripes) keeps it personal. Pair it with plain, darker trousers so it looks intentional.</li>
 </ul></div>
 <div class="vibes"><span class="vlabel">Show:</span><button data-f="all" class="on">All</button><button data-f="v-street">Street</button><button data-f="v-mid">In between</button><button data-f="v-classy">Classy</button><button data-f="ready">Ready to wear</button><button data-f="one">One piece away</button></div>
-<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#suits">Suits &amp; gala</a><a href="#loafers">Loafers</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
+<nav><a href="#favourites" class="navfav">★ Favourites</a><a href="#compare" class="navcmp">⇄ Compare<span class="cmpcount"></span></a><a href="#spring">Spring</a><a href="#summer">Summer</a><a href="#autumn">Autumn</a><a href="#winter">Winter</a><a href="#special">Special occasions</a><a href="#suits">Suits &amp; gala</a><a href="#loafers">Loafers</a><a href="#hoodies">Hoodies</a>{inspo_nav}<a href="#caps">Caps</a><a href="#brands">Brands</a><a href="#shopping-list">Shopping list</a><a href="#sizes">Sizes &amp; fit</a>{'<a href="#care">Care</a>' if care_section else ''}<a href="#sale-watch">Sale watch</a></nav>
 <section id="favourites"><h2>Favourites <span id="favcount" class="muted"></span></h2>
 <p class="lede" id="favempty">Tap <b>☆ Favourite</b> on any outfit and it shows up here. Taps are only kept in this browser, and browsers can clear them (Safari does after about a week without a visit). To keep them for good, on every device, tap <b>Copy the list to send me</b> and paste it to me: I'll save them into the page.</p>
 <div id="favlist"></div><p id="favtools" hidden><button id="favcmp" type="button">⇄ Compare these</button> <button id="favcopy" type="button">Copy the list to send me</button> <span id="favmsg" class="muted"></span></p></section>

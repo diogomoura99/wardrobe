@@ -841,5 +841,32 @@
   "url": "https://www.vinted.pt/items/10854233238",
   "image_url": "img/armani-burgundy-green-gold-dots.jpg",
   "match": "exact"
+ },
+ "own_af_darkrinse": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Baggy Jean",
+  "colour": "Dark Rinse (rigid indigo)",
+  "size": "32x30",
+  "url": "https://www.abercrombie.com/shop/eu/p/baggy-jean-58482319",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_131-4255-00264-275_model1?policy=product-large",
+  "match": "exact"
+ },
+ "own_af_hoodie_blue": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Heritage Heavyweight Logo Popover Hoodie",
+  "colour": "Washed medium blue",
+  "size": "M",
+  "url": "https://www.abercrombie.com/shop/eu/search?searchTerm=heritage%20heavyweight%20logo%20popover%20hoodie",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_122-6794-01715-220_prod1?policy=product-large",
+  "match": "exact"
+ },
+ "own_af_hoodie_brown": {
+  "brand": "Abercrombie & Fitch",
+  "name": "Heritage Heavyweight Logo Popover Hoodie",
+  "colour": "Dark Brown",
+  "size": "M",
+  "url": "https://www.abercrombie.com/shop/eu/p/heritage-heavyweight-logo-popover-hoodie-63915841",
+  "image_url": "https://img.abercrombie.com/is/image/anf/KIC_122-26002-01720-420_prod1?policy=product-large",
+  "match": "exact"
  }
 }
